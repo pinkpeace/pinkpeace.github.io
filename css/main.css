@@ -6940,7 +6940,7 @@ a {
     position: absolute;
     content: "";
     width: 9px;
-    height: 5px;
+    height: 9px;
     right: 0;
     bottom: 5px;
     background-image: url(../img/city_arrow.svg);
@@ -7000,7 +7000,7 @@ a {
   padding: 0;
   border-radius: 3px; }
   .navbar .img-logo {
-    height: 26px;
+    height: 24px;
     width: auto;
     shape-rendering: crispEdges; }
   @media (min-width: 992px) {
@@ -7031,7 +7031,8 @@ a {
       border-bottom-right-radius: 3px;
       background-color: #f2f5f6;
       border-left: none;
-      height: 40px; }
+      height: 40px;
+      width: 40px; }
     .navbar .search-form .img-search {
       width: 17px;
       height: auto;

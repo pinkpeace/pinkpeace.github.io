@@ -7005,9 +7005,8 @@ a {
     width: auto;
     shape-rendering: crispEdges; }
   .navbar .mobile-brand {
-    line-height: 1.1;
+    line-height: 1.2;
     font-weight: 900;
-    color: #ff3495;
     text-transform: uppercase; }
   @media (min-width: 992px) {
     .navbar .img-logo {
@@ -7052,6 +7051,9 @@ a {
         width: 40px; }
       .navbar .search-form .img-search {
         margin-top: -4px; } }
+
+.pink {
+  color: #ff3495; }
 
 .yel-bck {
   background-color: #fee44c; }

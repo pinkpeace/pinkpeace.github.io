@@ -2,12 +2,105 @@
 <html lang="ru">
 
 <head>
-    //= template/head.html
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <title>Лестницы-просто.ру</title>
 </head>
 
 <body>
-	 //= template/city_modal.html
-	 //= template/write_us_modal.html
+	 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	     <div class="modal-dialog my-modal" role="document">
+	         <div class="modal-content">
+	             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+	                 <span aria-hidden="true">
+	                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+	                         <polygon class="st0" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+	                     </svg>
+	                 </span>
+	             </button>
+	             <h2 class="" id="exampleModalLabel">Выберите город</h2>
+	             <ul class="city-ul">
+	               <li><a href="#">Москва</a></li>
+	               <li><a href="#">Санкт-Петербург</a></li>
+	               <li><a href="#">Екатеринбург</a></li>
+	               <li><a href="#">Нижний Новгород</a></li>
+	               <li><a href="#">Волгоград</a></li>
+	               <li><a href="#">Воронеж</a></li>
+	               <li><a href="#">Челябинск</a></li>
+	               <li><a href="#">Уфа</a></li>
+	               <li><a href="#">Минск</a></li>
+	               <li><a href="#">Бишкек</a></li>
+	               <li><a href="#">Великий Новгород</a></li>
+	               <li><a href="#">Астрахань</a></li>
+	               <li><a href="#">Липецк</a></li>
+	               <li><a href="#">Химки</a></li>
+	               <li><a href="#">Брянск</a></li>
+	               <li><a href="#">Москва</a></li>
+	               <li><a href="#">Санкт-Петербург</a></li>
+	               <li><a href="#">Екатеринбург</a></li>
+	               <li><a href="#">Нижний Новгород</a></li>
+	               <li><a href="#">Волгоград</a></li>
+	               <li><a href="#">Воронеж</a></li>
+	               <li><a href="#">Челябинск</a></li>
+	               <li><a href="#">Уфа</a></li>
+	               <li><a href="#">Минск</a></li>
+	               <li><a href="#">Бишкек</a></li>
+	               <li><a href="#">Великий Новгород</a></li>
+	               <li><a href="#">Астрахань</a></li>
+	               <li><a href="#">Липецк</a></li>
+	               <li><a href="#">Химки</a></li>
+	               <li><a href="#">Брянск</a></li>
+	             </ul>
+	         </div>
+	     </div>
+	 </div>
+	 <div class="modal fade" id="write_us" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	     <div class="modal-dialog my-modal" role="document">
+	         <div class="modal-content">
+	             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+	                 <span aria-hidden="true">
+	                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+	                         <polygon class="st0" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+	                     </svg>
+	                 </span>
+	             </button>
+	             <h2 class="" id="exampleModalLabel">Написать нам</h2>
+	             <form>
+	                 <div class="form-row">
+	                     <div class="form-group col-md-6">
+	                         <label for="inputPhone">Телефон</label>
+	                         <input type="password" class="form-control" id="inputPhone">
+	                     </div>
+	                     <div class="form-group col-md-6">
+	                         <label for="inputEmail4">Email</label>
+	                         <input type="email" class="form-control" id="inputEmail4">
+	                     </div>
+	                 </div>
+	                 <div class="form-group">
+	                     <label for="exampleFormControlTextarea1">Ваше сообщение</label>
+	                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	                 </div>
+	                 <div class="input-group mb-3">
+	                     <div class="my-file">
+	                         <input type="file" class="" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+	                         <label class="sr-only" for="inputGroupFile01">Прикрепить файл</label>
+	                     </div>
+	                 </div>
+	                 <div class="form-check">
+	                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+	                     <label class="form-check-label" for="defaultCheck1">
+	                         Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
+	                     </label>
+	                 </div>
+	                 <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>
+	             </form>
+	         </div>
+	     </div>
+	 </div>
     <div class="header">
         <div class="container-fluid container-xl">
             <nav class="navbar navbar-expand-lg align-items-center justify-content-around">
@@ -254,7 +347,167 @@
             </p>
         </div>
     </div>
-    //= template/footer.html
+    <script src="js/main.min.js"></script>
+    
+    <div class="footer">
+        <div class="first-section">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 pr-5">
+                        <img class="footer-img" src="img/low_price.svg" alt="">
+                        <h3>У нас самые низкие цены</h3>
+                        <p class="lead text-muted mb-lg-4">В других магазинах дороже!</p>
+                        <p>Попробуйте найти более низкую стоимость, чем указана у нас на сайте и мы продадим вам товар еще дешевле!</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 pr-5">
+                        <img class="footer-img" src="img/shop_quaranty.svg" alt="">
+                        <h3>Гарантия магазина 1 год</h3>
+                        <p class="lead text-muted mb-lg-4">Лестница без риска</p>
+                        <p>Мы сотрудничаем только с проверенными и надежными производителями и готовы поручиться за каждую проданную лестницу. Поэтому, кроме гарантии продавца, мы </p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 pr-5">
+                        <img class="footer-img" src="img/profi.svg" alt="">
+                        <h3>Вы обращаетесь к Гуру</h3>
+                        <p class="lead text-muted mb-lg-4">В других магазинах дороже!</p>
+                        <p>Как обойти "сложные углы", "что делать с окном", как вписаться в нестандартный проём на чем сэкономить, а на чем категорически нельзя -
+                            Мы знаем о лестницах всё!</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 pr-5">
+                        <img class="footer-img" src="img/region_delivery.svg" alt="">
+                        <h3>Доставка в любые регионы РФ</h3>
+                        <p class="lead text-muted mb-lg-4">от 1900<span class="price-rouble"> </span></p>
+                        <p>Москва и Мо - 1 день <br>
+                            Регионы РФ - от 5 дней <br>
+                            Белоруссия - от 4 дней </p>
+                    </div>
+                </div>
+                <div class="text-center pt-5 pb-5">
+                    <h2>Дизайнер, архитектор или строитель?</h2>
+                    <p class="lead">
+                        С нами можно выгодно сотрудничать. <br>
+                        Подробности <a href="#">здесь</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="second-section  pt-5 pb-5">
+            <div class="container-xl">
+                <div class="row mt-lg-4">
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <h3>
+                            Лестницы-просто.ру
+                        </h3>
+                        <ul class="nav flex-column mb-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Написать нам</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Гарантия</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Анкета для точного расчета стоимости</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <a href="" class="btn btn-simple">Стать дилером</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <h3>
+                            Услуги
+                        </h3>
+                        <ul class="nav flex-column mb-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Вызвать замерщика</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доставка лестниц</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Покраска лестниц</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Монтаж лестниц</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Условия оплаты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Облицовка лестниц</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Спросить специалиста</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <h3>
+                            Каталог лестниц
+                        </h3>
+                        <ul class="nav flex-column mb-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Лестницы из дерева</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы на металлокаркасе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы на второй этаж</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы Profi&Hobby</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Межэтажные лестницы </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы на тетивах</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы на косоурах </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#">Карта сайта </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <p class="footer-phone mb-2 mt-1">
+                            8 (495) 374-57-17
+                        </p>
+                        <p class="footer-phone mb-2">
+                            8 (495) 374-61-15
+                        </p>
+                        <p class="footer-phone mb-4">
+                            8 800 152 33 56
+                        </p>
+                        <a href="" class="mt-5">
+                            zakaz@lestnicy-prosto.ru</a>
+                        <p class="mt-4">
+                            г. Название длинное, ул.Такая-то, д.234, стр.4
+                        </p>
+                        <a href="" class="mt-5">На карте</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third-sec  pt-3 pb-3">
+            <div class="container-xl">
+                <p>
+                    1995-2020 © Lestnicy-prosto.ru — Мегамаркет интерьерных, наружных и чердачных лестниц. Комплектующие к лестницам. Производство лестниц.
+                    Все права защищены. Доставка по РФ, Беларуси, Казахстану
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -6902,8 +6902,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 1em;
-  line-height: 3.46666666em;
-  margin-top: 1.73333333em;
+  line-height: 1.6;
   margin-bottom: 0em;
   font-weight: 800; }
 
@@ -7057,7 +7056,7 @@ a {
       position: relative; } }
   .navbar-my-nav .nav-link {
     color: inherit;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
     font-size: 14px; }
   .navbar-my-nav .line {
@@ -7114,6 +7113,9 @@ a {
 @media (min-width: 992px) {
   .bsnav-mobile .navbar-nav {
     padding: 0; } }
+
+.banner-box {
+  margin-bottom: 30px; }
 
 .main-banner-box {
   background-color: #f2f5f6;
@@ -7177,6 +7179,56 @@ a {
     text-decoration: none;
     color: inherit; } }
 
+.my-modal .form-group {
+  position: relative;
+  margin-bottom: 30px; }
+
+.my-modal .form-control {
+  border-color: #a8acae;
+  background-color: #f2f5f6; }
+
+.my-modal label {
+  font-size: 0.8em;
+  line-height: 1.4em;
+  color: #a8acae; }
+
+.my-modal .my-label {
+  position: absolute;
+  top: -1em;
+  background-color: #fff;
+  left: 1em; }
+
+.my-modal .my-file {
+  padding: 20px;
+  border: 1px dashed #a8acae;
+  width: 100%;
+  background-color: #f2f5f6; }
+  .my-modal .my-file input {
+    width: inherit;
+    font-size: 0.8em; }
+
+.my-modal .modal-content {
+  padding: 50px; }
+
+.my-modal .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px; }
+
+.my-modal .city-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.my-modal a {
+  color: inherit; }
+
+@media (min-width: 992px) {
+  .my-modal .modal-content {
+    padding: 50px; } }
+
 .btn {
   padding: 9px 30px 14px; }
 
@@ -7197,27 +7249,40 @@ a {
   font-family: 'PT Sans';
   content: "\A0\20cf"; }
 
-.my-modal .modal-content {
-  padding: 30px; }
+.section {
+  padding-top: 30px;
+  padding-bottom: 80px; }
 
-.my-modal .btn-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 50px;
-  height: 50px; }
-
-.my-modal .city-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.my-modal a {
-  color: inherit; }
-
-@media (min-width: 992px) {
-  .my-modal .modal-content {
-    padding: 50px; } }
+.right-links-box {
+  position: fixed;
+  right: 0;
+  top: 20%;
+  z-index: 100; }
+  .right-links-box a {
+    text-decoration: none;
+    color: inherit; }
+  .right-links-box img {
+    width: 43px;
+    height: 43px;
+    margin-right: 33px; }
+  .right-links-box .right-link {
+    transition: all 0.3s ease;
+    background-color: #fff;
+    padding: 33px;
+    width: 250px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-bottom: 23px; }
+  .right-links-box .link-a,
+  .right-links-box .link-b,
+  .right-links-box .link-c {
+    margin-right: -149px; }
+  .right-links-box p {
+    font-weight: 800;
+    line-height: 1.3em; }
+  .right-links-box .link-a:hover {
+    margin-right: 0;
+    transition: all 0.3s ease; }
 
 .footer .first-section {
   background-color: #f2f5f6;

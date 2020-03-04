@@ -7250,8 +7250,12 @@ a {
   content: "\A0\20cf"; }
 
 .section {
-  padding-top: 30px;
-  padding-bottom: 80px; }
+  padding-top: 20px;
+  padding-bottom: 40px; }
+  @media (min-width: 992px) {
+    .section {
+      padding-top: 30px;
+      padding-bottom: 80px; } }
 
 .right-links-box {
   position: fixed;

@@ -7272,17 +7272,20 @@ a {
     width: 250px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    margin-bottom: 23px; }
-  .right-links-box .link-a,
-  .right-links-box .link-b,
-  .right-links-box .link-c {
-    margin-right: -149px; }
+    margin-bottom: 23px;
+    margin-right: -144px; }
   .right-links-box p {
     font-weight: 800;
     line-height: 1.3em; }
-  .right-links-box .link-a:hover {
+  .right-links-box .right-link:hover {
     margin-right: 0;
     transition: all 0.3s ease; }
+
+.link-b {
+  margin-top: 129px; }
+
+.link-c {
+  margin-top: 258px; }
 
 .footer .first-section {
   background-color: #f2f5f6;

@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="inputPhone" class="my-label">Телефон</label>
-                            <input type="password" class="form-control" id="inputPhone">
+                            <input type="phone" class="form-control" id="inputPhone">
                         </div>
                         <div class="form-group col-md-6">
                             <label class="my-label" for="inputEmail4">Email</label>
@@ -103,28 +103,117 @@
             </div>
         </div>
     </div>
-     <div class="right-links-box">
-         <a href="#">
-             <div class="right-link link-a shadow-lg d-flex align-items-center">
-                 <img src="img/ask.svg" alt="">
-                 <p class="mb-0">Задать вопрос</p>
-             </div>
-         </a>
-     </div>
-     <!-- <div class="right-links-box">
-         <a href="#">
-             <div class="right-link link-b shadow-lg d-flex align-items-center">
-                 <img src="img/calculate.svg" alt="">
-                 <p class="mb-0">Онлайн калькулятор</p>
-             </div>
-         </a>
-         <a href="#">
-             <div class="right-link link-c shadow-lg d-flex align-items-center">
-                 <img src="img/measure.svg" alt="">
-                 <p class="mb-0">Заказать замер</p>
-             </div>
-         </a>
-     </div> -->
+    <div class="modal fade" id="ask_us" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="mt-0 mb-5 text-center" id="exampleModalLabel">Задать вопрос</h2>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone" class="my-label">Телефон</label>
+                            <input type="phone" class="form-control" id="inputPhone">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="my-label" for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label class="my-label" for="exampleFormControlTextarea1">Ваш вопрос</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="my-file text-center">
+                            <input type="file" class="" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                            <label class="my-label" class="sr-only" for="inputGroupFile01">Прикрепить файл</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="order_measure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="mt-0 mb-5 text-center" id="exampleModalLabel">Заказать замер помещения</h2>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="my-label" for="inputName">Ваше имя</label>
+                            <input type="name" class="form-control" id="inputname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone" class="my-label">Телефон</label>
+                            <input type="phone" class="form-control" id="inputPhone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label class="my-label" for="exampleFormControlTextarea1">Адрес</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>
+                    <p class="text-center">
+                        Мы перезвоним вам, чтобы договориться об удобном для вас времени
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="right-links-box link-a d-none d-lg-block">
+        <a href="#" data-toggle="modal" data-target="#ask_us">
+            <div class="right-link  shadow-lg d-flex align-items-center">
+                <img src="img/ask.svg" alt="">
+                <p class="mb-0">Задать вопрос</p>
+            </div>
+        </a>
+    </div>
+    <div class="right-links-box link-b d-none d-lg-block">
+        <a href="#">
+            <div class="right-link  shadow-lg d-flex align-items-center">
+                <img src="img/calculate.svg" alt="">
+                <p class="mb-0">Онлайн калькулятор</p>
+            </div>
+        </a>
+    </div>
+    <div class="right-links-box link-c d-none d-lg-block">
+        <a href="#" data-toggle="modal" data-target="#order_measure">
+            <div class="right-link shadow-lg d-flex align-items-center">
+                <img src="img/measure.svg" alt="">
+                <p class="mb-0">Заказать замер</p>
+            </div>
+        </a>
+    </div>
     <div class="header">
         <div class="container-fluid container-xl">
             <nav class="navbar navbar-expand-lg align-items-center justify-content-around">

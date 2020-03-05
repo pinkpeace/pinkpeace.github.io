@@ -7025,13 +7025,9 @@ a {
   padding: 0;
   border-radius: 3px; }
   .navbar .img-logo {
-    height: 24px;
+    height: 21px;
     width: auto;
     shape-rendering: crispEdges; }
-  .navbar .mobile-brand {
-    line-height: 1.2;
-    font-weight: 900;
-    text-transform: uppercase; }
   @media (min-width: 992px) {
     .navbar .img-logo {
       width: 153px;
@@ -7143,7 +7139,8 @@ a {
   color: #ff3495; }
 
 .pluses-box {
-  margin-top: 2em; }
+  margin-top: 2em;
+  overflow: hidden; }
   .pluses-box p {
     font-size: 0.7em;
     font-weight: 700;
@@ -7293,12 +7290,15 @@ a {
 
 .footer .first-section {
   background-color: #f2f5f6;
-  padding-top: 100px;
+  padding-top: 40px;
   color: #454e5e; }
   .footer .first-section .footer-img {
     width: 68px;
     height: auto;
     margin-bottom: 1.5em; }
+  @media (min-width: 992px) {
+    .footer .first-section .first-section {
+      padding-top: 100px; } }
 
 .footer .second-section {
   background-color: #2e3038; }

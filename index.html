@@ -68,7 +68,7 @@
                         </svg>
                     </span>
                 </button>
-                <h2 class="mt-0 mb-5 text-center">Написать нам</h2>
+                <h2 class="mb-5 text-center">Написать нам</h2>
                 <form>
                     <div class="row">
                         <div class="form-group col-md-6">
@@ -113,7 +113,7 @@
                         </svg>
                     </span>
                 </button>
-                <h2 class="mt-0 mb-5 text-center">Задать вопрос</h2>
+                <h2 class="mb-5 text-center">Задать вопрос</h2>
                 <form>
                     <div class="row">
                         <div class="form-group col-md-6">
@@ -158,7 +158,7 @@
                         </svg>
                     </span>
                 </button>
-                <h2 class="mt-0 mb-5 text-center">Заказать замер помещения</h2>
+                <h2 class="mb-5 text-center">Заказать замер помещения</h2>
                 <form>
                     <div class="row">
                         <div class="form-group col-md-6">
@@ -182,7 +182,7 @@
                             Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>
+                    <button type="submit" class="btn btn-simple btn-block mt-4 mb-3">Отправить</button>
                     <p class="text-center">
                         Мы перезвоним вам, чтобы договориться об удобном для вас времени
                     </p>
@@ -240,7 +240,6 @@
                     <p class="mb-0 d-lg-block">Круглосуточно</p>
                 </div>
                 <div class="d-none d-lg-inline-flex flex-wrap mr-lg-3 mr-xl-4 align-items-center flex-md-shrink-0">
-                   
                     <a class="mr-lg-3 mr-xl-4" href="" data-toggle="modal" data-target="#write_us">написать нам</a>
                 </div>
                 <button type="button" class="btn btn-link p-0 d-inline-flex ml-2 ml-sm-4 d-sm-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -285,6 +284,18 @@
         <div class="navbar navbar-expand-lg bsnav yel-bck mb-lg-2">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav navbar-my-nav navbar-mobile justify-content-lg-around align-items-lg-center">
+                    <!--                     <li class="d-flex align-items-start d-lg-none mobile-phone-li flex-wrap">
+                        <img src="img/phone.svg" alt="Номер телефона">
+                        <div>
+                            <p class="phone-p font-weight-bold mr-2 text-nowrap">+7 495 152-33-56</p>
+                            <p class="text-xs">Круглосуточно</p>
+                        </div>
+                    </li> -->
+                    <li class="d-lg-none mb-4">
+                        <a class="a-city" href="#" data-toggle="modal" data-target="#exampleModal">
+                            Нижний Новгород
+                        </a>
+                    </li>
                     <li><a class="nav-item nav-link active" href="#">Деревянные</a></li>
                     <div class="line d-none d-lg-flex"></div>
                     <li><a class="nav-item nav-link" href="#">Винтовые</a></li>
@@ -295,37 +306,62 @@
                     <div class="line d-none d-lg-flex"></div>
                     <li><a class="nav-item nav-link " href="#">Чердачные</a></li>
                     <div class="line d-none d-lg-flex"></div>
-                    <li><a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Комплектующие
-                    </a>
-                    <div class="dropdown-menu pt-lg-3 pb-lg-4">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <a class="dropdown-item" href="#">Лаки, краски, масла</a>
-                            </div>
-                            <div class="col-lg-3">
-                                <a class="dropdown-item" href="#">Коврики для лестниц</a>
-                                <a class="dropdown-item" href="#">Ковродержатели</a>
-                                <a class="dropdown-item" href="#">Освещение для лестниц</a>
-                            </div>
-                            <div class="col-lg-3">
-                                <a class="dropdown-item" href="#">Столбы, балясины</a>
-                                <a class="dropdown-item" href="#">Перила, поручни</a>
-                            </div>
-                            <div class="col-lg-3">
-                                <a class="dropdown-item" href="#">Ступени</a>
-                                <a class="dropdown-item" href="#">Больцы</a>
+                    <li>
+                        <a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Комплектующие
+                        </a>
+                        <div class="dropdown-menu pt-lg-3 pb-lg-4">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Лаки, краски, масла</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Коврики для лестниц</a>
+                                    <a class="dropdown-item" href="#">Ковродержатели</a>
+                                    <a class="dropdown-item" href="#">Освещение для лестниц</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Столбы, балясины</a>
+                                    <a class="dropdown-item" href="#">Перила, поручни</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Ступени</a>
+                                    <a class="dropdown-item" href="#">Больцы</a>
+                                </div>
                             </div>
                         </div>
-                    </div></li>
+                    </li>
                     <div class="line d-none d-lg-flex"></div>
-                    <a class="nav-item nav-link " href="#">На заказ</a>
+                    <li>
+                        <a class="nav-item nav-link " href="#">На заказ</a>
+                    </li>
+                    <li class="d-lg-none">
+                        <a class="mobile-nav-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="d-lg-none">
+                        <a class="mobile-nav-link" href="#">
+                            Он-лайн калькулятор
+                        </a>
+                    </li>
+                    <li class="d-lg-none">
+                        <button class="btn btn-simple mt-4 mb-3" href="#" data-toggle="modal" data-target="#order_measure">
+                            Заказать замер
+                        </button>
+                    </li>
+                    <li class="d-flex align-items-сутеук d-lg-none mobile-phone-li flex-wrap">
+                            <p class="phone-p font-weight-bold mr-2 text-nowrap">+7 495 152-33-56</p>
+                            <p class="text-xs">Круглосуточно</p>
+
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="bsnav-mobile">
             <div class="bsnav-mobile-overlay"></div>
-            <div class="navbar"></div>
+            <div class="navbar">
+            </div>
         </div>
     </div>
     <!-- Главный баннер -->

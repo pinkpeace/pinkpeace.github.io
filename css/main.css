@@ -6911,6 +6911,9 @@ h5, .h5 {
   margin-bottom: 0em;
   font-weight: 800; }
 
+.text-xs {
+  font-size: 0.8em; }
+
 a {
   color: #1ab3ff; }
 
@@ -7050,15 +7053,33 @@ a {
   border-radius: 3px;
   padding: 0 10px 0 10px;
   position: absolute; }
+  .navbar-my-nav a {
+    color: inherit; }
+  .navbar-my-nav .a-city {
+    border-bottom: 1px dashed;
+    padding-top: 20px;
+    margin-bottom: 40px; }
   @media (min-width: 992px) {
     .navbar-my-nav {
       height: 50px;
       position: relative; } }
+  .navbar-my-nav .phone-p {
+    font-size: 1.3em; }
   .navbar-my-nav .nav-link {
     color: inherit;
     font-weight: 800;
     text-transform: uppercase;
     font-size: 14px; }
+  .navbar-my-nav .mobile-nav-link {
+    text-decoration: underline;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 0px 15px;
+    display: block; }
+  .navbar-my-nav .mobile-phone-li p {
+    margin-bottom: 0;
+    line-height: 1.3em; }
   .navbar-my-nav .line {
     width: 1px;
     height: 35px;
@@ -7079,7 +7100,7 @@ a {
 .bsnav-mobile .bsnav-mobile-overlay,
 .bsnav-sticky.navbar-fade,
 .bsnav-sticky.navbar-slide {
-  left: 0;
+  left: 55px;
   position: fixed;
   top: 0;
   right: 0; }
@@ -7096,7 +7117,7 @@ a {
 
 .bsnav-mobile .navbar {
   background: #fee44c;
-  padding: 45px 0 0;
+  padding: 15px 0 0;
   flex-flow: column;
   top: 0;
   bottom: 0;
@@ -7209,14 +7230,14 @@ a {
     font-size: 0.8em; }
 
 .my-modal .modal-content {
-  padding: 50px; }
+  padding: 30px; }
 
 .my-modal .btn-close {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 50px;
-  height: 50px; }
+  width: 40px;
+  height: 40px; }
 
 .my-modal .city-ul {
   list-style: none;

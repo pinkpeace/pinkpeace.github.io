@@ -490,7 +490,7 @@
                                 Помещение
                             </h4>
                         </li>
-                        <li class="list-group-item"><a href="#">Лестницы для дома</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы для дома</a></li>
                         <li class="list-group-item list-group-item-action"><a class="" href="#">Лестницы для дачи</a></li>
                         <li class="list-group-item list-group-item-action"><a class="" href="#">Лестницы для бани</a></li>
                         <li class="list-group-item list-group-item-action"><a class="" href="#">На мансарду</a></li>
@@ -576,8 +576,34 @@
             </p>
         </div>
     </div>
+    <!-- Кнопка наверх -->
+    <div class="scrollup">
+        <img src="img/up.svg" alt="">
+    </div>
     <script src="js/main.min.js"></script>
-    
+    <script>
+    $(function() {
+      // при нажатии на кнопку scrollup
+      $('.scrollup').click(function() {
+        // переместиться в верхнюю часть страницы
+        $("html, body").animate({
+          scrollTop:0
+        },1000);
+      })
+    })
+    // при прокрутке окна (window)
+    $(window).scroll(function() {
+      // если пользователь прокрутил страницу более чем на 200px
+      if ($(this).scrollTop()>200) {
+        // то сделать кнопку scrollup видимой
+        $('.scrollup').fadeIn();
+      }
+      // иначе скрыть кнопку scrollup
+      else {
+        $('.scrollup').fadeOut();
+      }
+    });
+    </script>
     <div class="footer">
         <div class="section first-section">
             <div class="container-xl">

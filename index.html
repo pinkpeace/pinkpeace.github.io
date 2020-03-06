@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="inputPhone1" class="my-label">Телефон</label>
-                            <input type="phone" class="form-control" id="inputPhone1">
+                            <input type="tel" class="form-control" id="inputPhone1">
                         </div>
                         <div class="form-group col-md-6">
                             <label class="my-label" for="inputEmail1">Email</label>
@@ -88,8 +88,8 @@
                     </div>
                     <div class="input-group mb-4">
                         <div class="my-file text-center">
-                            <input type="file" class="" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                            <label class="my-label" class="sr-only" for="inputGroupFile01">Прикрепить файл</label>
+                            <input type="file" class="" id="inputGroupFile01">
+                            <label class="my-label sr-only" for="inputGroupFile01">Прикрепить файл</label>
                         </div>
                     </div>
                     <div class="form-check">
@@ -118,7 +118,7 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="inputPhone2" class="my-label">Телефон</label>
-                            <input type="phone" class="form-control" id="inputPhone2">
+                            <input type="tel" class="form-control" id="inputPhone2">
                         </div>
                         <div class="form-group col-md-6">
                             <label class="my-label" for="inputEmail2">Email</label>
@@ -133,8 +133,8 @@
                     </div>
                     <div class="input-group mb-4">
                         <div class="my-file text-center">
-                            <input type="file" class="" id="inputGroupFile02" aria-describedby="inputGroupFileAddon02">
-                            <label class="my-label" class="sr-only" for="inputGroupFile02">Прикрепить файл</label>
+                            <input type="file" class="" id="inputGroupFile02">
+                            <label class="my-label sr-only" for="inputGroupFile02">Прикрепить файл</label>
                         </div>
                     </div>
                     <div class="form-check">
@@ -163,11 +163,11 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label class="my-label" for="inputName3">Ваше имя</label>
-                            <input type="name" class="form-control" id="inputname3">
+                            <input type="text" class="form-control" id="inputName3">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPhone3" class="my-label">Телефон</label>
-                            <input type="phone" class="form-control" id="inputPhone3">
+                            <input type="tel" class="form-control" id="inputPhone3">
                         </div>
                     </div>
                     <div class="row">
@@ -242,7 +242,7 @@
                 <div class="d-none d-lg-inline-flex flex-wrap mr-lg-3 mr-xl-4 align-items-center flex-md-shrink-0">
                     <a class="mr-lg-3 mr-xl-4" href="" data-toggle="modal" data-target="#write_us">написать нам</a>
                 </div>
-                <button type="button" class="btn btn-link p-0 d-inline-flex ml-2 ml-sm-4 d-sm-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button type="button" class="btn btn-link p-0 d-inline-flex ml-2 ml-sm-4 d-sm-none" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21">
                         <path class="header-svg" d="M22.6,20.2L16,14.4c1.2-1.5,1.9-3.4,1.9-5.5c0-4.9-4-8.9-8.9-8.9S0,4,0,8.9c0,4.9,4,8.9,8.9,8.9
 							c2.1,0,4.1-0.8,5.7-2l6.7,5.8L22.6,20.2z M1.9,8.9C1.9,5,5,1.9,8.9,1.9S16,5,16,8.9c0,3.9-3.2,7.1-7.1,7.1S1.9,12.8,1.9,8.9z" />
@@ -284,28 +284,31 @@
         <div class="navbar navbar-expand-lg bsnav yel-bck mb-lg-2">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav navbar-my-nav navbar-mobile justify-content-lg-around align-items-lg-center">
-                    <!--                     <li class="d-flex align-items-start d-lg-none mobile-phone-li flex-wrap">
-                        <img src="img/phone.svg" alt="Номер телефона">
-                        <div>
-                            <p class="phone-p font-weight-bold mr-2 text-nowrap">+7 495 152-33-56</p>
-                            <p class="text-xs">Круглосуточно</p>
-                        </div>
-                    </li> -->
                     <li class="d-lg-none mb-4">
                         <a class="a-city" href="#" data-toggle="modal" data-target="#exampleModal">
                             Нижний Новгород
                         </a>
                     </li>
                     <li><a class="nav-item nav-link active" href="#">Деревянные</a></li>
-                    <div class="line d-none d-lg-flex"></div>
+                    <li>
+                        <div class="line d-none d-lg-flex"></div>
+                    </li>
                     <li><a class="nav-item nav-link" href="#">Винтовые</a></li>
-                    <div class="line d-none d-lg-flex"></div>
+                    <li>
+                        <div class="line d-none d-lg-flex"></div>
+                    </li>
                     <li><a class="nav-item nav-link" href="#">Модульные</a></li>
-                    <div class="line d-none d-lg-flex"></div>
+                    <li>
+                        <div class="line d-none d-lg-flex"></div>
+                    </li>
                     <li><a class="nav-item nav-link " href="#">На металлокаркасе</a></li>
-                    <div class="line d-none d-lg-flex"></div>
+                    <li>
+                        <div class="line d-none d-lg-flex"></div>
+                    </li>
                     <li><a class="nav-item nav-link " href="#">Чердачные</a></li>
-                    <div class="line d-none d-lg-flex"></div>
+                    <li>
+                        <div class="line d-none d-lg-flex"></div>
+                    </li>
                     <li>
                         <a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                             Комплектующие
@@ -331,7 +334,9 @@
                             </div>
                         </div>
                     </li>
-                    <div class="line d-none d-lg-flex"></div>
+                    <li>
+                        <div class="line d-none d-lg-flex"></div>
+                    </li>
                     <li>
                         <a class="nav-item nav-link " href="#">На заказ</a>
                     </li>
@@ -346,14 +351,13 @@
                         </a>
                     </li>
                     <li class="d-lg-none">
-                        <button class="btn btn-simple mt-4 mb-3" href="#" data-toggle="modal" data-target="#order_measure">
+                        <button class="btn btn-simple mt-4 mb-3" data-toggle="modal" data-target="#order_measure">
                             Заказать замер
                         </button>
                     </li>
                     <li class="d-flex align-items-center d-lg-none mobile-phone-li flex-wrap">
-                            <p class="phone-p font-weight-bold mr-2 text-nowrap">+7 495 152-33-56</p>
-                            <p class="text-xs">Круглосуточно</p>
-
+                        <p class="phone-p font-weight-bold mr-2 text-nowrap">+7 495 152-33-56</p>
+                        <p class="text-xs">Круглосуточно</p>
                     </li>
                 </ul>
             </div>
@@ -481,47 +485,63 @@
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <ul class="list-group mb-3">
-                        <h4 class="list-group-item">Помещение</h4>
-                        <a class="list-group-item list-group-item-action" href="">Лестницы для дома</a>
-                        <a class=" list-group-item list-group-item-action" href="">Лестницы для дачи</a>
-                        <a class="list-group-item list-group-item-action" href="">Лестницы для бани</a>
-                        <a class=" list-group-item list-group-item-action" href="">На мансарду</a>
-                        <a class="list-group-item list-group-item-action" href="">Лестницы в подвал</a>
-                        <a class=" list-group-item list-group-item-action" href="">Уличные лестницы</a>
-                        <a class="list-group-item list-group-item-action" href="">Входные лестницы</a>
-                        <a class=" list-group-item list-group-item-action" href="">Межэтажные лестницы</a>
+                        <li class="list-group-item list-group-item-action">
+                            <h4 class="">
+                                Помещение
+                            </h4>
+                        </li>
+                        <li class="list-group-item"><a href="#">Лестницы для дома</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="" href="#">Лестницы для дачи</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="" href="#">Лестницы для бани</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="" href="#">На мансарду</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="" href="#">Лестницы в подвал</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="" href="#">Уличные лестницы</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="" href="#">Входные лестницы</a></li>
+                        <li class="list-group-item list-group-item-action"><a class=" " href="#">Межэтажные лестницы</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <ul class="list-group mb-3">
-                        <h4 class="list-group-item">Материал</h4>
-                        <a class="list-group-item list-group-item-action" href="">Лестницы из сосны</a>
-                        <a class=" list-group-item list-group-item-action" href="">Лестницы из берёзы</a>
-                        <a class="list-group-item list-group-item-action" href="">Лестницы из лиственницы</a>
-                        <a class=" list-group-item list-group-item-action" href="">Лестницы из бука</a>
-                        <a class="list-group-item list-group-item-action" href="">Лестницы из ясеня</a>
-                        <a class=" list-group-item list-group-item-action" href="">Лестницы из дуба</a>
+                        <li class="list-group-item list-group-item-action">
+                            <h4 class="">
+                                Материал
+                            </h4>
+                        </li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из сосны</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из берёзы</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из лиственницы</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из бука</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из ясеня</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из дуба</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <ul class="list-group mb-3">
-                        <h4 class="list-group-item">Форма лестницы</h4>
-                        <a class="list-group-item list-group-item-action" href="">Винтовые лестницы</a>
-                        <a class=" list-group-item list-group-item-action" href="">Г-образные лестницы</a>
-                        <a class="list-group-item list-group-item-action" href="">П-образные лестницы</a>
-                        <a class=" list-group-item list-group-item-action" href="">Маршевые лестницы</a>
-                        <a class="list-group-item list-group-item-action" href="">Поворотные лестницы</a>
+                        <li class="list-group-item list-group-item-action">
+                            <h4 class="">
+                                Форма лестницы
+                            </h4>
+                        </li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Винтовые лестницы</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Г-образные лестницы</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">П-образные лестницы</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Маршевые лестницы</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Поворотные лестницы</a></li>
                     </ul>
                 </div>
                 <div class=" col-sm-6 col-md-3">
                     <ul class="list-group mb-3">
-                        <h4 class="list-group-item">Конструкция</h4>
-                        <a class="list-group-item list-group-item-action" href="">Лестницы забежные</a>
-                        <a class=" list-group-item list-group-item-action" href="">Лестницы на косоурах</a>
-                        <a class="list-group-item list-group-item-action" href="">Лестницы на тетивах</a>
-                        <a class=" list-group-item list-group-item-action" href="">Лестницы на больцах</a>
-                        <a class="list-group-item list-group-item-action" href="">Модульные лестницы</a>
-                        <a class=" list-group-item list-group-item-action" href="">Лестницы из дуба</a>
+                        <li class="list-group-item list-group-item-action">
+                            <h4 class="">
+                                Конструкция
+                            </h4>
+                        </li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы забежные</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы на косоурах</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы на тетивах</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы на больцах</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Модульные лестницы</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из дуба</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,909 @@
+html,
+.root {
+    font-size: 15px;
+    // line-height: 21px;
+}
+
+body,
+.article {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: $dark-grey;
+    font-weight: 400;
+}
+
+h1,
+.h1 {
+    font-size: 1.6em;
+    line-height: 1.6em;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+    font-weight: 800;
+}
+
+h2,
+.h2 {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1.04em;
+    font-weight: 800;
+}
+
+h3,
+.h3 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+    font-weight: 800;
+}
+
+h4,
+.h4 {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0em;
+    font-weight: 800;
+}
+
+h5,
+.h5 {
+    font-size: 1em;
+    line-height: 1.73333333em;
+    margin-top: 1.73333333em;
+    margin-bottom: 0em;
+    font-weight: 800;
+}
+
+.text-xs {
+    font-size: 0.8em;
+}
+
+.p-descr {
+    font-size: 0.8em;
+    color: $midi-grey;
+    margin-bottom: 0.6em;
+    line-height: 1em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.a-link {
+    color: $link;
+    text-decoration: underline;
+}
+
+.a-link:hover,
+.a-link:focus {
+    text-decoration: none;
+    color: transparentize($link, .3);
+}
+
+.header {
+    color: inherit;
+    line-height: 1.2em;
+    padding-top: 1.1em;
+    padding-bottom: 1em;
+
+
+    a {
+        font-size: 0.8em;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .a-city {
+        position: relative;
+        display: block;
+    }
+
+    .a-city::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .15em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+    }
+
+    .phone-box {
+        max-width: 170px;
+        line-height: 1.3em;
+
+        p {
+            font-size: 0.8em;
+            color: $midi-grey;
+        }
+    }
+
+    // иконки svg
+    .header-svg {
+        fill: #2e3038;
+        fill-rule: evenodd;
+    }
+
+    .mob-search-close {
+        fill: #a92727;
+        fill-rule: evenodd;
+    }
+
+    // -- иконки svg
+
+    .header-price {
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    .img-basket {
+        width: 28px;
+        height: auto;
+    }
+
+    // @media(min-width: 992px) {
+    //     padding-top: 23px;
+    //     padding-bottom: 25px;
+    // }
+
+}
+
+.search-form {
+    position: relative;
+    flex-grow: 1;
+
+    // input {
+    //     height: 30px;
+    //     background-color: $mini-grey;
+    //     border: 1px solid #dedede;
+    //     font-size: 0.8em;
+    //     border-top-right-radius: 0;
+    //     border-bottom-right-radius: 0;
+    //     border-bottom-left-radius: 3px;
+    //     border-top-left-radius: 3px;
+    //     border-right: none;
+    // }
+
+    // .search-btn {
+    //     border: 1px solid #dedede;
+    //     border-top-left-radius: 0;
+    //     border-bottom-left-radius: 0;
+    //     border-top-right-radius: 3px;
+    //     border-bottom-right-radius: 3px;
+    //     background-color: #f2f5f6;
+    //     border-left: none;
+    //     height: 30px;
+    //     width: 40px;
+    // }
+    input {
+        height: 30px;
+        background-color: #fff;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid $base-color;
+        font-size: 0.8em;
+        padding-left: 0;
+
+    }
+
+    .search-btn {
+        background-color: #fff;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid $base-color;
+        height: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .img-search {
+        width: 17px;
+        height: auto;
+        margin-top: -10px;
+        shape-rendering: crispEdges;
+    }
+
+    @media (min-width: 992px) {
+        input {
+            height: 40px;
+            background-color: $mini-grey;
+            border: 1px solid #dedede;
+            font-size: 0.8em;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+            border-right: none;
+            padding-left: 0.75rem;
+
+        }
+
+        .search-btn {
+            height: 40px;
+            border: 1px solid #dedede;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            background-color: #f2f5f6;
+            border-left: none;
+            width: 40px;
+        }
+
+        .img-search {
+            // margin-top: 4px;
+        }
+    }
+}
+
+.basket-box {
+    position: relative;
+    // transform: translateZ(0);
+
+    .count {
+        background-color: $base-color;
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        margin-top: -5px;
+        margin-left: -5px;
+        font-size: 11px;
+        text-align: center;
+        display: inline-block;
+        line-height: 20px;
+        font-weight: 700;
+    }
+}
+
+.navbar {
+    padding: 0;
+    border-radius: 3px;
+
+    .img-logo {
+        height: 21px;
+        width: auto;
+        shape-rendering: crispEdges;
+    }
+
+    @media (min-width: 992px) {
+        .img-logo {
+            width: 153px;
+            height: auto;
+        }
+    }
+
+    .navbar-toggler {
+        outline: none;
+        padding-left: 0;
+        z-index: 500;
+    }
+
+
+
+}
+
+
+.yel-bck {
+    background-color: $base-color;
+}
+
+.navbar-my-nav {
+    width: 100%;
+    background-color: $base-color;
+    border-radius: 3px;
+    padding: 0 10px 0 10px;
+    position: absolute;
+
+    a {
+        color: inherit;
+        // text-decoration: none;
+    }
+
+    .a-city {
+        border-bottom: 1px dashed;
+        padding-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: 992px) {
+        height: 50px;
+        position: relative;
+    }
+
+    .phone-p {
+        font-size: 1.3em;
+    }
+
+    .nav-link {
+        color: inherit;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 0.9em;
+    }
+
+    .mobile-nav-link {
+        text-decoration: underline;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 15px 0px 15px;
+        display: block;
+    }
+
+    .mobile-dop-info {
+        border-top: 1px solid grey;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: -15px;
+        padding: 25px 15px 25px 15px;
+        background-color: #3f4a50;
+        color: #f1f5f6;
+
+        .a-city {
+            text-decoration: none;
+        }
+    }
+
+    .mobile-dop-link {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-top: 1px solid #e4cd44;
+
+    }
+
+    .cls-1 {
+        fill: $midi-grey;
+    }
+
+    .line {
+        width: 1px;
+        height: 35px;
+        background-color: #fde963;
+    }
+
+    .caption {
+        font-weight: 800;
+    }
+
+    .description {
+        font-weight: 400;
+        font-size: 0.7em;
+        display: block;
+        color: transparentize($mini-grey, .6);
+    }
+
+    .dropdown-menu {
+        font-size: inherit;
+        width: 100%;
+        border: none;
+        background-color: #0000000a;
+
+        @media (min-width: 992px) {
+            background-color: white;
+        }
+
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            background-color: #0000000a;
+        }
+    }
+}
+
+// Стили мобильного меню 
+.bsnav-mobile,
+.bsnav-mobile .bsnav-mobile-overlay,
+.bsnav-sticky.navbar-fade,
+.bsnav-sticky.navbar-slide {
+    left: 55px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.navbar-toggler .navbar-toggler-icon,
+.navbar-toggler .navbar-toggler-icon::after,
+.navbar-toggler .navbar-toggler-icon::before {
+    background-color: #212529;
+}
+
+.bsnav-mobile {
+    bottom: 0;
+    z-index: 49;
+    pointer-events: none;
+}
+
+.bsnav-mobile .navbar {
+    background: $base-color;
+    padding: 15px 0 0;
+    flex-flow: column;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    transition: .4s ease-in-out;
+    transform: translate3d(400px, 0, 0);
+    overflow: auto;
+}
+
+.bsnav-mobile.in .navbar {
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+}
+
+.bsnav-mobile .navbar-nav {
+    @media (min-width: 992px) {
+        padding: 0;
+    }
+}
+
+// Остальные на главной
+.phone,
+.header .phone {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.banner-box {
+    margin-bottom: 30px;
+}
+
+.main-banner-box {
+    background-color: $mini-grey;
+    position: relative;
+    overflow: hidden;
+
+    a {
+        color: inherit;
+    }
+
+    .main-banner-img {}
+
+    .text-banner {
+        position: absolute;
+        z-index: 3;
+        padding: 20px;
+    }
+
+    .p-banner-cap {
+        font-size: 2.2em;
+        line-height: 1.57575758em;
+        margin-top: 0.78787879em;
+        margin-bottom: 0.6em;
+        font-weight: 800;
+    }
+
+    @media (min-width: 992px) {
+        .p-banner-cap {
+            font-size: 3em;
+        }
+
+        .text-banner {
+            background-color: #fee44c00;
+        }
+
+        .main-banner-box {}
+    }
+}
+
+.pluses-box {
+    margin-top: 2em;
+    overflow: hidden;
+
+    p {
+        font-size: 0.7em;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        line-height: 1.5em;
+    }
+
+    img {
+        width: 41px;
+        height: auto;
+    }
+
+    @media(min-width: 992px) {
+        p {
+            font-size: 0.8em;
+        }
+    }
+
+}
+
+.pop-a {
+    margin-right: 20px;
+    color: inherit;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    font-size: 0.8em;
+
+}
+
+@media (min-width: 992px) {
+    .pop-a {
+        border: 1px solid #edeef0;
+        padding: 10px 20px;
+        font-size: inherit;
+        text-decoration: none;
+        display: inline-block;
+        color: inherit;
+
+    }
+
+    .pop-a:hover {
+        background-color: $mini-grey;
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+// Модальные окна
+.my-modal {
+    .form-group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .form-control {
+        border-color: $midi-grey;
+        background-color: $mini-grey;
+    }
+
+    label {
+        font-size: 0.8em;
+        line-height: 1.4em;
+        color: $midi-grey;
+    }
+
+    .my-label {
+        position: absolute;
+        top: -1em;
+        background-color: #fff;
+        left: 1em;
+    }
+
+    .my-file {
+        padding: 20px;
+        border: 1px dashed $midi-grey;
+        width: 100%;
+        background-color: $mini-grey;
+
+        input {
+            width: inherit;
+            font-size: 0.8em;
+        }
+    }
+
+    .modal-content {
+        padding: 30px;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .city-ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    @media(min-width: 768px) {
+        .modal-content {
+            padding: 50px;
+        }
+    }
+}
+
+// Хлебные крошки
+.my-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.8em;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.8em;
+
+    .breadcrumb-item {
+        font-size: 0.8em;
+        // font-weight: 800;
+        color: $dark-grey;
+    }
+
+    .breadcrumb-item+.active {
+        font-weight: normal;
+        color: $midi-grey;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: "<";
+    }
+}
+
+// Ссылки-выборки или подразделы на странице каталога
+.submenu-nav {
+    margin-bottom: 20px;
+
+    .nav-item {
+    	margin-right: 2em;
+        .nav-link {
+            color: $link;
+            padding-left: 0;
+            text-decoration: underline;
+            padding-right: 5px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        .nav-link:hover,
+        .nav-link:focus {
+        	text-decoration: none;
+        	color:transparentize($link, 0.3);
+        }
+    }
+}
+
+// Фильтры и сортировки
+.filter-form {
+    margin-right: 10px;
+}
+
+// Общие стили
+.btn {
+    padding: 9px 30px 14px;
+}
+
+.btn-close {
+    border: none;
+    background-color: #fff;
+}
+
+.btn-simple {
+    background-color: $btn-color;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-simple:hover {
+    color: #fff;
+    background-color: transparentize($btn-color, .15);
+}
+
+.price-rouble:after {
+    font-family: 'PT Sans';
+    content: "\A0\20cf";
+}
+
+.product-box {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-bottom: 2em;
+
+    .prod-descr-box {
+        padding-top: 0.6em;
+    }
+
+    p {}
+
+    .p-price {
+        font-weight: 600;
+        font-size: 1.2em;
+        color: $btn-color;
+        margin-bottom: 0;
+    }
+
+    .old-price {
+        text-decoration: line-through;
+        font-size: 0.7em;
+        font-weight: 400;
+        margin-left: 10px;
+        color: $dark-grey;
+    }
+
+
+}
+
+.hidden-descr {
+    .p-descr {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .hidden-descr {
+        display: none;
+    }
+
+    .product-box:hover {
+        margin: -15px -15px 0;
+        padding: 14px 14px 20px;
+        border: 1px solid $gray-200;
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+
+        .hidden-descr {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+
+.tmb-wrap-table div.active {
+    border-color: $gray-200;
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    @media(min-width: 992px) {
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+}
+
+// Кнопка "наверх"
+.scrollup {
+    position: fixed;
+    color: #fff;
+    background-color: $base-color;
+    right: 20px;
+    bottom: 0px;
+    padding: 4px 10px;
+    font-size: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+
+    img {
+        width: 20px;
+        height: auto;
+    }
+}
+
+div.scrollup:hover {
+    background-color: transparentize($base-color, .3);
+    /* цвет заднего фона при наведении */
+}
+
+// Боковые ссылки
+.right-links-box {
+    position: fixed;
+    right: 0;
+    top: 25%;
+    z-index: 100;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img {
+        width: 43px;
+        height: 43px;
+        margin-right: 23px;
+    }
+
+    .right-link {
+        transition: all 0.3s ease;
+        background-color: #fff;
+        padding: 23px;
+        width: 250px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        margin-bottom: 23px;
+        margin-right: -164px;
+
+    }
+
+    p {
+        font-weight: 800;
+        line-height: 1.3em;
+    }
+
+    .right-link:hover {
+        margin-right: 0;
+        transition: all 0.3s ease;
+
+    }
+}
+
+.link-b {
+    margin-top: 109px;
+}
+
+.link-c {
+    margin-top: 218px;
+}
+
+
+// footer
+.footer {
+    .first-section {
+        background-color: $mini-grey;
+        padding-top: 40px;
+        color: #454e5e;
+
+        .footer-img {
+            width: 68px;
+            height: auto;
+            margin-bottom: 1.5em;
+        }
+
+        @media(min-width: 992px) {
+            .first-section {
+                padding-top: 100px;
+            }
+        }
+    }
+
+    .second-section {
+        background-color: $dark-grey;
+
+        h3,
+        .h3 {
+            color: $mini-grey;
+        }
+
+        p {
+            color: $midi-grey;
+        }
+
+        .footer-phone {
+            color: $mini-grey;
+            font-size: 1.33333333em;
+            line-height: 1.5em;
+            margin-bottom: 0.3em;
+            font-weight: 800;
+        }
+
+        .nav-item {
+            .nav-link {
+                color: $midi-grey;
+                font-weight: 400;
+                padding-left: 0;
+            }
+
+            .nav-link::hover {
+                color: $mini-grey;
+            }
+        }
+    }
+
+    .third-sec {
+        background-color: #202327;
+
+        p {
+            color: #7a8387;
+            font-size: 0.8em;
+        }
+    }
+}

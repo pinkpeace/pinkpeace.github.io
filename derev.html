@@ -412,42 +412,102 @@
                 </li>
             </ul>
         </div>
-        <!-- Фильтры и сортировка -->
-        <div class="filter-sort-box d-flex">
-            <div class="filter flex-nowrap d-flex">
-                <select class="form-control filter-form">
-                    <option>Форма лестницы</option>
-                    <option>Прямая</option>
-                    <option>Г-образная</option>
-                    <option>П-образная</option>
-                    <option>Винтовая</option>
-                </select>
-                <select class="form-control filter-form">
-                    <option>Длина проёма</option>
-                    <option>До 1300 мм</option>
-                    <option>1300 - 1900 мм</option>
-                    <option>1900 - 2300 мм</option>
-                    <option>2300 - 2750 мм</option>
-                    <option>2750 - 3400 мм</option>
-                    <option>от 3400 мм</option>
-                </select>
-                <select class="form-control filter-form">
-                    <option>Высота лестницы</option>
-                    <option>Прямая</option>
-                    <option>Г-образная</option>
-                    <option>П-образная</option>
-                    <option>Винтовая</option>
-                </select>
-                <select class="form-control filter-form">
-                    <option>Цена</option>
-                    <option>Эконом</option>
-                    <option>Стандарт</option>
-                    <option>Престиж</option>
+        <!-- Проба -->
+        <!--         <div class="row">
+            <div class="col-sm">
+                <select id="select" class="form-control" name="fruct">
+                    <option value="1">яблоко</option>
+                    <option value="2" selected>апельсин</option>
+                    <option value="3">виноград</option>
                 </select>
             </div>
-            <div class="sort">
+            <div class="" id="js-result">
+                
+            </div>
+            <button class="btn-close" id="del-select">
+            	<img src="img/close.svg" alt="">
+            </button>
+        </div> -->
+        <!-- Конец пробы -->
+        <!-- Фильтры и сортировки -->
+        <div class="filter-sort-box d-lg-flex justify-content-lg-between">
+            <button class="d-lg-none filter-btn" type="button" data-toggle="collapse" data-target="#filters" aria-controls="filters" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
+                    <defs>
+                    </defs>
+                    <path data-name="Ellipse 12 copy 2" class="cls-filter" d="M743,214H732.858a3.981,3.981,0,0,1-7.717,0H723a1,1,0,1,1,0-2h2.141a3.981,3.981,0,0,1,7.717,0H743A1,1,0,1,1,743,214Zm-14-3a2,2,0,1,0,2,2A2,2,0,0,0,729,211Zm14-5h-2.142a3.981,3.981,0,0,1-7.717,0H723a1,1,0,0,1,0-2h10.141a3.981,3.981,0,0,1,7.717,0H743A1,1,0,0,1,743,206Zm-6-3a2,2,0,1,0,2,2A2,2,0,0,0,737,203Zm-14,17h10.141a3.982,3.982,0,0,1,7.717,0H743a1,1,0,0,1,0,2h-2.142a3.982,3.982,0,0,1-7.717,0H723A1,1,0,0,1,723,220Zm14,3a2,2,0,1,0-2-2A2,2,0,0,0,737,223Z" transform="translate(-722 -201)"></path>
+                </svg>
+            </button>
+            <div class="select-box order-lg-last float-right">
+                <select class="form-control select sort" id="">
+                    <option value="0">Сначала популярные</option>
+                    <option>Сначала недорогие</option>
+                    <option>Сначала дорогие</option>
+                </select>
+            </div>
+            <div class="collapse d-lg-block order-lg-first" id="filters">
+                <div class="d-lg-flex selects-wrap">
+                    <div class="select-box">
+                        <select class="form-control filter-form filter-sel" id="filter-form">
+                            <option value="0">Форма лестницы</option>
+                            <option>Прямая</option>
+                            <option>Г-образная</option>
+                            <option>П-образная</option>
+                            <option>Винтовая</option>
+                        </select>
+                        <div class="selectresult" id="">
+                        </div>
+                        <button class="d-none delselect" id="">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="select-box">
+                        <select class="form-control filter-form filter-sel" id="filter-measure">
+                            <option value="0">Длина проёма</option>
+                            <option>До 1300 мм</option>
+                            <option>1300 - 1900 мм</option>
+                            <option>1900 - 2300 мм</option>
+                            <option>2300 - 2750 мм</option>
+                            <option>2750 - 3400 мм</option>
+                            <option>от 3400 мм</option>
+                        </select>
+                        <div class="selectresult" id="">
+                        </div>
+                        <button class="d-none delselect" id="">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="select-box">
+                        <select class="form-control filter-form filter-sel" id="filter-geometry">
+                            <option value="0">Высота лестницы</option>
+                            <option>Прямая</option>
+                            <option>Г-образная</option>
+                            <option>П-образная</option>
+                            <option>Винтовая</option>
+                        </select>
+                        <div class="selectresult" id="">
+                        </div>
+                        <button class="d-none delselect" id="">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="select-box">
+                        <select class="form-control filter-form filter-sel" id="filter-price">
+                            <option value="0">Цена</option>
+                            <option>Эконом</option>
+                            <option>Стандарт</option>
+                            <option>Престиж</option>
+                        </select>
+                        <div class="selectresult" id="">
+                        </div>
+                        <button class="d-none delselect" id="">
+                            <img src="img/close.svg" alt="">
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Конец -Фильтры и сортировка -->
         <!-- Товары -->
         <div class="section product-area">
             <div class="row">
@@ -757,7 +817,7 @@
     </div>
     <script src="js/main.min.js"></script>
     <script>
-    $(function() {
+        $(function() {
         // при нажатии на кнопку scrollup
         $('.scrollup').click(function() {
             // переместиться в верхнюю часть страницы
@@ -780,7 +840,7 @@
     });
     </script>
     <script>
-    //Инициируем карусель фото в анонсе товаров
+        //Инициируем карусель фото в анонсе товаров
     $(document).ready(function() {
         $(".item").brazzersCarousel();
     });

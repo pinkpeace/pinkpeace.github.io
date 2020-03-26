@@ -6881,7 +6881,6 @@ body,
 .article {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  line-height: 1.6em;
   color: #2e3038;
   font-weight: 400;
   letter-spacing: normal; }
@@ -6918,6 +6917,10 @@ h5, .h5 {
   margin-top: 1.73333333em;
   margin-bottom: 0em;
   font-weight: 800; }
+
+p {
+  font-size: 1em;
+  line-height: 1.6em; }
 
 .text-xs {
   font-size: 0.8em; }
@@ -7311,6 +7314,13 @@ a:hover {
   .my-modal .modal-content {
     padding: 50px; } }
 
+.a-back {
+  font-size: 11px;
+  padding: 5px 15px;
+  border: 1px solid #ff36a3;
+  border-radius: 3px;
+  margin-right: 10px; }
+
 .my-breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -7475,12 +7485,15 @@ select:focus {
     font-weight: 400;
     white-space: nowrap; }
   .product-box .sale-info {
-    min-height: 26px; }
+    min-height: 26px;
+    line-height: 1.2em;
+    word-break: break-all; }
   .product-box .sale {
     font-size: 11px;
     background-color: #fee44c;
     padding: 3px 6px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    margin-right: 5px; }
 
 .hidden-descr {
   display: block; }
@@ -7491,47 +7504,19 @@ select:focus {
     font-weight: inherit;
     font-size: 11px;
     position: relative; }
-  .hidden-descr .p-values {
-    position: relative;
-    width: 100%;
-    line-height: 1em;
-    font-weight: 500;
-    margin-bottom: 1em; }
-    .hidden-descr .p-values .feature-name {
-      width: 55%;
-      word-wrap: break-word;
-      position: relative;
-      vertical-align: top;
+  .hidden-descr .material {
+    margin-top: 1em; }
+    .hidden-descr .material span {
+      background-color: #def2f9;
+      padding: 3px 5px;
+      margin-right: 3px;
+      margin-bottom: 3px;
+      border-radius: 3px;
       display: inline-block;
-      margin: 0 2.5% 0 0; }
-      .hidden-descr .p-values .feature-name b {
-        background: #fff;
-        font-weight: 500;
-        padding: 0 10px 0 0;
-        position: relative;
-        z-index: 1; }
-    .hidden-descr .p-values .feature-name::after {
-      border-bottom: 1px dashed #ccc;
-      bottom: 0px;
-      content: '';
-      display: block;
-      height: 20px;
-      left: 0;
-      position: absolute;
-      width: 100%; }
-    .hidden-descr .p-values .feature-val {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      word-break: break-word;
-      display: inline-block;
-      vertical-align: bottom;
-      width: 40%; }
-  .hidden-descr .material span {
-    background-color: #def2f9;
-    padding: 3px 5px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    border-radius: 3px; }
+      font-size: 11px; }
+    @media (min-width: 567px) {
+      .hidden-descr .material span {
+        font-size: 13px; } }
 
 @media (min-width: 992px) {
   .product-box {
@@ -7549,6 +7534,48 @@ select:focus {
     .product-box:hover .hidden-descr {
       display: block;
       width: 100%; } }
+
+.p-values {
+  position: relative;
+  width: 100%;
+  line-height: 1em;
+  font-weight: 500;
+  margin-bottom: 1em; }
+  .p-values .feature-name {
+    word-wrap: break-word;
+    position: relative;
+    vertical-align: top;
+    display: inline-block; }
+    .p-values .feature-name b {
+      font-weight: 400;
+      color: #a8acae; }
+  .p-values .feature-val {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    display: inline-block;
+    vertical-align: bottom; }
+  @media (min-width: 567px) {
+    .p-values .feature-name {
+      width: 55%;
+      margin: 0 2.5% 0 0; }
+      .p-values .feature-name b {
+        background: #fff;
+        padding: 0 10px 0 0;
+        position: relative;
+        z-index: 1;
+        color: inherit; }
+    .p-values .feature-name::after {
+      border-bottom: 1px dashed #ccc;
+      bottom: 0px;
+      content: '';
+      display: block;
+      height: 20px;
+      left: 0;
+      position: absolute;
+      width: 100%; }
+    .p-values .feature-val {
+      width: 40%; } }
 
 .tmb-wrap-table div.active {
   border-color: #e9ecef; }

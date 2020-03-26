@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="css/main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Лестницы-просто.ру</title>
 </head>
 
@@ -262,7 +261,7 @@
                         <span class="count">2</span>
                     </div>
                     <p class="header-price d-none d-xl-flex text-nowrap mb-0">
-                        35 900 <span class="price-rouble"> </span>
+                        35 900 <span class="price-rouble"></span>
                     </p>
                 </a>
             </nav>
@@ -383,7 +382,7 @@
         <!-- Конец хлебых крошек -->
     </div>
     <div class="container-xl">
-        <h1>
+        <h1 class="m">
             Деревянные лестницы
         </h1>
         <!-- Меню выборок (или подразделов) -->
@@ -412,34 +411,20 @@
                 </li>
             </ul>
         </div>
-        <!-- Проба -->
-        <!--         <div class="row">
-            <div class="col-sm">
-                <select id="select" class="form-control" name="fruct">
-                    <option value="1">яблоко</option>
-                    <option value="2" selected>апельсин</option>
-                    <option value="3">виноград</option>
-                </select>
-            </div>
-            <div class="" id="js-result">
-                
-            </div>
-            <button class="btn-close" id="del-select">
-            	<img src="img/close.svg" alt="">
-            </button>
-        </div> -->
-        <!-- Конец пробы -->
         <!-- Фильтры и сортировки -->
         <div class="filter-sort-box d-lg-flex justify-content-lg-between">
             <button class="d-lg-none filter-btn" type="button" data-toggle="collapse" data-target="#filters" aria-controls="filters" aria-expanded="false" aria-label="Toggle navigation">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
-                    <defs>
-                    </defs>
-                    <path data-name="Ellipse 12 copy 2" class="cls-filter" d="M743,214H732.858a3.981,3.981,0,0,1-7.717,0H723a1,1,0,1,1,0-2h2.141a3.981,3.981,0,0,1,7.717,0H743A1,1,0,1,1,743,214Zm-14-3a2,2,0,1,0,2,2A2,2,0,0,0,729,211Zm14-5h-2.142a3.981,3.981,0,0,1-7.717,0H723a1,1,0,0,1,0-2h10.141a3.981,3.981,0,0,1,7.717,0H743A1,1,0,0,1,743,206Zm-6-3a2,2,0,1,0,2,2A2,2,0,0,0,737,203Zm-14,17h10.141a3.982,3.982,0,0,1,7.717,0H743a1,1,0,0,1,0,2h-2.142a3.982,3.982,0,0,1-7.717,0H723A1,1,0,0,1,723,220Zm14,3a2,2,0,1,0-2-2A2,2,0,0,0,737,223Z" transform="translate(-722 -201)"></path>
+                    <path class="cls-filter" d="M21,13H10.9c-0.5,2.1-2.7,3.4-4.8,2.9c-1.4-0.4-2.5-1.5-2.9-2.9H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2.1C3.7,8.9,5.8,7.6,8,8.1
+					c1.4,0.4,2.5,1.5,2.9,2.9H21c0.6,0,1,0.4,1,1S21.6,13,21,13z M7,10c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S8.1,10,7,10z M21,5h-2.1
+					c-0.5,2.1-2.7,3.4-4.8,2.9c-1.4-0.4-2.5-1.5-2.9-2.9H1C0.4,5,0,4.6,0,4s0.4-1,1-1h10.1c0.5-2.1,2.7-3.4,4.8-2.9
+					c1.4,0.4,2.5,1.5,2.9,2.9H21c0.6,0,1,0.4,1,1S21.6,5,21,5z M15,2c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S16.1,2,15,2z M1,19h10.1
+					c0.5-2.1,2.7-3.4,4.8-2.9c1.4,0.4,2.5,1.5,2.9,2.9H21c0.6,0,1,0.4,1,1s-0.4,1-1,1h-2.1c-0.5,2.1-2.7,3.4-4.8,2.9
+					c-1.4-0.4-2.5-1.5-2.9-2.9H1c-0.6,0-1-0.4-1-1S0.4,19,1,19z M15,22c1.1,0,2-0.9,2-2s-0.9-2-2-2s-2,0.9-2,2S13.9,22,15,22z" />
                 </svg>
             </button>
             <div class="select-box order-lg-last float-right">
-                <select class="form-control select sort" id="">
+                <select class="select sort form-control" id="">
                     <option value="0">Сначала популярные</option>
                     <option>Сначала недорогие</option>
                     <option>Сначала дорогие</option>
@@ -449,21 +434,21 @@
                 <div class="d-lg-flex selects-wrap">
                     <div class="select-box">
                         <select class="form-control filter-form filter-sel" id="filter-form">
-                            <option value="0">Форма лестницы</option>
+                            <option class="placeholder" selected disabled value="0">Форма лестницы</option>
                             <option>Прямая</option>
                             <option>Г-образная</option>
                             <option>П-образная</option>
                             <option>Винтовая</option>
                         </select>
+                        <button class="d-none delselect" id="">
+                            <img src="img/filter-close.svg" alt="">
+                        </button>
                         <div class="selectresult" id="">
                         </div>
-                        <button class="d-none delselect" id="">
-                            <img src="img/close.svg" alt="">
-                        </button>
                     </div>
                     <div class="select-box">
                         <select class="form-control filter-form filter-sel" id="filter-measure">
-                            <option value="0">Длина проёма</option>
+                            <option class="placeholder" selected disabled value="0">Длина проёма</option>
                             <option>До 1300 мм</option>
                             <option>1300 - 1900 мм</option>
                             <option>1900 - 2300 мм</option>
@@ -471,47 +456,49 @@
                             <option>2750 - 3400 мм</option>
                             <option>от 3400 мм</option>
                         </select>
+                        <button class="d-none delselect" id="">
+                            <img src="img/filter-close.svg" alt="">
+                        </button>
                         <div class="selectresult" id="">
                         </div>
-                        <button class="d-none delselect" id="">
-                            <img src="img/close.svg" alt="">
-                        </button>
                     </div>
                     <div class="select-box">
                         <select class="form-control filter-form filter-sel" id="filter-geometry">
-                            <option value="0">Высота лестницы</option>
-                            <option>Прямая</option>
-                            <option>Г-образная</option>
-                            <option>П-образная</option>
-                            <option>Винтовая</option>
+                            <option class="placeholder" selected disabled value="0">Высота лестницы</option>
+                            <option>До 2500 мм</option>
+                            <option>2500 - 2700 мм</option>
+                            <option>2700-2950 мм</option>
+                            <option>2950-3200 мм</option>
+                            <option>от 3200 мм</option>
                         </select>
+                        <button class="d-none delselect" id="">
+                            <img src="img/filter-close.svg" alt="">
+                        </button>
                         <div class="selectresult" id="">
                         </div>
-                        <button class="d-none delselect" id="">
-                            <img src="img/close.svg" alt="">
-                        </button>
                     </div>
                     <div class="select-box">
                         <select class="form-control filter-form filter-sel" id="filter-price">
-                            <option value="0">Цена</option>
+                            <option class="placeholder" selected disabled value="0">Цена</option>
                             <option>Эконом</option>
                             <option>Стандарт</option>
                             <option>Престиж</option>
                         </select>
+                        <button class="d-none delselect" id="">
+                            <img src="img/filter-close.svg" alt="">
+                        </button>
                         <div class="selectresult" id="">
                         </div>
-                        <button class="d-none delselect" id="">
-                            <img src="img/close.svg" alt="">
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Конец -Фильтры и сортировка -->
         <!-- Товары -->
+        <hr>
         <div class="section product-area">
             <div class="row">
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <a href="product.html">
                         <div class="product-box">
                             <div class="item">
@@ -523,27 +510,50 @@
                                 <p class="p-descr text-xs">
                                     В наличии 12 шт.
                                 </p>
-                                <p class="p-price">
-                                    от 52 000<span class="price-rouble"></span><span class="old-price">от 57 000<span class="price-rouble"> </span>
-                                </p>
                                 <p class="">
                                     Лестница К-001М
                                 </p>
+                                <div class="price-box">
+                                    <div class="sale-info">
+                                        <span class="sale">Скидка 15%</span> <span class="old-price">от 57 000<span class="price-rouble"> </span>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 52 000<span class="price-rouble"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-descr">
-                                    Высота:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2750 - 3400 мм</span>
                                 </p>
-                                <p>2750 - 3400 мм</p>
-                                <p class="p-descr">
-                                    Длина проёма:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Длина проёма:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">
+                                        от 1400 мм
+                                    </span>
                                 </p>
-                                <p>от 1400 мм</p>
+                                <p class="material">
+                                    <span>Сосна под покраску</span> <span>сосна</span><span> сосна+дуб</span><span> дуб</span><span> бук</span>
+                                </p>
+                                <p class="special-info">
+                                    Более 24 вариантов размеров
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <a href="product.html">
                         <div class="product-box">
                             <div class="item">
@@ -555,27 +565,50 @@
                                 <p class="p-descr text-xs">
                                     В наличии 12 шт.
                                 </p>
-                                <p class="p-price">
-                                    от 32 000<span class="price-rouble"></span><span class="old-price">от 37 000<span class="price-rouble"> </span>
-                                </p>
                                 <p class="">
                                     Лестница К-002М
                                 </p>
+                                <div class="price-box">
+                                    <div class="sale-info">
+                                        <span class="sale">Скидка 5%</span> <span class="old-price">от 57 000<span class="price-rouble"> </span>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 52 000<span class="price-rouble"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-descr">
-                                    Высота:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2650 - 3700 мм</span>
                                 </p>
-                                <p>2750 - 3400 мм</p>
-                                <p class="p-descr">
-                                    Длина проёма:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Длина проёма:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">
+                                        от 1000 мм
+                                    </span>
                                 </p>
-                                <p>от 1400 мм</p>
+                                <p class="material">
+                                    <span>сосна</span><span> дуб</span><span> бук</span>
+                                </p>
+                                <p class="special-info">
+                                    Витринный образец
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <a href="product.html">
                         <div class="product-box">
                             <div class="item">
@@ -586,27 +619,49 @@
                                 <p class="p-descr text-xs">
                                     В наличии 45 шт.
                                 </p>
-                                <p class="p-price">
-                                    от 32 000<span class="price-rouble"></span><span class="old-price">от 37 000<span class="price-rouble"> </span>
-                                </p>
                                 <p class="">
                                     Лестница К-003М
                                 </p>
+                                <div class="price-box">
+                                    <div class="sale-info">
+                                    </div>
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 52 000<span class="price-rouble"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-descr">
-                                    Высота:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2880 - 3250 мм</span>
                                 </p>
-                                <p>2750 - 3400 мм</p>
-                                <p class="p-descr">
-                                    Длина проёма:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Длина проёма:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">
+                                        от 7500 мм
+                                    </span>
                                 </p>
-                                <p>от 1400 мм</p>
+                                <p class="material">
+                                    <span>сосна</span><span> дуб</span><span>ольха</span>
+                                </p>
+                                <p class="special-info">
+                                    У этой лестницы есть фишка
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <a href="product.html">
                         <div class="product-box">
                             <div class="item">
@@ -620,27 +675,49 @@
                                 <p class="p-descr text-xs">
                                     В наличии 120 шт.
                                 </p>
-                                <p class="p-price">
-                                    от 17 000<span class="price-rouble"></span><span class="old-price">от 23 000<span class="price-rouble"> </span>
-                                </p>
                                 <p class="">
                                     Лестница К-004М
                                 </p>
+                                <div class="price-box">
+                                    <div class="sale-info">
+                                    </div>
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 52 000<span class="price-rouble"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-descr">
-                                    Высота:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2750 - 3200 мм</span>
                                 </p>
-                                <p>2750 - 3400 мм</p>
-                                <p class="p-descr">
-                                    Длина проёма:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Длина проёма:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">
+                                        от 1200 мм
+                                    </span>
                                 </p>
-                                <p>от 1400 мм</p>
+                                <p class="material">
+                                    <span>сосна</span><span>сосна под покраску</span>
+                                </p>
+                                <p class="special-info">
+                                    Самая недорогая лестница
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <a href="product.html">
                         <div class="product-box">
                             <div class="item">
@@ -651,27 +728,50 @@
                                 <p class="p-descr">
                                     В наличии 7 шт.
                                 </p>
-                                <p class="p-price">
-                                    от 57 000<span class="price-rouble"></span><span class="old-price">от 67 000<span class="price-rouble"> </span>
-                                </p>
                                 <p class="">
                                     Лестница К-005М
                                 </p>
+                                <div class="price-box">
+                                    <div class="sale-info">
+                                        <span class="sale">-3000<span class="price-rouble"> </span></span> <span class="old-price">от 57 000<span class="price-rouble"> </span>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 52 000<span class="price-rouble"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-descr">
-                                    Высота:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2650 - 3700 мм</span>
                                 </p>
-                                <p>2750 - 3400 мм</p>
-                                <p class="p-descr">
-                                    Длина проёма:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Длина проёма:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">
+                                        от 1000 мм
+                                    </span>
                                 </p>
-                                <p>от 1400 мм</p>
+                                <p class="material">
+                                    <span>сосна</span><span> дуб</span><span> бук</span>
+                                </p>
+                                <p class="special-info">
+                                    Здесь описание фишки этой лестницы
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <a href="product.html">
                         <div class="product-box">
                             <div class="item">
@@ -683,31 +783,50 @@
                                 <p class="p-descr text-xs">
                                     В наличии 23 шт.
                                 </p>
-                                <p class="p-price">
-                                    37 400<span class="price-rouble"></span>
-                                </p>
                                 <p class="">
                                     Лестница ЛЕС-03
                                 </p>
+                                <div class="price-box">
+                                    <div class="sale-info">
+                                        <span class="sale">-10 000<span class="price-rouble"> </span></span> <span class="old-price">от 57 000<span class="price-rouble"> </span>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 67 000<span class="price-rouble"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-descr">
-                                    Высота:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2650 - 3700 мм</span>
                                 </p>
-                                <p>2750 - 3400 мм</p>
-                                <p class="p-descr">
-                                    Диаметр:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Длина проёма:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">
+                                        от 1000 мм
+                                    </span>
                                 </p>
-                                <p>от 1400 мм</p>
-                                <p class="p-descr">
-                                    Материал:
+                                <p class="material">
+                                    <span>сосна</span><span> дуб</span><span> бук</span>
                                 </p>
-                                <p>Сосна, дуб, ольха</p>
+                                <p class="special-info">
+                                    Витринный образец
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <a href="product.html">
                         <div class="product-box">
                             <div class="item">
@@ -719,28 +838,67 @@
                                 <p class="p-descr text-xs">
                                     Изготовление от 2-х недель
                                 </p>
-                                <p class="p-price">
-                                    32 000<span class="price-rouble"></span><span class="old-price">37 000<span class="price-rouble"> </span>
-                                </p>
                                 <p class="">
                                     Лестница Калина
                                 </p>
+                                <div class="price-box">
+                                    <div class="sale-info">
+                                        <span class="sale">покраска в подарок</span>
+                                    </div>
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 23 000<span class="price-rouble"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-descr">
-                                    Высота:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2650 - 3700 мм</span>
                                 </p>
-                                <p>2750 - 3400 мм</p>
-                                <p class="p-descr">
-                                    Длина проёма:
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Длина проёма:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">
+                                        от 1000 мм
+                                    </span>
                                 </p>
-                                <p>от 1400 мм</p>
+                                <p class="material">
+                                	 <span>сосна</span><span> дуб</span><span> бук</span>
+                                </p>
+                                <p class="special-info">
+                                   Витринный образец
+                                </p>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
+        <!-- Конец товаров -->
+        <!-- Хлебные крошки -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">назад</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">вперед</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Конец хлебных крошек -->
     </div>
     <!-- Сео-блок -->
     <div class="container-xl">
@@ -812,12 +970,12 @@
     </div>
     </div>
     <!-- Кнопка наверх -->
-    <div class="scrollup">
+    <div class="scrollup shadow-lg">
         <img src="img/up.svg" alt="">
     </div>
     <script src="js/main.min.js"></script>
     <script>
-        $(function() {
+    $(function() {
         // при нажатии на кнопку scrollup
         $('.scrollup').click(function() {
             // переместиться в верхнюю часть страницы
@@ -840,7 +998,7 @@
     });
     </script>
     <script>
-        //Инициируем карусель фото в анонсе товаров
+    //Инициируем карусель фото в анонсе товаров
     $(document).ready(function() {
         $(".item").brazzersCarousel();
     });
@@ -913,7 +1071,6 @@
                                 <a class="nav-link" href="#">Анкета для точного расчета стоимости</a>
                             </li>
                         </ul>
-                        <br>
                         <a href="" class="btn btn-simple">Стать дилером</a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3 mb-4">

@@ -7483,7 +7483,7 @@ select:focus {
     border-radius: 3px; }
 
 .hidden-descr {
-  display: none; }
+  display: block; }
   .hidden-descr p {
     font-size: 13px; }
   .hidden-descr .p-descr {
@@ -7537,6 +7537,8 @@ select:focus {
   .product-box {
     border: none;
     margin-bottom: 2em; }
+    .product-box .hidden-descr {
+      display: none; }
   .product-box:hover {
     margin: -15px -15px 0;
     padding: 14px 14px 20px;

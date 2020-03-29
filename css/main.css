@@ -7405,7 +7405,7 @@ select:focus {
     font-weight: 600;
     padding-right: 40px; }
   .filter-sort-box .selects-wrap {
-    padding: 20px 0px 10px 0;
+    padding: 20px 0px 20px 0;
     border-bottom: 1px solid #f2f5f6; }
     .filter-sort-box .selects-wrap .select-box {
       margin-right: 0;
@@ -7430,9 +7430,9 @@ select:focus {
     @media (min-width: 992px) {
       .filter-sort-box .selects-wrap {
         padding: 0;
-        background-color: #fff; }
-        .filter-sort-box .selects-wrap .selects-wrap {
-          padding: 20px 10px 10px 0; }
+        background-color: #fff;
+        padding: 0px 0px 10px 0;
+        border: none; }
         .filter-sort-box .selects-wrap select {
           width: auto; }
         .filter-sort-box .selects-wrap .select-box {
@@ -7463,7 +7463,8 @@ select:focus {
   border: 1px solid #e9ecef;
   font-size: 13px;
   font-weight: 600;
-  padding: 6px 40px 8px 20px;
+  padding: 5px 40px 7px 20px;
+  height: calc(1.5em + .75rem + 2px);
   border: none;
   background-color: transparent;
   line-height: 1.5em;

@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Лестницы-просто.ру</title>
 </head>
 
@@ -582,6 +583,132 @@
         <img src="img/up.svg" alt="">
     </div>
     <script src="js/main.min.js"></script>
+    <!-- Фотогалерея -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    $('.one-product__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.one-product__slider_navigation',
+        arrows: false,
+        dots: false,
+        infinite: true,
+        focusOnSelect: true,
+        fade: true,
+        cssEase: 'linear'
+    });
+    // Slider | one-product-slider
+    $('.one-product__slider_navigation').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button class="next-btn"></button>',
+        nextArrow: '<button class="prev-btn"></button>',
+        dots: false,
+        infinite: true,
+        asNavFor: '.one-product__slider',
+        focusOnSelect: true,
+        centerMode: false,
+        vertical: true,
+        responsive: [
+            {
+                breakpoint: 1250,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 908,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 567,
+                settings: {
+                    arrows: false,
+                    vertical: false,
+                    slidesToShow: 4,
+                }
+            },
+    
+    
+        ]
+    });
+    
+    // $(document).ready(function() {
+    //     $(".fancybox").fancybox({
+    //         afterShow: function() {
+    //             $(".fancybox-image").elevateZoom({
+    //                 //zoomType: "inner",
+    //                 cursor: "crosshair",
+    //                 zoomType: "lens",
+    //                 scrollZoom: true,
+    //             });
+    //         },
+    //         beforeClose: function() {
+    //             $(".zoomContainer").remove();
+    //             $('.zoomWindowContainer').remove();
+    //             $(".zoomLens").remove();
+    //         }
+    //     });
+    // });
+    </script>
+    <!-- <script>
+    $(document).ready(function() {
+        $('.main-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            centerMode: true,
+            dots: false,
+            fade: true,
+            asNavFor: '.thumb-slider',
+            prevArrow: $('.prev-btn'),
+            nextArrow: $('.next-btn'),
+            adaptiveHeight: true
+        });
+        $('.thumb-slider').slick({
+            dots: false,
+            vertical: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.main-slider',
+            verticalSwiping: true,
+            focusOnSelect: false,
+            prevArrow: '<button class="nav-prev-btn"></button>',
+            nextArrow: '<button class="nav-next-btn"></button>',
+            adaptiveHeight: true,
+            focusOnSelect: true,
+            centerMode: false
+        });
+    
+        $('.main-slider').on('afterChange', function(event, slick, currentSlide) {
+            $('.thumb-slider').slick('slickGoTo', currentSlide);
+            var currrentNavSlideElem = '.thumb-slider .slick-slide[data-slick-index="' + currentSlide + '"]';
+            $('.thumb-slider .slick-slide.is-active').removeClass('is-active');
+            $(currrentNavSlideElem).addClass('is-active');
+        });
+    
+        $('.thumb-slider').on('click', '.slick-slide', function(event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+            $('.main-slider').slick('slickGoTo', goToSingleSlide);
+        });
+    });
+    </script> -->
     <script>
     $(function() {
         // при нажатии на кнопку scrollup
@@ -608,9 +735,17 @@
     <script>
     //Инициируем карусель фото в анонсе товаров
     $(document).ready(function() {
-        $(".item").brazzersCarousel();
+        $(".prev-photo-item").brazzersCarousel();
     });
     </script>
+    <!-- Надо засвайпить бразерскарусель -->
+    <!-- <script>
+    $("#block").on("swipeleft", function() {
+        alert("left");
+    }).on("swiperight", function() {
+        alert("right");
+    });
+    </script> -->
     <div class="footer">
         <div class="section first-section">
             <div class="container-xl">
@@ -643,7 +778,7 @@
                             Белоруссия - от 4 дней </p>
                     </div>
                 </div>
-                <div class="text-center pt-5 pb-5">
+                <div class="text-center pt-5">
                     <h2>Дизайнер, архитектор или строитель?</h2>
                     <p class="lead">
                         С нами можно выгодно сотрудничать. <br>

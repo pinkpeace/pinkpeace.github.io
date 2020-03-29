@@ -18442,6 +18442,7 @@ return Popper;
 // Отображение выбранных селектов в фильтрах
 $(".filter-sel").change(function() {
     if ($(this).val() == 0) return false;
+
     var id_select = $(this).attr('id');
     $(this).children("option").filter(":selected").each(function() {
         var x = $(this);
@@ -18449,24 +18450,43 @@ $(".filter-sel").change(function() {
         // alert(b);
         // alert(id_select);
         $('#' + id_select).siblings(".delselect").removeClass("d-none");
-        $('#' + id_select).siblings('.selectresult').html(b);
+        $('#' + id_select).siblings('.delselect').html(b);
 
         $('#' + id_select).addClass('d-none');
-        $('#' + id_select).parent('.select-box').addClass('check-select');
+        $('.filter-btn').addClass('filter-btn-marked');
+        $('#clearFilter').addClass('active');
     });
 });
 
 $('.delselect').click(function() {
     var id_close = $(this).siblings(".filter-sel").attr('id');
-    // alert(id_close);
     $('#' + id_close).removeClass("d-none");
-    $('#' + id_close).siblings('.selectresult').empty();
+    $('#' + id_close).siblings('.delselect').empty();
     $(this).addClass('d-none');
     $('#' + id_close).val('0');
-    $('#' + id_close).parent('.select-box').removeClass("check-select");
+    if ($('.filter-sel').is('.d-none')) return false;
+    $('#clearFilter').removeClass('active');
+    $('.filter-btn').removeClass('filter-btn-marked');
+
+});
+$('#clearFilter').click(function() {
+    if (!this.classList.contains('active')) return false;
+    $(".filter-sel").val('0');
+    $('.filter-btn').removeClass('filter-btn-marked');
+    $(".filter-sel").removeClass('d-none');
+
+    $('.delselect').empty();
+    $('.delselect').addClass('d-none');
+    $('#clearFilter').removeClass('active');
 });
 /*!
  * jQuery Brazzers Carousel v1.0.0 (http://webdesign-master.ru)
  * Copyright 2015 WebDesign Master.
  */
 !function(a){a.fn.brazzersCarousel=function(){return this.addClass("brazzers-daddy").append("<div class='tmb-wrap'><div class='tmb-wrap-table'>").append("<div class='image-wrap'>").each(function(){var i=a(this);i.find("img").appendTo(i.find(".image-wrap")).each(function(){i.find(".tmb-wrap-table").append("<div>")})}).find(".tmb-wrap-table div").hover(function(){var i=a(this).parent(".tmb-wrap-table").closest(".brazzers-daddy").find("img"),d=a(this).parent(".tmb-wrap-table").find("div");i.hide().eq(a(this).index()).css("display","block"),d.removeClass("active"),a(this).addClass("active")}).parent().find(":first").addClass("active")}}(jQuery);
+/*!
+* bootstrap-lightbox.js v0.6.1 
+* Copyright 2013 Jason Butz
+* http://www.apache.org/licenses/LICENSE-2.0.txt
+*/
+!function(e){"use strict";var t=function(t,n){this.options=n,this.$element=e(t).delegate('[data-dismiss="lightbox"]',"click.dismiss.lightbox",e.proxy(this.hide,this)),this.options.remote&&this.$element.find(".lightbox-body").load(this.options.remote)};t.prototype=e.extend({},e.fn.modal.Constructor.prototype),t.prototype.constructor=t,t.prototype.enforceFocus=function(){var t=this;e(document).on("focusin.lightbox",function(e){t.$element[0]!==e.target&&!t.$element.has(e.target).length&&t.$element.focus()})},t.prototype.show=function(){var t=this,n=e.Event("show");this.$element.trigger(n);if(this.isShown||n.isDefaultPrevented())return;this.isShown=!0,this.escape(),this.preloadSize(function(){t.backdrop(function(){var n=e.support.transition&&t.$element.hasClass("fade");t.$element.parent().length||t.$element.appendTo(document.body),t.$element.show(),n&&t.$element[0].offsetWidth,t.$element.addClass("in").attr("aria-hidden",!1),t.enforceFocus(),n?t.$element.one(e.support.transition.end,function(){t.$element.focus().trigger("shown")}):t.$element.focus().trigger("shown")})})},t.prototype.hide=function(t){t&&t.preventDefault();var n=this;t=e.Event("hide"),this.$element.trigger(t);if(!this.isShown||t.isDefaultPrevented())return;this.isShown=!1,this.escape(),e(document).off("focusin.lightbox"),this.$element.removeClass("in").attr("aria-hidden",!0),e.support.transition&&this.$element.hasClass("fade")?this.hideWithTransition():this.hideModal()},t.prototype.escape=function(){var e=this;this.isShown&&this.options.keyboard?this.$element.on("keyup.dismiss.lightbox",function(t){t.which==27&&e.hide()}):this.isShown||this.$element.off("keyup.dismiss.lightbox")},t.prototype.preloadSize=function(t){var n=e.Callbacks();t&&n.add(t);var r=this,i,s,o,u,a,f,l,c,h,p;i=e(window).height(),s=e(window).width(),o=parseInt(r.$element.find(".lightbox-content").css("padding-top"),10),u=parseInt(r.$element.find(".lightbox-content").css("padding-bottom"),10),a=parseInt(r.$element.find(".lightbox-content").css("padding-left"),10),f=parseInt(r.$element.find(".lightbox-content").css("padding-right"),10),l=r.$element.find(".lightbox-content").find("img:first"),c=new Image,c.onload=function(){c.width+a+f>=s&&(h=c.width,p=c.height,c.width=s-a-f,c.height=p/h*c.width),c.height+o+u>=i&&(h=c.width,p=c.height,c.height=i-o-u,c.width=h/p*c.height),r.$element.css({position:"fixed",width:c.width+a+f,height:c.height+o+u,top:i/2-(c.height+o+u)/2,left:"50%","margin-left":-1*(c.width+a+f)/2}),r.$element.find(".lightbox-content").css({width:c.width,height:c.height}),n.fire()},c.src=l.attr("src")};var n=e.fn.lightbox;e.fn.lightbox=function(n){return this.each(function(){var r=e(this),i=r.data("lightbox"),s=e.extend({},e.fn.lightbox.defaults,r.data(),typeof n=="object"&&n);i||r.data("lightbox",i=new t(this,s)),typeof n=="string"?i[n]():s.show&&i.show()})},e.fn.lightbox.defaults={backdrop:!0,keyboard:!0,show:!0},e.fn.lightbox.Constructor=t,e.fn.lightbox.noConflict=function(){return e.fn.lightbox=n,this},e(document).on("click.lightbox.data-api",'[data-toggle*="lightbox"]',function(t){var n=e(this),r=n.attr("href"),i=e(n.attr("data-target")||r&&r.replace(/.*(?=#[^\s]+$)/,"")),s=i.data("lightbox")?"toggle":e.extend({remote:!/#/.test(r)&&r},i.data(),n.data());t.preventDefault(),i.lightbox(s).one("hide",function(){n.focus()})})}(window.jQuery);

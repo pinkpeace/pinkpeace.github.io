@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Лестницы-просто.ру</title>
 </head>
 
@@ -416,6 +417,7 @@
                 </li>
             </ul>
         </div>
+        <div class="my-hr"></div>
         <!-- Фильтры и сортировки -->
         <div class="filter-sort-box d-lg-flex justify-content-lg-between">
             <button class="d-lg-none filter-btn" type="button" data-toggle="collapse" data-target="#filters" aria-controls="filters" aria-expanded="false" aria-label="Toggle navigation">
@@ -438,75 +440,82 @@
             <div class="collapse d-lg-block order-lg-first" id="filters">
                 <div class="d-lg-flex selects-wrap">
                     <div class="select-box">
-                        <select class="form-control filter-form filter-sel" id="filter-form">
-                            <option class="placeholder" selected disabled value="0">Форма лестницы</option>
-                            <option>Прямая</option>
-                            <option>Г-образная</option>
-                            <option>П-образная</option>
-                            <option>Винтовая</option>
+                        <label for="exampleFormControlSelect1" class="sr-only">Форма лестницы</label>
+                        <select class="form-control filter-sel" id="filter-form">
+                            <option class="placeholder" value="0">Форма лестницы</option>
+                            <option value="1">Прямая</option>
+                            <option value="2">Г-образная</option>
+                            <option value="3">П-образная</option>
+                            <option value="4">Винтовая</option>
                         </select>
-                        <button class="d-none delselect">
-                            <img src="img/filter-close.svg" alt="">
-                        </button>
                         <div class="selectresult" id="">
                         </div>
-                    </div>
-                    <div class="select-box">
-                        <select class="form-control filter-form filter-sel" id="filter-measure">
-                            <option class="placeholder" selected disabled value="0">Длина проёма</option>
-                            <option>До 1300 мм</option>
-                            <option>1300 - 1900 мм</option>
-                            <option>1900 - 2300 мм</option>
-                            <option>2300 - 2750 мм</option>
-                            <option>2750 - 3400 мм</option>
-                            <option>от 3400 мм</option>
-                        </select>
                         <button class="d-none delselect">
                             <img src="img/filter-close.svg" alt="">
                         </button>
+                    </div>
+                    <div class="select-box">
+                        <label for="filter-measure" class="sr-only">Длина проёма</label>
+                        <select class="form-control filter-sel" id="filter-measure">
+                            <option class="placeholder" value="0">Длина проёма</option>
+                            <option value="1">До 1300 мм</option>
+                            <option value="2">1300 - 1900 мм</option>
+                            <option value="3">1900 - 2300 мм</option>
+                            <option value="4">2300 - 2750 мм</option>
+                            <option value="5">2750 - 3400 мм</option>
+                            <option value="6">от 3400 мм</option>
+                        </select>
                         <div class="selectresult">
                         </div>
-                    </div>
-                    <div class="select-box">
-                        <select class="form-control filter-form filter-sel" id="filter-geometry">
-                            <option class="placeholder" selected disabled value="0">Высота лестницы</option>
-                            <option>До 2500 мм</option>
-                            <option>2500 - 2700 мм</option>
-                            <option>2700-2950 мм</option>
-                            <option>2950-3200 мм</option>
-                            <option>от 3200 мм</option>
-                        </select>
                         <button class="d-none delselect">
                             <img src="img/filter-close.svg" alt="">
                         </button>
+                    </div>
+                    <div class="select-box">
+                        <label for="filter-geometry" class="sr-only">Высота лестницы</label>
+                        <select class="form-control filter-sel my-select" id="filter-geometry">
+                            <option class="placeholder" value="0">Высота лестницы</option>
+                            <option value="1">До 2500 мм</option>
+                            <option value="2">2500 - 2700 мм</option>
+                            <option value="3">2700-2950 мм</option>
+                            <option value="4">2950-3200 мм</option>
+                            <option value="5">от 3200 мм</option>
+                        </select>
                         <div class="selectresult" id="">
                         </div>
-                    </div>
-                    <div class="select-box">
-                        <select class="form-control filter-form filter-sel" id="filter-price">
-                            <option class="placeholder" selected disabled value="0">Цена</option>
-                            <option>Эконом</option>
-                            <option>Стандарт</option>
-                            <option>Престиж</option>
-                        </select>
                         <button class="d-none delselect">
                             <img src="img/filter-close.svg" alt="">
                         </button>
+                    </div>
+                    <div class="select-box">
+                        <label for="filter-price" class="sr-only">Ценовая категория</label>
+                        <select class="form-control filter-sel" id="filter-price">
+                            <option class="placeholder" value="0">Цена</option>
+                            <option value="1">Эконом</option>
+                            <option value="2">Стандарт</option>
+                            <option value="3">Престиж</option>
+                        </select>
                         <div class="selectresult">
                         </div>
+                        <button class="d-none delselect">
+                            <img src="img/filter-close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-between mobile-filter-btns d-lg-none">
+                        <a class="filter-dop-btn clear-btn" id="clearFilter">Очистить</a>
+                        <a class="filter-dop-btn" data-toggle="collapse" data-target="#filters" aria-controls="filters" aria-expanded="false" aria-label="Toggle navigation">Свернуть</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Конец -Фильтры и сортировка -->
         <!-- Товары -->
-        <hr>
         <div class="section product-area">
             <div class="row">
                 <div class="col-6 col-lg-4 col-xl-3">
                     <a href="stair-catalog.html">
                         <div class="product-box">
-                            <div class="item">
+                            <div class="prev-photo-item">
                                 <img src="img/prod-1.jpg" alt="Alt">
                                 <img src="img/prod-2.jpg" alt="Alt">
                                 <img src="img/prod-3.jpg" alt="Alt">
@@ -530,7 +539,7 @@
                                 </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Высота:
@@ -538,7 +547,7 @@
                                     </span>
                                     <span class="feature-val">2750 - 3400 мм</span>
                                 </p>
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Длина проёма:
@@ -561,7 +570,7 @@
                 <div class="col-6 col-lg-4 col-xl-3">
                     <a href="stair-catalog.html">
                         <div class="product-box">
-                            <div class="item">
+                            <div class="prev-photo-item">
                                 <img src="img/prod-4.jpg" alt="Alt">
                                 <img src="img/prod-2.jpg" alt="Alt">
                                 <img src="img/prod-7.jpg" alt="Alt">
@@ -585,7 +594,7 @@
                                 </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Высота:
@@ -593,7 +602,7 @@
                                     </span>
                                     <span class="feature-val">2650 - 3700 мм</span>
                                 </p>
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Длина проёма:
@@ -616,7 +625,7 @@
                 <div class="col-6 col-lg-4 col-xl-3">
                     <a href="stair-catalog.html">
                         <div class="product-box">
-                            <div class="item">
+                            <div class="prev-photo-item">
                                 <img src="img/prod-5.jpg" alt="Alt">
                                 <img src="img/prod-1.jpg" alt="Alt">
                             </div>
@@ -638,7 +647,7 @@
                                 </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Высота:
@@ -646,7 +655,7 @@
                                     </span>
                                     <span class="feature-val">2880 - 3250 мм</span>
                                 </p>
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Длина проёма:
@@ -669,7 +678,7 @@
                 <div class="col-6 col-lg-4 col-xl-3">
                     <a href="stair-catalog.html">
                         <div class="product-box">
-                            <div class="item">
+                            <div class="prev-photo-item">
                                 <img src="img/prod-6.jpg" alt="Alt">
                                 <img src="img/prod-2.jpg" alt="Alt">
                                 <img src="img/prod-3.jpg" alt="Alt">
@@ -694,7 +703,7 @@
                                 </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Высота:
@@ -702,7 +711,7 @@
                                     </span>
                                     <span class="feature-val">2750 - 3200 мм</span>
                                 </p>
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Длина проёма:
@@ -725,7 +734,7 @@
                 <div class="col-6 col-lg-4 col-xl-3">
                     <a href="stair-catalog.html">
                         <div class="product-box">
-                            <div class="item">
+                            <div class="prev-photo-item">
                                 <img src="img/prod-7.jpg" alt="Alt">
                                 <img src="img/prod-2.jpg" alt="Alt">
                             </div>
@@ -748,7 +757,7 @@
                                 </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Высота:
@@ -756,7 +765,7 @@
                                     </span>
                                     <span class="feature-val">2650 - 3700 мм</span>
                                 </p>
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Длина проёма:
@@ -779,7 +788,7 @@
                 <div class="col-6 col-lg-4 col-xl-3">
                     <a href="stair-catalog.html">
                         <div class="product-box">
-                            <div class="item">
+                            <div class="prev-photo-item">
                                 <img src="img/prod-3.jpg" alt="Alt">
                                 <img src="img/prod-2.jpg" alt="Alt">
                                 <img src="img/prod-1.jpg" alt="Alt">
@@ -803,7 +812,7 @@
                                 </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Высота:
@@ -811,7 +820,7 @@
                                     </span>
                                     <span class="feature-val">2650 - 3700 мм</span>
                                 </p>
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Длина проёма:
@@ -834,7 +843,7 @@
                 <div class="col-6 col-lg-4 col-xl-3">
                     <a href="stair-catalog.html">
                         <div class="product-box">
-                            <div class="item">
+                            <div class="prev-photo-item">
                                 <img src="img/prod-2.jpg" alt="Alt">
                                 <img src="img/prod-2.jpg" alt="Alt">
                                 <img src="img/prod-3.jpg" alt="Alt">
@@ -858,7 +867,7 @@
                                 </div>
                             </div>
                             <div class="hidden-descr">
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Высота:
@@ -866,7 +875,7 @@
                                     </span>
                                     <span class="feature-val">2650 - 3700 мм</span>
                                 </p>
-                                <p class="p-values">
+                                <p class="p-values d-none d-sm-inline-block">
                                     <span class="feature-name">
                                         <b>
                                             Длина проёма:
@@ -978,6 +987,132 @@
         <img src="img/up.svg" alt="">
     </div>
     <script src="js/main.min.js"></script>
+    <!-- Фотогалерея -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    $('.one-product__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.one-product__slider_navigation',
+        arrows: false,
+        dots: false,
+        infinite: true,
+        focusOnSelect: true,
+        fade: true,
+        cssEase: 'linear'
+    });
+    // Slider | one-product-slider
+    $('.one-product__slider_navigation').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button class="next-btn"></button>',
+        nextArrow: '<button class="prev-btn"></button>',
+        dots: false,
+        infinite: true,
+        asNavFor: '.one-product__slider',
+        focusOnSelect: true,
+        centerMode: false,
+        vertical: true,
+        responsive: [
+            {
+                breakpoint: 1250,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 908,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 567,
+                settings: {
+                    arrows: false,
+                    vertical: false,
+                    slidesToShow: 4,
+                }
+            },
+    
+    
+        ]
+    });
+    
+    // $(document).ready(function() {
+    //     $(".fancybox").fancybox({
+    //         afterShow: function() {
+    //             $(".fancybox-image").elevateZoom({
+    //                 //zoomType: "inner",
+    //                 cursor: "crosshair",
+    //                 zoomType: "lens",
+    //                 scrollZoom: true,
+    //             });
+    //         },
+    //         beforeClose: function() {
+    //             $(".zoomContainer").remove();
+    //             $('.zoomWindowContainer').remove();
+    //             $(".zoomLens").remove();
+    //         }
+    //     });
+    // });
+    </script>
+    <!-- <script>
+    $(document).ready(function() {
+        $('.main-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            centerMode: true,
+            dots: false,
+            fade: true,
+            asNavFor: '.thumb-slider',
+            prevArrow: $('.prev-btn'),
+            nextArrow: $('.next-btn'),
+            adaptiveHeight: true
+        });
+        $('.thumb-slider').slick({
+            dots: false,
+            vertical: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.main-slider',
+            verticalSwiping: true,
+            focusOnSelect: false,
+            prevArrow: '<button class="nav-prev-btn"></button>',
+            nextArrow: '<button class="nav-next-btn"></button>',
+            adaptiveHeight: true,
+            focusOnSelect: true,
+            centerMode: false
+        });
+    
+        $('.main-slider').on('afterChange', function(event, slick, currentSlide) {
+            $('.thumb-slider').slick('slickGoTo', currentSlide);
+            var currrentNavSlideElem = '.thumb-slider .slick-slide[data-slick-index="' + currentSlide + '"]';
+            $('.thumb-slider .slick-slide.is-active').removeClass('is-active');
+            $(currrentNavSlideElem).addClass('is-active');
+        });
+    
+        $('.thumb-slider').on('click', '.slick-slide', function(event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+            $('.main-slider').slick('slickGoTo', goToSingleSlide);
+        });
+    });
+    </script> -->
     <script>
     $(function() {
         // при нажатии на кнопку scrollup
@@ -1004,9 +1139,17 @@
     <script>
     //Инициируем карусель фото в анонсе товаров
     $(document).ready(function() {
-        $(".item").brazzersCarousel();
+        $(".prev-photo-item").brazzersCarousel();
     });
     </script>
+    <!-- Надо засвайпить бразерскарусель -->
+    <!-- <script>
+    $("#block").on("swipeleft", function() {
+        alert("left");
+    }).on("swiperight", function() {
+        alert("right");
+    });
+    </script> -->
     <div class="footer">
         <div class="section first-section">
             <div class="container-xl">
@@ -1039,7 +1182,7 @@
                             Белоруссия - от 4 дней </p>
                     </div>
                 </div>
-                <div class="text-center pt-5 pb-5">
+                <div class="text-center pt-5">
                     <h2>Дизайнер, архитектор или строитель?</h2>
                     <p class="lead">
                         С нами можно выгодно сотрудничать. <br>

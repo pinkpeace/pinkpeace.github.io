@@ -367,21 +367,26 @@
         <h1 class="m">
             Лестница К-001М
         </h1>
-        <div class="top-panel d-sm-flex align-items-top">
-            <div class="reviews">
-                <div class="stars">
-                </div>
-                <a class="" href="#reviews">Отзывов 2</a>
+        <div class="top-panel">
+            <div class="rating-mini">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
             </div>
-            <a href="#quest">Задайте вопрос первым</a>
-            <p class=""> У лестницы <a href="#vars"> 7 вариантов размера</a></p>
+            <a class="a-border-dotted" href="#reviews">Отзывов 2</a>
+            <a class="a-border-dotted" href="#quest">Задайте вопрос первым</a>
+            <nobr>
+                <p class=""> У лестницы&emsp;</p><a href="#vars" class="a-border-dotted"> 7 вариантов размера</a>
+            </nobr>
             <p class="">Купили более 12 раз</p>
         </div>
         <!-- Конец -Фильтры и сортировка -->
         <!-- Карточка-каталог -->
         <div class="product-area">
-            <div class="row">
-                <div class="col-md-8 col-lg-7 col-xl-6">
+            <div class="row mb-3 mb-lg-5">
+                <div class="col-md-7 col-lg-7 col-xl-6">
                     <div class="one-product">
                         <div class="one-product__slider order-sm-2">
                             <div class="item">
@@ -445,15 +450,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-5 col-xl-6">
+                <div class="col-md-5 col-lg-5 col-xl-6">
                     <div class="main-right">
                         <p class="p-descr"> В наличии 45 шт.</p>
                         <p class="p-main-price">от 34 000<span class="price-rouble"></span></p>
-                        <form>
+                        <form class="mb-3 mb-lg-5">
                             <div class="form-group">
                                 <label for="checkMaterial" class="sr-only">Материал</label>
                                 <select class="form-control" id="checkMaterial">
-                                	<option class="placeholder" value="0">Выберите материал</option>
+                                    <option class="placeholder" value="0">Выберите материал</option>
                                     <option>Сосна</option>
                                     <option>Сосна под покраску</option>
                                     <option>Сосна + дуб</option>
@@ -462,9 +467,9 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="checkHight"  class="sr-only">Высота лестницы</label>
+                                <label for="checkHight" class="sr-only">Высота лестницы</label>
                                 <select class="form-control" id="checkHight">
-                                	<option class="placeholder" value="0">Высота лестницы</option>
+                                    <option class="placeholder" value="0">Высота лестницы</option>
                                     <option>2560 - 2720 мм</option>
                                     <option>2721-2900 мм</option>
                                     <option>2920 - 3100 ммм</option>
@@ -473,21 +478,102 @@
                             <div class="form-group">
                                 <label for="checLong" class="sr-only">Длинна проёма</label>
                                 <select class="form-control" id="checLong">
-                                	<option class="placeholder" value="0">Длинна проёма</option>
+                                    <option class="placeholder" value="0">Длинна проёма</option>
                                     <option>2560 - 2720 мм</option>
                                     <option>2721-2900 мм</option>
                                     <option>2920 - 3100 ммм</option>
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn active btn-povorot">
+                                        <input type="radio" name="options" id="option1" checked> Поворот направо
+                                    </label>
+                                    <label class="btn  btn-povorot">
+                                        <input type="radio" name="options" id="option2"> Поворот налево
+                                    </label>
+                                </div>
+                            </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                                 <label class="custom-control-label" for="customCheck1">Добавить подступенки</label>
                             </div>
-                            <button class="btn btn-simple mt-4">Рассчитать</button>
-                            <a href="#">Посмотреть все варианты лестницы</a>
+                            <button class="btn btn-simple mt-4 btn-block btn-notactive">Рассчитать</button>
                         </form>
+                        <a class="a-border-dotted" href="#">Посмотреть все варианты лестницы</a>
                     </div>
                 </div>
+            </div>
+            <div class="main-descr mb-3 mb-lg-5">
+                <h2>Характеристики</h2>
+                <div class="row">
+                    <div class="col">
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Высота:
+                                </b>
+                            </span>
+                            <span class="feature-val">2750 - 3400 мм</span>
+                        </p>
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Высота:
+                                </b>
+                            </span>
+                            <span class="feature-val">2750 - 3400 мм</span>
+                        </p>
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Высота:
+                                </b>
+                            </span>
+                            <span class="feature-val">2750 - 3400 мм</span>
+                        </p>
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Высота:
+                                </b>
+                            </span>
+                            <span class="feature-val">2750 - 3400 мм</span>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Высота:
+                                </b>
+                            </span>
+                            <span class="feature-val">2750 - 3400 мм</span>
+                        </p>
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Высота:
+                                </b>
+                            </span>
+                            <span class="feature-val">2750 - 3400 мм</span>
+                        </p>
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Высота:
+                                </b>
+                            </span>
+                            <span class="feature-val">2750 - 3400 мм</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-tables mb-3 mb-lg-5">
+                <a name="vars"></a>
+                <h2>
+                    Модификации лестницы К-001М
+                </h2>
             </div>
         </div>
         <!-- Конец товаров -->

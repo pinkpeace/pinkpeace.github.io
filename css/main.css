@@ -6954,6 +6954,23 @@ a:hover {
   text-decoration: none;
   color: rgba(33, 175, 243, 0.7); }
 
+.a-border-dotted {
+  text-decoration: none;
+  position: relative; }
+
+.a-border-dotted::after {
+  content: "";
+  width: 100%;
+  border-top: 1px dashed;
+  height: 1px;
+  bottom: 0px;
+  position: absolute;
+  left: 0; }
+
+.a-border-dotted:hover::after,
+.a-border-dotted:focus::after {
+  border-color: #fff; }
+
 .header {
   color: inherit;
   line-height: 1.2em;
@@ -7027,7 +7044,7 @@ a:hover {
   .search-form .img-search {
     width: 17px;
     height: auto;
-    margin-top: -7px;
+    margin-top: -17px;
     shape-rendering: crispEdges; }
   @media (min-width: 992px) {
     .search-form input {
@@ -7050,7 +7067,9 @@ a:hover {
       border-bottom-right-radius: 3px;
       background-color: #f2f5f6;
       border-left: none;
-      width: 40px; } }
+      width: 40px; }
+    .search-form .img-search {
+      margin-top: -7px; } }
 
 .basket-box {
   position: relative; }
@@ -7336,7 +7355,8 @@ a:hover {
   margin-top: 0.5em; }
   .my-breadcrumb .breadcrumb-item {
     font-size: 0.75em;
-    color: #a8acae; }
+    color: #a8acae;
+    letter-spacing: 0.04em; }
   .my-breadcrumb .breadcrumb-item + .active {
     font-weight: normal; }
   .my-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
@@ -7480,9 +7500,6 @@ select:focus {
   background-color: #f2f5f6;
   width: 100%; }
 
-.btn {
-  padding: 9px 30px 14px; }
-
 .btn-close {
   border: none;
   background-color: #fff; }
@@ -7490,11 +7507,22 @@ select:focus {
 .btn-simple {
   background-color: #ff3495;
   color: white;
-  font-weight: 600; }
+  font-weight: 600;
+  padding: 9px 30px 14px; }
 
 .btn-simple:hover {
   color: #fff;
   background-color: rgba(255, 52, 149, 0.85); }
+
+.btn-notactive {
+  background-color: #f2f5f6;
+  color: #a8acae; }
+
+.btn-notactive:hover,
+.btn-notactive:focus {
+  cursor: auto;
+  background-color: #f2f5f6;
+  color: #a8acae; }
 
 .product-box {
   position: relative;
@@ -7570,10 +7598,16 @@ select:focus {
     border: 1px solid #e9ecef;
     position: absolute;
     z-index: 10;
-    background-color: #fff; }
+    background-color: #fff;
+    box-shadow: 0px 0px 15px #464a563d; }
     .product-box:hover .hidden-descr {
       display: block;
       width: 100%; } }
+
+.main-right {
+  max-width: 450px;
+  padding: 2em;
+  border: 3px solid #fee44c; }
 
 .p-values {
   position: relative;
@@ -7679,11 +7713,76 @@ div.scrollup:hover {
 
 .top-panel {
   font-size: 12px;
-  line-height: inherit;
-  color: #a8acae; }
+  color: #a8acae;
+  margin-bottom: 2.2em; }
+  .top-panel a,
+  .top-panel p {
+    letter-spacing: .04em;
+    margin-bottom: 1em;
+    line-height: 18px;
+    display: inline-block; }
   .top-panel a {
     color: #21aff3;
-    margin-right: 2em; }
+    margin-right: 2.5em; }
+
+.reviews {
+  display: inline-block; }
+
+.rating-area {
+  overflow: hidden;
+  width: 265px;
+  margin: 0 auto; }
+
+.rating-area:not(:checked) > input {
+  display: none; }
+
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 50px;
+  line-height: 50px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb; }
+
+.rating-area:not(:checked) > label:before {
+  content: '★'; }
+
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60; }
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold; }
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod; }
+
+.rate-area > label:active {
+  position: relative; }
+
+.rating-mini {
+  display: inline-block;
+  font-size: 0; }
+
+.rating-mini span {
+  padding: 0;
+  font-size: 20px;
+  line-height: 1;
+  color: lightgrey; }
+
+.rating-mini > span:before {
+  content: '★'; }
+
+.rating-mini > span.active {
+  color: gold; }
 
 *,
 *:before,

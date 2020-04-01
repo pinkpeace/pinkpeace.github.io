@@ -586,6 +586,15 @@
     <!-- Фотогалерея -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
+    $('.breadcrumb__slider').slick({
+        dots: false,
+        infinite: false,
+        centerMode: false,
+        arrows: false,
+        slidesToShow: 1,
+        variableWidth: true,
+        cssEase: 'linear'
+    });
     $('.one-product__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -635,7 +644,7 @@
                 }
             },
             {
-                breakpoint: 567,
+                breakpoint: 577,
                 settings: {
                     arrows: false,
                     vertical: false,

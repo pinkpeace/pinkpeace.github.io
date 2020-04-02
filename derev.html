@@ -377,7 +377,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="8.4" height="15"  viewBox="0 0 8.4 15">
                     <path class="st0" d="M7.5,15c-0.2,0-0.4-0.1-0.6-0.3L0.2,8c-0.3-0.3-0.3-0.9,0-1.2l6.5-6.6c0.3-0.3,0.9-0.3,1.2,0
     c0.3,0.3,0.3,0.9,0,1.2L2,7.4l6.1,6.1c0.3,0.3,0.3,0.9,0,1.2C8,14.9,7.7,15,7.5,15z"/>
-                </svg>
+                </svg> <span>назад</span>
             </a>
             <nav aria-label="breadcrumb" class="nav-my-breadcrumbs">
                 <ol class="my-breadcrumb breadcrumb__slider">
@@ -989,6 +989,10 @@
     <script src="js/main.min.js"></script>
     <!-- Фотогалерея -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('[data-fancybox="gallery"]').fancybox({
+    });
+    </script>
     <script>
     $('.breadcrumb__slider').slick({
         dots: false,
@@ -1059,68 +1063,7 @@
     
         ]
     });
-    
-    // $(document).ready(function() {
-    //     $(".fancybox").fancybox({
-    //         afterShow: function() {
-    //             $(".fancybox-image").elevateZoom({
-    //                 //zoomType: "inner",
-    //                 cursor: "crosshair",
-    //                 zoomType: "lens",
-    //                 scrollZoom: true,
-    //             });
-    //         },
-    //         beforeClose: function() {
-    //             $(".zoomContainer").remove();
-    //             $('.zoomWindowContainer').remove();
-    //             $(".zoomLens").remove();
-    //         }
-    //     });
-    // });
     </script>
-    <!-- <script>
-    $(document).ready(function() {
-        $('.main-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            centerMode: true,
-            dots: false,
-            fade: true,
-            asNavFor: '.thumb-slider',
-            prevArrow: $('.prev-btn'),
-            nextArrow: $('.next-btn'),
-            adaptiveHeight: true
-        });
-        $('.thumb-slider').slick({
-            dots: false,
-            vertical: true,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            asNavFor: '.main-slider',
-            verticalSwiping: true,
-            focusOnSelect: false,
-            prevArrow: '<button class="nav-prev-btn"></button>',
-            nextArrow: '<button class="nav-next-btn"></button>',
-            adaptiveHeight: true,
-            focusOnSelect: true,
-            centerMode: false
-        });
-    
-        $('.main-slider').on('afterChange', function(event, slick, currentSlide) {
-            $('.thumb-slider').slick('slickGoTo', currentSlide);
-            var currrentNavSlideElem = '.thumb-slider .slick-slide[data-slick-index="' + currentSlide + '"]';
-            $('.thumb-slider .slick-slide.is-active').removeClass('is-active');
-            $(currrentNavSlideElem).addClass('is-active');
-        });
-    
-        $('.thumb-slider').on('click', '.slick-slide', function(event) {
-            event.preventDefault();
-            var goToSingleSlide = $(this).data('slick-index');
-            $('.main-slider').slick('slickGoTo', goToSingleSlide);
-        });
-    });
-    </script> -->
     <script>
     $(function() {
         // при нажатии на кнопку scrollup
@@ -1150,14 +1093,6 @@
         $(".prev-photo-item").brazzersCarousel();
     });
     </script>
-    <!-- Надо засвайпить бразерскарусель -->
-    <!-- <script>
-    $("#block").on("swipeleft", function() {
-        alert("left");
-    }).on("swiperight", function() {
-        alert("right");
-    });
-    </script> -->
     <div class="footer">
         <div class="section first-section">
             <div class="container-xl">

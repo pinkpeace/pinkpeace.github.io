@@ -7367,7 +7367,7 @@ a:hover {
 @media (min-width: 768px) {
   .a-back {
     display: inline-block;
-    padding: 2px 12px 6px 8px;
+    padding: 0px 12px 3px 8px;
     margin-right: 10px;
     border: 1px solid #f2f5f6;
     border-radius: 3px; }
@@ -7523,11 +7523,15 @@ select:focus {
           margin-bottom: 0; } }
 
 .sort {
-  height: 38px; }
+  height: 38px;
+  background: url(../img/select-arr.svg) right 15px top 15px no-repeat #fff;
+  background-size: 10px auto; }
 
 @media (min-width: 992px) {
   .sort {
-    height: auto; } }
+    height: auto;
+    background: url(../img/select-arr.svg) right 15px top 12px no-repeat #fff;
+    background-size: 10px auto; } }
 
 .check-select {
   display: flex;
@@ -7541,7 +7545,7 @@ select:focus {
   border: 1px solid #e9ecef;
   font-size: 13px;
   font-weight: 600;
-  padding: 5px 40px 7px 20px;
+  padding: 0px 40px 0px 20px;
   height: calc(1.5em + .75rem + 2px);
   border: none;
   background-color: transparent;
@@ -7814,7 +7818,7 @@ div.scrollup:hover {
   margin-bottom: 2.2em; }
   .top-panel .top-sale {
     margin-right: 1.5em;
-    padding: 3px 10px 5px 10px;
+    padding: 0px 7px 2px 7px;
     border: 1px solid #fee44c;
     color: initial;
     border-radius: 3px; }

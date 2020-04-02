@@ -7395,13 +7395,13 @@ a:hover {
       margin-left: -2px; } }
 
 .nav-my-breadcrumbs {
-  width: calc(100% - 56px);
+  width: calc(100% - 50px);
   display: inline-block;
   height: 30px;
   vertical-align: middle; }
   @media (min-width: 768px) {
     .nav-my-breadcrumbs {
-      width: calc(100% - 125px); } }
+      width: calc(100% - 123px); } }
 
 .my-breadcrumb {
   display: flex;
@@ -7437,6 +7437,14 @@ a:hover {
   @media (min-width: 992px) {
     .submenu-nav .nav-item {
       margin-right: 1.5em; } }
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../img/select-arr.svg) right 15px top 12px no-repeat #fff;
+  background-size: 10px auto;
+  outline: none; }
 
 .filter-btn {
   margin: 0;
@@ -7496,8 +7504,6 @@ select:focus {
       -webkit-appearance: none;
          -moz-appearance: none;
               appearance: none;
-      background: url(../img/arr.svg) right 15px top 12px no-repeat #fff;
-      background-size: 9px auto;
       outline: none; }
       .filter-sort-box .selects-wrap select .placeholder {
         display: none; }
@@ -7517,12 +7523,7 @@ select:focus {
           margin-bottom: 0; } }
 
 .sort {
-  height: 38px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: url(../img/arr.svg) right 15px top 12px no-repeat #fff;
-  background-size: 9px auto; }
+  height: 38px; }
 
 @media (min-width: 992px) {
   .sort {
@@ -7675,6 +7676,35 @@ select:focus {
   padding: 2em;
   /* border: 1px solid #f2f5f6; */
   box-shadow: 0px 0px 15px #55586957; }
+  .main-right .p-main-price {
+    display: inline-block;
+    vertical-align: text-top;
+    line-height: 21px;
+    margin-bottom: 1em; }
+  .main-right .old-price {
+    font-weight: 500;
+    vertical-align: text-top;
+    display: inline-block;
+    margin-left: 10px;
+    color: #a8acae;
+    line-height: 21px;
+    margin-bottom: 1em; }
+  .main-right .btn-group {
+    width: 100%; }
+  .main-right .btn-povorot {
+    border: 1px solid #e9ecef;
+    color: #a8acae; }
+  .main-right .btn-povorot:not(.active):hover {
+    border-color: #00a6ff;
+    color: #2e3038; }
+  .main-right .btn-povorot.active {
+    background-color: #00a6ff;
+    border-color: #00a6ff;
+    color: #fff; }
+  .main-right .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #00a6ff;
+    background-color: #00a6ff; }
 
 .p-values {
   position: relative;

@@ -18479,6 +18479,14 @@ $('#clearFilter').click(function() {
     $('.delselect').addClass('d-none');
     $('#clearFilter').removeClass('active');
 });
+
+$(".product-sel").change(function() {
+    if ($(this).val() == 0) {
+        $(this).removeClass('want-it');
+    } else {
+    $(this).addClass('want-it');
+    }
+});
 /*!
  * jQuery Brazzers Carousel v1.0.0 (http://webdesign-master.ru)
  * Copyright 2015 WebDesign Master.

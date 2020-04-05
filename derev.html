@@ -221,7 +221,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand mr-auto mr-lg-4 mr-xl-5 " href="index.html">
-                    <img class="img-logo " src="img/brand.png" alt="Лестницы-просто. Гипермаркет лестниц">
+                    <img class="img-logo " src="img/brand_small.svg" alt="Лестницы-просто. Гипермаркет лестниц">
+                    <p>Лестницы<br>просто<span>.ру</span></p>
                 </a>
                 <div class="d-none d-lg-inline flex-wrap mr-lg-4 mr-xl-5 flex-md-shrink-1">
                     <a class="a-city text-nowrap" href="#" data-toggle="modal" data-target="#exampleModal">
@@ -374,9 +375,9 @@
         <!-- Хлебные крошки -->
         <div class="breadcrumb-box">
             <a href="javascript:history.back()" class="a-back">
-                <svg xmlns="http://www.w3.org/2000/svg" width="6.2" height="10.8"  viewBox="0 0 6.2 10.8">
-                <path class="st0" d="M5.4,10.8c-0.2,0-0.4-0.1-0.6-0.3L0.2,6c-0.3-0.3-0.3-0.9,0-1.2l4.5-4.6c0.3-0.3,0.9-0.3,1.2,0
-    c0.3,0.3,0.3,0.9,0,1.2L2,5.4L6,9.3c0.3,0.3,0.3,0.9,0,1.2C5.9,10.7,5.6,10.8,5.4,10.8z"/></svg> <span>назад</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6.2" height="10.8" viewBox="0 0 6.2 10.8">
+                    <path class="st0" d="M5.4,10.8c-0.2,0-0.4-0.1-0.6-0.3L0.2,6c-0.3-0.3-0.3-0.9,0-1.2l4.5-4.6c0.3-0.3,0.9-0.3,1.2,0
+    c0.3,0.3,0.3,0.9,0,1.2L2,5.4L6,9.3c0.3,0.3,0.3,0.9,0,1.2C5.9,10.7,5.6,10.8,5.4,10.8z" /></svg> <span>назад</span>
             </a>
             <nav aria-label="breadcrumb" class="nav-my-breadcrumbs">
                 <ol class="my-breadcrumb breadcrumb__slider">
@@ -385,17 +386,17 @@
                 </ol>
             </nav>
             <button class="a-share">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10.1" height="11"  viewBox="0 0 10.1 11">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.1" height="11" viewBox="0 0 10.1 11">
                     <path d="M8.3,7.3c-0.5,0-1,0.2-1.3,0.6L3.6,6c0.1-0.1,0.1-0.3,0.1-0.5s0-0.4-0.1-0.5l3.3-1.9c0.4,0.4,0.8,0.6,1.4,0.6
     c1,0,1.8-0.8,1.8-1.8S9.3,0,8.3,0S6.5,0.8,6.5,1.8c0,0.1,0,0.3,0.1,0.4L3.1,4.2C2.8,3.9,2.3,3.7,1.8,3.7C0.8,3.7,0,4.5,0,5.5
-    s0.8,1.8,1.8,1.8c0.5,0,1-0.2,1.2-0.5l3.4,1.9c0,0.1-0.1,0.3-0.1,0.4c0,1,0.8,1.8,1.8,1.8S10,10.2,10,9.2S9.2,7.3,8.3,7.3z"/>
+    s0.8,1.8,1.8,1.8c0.5,0,1-0.2,1.2-0.5l3.4,1.9c0,0.1-0.1,0.3-0.1,0.4c0,1,0.8,1.8,1.8,1.8S10,10.2,10,9.2S9.2,7.3,8.3,7.3z" />
                 </svg>
             </button>
         </div>
         <!-- Конец хлебых крошек -->
     </div>
     <div class="container-xl">
-        <h1 class="m">
+        <h1 class="page-name">
             Деревянные лестницы
         </h1>
         <!-- Меню выборок (или подразделов) -->
@@ -988,8 +989,10 @@
     <!-- Фотогалерея -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
-        $('[data-fancybox="gallery"]').fancybox({
-    });
+    $('[data-fancybox="gallery"]').fancybox({});
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
     </script>
     <script>
     $('.breadcrumb__slider').slick({
@@ -1005,7 +1008,9 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.one-product__slider_navigation',
-        arrows: false,
+        // arrows: false,
+        prevArrow: '<button class="next-btn"></button>',
+        nextArrow: '<button class="prev-btn"></button>',
         dots: false,
         infinite: true,
         focusOnSelect: true,
@@ -1017,9 +1022,10 @@
         slidesToShow: 6,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<button class="next-btn"></button>',
-        nextArrow: '<button class="prev-btn"></button>',
+        // prevArrow: '<button class="next-btn"></button>',
+        // nextArrow: '<button class="prev-btn"></button>',
         dots: false,
+        arrows: false,
         infinite: true,
         asNavFor: '.one-product__slider',
         focusOnSelect: true,

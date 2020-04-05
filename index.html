@@ -220,8 +220,9 @@
                 <button class="navbar-toggler toggler-spring border-0 mr-2" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand mr-auto mr-lg-4 mr-xl-5 " href="#">
-                    <img class="img-logo " src="img/brand.png" alt="Лестницы-просто. Гипермаркет лестниц">
+                <a class="navbar-brand mr-auto mr-lg-4 mr-xl-5 " href="index.html">
+                    <img class="img-logo " src="img/brand_small.svg" alt="Лестницы-просто. Гипермаркет лестниц">
+                    <p>Лестницы<br>просто<span>.ру</span></p>
                 </a>
                 <div class="d-none d-lg-inline flex-wrap mr-lg-4 mr-xl-5 flex-md-shrink-1">
                     <a class="a-city text-nowrap" href="#" data-toggle="modal" data-target="#exampleModal">
@@ -245,7 +246,7 @@
                 <button type="button" class="btn btn-link p-0 d-inline-flex ml-2 ml-sm-4 d-sm-none" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21">
                         <path class="header-svg" d="M22.6,20.2L16,14.4c1.2-1.5,1.9-3.4,1.9-5.5c0-4.9-4-8.9-8.9-8.9S0,4,0,8.9c0,4.9,4,8.9,8.9,8.9
-							c2.1,0,4.1-0.8,5.7-2l6.7,5.8L22.6,20.2z M1.9,8.9C1.9,5,5,1.9,8.9,1.9S16,5,16,8.9c0,3.9-3.2,7.1-7.1,7.1S1.9,12.8,1.9,8.9z" />
+                            c2.1,0,4.1-0.8,5.7-2l6.7,5.8L22.6,20.2z M1.9,8.9C1.9,5,5,1.9,8.9,1.9S16,5,16,8.9c0,3.9-3.2,7.1-7.1,7.1S1.9,12.8,1.9,8.9z" />
                     </svg>
                 </button>
                 <button class="btn btn-link p-0 d-inline-flex ml-3 ml-sm-4 d-lg-none" data-toggle="modal" data-target="#write_us">
@@ -343,7 +344,6 @@
                         <a class="nav-item nav-link " href="#">Онлайн-калькулятор лестницы</a>
                     </li>
                     <li class="d-lg-none mobile-dop-info">
-
                         <p class="caption">
                             Контактная информация
                         </p>
@@ -586,8 +586,10 @@
     <!-- Фотогалерея -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
-        $('[data-fancybox="gallery"]').fancybox({
-    });
+    $('[data-fancybox="gallery"]').fancybox({});
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
     </script>
     <script>
     $('.breadcrumb__slider').slick({
@@ -603,7 +605,9 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.one-product__slider_navigation',
-        arrows: false,
+        // arrows: false,
+        prevArrow: '<button class="next-btn"></button>',
+        nextArrow: '<button class="prev-btn"></button>',
         dots: false,
         infinite: true,
         focusOnSelect: true,
@@ -615,9 +619,10 @@
         slidesToShow: 6,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<button class="next-btn"></button>',
-        nextArrow: '<button class="prev-btn"></button>',
+        // prevArrow: '<button class="next-btn"></button>',
+        // nextArrow: '<button class="prev-btn"></button>',
         dots: false,
+        arrows: false,
         infinite: true,
         asNavFor: '.one-product__slider',
         focusOnSelect: true,

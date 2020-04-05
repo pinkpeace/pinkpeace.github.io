@@ -197,7 +197,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand mr-auto mr-lg-4 mr-xl-5 " href="index.html">
-                    <img class="img-logo " src="img/brand.png" alt="Лестницы-просто. Гипермаркет лестниц">
+                    <img class="img-logo " src="img/brand_small.svg" alt="Лестницы-просто. Гипермаркет лестниц">
+                    <p>Лестницы<br>просто<span>.ру</span></p>
                 </a>
                 <div class="d-none d-lg-inline flex-wrap mr-lg-4 mr-xl-5 flex-md-shrink-1">
                     <a class="a-city text-nowrap" href="#" data-toggle="modal" data-target="#exampleModal">
@@ -227,7 +228,7 @@
                 <button class="btn btn-link p-0 d-inline-flex ml-3 ml-sm-4 d-lg-none" data-toggle="modal" data-target="#write_us">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="21" viewBox="0 0 28 21">
                         <path class="header-svg" d="M11,14H6c-0.6,0-1,0.5-1,1c0,0.6,0.5,1,1,1h5c0.6,0,1-0.4,1-1C12,14.4,11.5,14,11,14z" />
-                        <path class="ba_bb_cls-1" d="M0,0v21h28V0H0z M23.8,2L14,8.8L4.2,2H23.8z M26,19H2V2.9l12,8.3l12-8.3V19z" />
+                        <path class="header-svg" d="M0,0v21h28V0H0z M23.8,2L14,8.8L4.2,2H23.8z M26,19H2V2.9l12,8.3l12-8.3V19z" />
                     </svg>
                 </button>
                 <a href="#" class="a-basket d-inline-flex align-items-center flex-nowrap ml-3">
@@ -373,15 +374,15 @@
         <!-- Конец хлебых крошек -->
     </div>
     <div class="container-xl">
-        <h1 class="m">
+        <h1 class="page-name">
             Лестница К-001М
         </h1>
         <div class="top-panel">
             <p class="top-sale text-center">
                 Скидка 15%
-            </p><nobr>
-            <div class="rating-box">
-                
+            </p>
+            <nobr>
+                <div class="rating-box">
                     <div class="rating-mini">
                         <span class="active"></span>
                         <span class="active"></span>
@@ -390,9 +391,9 @@
                         <span></span>&nbsp;
                     </div>
                     <a class="a-border-dotted" href="#reviews">Отзывов 2</a>
-                
-            </div>
-            <a class="a-border-dotted" href="#quest">Вопросов 1</a></nobr>
+                </div>
+                <a class="a-border-dotted" href="#quest">Вопросов 1</a>
+            </nobr>
             <nobr>
                 <p class=""> У лестницы&nbsp;</p><a href="#vars" class="a-border-dotted"> 7 вариантов размера</a>
             </nobr>
@@ -468,12 +469,16 @@
                 </div>
                 <div class="col-lg-5 col-xl-5">
                     <div class="main-right">
-                        <p class="p-descr"> В наличии 45 шт.</p>
-                        <p class="p-main-price">от 34 000<span class="price-rouble"></span></p>
-                        <p class="old-price">
-                            от 40 000<span class="price-rouble"></span>
-                        </p>
-                        <div class="params mb-4 d-none">
+                        <div class="main-price-box">
+                            <p class="text-xs text-grey w-50"> В наличии 45 шт.</p>
+                            <p class="p-main-price">от 34 000<span class="price-rouble"></span></p>
+                            <p class="old-price">
+                                от 40 000<span class="price-rouble"></span>
+                            </p>
+                            <div class="">
+                                <a href="#" class="w-40 a-border-dotted text-xs text-grey">Нашли дешевле?</a></div>
+                        </div>
+                        <div class="params mb-4 d-none d-lg-block">
                             <p class="p-values">
                                 <span class="feature-name">
                                     <b>
@@ -530,30 +535,30 @@
                                     <option>Длина проёма: до 1200 ммм</option>
                                 </select>
                             </div>
-                            <div class="form-group d-none">
+                            <div class="form-group">
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <p class="mb-1">Выберите цвет:&nbsp;<span class="p-descr">Название цвета</span></p>
+                                    <p class="mb-1 text-dgrey">Выберите цвет:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
                                     <label class="btn  btn-radio-color">
-                                        <input type="radio" name="options" id="option1"> 
+                                        <input type="radio" name="options" id="option1">
                                         <img src="img/white.jpg" alt="" class="stair-color-img">
                                     </label>
                                     <label class="btn  btn-radio-color">
                                         <input type="radio" name="options" id="option2">
-                                         <img src="img/venge.jpg" alt="" class="stair-color-img">
+                                        <img src="img/venge.jpg" alt="" class="stair-color-img">
                                     </label>
                                     <label class="btn  btn-radio-color">
                                         <input type="radio" name="options" id="option2">
-                                         <img src="img/sahara.jpg" alt="" class="stair-color-img">
+                                        <img src="img/sahara.jpg" alt="" class="stair-color-img">
                                     </label>
                                     <label class="btn  btn-radio-color">
                                         <input type="radio" name="options" id="option2">
-                                         <img src="img/no.jpg" alt="" class="stair-color-img">
+                                        <img src="img/no.jpg" alt="" class="stair-color-img">
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group d-none">
+                            <div class="form-group">
                                 <div class="btn-group-toggle" data-toggle="buttons">
-                                    <p class="mb-1">Выберите диаметр:</p>
+                                    <p class="mb-1 text-dgrey">Выберите диаметр:</p>
                                     <label class="btn  btn-radio-diametr">
                                         <input type="radio" name="options" id="option1"> 120 мм
                                     </label>
@@ -569,6 +574,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                            	 <p class="mb-1 text-dgrey">Выберите поворот:</p>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn  btn-povorot">
                                         <input type="radio" name="options" id="option1"> Поворот направо
@@ -586,7 +592,7 @@
                                 <p class="d-inline"> После выбора параметров здесь появится название модификации</p>
                                 <a class="a-link d-inline" href="">и ссылка подробнее</a>
                             </div>
-                            <button class="btn btn-simple mt-4 btn-block btn-notactive">Купить</button>
+                            <button class="btn btn-buy mt-4 btn-block btn-notactive">Купить</button>
                             <button class="btn btn-sister mt-2 btn-block">Вызвать замерщика</button>
                         </form>
                         <a class="a-border-dotted a-link" href="#vars">Посмотреть все варианты лестницы</a>
@@ -594,7 +600,7 @@
                 </div>
             </div>
             <div class="main-descr mb-3 mb-lg-5">
-            	<a name="params"></a>
+                <a name="params"></a>
                 <h2>Характеристики</h2>
                 <div class="row">
                     <div class="col-md">
@@ -1009,8 +1015,10 @@
     <!-- Фотогалерея -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
-        $('[data-fancybox="gallery"]').fancybox({
-    });
+    $('[data-fancybox="gallery"]').fancybox({});
+    $(function() {
+        $('[data-toggle="popover"]').popover()
+    })
     </script>
     <script>
     $('.breadcrumb__slider').slick({
@@ -1026,7 +1034,9 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.one-product__slider_navigation',
-        arrows: false,
+        // arrows: false,
+        prevArrow: '<button class="next-btn"></button>',
+        nextArrow: '<button class="prev-btn"></button>',
         dots: false,
         infinite: true,
         focusOnSelect: true,
@@ -1038,9 +1048,10 @@
         slidesToShow: 6,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<button class="next-btn"></button>',
-        nextArrow: '<button class="prev-btn"></button>',
+        // prevArrow: '<button class="next-btn"></button>',
+        // nextArrow: '<button class="prev-btn"></button>',
         dots: false,
+        arrows: false,
         infinite: true,
         asNavFor: '.one-product__slider',
         focusOnSelect: true,

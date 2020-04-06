@@ -995,6 +995,54 @@
     })
     </script>
     <script>
+    $('.main-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        prevArrow: '<button class="next-btn"></button>',
+        nextArrow: '<button class="prev-btn"></button>',
+        infinite: true,
+        focusOnSelect: true,
+        fade: true,
+        cssEase: 'linear',
+        asNavFor: '.thumb-slider'  ,  
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    dots:true,
+                    dotsClass:'my-dots'
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    dots:true,
+                    dotsClass:'my-dots'
+                }
+            }
+        ]
+    });
+    
+    $('.thumb-slider').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: true,
+        arrows: false,
+        asNavFor: '.main-slider',
+        focusOnSelect: true,
+        centerMode: false,
+        vertical: true,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                }
+            }
+        ]
+    });
+    
     $('.breadcrumb__slider').slick({
         dots: false,
         infinite: false,
@@ -1003,69 +1051,6 @@
         slidesToShow: 1,
         variableWidth: true,
         cssEase: 'linear'
-    });
-    $('.one-product__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.one-product__slider_navigation',
-        // arrows: false,
-        prevArrow: '<button class="next-btn"></button>',
-        nextArrow: '<button class="prev-btn"></button>',
-        dots: false,
-        infinite: true,
-        focusOnSelect: true,
-        fade: true,
-        cssEase: 'linear'
-    });
-    // Slider | one-product-slider
-    $('.one-product__slider_navigation').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        arrows: true,
-        // prevArrow: '<button class="next-btn"></button>',
-        // nextArrow: '<button class="prev-btn"></button>',
-        dots: false,
-        arrows: false,
-        infinite: true,
-        asNavFor: '.one-product__slider',
-        focusOnSelect: true,
-        centerMode: false,
-        vertical: true,
-        responsive: [{
-                breakpoint: 1250,
-                settings: {
-                    slidesToShow: 5,
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 5,
-                }
-            },
-            {
-                breakpoint: 908,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 5,
-                }
-            },
-            {
-                breakpoint: 577,
-                settings: {
-                    arrows: false,
-                    vertical: false,
-                    slidesToShow: 4,
-                }
-            },
-    
-    
-        ]
     });
     </script>
     <script>

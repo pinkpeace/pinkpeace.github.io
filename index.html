@@ -585,101 +585,17 @@
     <script src="js/main.min.js"></script>
     <!-- Фотогалерея -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-    $('[data-fancybox="gallery"]').fancybox({});
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    })
-    </script>
-    <script>
-    $('.main-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        prevArrow: '<button class="next-btn"></button>',
-        nextArrow: '<button class="prev-btn"></button>',
-        infinite: true,
-        focusOnSelect: true,
-        fade: true,
-        cssEase: 'linear',
-        asNavFor: '.thumb-slider'  ,  
-        responsive: [{
-                breakpoint: 992,
-                settings: {
-                    dots:true,
-                    dotsClass:'my-dots'
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    arrows: false,
-                    dots:true,
-                    dotsClass:'my-dots'
-                }
-            }
-        ]
-    });
-    
-    $('.thumb-slider').slick({
-        slidesToShow: 7,
-        slidesToScroll: 1,
-        dots: false,
-        infinite: true,
-        arrows: false,
-        asNavFor: '.main-slider',
-        focusOnSelect: true,
-        centerMode: false,
-        vertical: true,
-        responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 5,
-                }
-            }
-        ]
-    });
-    
-    $('.breadcrumb__slider').slick({
-        dots: false,
-        infinite: false,
-        centerMode: false,
-        arrows: false,
-        slidesToShow: 1,
-        variableWidth: true,
-        cssEase: 'linear'
-    });
-    </script>
-    <script>
-    $(function() {
-        // при нажатии на кнопку scrollup
-        $('.scrollup').click(function() {
-            // переместиться в верхнюю часть страницы
-            $("html, body").animate({
-                scrollTop: 0
-            }, 1000);
-        })
-    })
-    // при прокрутке окна (window)
-    $(window).scroll(function() {
-        // если пользователь прокрутил страницу более чем на 200px
-        if ($(this).scrollTop() > 200) {
-            // то сделать кнопку scrollup видимой
-            $('.scrollup').fadeIn();
-        }
-        // иначе скрыть кнопку scrollup
-        else {
-            $('.scrollup').fadeOut();
-        }
-    });
-    </script>
-    <script>
-    //Инициируем карусель фото в анонсе товаров
-    $(document).ready(function() {
-        $(".prev-photo-item").brazzersCarousel();
-    });
-    </script>
     <div class="footer">
+        <section>
+            <div class="container-xl">
+                <div class="text-center pt-5 mb-5">
+                    <p class="p-caption">Дизайнер, архитектор или строитель?</p>
+                    <p class="lead">
+                        С нами можно выгодно сотрудничать. </p>
+                    <a href="sotrudnichestvo.html" class="btn btn-simple">Узнать подробнее</a>
+                </div>
+            </div>
+        </section>
         <div class="section first-section">
             <div class="container-xl">
                 <div class="row align-items-stretch">
@@ -719,13 +635,6 @@
                                 Белоруссия - от 4 дней </p>
                         </div>
                     </div>
-                </div>
-                <div class="text-center pt-5">
-                    <h2>Дизайнер, архитектор или строитель?</h2>
-                    <p class="lead">
-                        С нами можно выгодно сотрудничать. <br>
-                        Подробности <a href="#" class="a-link">здесь</a>
-                    </p>
                 </div>
             </div>
         </div>

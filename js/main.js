@@ -18444,6 +18444,7 @@ $(function() {
     $('.main-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        speed: 300,
         dots: false,
         prevArrow: '<button class="next-btn"></button>',
         nextArrow: '<button class="prev-btn"></button>',
@@ -18499,7 +18500,7 @@ $(function() {
     });
     $('.similar-slider').slick({
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         prevArrow: '<button class="next-similar-btn"></button>',
         nextArrow: '<button class="prev-similar-btn"></button>',
         dots: false,

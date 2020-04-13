@@ -6987,8 +6987,7 @@ a:hover {
   line-height: 1.2em;
   padding-top: 1.1em;
   padding-bottom: 1em;
-  box-shadow: 0px 0px 15px #2e303847;
-  margin-bottom: 1em; }
+  box-shadow: 0px 0px 15px #2e303847; }
   .header a {
     font-size: 13px; }
   .header a:not(.navbar-brand):hover {
@@ -7275,7 +7274,8 @@ a:hover {
 .main-banner-box {
   background-color: #f2f5f6;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -1; }
   .main-banner-box a {
     color: inherit; }
   .main-banner-box .text-banner {
@@ -7993,9 +7993,10 @@ div.scrollup:hover {
     transition: all 0.3s ease; }
 
 .top-panel {
-  font-size: 13px;
+  font-size: 12px;
   color: #a8acae;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  line-height: 1em; }
   .top-panel .top-sale {
     margin-right: 1.5em;
     padding: 0px 7px 0px 7px;

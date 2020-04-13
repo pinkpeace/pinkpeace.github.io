@@ -411,13 +411,13 @@
             <nobr>
                 <p class=""> У лестницы&nbsp;</p><a href="#vars" class="a-border-dotted"> 7 вариантов размера</a>
             </nobr>
-            <p class="mr-4">Купили более 12 раз</p>
-             <p class="">В наличии 54 шт</p>
+            <p class="mr-4">Купили более 10 раз</p>
+            <p class="p-quantity">В наличии: <span class="few">2 шт.</span></p>
         </div>
         <!-- Конец -верхней панели -->
         <!-- Карточка-каталог -->
-        <div class="row mb-3 mb-lg-5">
-            <div class="col-lg-6 col-xl-6">
+        <div class="row mb-3 mb-lg-4">
+            <div class="col-lg-6 col-xl-6 order-1">
                 <div class="data-img">
                     <div class="thumb-slider d-none d-lg-block">
                         <div>
@@ -489,9 +489,10 @@
                     </div>
                 </div>
             </div>
-            <div class="d-none d-xl-block col-xl-3">
-                <div class="params mb-4">
-                    <a href="#" class="a-zapros">Запрос консультации по товару</a>
+            <div class="col col-xl-3 order-3 order-xl-2">
+                <a href="#" class="a-form-call a-zapros">Запрос консультации по товару</a>
+                <a href="#" class="a-form-call a-zamer-order">Заказать замер</a>
+                <div class="d-none d-xl-block params mt-3 mb-4">
                     <p><b>Характеристики</b></p>
                     <p class="p-values">
                         <span class="feature-name">
@@ -528,7 +529,7 @@
                     <a class="a-link a-border-dotted" href="#params">все характеристики</a>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-3">
+            <div class="col-lg-6 col-xl-3 order-2 order-xl-3">
                 <div class="main-right">
                     <div class="main-price-box">
                         <p class="p-main-price">от 34 000<span class="price-rouble"></span></p>
@@ -540,44 +541,43 @@
                     </div>
                     <form class="mb-3">
                         <div class="form-group">
-                            <label for="checkHight" class="sr-only">Выберите высоту</label>
-                            <select class="form-control product-sel" id="checkHight">
-                                <option class="placeholder" value="0">Выберите высоту</option>
-                                <option>Высота: 2730-2925 мм</option>
-                                <option>Высота: 2721-2900 мм</option>
-                                <option>Высота: 2920 - 3100 ммм</option>
-                            </select>
+                            <label for="checkHight" class="">Высота</label>
                             <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Высота от пола нижнего этажа до пола верхнего">
                                 ?
                             </button>
+                            <select class="form-control product-sel" id="checkHight">
+                                <option class="placeholder" value="0">–</option>
+                                <option>2730-2925 мм</option>
+                                <option>2721-2900 мм</option>
+                                <option>2920 - 3100 ммм</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="checLong" class="sr-only">Минимальный проём</label>
-                            <select class="form-control product-sel" id="checLong">
-                                <option class="placeholder" value="0">Минимальный проём</option>
+                            <label for="checkLong" class="">Минимальный проём</label>
+                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
+                                ?
+                            </button>
+                            <select class="form-control product-sel" id="checkLong">
+                                <option class="placeholder" value="0">–</option>
                                 <option>2700 х 920 мм</option>
                                 <option>2480 х 1170 мм</option>
                                 <option>2920 х 920 ммм</option>
                                 <option>3140 х 920 ммм</option>
                             </select>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
-                                ?
-                            </button>
                         </div>
                         <div class="form-group">
-                            <label for="checkMaterial" class="sr-only">Материал</label>
+                            <label for="checkMaterial" class="">Материал</label>
                             <select class="form-control product-sel" id="checkMaterial">
-                                <option class="placeholder" value="0">Выберите материал</option>
+                                <option class="placeholder" value="0">–</option>
                                 <option>Сосна</option>
                                 <option>Сосна под покраску</option>
                                 <option>Сосна + дуб</option>
                                 <option>Дуб</option>
-                                <option>Ольха</option>
                             </select>
                         </div>
                         <div class="form-group d-none">
+                            <p class="p-param-label">Выберите цвет:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
-                                <p class="mb-1 text-dgrey">Выберите цвет:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
                                 <label class="btn  btn-radio-color">
                                     <input type="radio" name="options" id="option1">
                                     <img src="img/white.jpg" alt="" class="stair-color-img">
@@ -597,8 +597,11 @@
                             </div>
                         </div>
                         <div class="form-group d-none">
+                            <p class="p-param-label">Выберите диаметр:</p>
+                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
+                                ?
+                            </button>
                             <div class="btn-group-toggle" data-toggle="buttons">
-                                <p class="mb-1 text-dgrey">Выберите диаметр:</p>
                                 <label class="btn  btn-radio-diametr">
                                     <input type="radio" name="options" id="option1"> 120 мм
                                 </label>
@@ -614,7 +617,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <p class="mb-1 text-dgrey">Выберите поворот:</p>
+                            <p class="p-param-label">Выберите поворот:</p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-povorot">
                                     <input type="radio" name="options" id="option1"> направо
@@ -627,13 +630,16 @@
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                             <label class="custom-control-label" for="customCheck1">Добавить подступенки</label>
+                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
+                                ?
+                            </button>
                         </div>
                         <div class="modif-name-box d-none">
                             <p class="d-inline"> После выбора параметров здесь появится название модификации</p>
                             <a class="a-link d-inline" href="">и ссылка подробнее</a>
                         </div>
-                        <button class="btn btn-buy mt-4 btn-block btn-notactive">Рассчитать</button>
-                        <button class="btn btn-sister mt-2 btn-block">Вызвать замерщика</button>
+                        <button class="btn btn-buy mt-4 btn-block disabled">Рассчитать</button>
+                        <!-- <button class="btn btn-sister mt-2 btn-block">Вызвать замерщика</button> -->
                     </form>
                     <a class="a-border-dotted a-link" href="#vars">Посмотреть все варианты лестницы</a>
                 </div>

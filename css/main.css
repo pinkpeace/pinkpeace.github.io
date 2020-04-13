@@ -7078,7 +7078,7 @@ a:hover {
       border-bottom-right-radius: 3px;
       background-color: #f2f5f6;
       border-left: none;
-      width: 40px; }
+      width: 50px; }
     .search-form .img-search {
       margin-top: -7px; } }
 
@@ -7575,7 +7575,9 @@ select:focus {
   outline: none; }
 
 .filter-sort-box {
-  margin-top: 0.5em; }
+  margin-top: .5em;
+  border-top: 1px solid #f2f5f6;
+  padding-top: 1em; }
   .filter-sort-box .form-control {
     font-size: 13px;
     font-weight: 600;
@@ -7721,12 +7723,12 @@ select:focus {
   font-size: .8em;
   letter-spacing: 0.05em; }
 
-.btn-notactive {
+.btn-buy.disabled {
   background-color: #f2f5f6;
   color: #a8acae; }
 
-.btn-notactive:hover,
-.btn-notactive:focus {
+.btn-buy.disabled:hover,
+.btn-buy.disabled:focus {
   cursor: auto;
   background-color: #f2f5f6;
   color: #a8acae; }
@@ -7835,14 +7837,29 @@ select:focus {
       display: block;
       width: 100%; } }
 
-.a-zapros {
-  padding: 15px 15px 15px 20px;
+.a-form-call {
+  padding: 10px 15px 10px 20px;
   background-color: #f2f5f6;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: block;
   border-radius: 3px;
   font-size: smaller;
-  color: #686e86; }
+  color: #686e86;
+  display: block; }
+
+.p-param-label {
+  display: inline-block;
+  margin-bottom: 0.5em; }
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .a-form-call {
+    display: inline-block; } }
+
+.p-quantity .many {
+  color: initial; }
+
+.p-quantity .few {
+  color: red; }
 
 .main-right {
   padding: 1em 2.5em 1em 2em;
@@ -7854,6 +7871,9 @@ select:focus {
     margin-bottom: 1.5em; }
   .main-right .modif-name-box {
     margin-top: 1.5em; }
+  .main-right label,
+  .main-right .p-param-label {
+    color: #686e86; }
   .main-right select {
     display: inline-block;
     font-size: 14px; }
@@ -7870,7 +7890,7 @@ select:focus {
     width: 20px;
     font-size: 13px;
     padding: 0;
-    margin-right: -30px;
+    margin-left: .2em;
     background-color: #f2f5f6; }
   .main-right .btn-hint:focus,
   .main-right .btn-hint:active {
@@ -7886,7 +7906,7 @@ select:focus {
     color: #a8acae;
     line-height: 26px;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 15px;
     position: relative; }
   .main-right .btn-group {
     width: 100%; }
@@ -7917,7 +7937,7 @@ select:focus {
     border-color: #00a6ff;
     color: #fff; }
   .main-right .btn-povorot {
-    border: 2px solid #dedede;
+    border: 1px solid #dedede;
     font-weight: 400;
     font-size: 14px; }
   .main-right .btn-povorot:not(.active):hover {
@@ -7937,7 +7957,7 @@ select:focus {
 
 @media (min-width: 567px) {
   .main-right {
-    padding: 2em 2.6em 2em;
+    padding: 2em 2.2em;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     border: none;
     margin: 0 0 2em;
@@ -8001,7 +8021,8 @@ div.scrollup:hover {
   font-size: 12px;
   color: #a8acae;
   margin-bottom: 1em;
-  line-height: 1em; }
+  line-height: 1em;
+  border-bottom: 1px solid #f2f5f6; }
   .top-panel .top-sale {
     margin-right: 1.5em;
     padding: 0px 7px 0px 7px;
@@ -8018,7 +8039,8 @@ div.scrollup:hover {
 
 @media (min-width: 576px) {
   .top-panel {
-    margin-bottom: 2.2em; } }
+    margin-bottom: 2.2em;
+    padding-bottom: 0.5em; } }
 
 .rating-box {
   display: inline-block; }

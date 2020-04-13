@@ -7589,7 +7589,10 @@ select:focus {
       margin-right: 0;
       margin-bottom: 1em;
       overflow: hidden;
-      display: flex; }
+      display: flex;
+      flex-direction: column; }
+    .filter-sort-box .selects-wrap label {
+      font-size: 13px; }
     .filter-sort-box .selects-wrap select {
       font-weight: 600;
       width: 100%;
@@ -7606,9 +7609,14 @@ select:focus {
         padding: 0px 0px 10px 0;
         border: none; }
         .filter-sort-box .selects-wrap select {
-          width: auto; }
+          width: auto;
+          min-width: 140px; }
+        .filter-sort-box .selects-wrap label {
+          margin-bottom: 3px; }
+        .filter-sort-box .selects-wrap .delselect {
+          min-width: 140px; }
         .filter-sort-box .selects-wrap .select-box {
-          margin-right: .5em;
+          margin-right: 1em;
           margin-bottom: 0; } }
 
 .sort {
@@ -7634,14 +7642,14 @@ select:focus {
   border: 1px solid #e9ecef;
   font-size: 13px;
   font-weight: 600;
-  padding: 0px 40px 0px 20px;
+  padding: 0px 20px 0px 10px;
   height: calc(1.5em + .75rem + 2px);
   border: none;
   background-color: transparent;
   line-height: 1.5em;
   position: relative;
   align-self: center;
-  background: url(../../img/filter-close.svg) right 15px top 11px no-repeat #f2f5f6;
+  background: url(../../img/filter-close.svg) right 10px top 11px no-repeat #f2f5f6;
   background-size: 11px auto; }
 
 * {

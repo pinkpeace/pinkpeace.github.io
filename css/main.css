@@ -7131,7 +7131,8 @@ a:hover {
   .navbar .navbar-toggler {
     outline: none;
     padding-left: 0;
-    z-index: 500; }
+    z-index: 500;
+    width: 28px; }
 
 .yel-bck {
   background-color: #fee44c; }
@@ -7166,8 +7167,9 @@ a:hover {
     font-size: 0.9em;
     text-transform: uppercase;
     font-weight: 600;
-    padding: 15px 0px 15px;
-    display: block; }
+    padding: 15px;
+    display: block;
+    border-top: 1px solid #fbeb8f; }
   .navbar-my-nav .mobile-dop-info {
     border-top: 1px solid grey;
     margin-left: -15px;
@@ -7178,17 +7180,11 @@ a:hover {
     color: #f1f5f6; }
     .navbar-my-nav .mobile-dop-info .a-city {
       text-decoration: none; }
-  .navbar-my-nav .mobile-dop-link {
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-top: 1px solid #e4cd44; }
   .navbar-my-nav .cls-1 {
     fill: #a8acae; }
   .navbar-my-nav .line {
-    width: 1px;
-    height: 35px;
+    width: 100%;
+    height: 1px;
     background-color: #fde963; }
   .navbar-my-nav .caption {
     font-weight: 800; }
@@ -7210,6 +7206,11 @@ a:hover {
     .navbar-my-nav .dropdown-menu .dropdown-item:focus,
     .navbar-my-nav .dropdown-menu .dropdown-item:hover {
       background-color: #0000000a; }
+
+@media (min-width: 992px) {
+  .navbar-my-nav .line {
+    width: 1px;
+    height: 35px; } }
 
 .bsnav-mobile,
 .bsnav-mobile .bsnav-mobile-overlay,
@@ -7246,9 +7247,20 @@ a:hover {
   transform: translate3d(0, 0, 0);
   width: 100%; }
 
+.bsnav-mobile .navbar-nav {
+  padding: 0; }
+
+.bsnav-mobile li {
+  padding-left: 20px; }
+
 @media (min-width: 992px) {
   .bsnav-mobile .navbar-nav {
     padding: 0; } }
+
+.ul-dop-info {
+  list-style: inherit;
+  padding: 0;
+  margin: 0; }
 
 .phone,
 .header .phone {
@@ -7422,11 +7434,7 @@ a:hover {
       font-weight: 700;
       margin-left: 3px; }
   .a-back:hover {
-    background-color: #ff3495; }
-    .a-back:hover svg {
-      fill: #fff; }
-    .a-back:hover span {
-      color: #fff; }
+    border-color: #ff3495; }
   .a-share {
     width: 36px;
     height: 36px;
@@ -7526,6 +7534,9 @@ select {
   background: url(../img/select-arr.svg) right 15px top 13px no-repeat #fff;
   background-size: 10px auto;
   outline: none; }
+
+.select-sort {
+  border-color: #e9ecef; }
 
 .filter-btn {
   margin: 0;
@@ -7635,6 +7646,28 @@ select:focus {
 * {
   outline: none !important; }
 
+.my-pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 13px; }
+  .my-pagination li {
+    margin: 0 .4em; }
+    .my-pagination li .my-page-link {
+      border: 1px solid #f2f5f6;
+      padding: 5px 9px;
+      line-height: 0;
+      border-radius: 3px; }
+  .my-pagination li.disabled .my-page-link {
+    color: #ced4da;
+    cursor: default; }
+  .my-pagination li.active .my-page-link {
+    font-weight: 600;
+    cursor: default; }
+  .my-pagination li:not(.disabled):not(.active) .my-page-link:hover {
+    border-color: #a8acae; }
+
 .my-hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -7737,7 +7770,7 @@ select:focus {
     font-size: 15px;
     color: #ff3495; }
   .product-box .old-price {
-    font-size: 13px;
+    font-size: 10px;
     color: #a8acae;
     white-space: nowrap; }
   .product-box .sale-info {
@@ -7745,7 +7778,7 @@ select:focus {
     line-height: 1.2em;
     word-break: break-all; }
   .product-box .sale {
-    font-size: 11px;
+    font-size: 10px;
     background-color: #fee44c;
     padding: 3px 6px;
     border-radius: 3px;
@@ -7765,7 +7798,11 @@ select:focus {
 @media (min-width: 576px) {
   .hidden-descr,
   .similar-descr {
-    display: block; } }
+    display: block; }
+  .product-box .sale {
+    font-size: 11px; }
+  .product-box .old-price {
+    font-size: 13px; } }
 
 .material {
   margin-top: 1em; }
@@ -7839,21 +7876,11 @@ select:focus {
   .main-right .old-price {
     vertical-align: top;
     display: inline-block;
-    color: #ced4da;
+    color: #a8acae;
     line-height: 26px;
     margin-bottom: 0;
     font-size: 16px;
-    font-weight: 800;
-    position: relative;
-    text-decoration: none; }
-  .main-right .old-price:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    top: 50%;
-    left: 0;
-    background-color: #ff3495;
-    position: absolute; }
+    position: relative; }
   .main-right .btn-group {
     width: 100%; }
   .main-right .btn-radio-color {
@@ -7884,7 +7911,7 @@ select:focus {
     color: #fff; }
   .main-right .btn-povorot {
     border: 2px solid #dedede;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px; }
   .main-right .btn-povorot:not(.active):hover {
     border-color: #00a6ff;

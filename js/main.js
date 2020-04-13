@@ -18449,13 +18449,13 @@ $(function() {
         nextArrow: '<button class="prev-btn"></button>',
         infinite: true,
         focusOnSelect: true,
-        fade: true,
         cssEase: 'linear',
         asNavFor: '.thumb-slider',
         responsive: [{
                 breakpoint: 992,
                 settings: {
                     dots: true,
+                    fade: true,
                     dotsClass: 'my-dots'
                 }
             },

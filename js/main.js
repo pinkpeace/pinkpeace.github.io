@@ -18444,7 +18444,7 @@ $(function() {
     $('.main-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 300,
+        speed: 400,
         dots: false,
         prevArrow: '<button class="next-btn"></button>',
         nextArrow: '<button class="prev-btn"></button>',

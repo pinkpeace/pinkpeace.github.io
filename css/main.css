@@ -8001,7 +8001,7 @@ select:focus {
   color: #ff3495; }
 
 .main-right {
-  padding: 1em 1em;
+  padding: 2em 1em;
   margin-bottom: 1em;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12); }
   .main-right .main-price-box {
@@ -8109,7 +8109,7 @@ select:focus {
 
 @media (min-width: 567px) {
   .main-right {
-    padding: 1.2em 2.2em 1em;
+    padding: 2.5em 2.2em 1em;
     border: none;
     margin: 0 0 2em;
     border-radius: 3px; } }
@@ -8309,10 +8309,6 @@ div.scrollup:hover {
 .my-dots li button:focus {
   outline: none; }
 
-.my-dots li button:hover:before,
-.my-dots li button:focus:before {
-  opacity: 1; }
-
 .my-dots li button:before {
   font-family: 'slick';
   font-size: 40px;
@@ -8327,7 +8323,7 @@ div.scrollup:hover {
   -moz-osx-font-smoothing: grayscale; }
 
 .my-dots li.slick-active button:before {
-  opacity: .75;
+  opacity: 0.75;
   color: #ff3495; }
 
 .main-slider div {

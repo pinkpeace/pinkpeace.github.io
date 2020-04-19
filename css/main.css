@@ -8302,8 +8302,7 @@ div.scrollup:hover {
   font-size: 40px;
   line-height: 0px;
   position: absolute;
-  left: -2px;
-  top: 4px;
+  left: -3px;
   content: '•';
   text-align: center;
   opacity: .25;

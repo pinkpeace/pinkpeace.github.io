@@ -6965,9 +6965,10 @@ button:focus,
   color: #a8acae; }
 
 .p-page-cap {
-  font-weight: 800;
-  font-size: 1.3em;
-  margin-top: 1.2em; }
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: .6em; }
 
 @media (min-width: 768px) {
   .p-descr {
@@ -7599,6 +7600,10 @@ a:hover {
     width: 40%;
     display: inline-block; }
 
+@media (min-width: 1200px) {
+  .values-box .p-values {
+    font-weight: 400; } }
+
 .tmb-wrap-table div.active {
   border-color: #f2f5f6; }
 
@@ -7656,7 +7661,7 @@ select:focus {
   padding-top: 1em; }
   .filter-sort-box .form-control {
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     padding-right: 40px; }
   .filter-sort-box .selects-wrap {
     padding: 20px 0px 20px 0;
@@ -7670,7 +7675,6 @@ select:focus {
     .filter-sort-box .selects-wrap label {
       font-size: 13px; }
     .filter-sort-box .selects-wrap select {
-      font-weight: 400;
       width: 100%;
       border: 1px solid #e9ecef; }
       .filter-sort-box .selects-wrap select .placeholder {
@@ -7881,7 +7885,18 @@ select:focus {
   z-index: 9;
   margin-right: 15px;
   background-color: #fbd80a;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  height: 32px; }
+
+.sale-marker:after {
+  content: '';
+  position: absolute;
+  border: 16px solid transparent;
+  border-right: 16px solid #dabb06;
+  border-bottom: 16px solid #dabb06;
+  right: 0;
+  top: 0;
+  z-index: -1; }
 
 .hidden-descr {
   display: none;
@@ -7997,6 +8012,7 @@ select:focus {
   .main-right .p-param-label {
     font-size: 14px; }
   .main-right select {
+    font-weight: 600;
     display: inline-block;
     border-color: #f2f5f6;
     background-color: #f2f5f6; }
@@ -8287,7 +8303,7 @@ div.scrollup:hover {
   outline: none;
   background: transparent;
   border-radius: 50%;
-  border: 1px solid #e9ecef; }
+  border: 1px solid #999ba2; }
 
 .my-dots li button:hover,
 .my-dots li button:focus {
@@ -8520,6 +8536,29 @@ div.scrollup:hover {
   width: 290px;
   max-width: 100%;
   height: auto; }
+
+.nav-anchor {
+  display: none; }
+
+@media (min-width: 992px) {
+  .nav-anchor {
+    display: flex;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    border-top: 1px solid #f2f5f6; }
+    .nav-anchor .nav-link {
+      padding: 10px 5px;
+      border-bottom: 2px solid #fff;
+      font-weight: 600;
+      font-size: 14px; }
+      .nav-anchor .nav-link.disabled {
+        color: #a8acae; }
+      .nav-anchor .nav-link:not(.disabled):hover {
+        border-bottom: 2px solid #fee44c; } }
+
+.video-block {
+  padding: 40px 50px 50px;
+  background-color: #f2f5f6; }
 
 .link-b {
   margin-top: 109px; }

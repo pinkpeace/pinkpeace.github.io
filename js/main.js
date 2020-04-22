@@ -18527,7 +18527,6 @@ $(function() {
         dots: false,
         infinite: false,
         speed: 300,
-        variableWidth:true,
         slidesToShow: 4,
         responsive: [{
             breakpoint: 992,

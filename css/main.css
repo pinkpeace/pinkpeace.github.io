@@ -8643,7 +8643,8 @@ div.scrollup:hover {
   border: 1px solid #dee2e6; }
   .row-s .col-s {
     border-left: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6; }
+    border-bottom: 1px solid #dee2e6;
+    display: flex; }
     .row-s .col-s:last-child {
       border-right: 1px solid #dee2e6; }
     .row-s .col-s:hover {
@@ -8660,20 +8661,23 @@ div.scrollup:hover {
 
 .dop-prod {
   padding: 15px 15px 20px 15px;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  justify-content: space-between; }
   .dop-prod .p-price {
     font-size: 18px;
     color: #ff3495;
     margin-top: .5em; }
   .dop-prod a {
     margin-bottom: 1em;
-    margin-top: 1em; }
+    margin-top: 0; }
     .dop-prod a h4 {
-      height: 48px;
-      text-overflow: ellipsis;
+      min-height: 48px;
       font-weight: 500;
-      overflow: hidden;
-      margin-bottom: .5em; }
+      margin-bottom: .5em;
+      margin-top: 0; }
   .dop-prod .quantity {
     display: inline-flex;
     justify-content: space-between;

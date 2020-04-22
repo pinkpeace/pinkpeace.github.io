@@ -18501,8 +18501,6 @@ $(function() {
     $('.similar-slider').slick({
         slidesToShow: 5,
         slidesToScroll: 2,
-        prevArrow: '<button class="next-similar-btn"></button>',
-        nextArrow: '<button class="prev-similar-btn"></button>',
         dots: false,
         infinite: true,
         responsive: [{
@@ -18525,7 +18523,28 @@ $(function() {
             },
         ]
     });
-
+    $('.schemes-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        variableWidth:true,
+        slidesToShow: 4,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth:false,
+                    variableHight:true,
+                }
+            },
+        ]
+    });
     $('[data-fancybox="gallery"]').fancybox({});
     $(function() {
         $('[data-toggle="popover"]').popover()

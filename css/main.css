@@ -7065,6 +7065,9 @@ a:hover {
 .price-rouble:after {
   content: "\A0\20BD"; }
 
+.nowrp {
+  white-space: nowrap; }
+
 /*
       www.OnlineWebFonts.Com 
       You must credit the author Copy this link on your web 
@@ -7829,11 +7832,13 @@ select:focus {
   color: #a8acae; }
 
 .p-price {
-  font-weight: 700; }
+  font-weight: 700;
+  white-space: nowrap; }
 
 .old-price {
   text-decoration: line-through;
-  font-weight: 400; }
+  font-weight: 400;
+  white-space: nowrap; }
 
 .p-caption {
   font-size: 2em;
@@ -8506,9 +8511,15 @@ div.scrollup:hover {
     padding: 5px 8px 5px; }
   .modif-table p {
     margin-bottom: 0; }
+  .modif-table .dpr {
+    display: inline; }
+  .modif-table .old-price,
+  .modif-table .p-price {
+    display: inline; }
   .modif-table td,
   .modif-table th {
-    padding: 0.5rem 0.2rem 0.3rem 0.1rem; }
+    padding: 0.5rem 0.2rem 0.3rem 0.1rem;
+    vertical-align: middle; }
   .modif-table .table-btn {
     fill: #fff;
     fill-rule: evenodd; }
@@ -8517,10 +8528,22 @@ div.scrollup:hover {
     border-bottom: 1px solid #f8f9fa; }
   .modif-table td:not(:first-child) {
     text-align: end; }
-  .modif-table span.old-price {
-    font-size: 0.9em;
+  .modif-table .p-price {
+    margin-left: 0.5em;
+    line-height: 1em; }
+  .modif-table .old-price {
+    font-size: .9em;
     color: #a8acae;
-    margin-right: 0.5em; }
+    margin-right: 0;
+    font-weight: 400;
+    white-space: break-spaces;
+    line-height: 1em;
+    vertical-align: middle; }
+
+@media (max-width: 768px) {
+  .card-body {
+    margin-left: -13px;
+    margin-right: -13px; } }
 
 @media (min-width: 992px) {
   .modif-table {

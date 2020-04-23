@@ -7483,7 +7483,7 @@ a:hover {
     fill: #ff3495; }
 
 .a-share {
-  background-color: #fff;
+  background-color: #fff0;
   padding-left: 8px;
   height: 30px;
   width: auto;
@@ -7495,7 +7495,7 @@ a:hover {
 
 .a-share:hover {
   outline: none;
-  background-color: #fff; }
+  background-color: #fff0; }
   .a-share:hover svg {
     fill: #ff3495; }
 
@@ -7513,6 +7513,8 @@ a:hover {
       font-size: 0.75em;
       font-weight: 700;
       margin-left: 3px; }
+    .a-back .a-share {
+      background-color: #fff; }
   .a-back:hover {
     border-color: #ff3495; }
   .a-share {
@@ -7526,7 +7528,7 @@ a:hover {
       margin-left: -2px; } }
 
 .nav-my-breadcrumbs {
-  width: calc(100% - 50px);
+  width: calc(100% - 52px);
   display: inline-block;
   height: 30px;
   vertical-align: middle; }
@@ -8598,7 +8600,7 @@ div.scrollup:hover {
       display: block;
       height: 200px; }
     .schemes-slider .schemes-slider-item p {
-      margin-top: 1em;
+      margin-top: 0;
       margin-bottom: 0; }
   .schemes-slider .slick-arrow {
     position: absolute;
@@ -8681,12 +8683,12 @@ div.scrollup:hover {
   .dop-prod .quantity {
     display: inline-flex;
     justify-content: space-between;
-    width: 110px;
     margin-top: 1em; }
     .dop-prod .quantity input {
       text-align: center;
       padding: 5px;
-      height: 30px; }
+      height: 30px;
+      width: 40px; }
   .dop-prod .btn-dop {
     font-size: 12px;
     background-color: #ff3495;

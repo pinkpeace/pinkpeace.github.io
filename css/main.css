@@ -8262,7 +8262,8 @@ div.scrollup:hover {
     padding-bottom: 0.5em; } }
 
 .rating-box {
-  display: inline-block; }
+  display: inline-block;
+  white-space: nowrap; }
 
 .rating-area {
   overflow: hidden;

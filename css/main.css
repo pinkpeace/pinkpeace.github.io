@@ -8167,7 +8167,12 @@ select:focus {
 
 .section {
   padding-top: 1em;
-  padding-bottom: 2em; }
+  padding-bottom: 1em; }
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 2em;
+    padding-bottom: 2em; } }
 
 .btn-zamer-order {
   margin-right: 2em;
@@ -8766,6 +8771,44 @@ div.scrollup:hover {
       margin-left: 6px; }
   .btn-dop {
     height: 30px; } }
+
+.btn-color {
+  border: 2px solid #f2f5f6;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: inherit;
+  width: 100%; }
+  .btn-color:hover {
+    border-color: #ff3495;
+    color: #fff;
+    background-color: #ff3495; }
+
+.clrbm {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 2em; }
+
+p.clrnm {
+  color: #a8acae;
+  margin-top: .5em;
+  margin-bottom: 0em;
+  font-size: 12px;
+  min-height: 38px; }
+
+.clrb {
+  width: 140px;
+  padding: 20px;
+  text-align: center; }
+  .clrb .p-price {
+    margin-bottom: .5em;
+    color: #ff3495; }
+  .clrb .img {
+    width: 100px;
+    height: 100px; }
+
+@media (min-width: 1200px) {
+  .clrb:hover {
+    box-shadow: 0 0 15px #464a563d; } }
 
 .footer .first-section {
   padding-top: 40px;

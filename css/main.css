@@ -7535,7 +7535,7 @@ a:hover {
       margin-left: -2px; } }
 
 .nav-my-breadcrumbs {
-  width: calc(100% - 60px);
+  width: calc(100% - 62px);
   display: inline-block;
   height: 30px;
   vertical-align: middle; }
@@ -8507,6 +8507,12 @@ div.scrollup:hover {
 .modif-table {
   width: 100%;
   font-size: 12px; }
+  .modif-table thead th {
+    vertical-align: initial; }
+    .modif-table thead th p {
+      font-weight: 400; }
+    .modif-table thead th:nth-child(3) {
+      text-align: right; }
   .modif-table button {
     padding: 5px 8px 5px; }
   .modif-table p {

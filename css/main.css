@@ -8817,6 +8817,26 @@ p.clrnm {
   .clrb:hover {
     box-shadow: 0 0 15px #464a563d; } }
 
+.btn-pdf {
+  position: relative;
+  padding: 10px 15px 10px 70px;
+  height: 80px;
+  width: 100%;
+  border: 1px solid #f2f5f6;
+  background-image: url(../img/pdf.svg);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  background-size: 40px auto;
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5em;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 3px; }
+  .btn-pdf:hover {
+    border-color: #009de8;
+    color: #009de8; }
+
 .footer .first-section {
   padding-top: 40px;
   color: #454e5e; }

@@ -7557,7 +7557,7 @@ a:hover {
     font-size: 12px;
     color: #a8acae; }
   .my-breadcrumb .my-breadcrumb-item.active {
-    color: #2e3038;
+    color: #ced4da;
     cursor: default; }
   .my-breadcrumb .brc {
     margin: 0 4px 0 8px;
@@ -7871,10 +7871,12 @@ select:focus {
   margin-bottom: 10px; }
   .product-box .price-box,
   .similar-box .price-box {
-    margin-bottom: 1em; }
+    margin-bottom: .5em; }
   .product-box .pr-name,
   .similar-box .pr-name {
-    min-height: 48px; }
+    min-height: 48px;
+    font-weight: 500;
+    line-height: 1.3; }
   .product-box .prod-descr-box,
   .similar-box .prod-descr-box {
     padding-top: 0.2em; }
@@ -7897,13 +7899,15 @@ select:focus {
     color: #ff3495;
     display: inline-block;
     margin-bottom: 0;
-    margin-right: 5px; }
+    margin-right: 5px;
+    line-height: 1.3em; }
   .product-box .old-price,
   .similar-box .old-price {
     font-size: 10px;
     color: #a8acae;
     white-space: nowrap;
-    display: inline; }
+    display: inline;
+    line-height: 1.3em; }
   .product-box .p-descr,
   .similar-box .p-descr {
     margin-bottom: 0.6em;
@@ -7941,6 +7945,10 @@ select:focus {
   .hidden-descr p {
     font-size: 13px; }
 
+.similar-box h4 {
+  margin-bottom: .5em;
+  font-weight: 500; }
+
 .similar-descr {
   padding-top: 1em;
   display: none; }
@@ -7956,7 +7964,7 @@ select:focus {
     font-size: 13px; }
   .product-box .p-price,
   .similar-box .p-price {
-    font-size: 18px;
+    font-size: 15px;
     margin-right: 6px; } }
 
 .material {

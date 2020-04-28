@@ -7885,7 +7885,7 @@ select:focus {
     margin-right: 0; }
   .product-box .special-info,
   .similar-box .special-info {
-    padding: 10px 10px 0;
+    padding: 10px 10px .6em;
     font-size: 13px;
     border-radius: 3px;
     text-align: center;
@@ -7968,7 +7968,9 @@ select:focus {
     margin-right: 6px; } }
 
 .material {
-  margin-top: 1em; }
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-block; }
   .material span {
     background-color: #def2f9;
     padding: 3px 5px;
@@ -7991,7 +7993,7 @@ select:focus {
       display: none; }
   .product-box:hover {
     margin: -15px -15px 0;
-    padding: 15px 15px 20px;
+    padding: 15px 15px 5px;
     position: absolute;
     z-index: 10;
     background-color: #fff;
@@ -8855,6 +8857,25 @@ p.clrnm {
   background-color: #fff;
   font-weight: 500;
   margin-bottom: .5em; }
+
+.diams,
+.mclrs {
+  margin-bottom: 1em;
+  margin-top: 1em; }
+
+.diam {
+  display: inline-block;
+  padding: 3px 10px 3px 18px;
+  background-image: url(../img/diam.svg);
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  background-size: 16px 16px;
+  margin-right: .3em;
+  font-weight: 500; }
+
+.mclr {
+  display: inline-block;
+  margin-right: .3em; }
 
 .footer .first-section {
   padding-top: 40px;

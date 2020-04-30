@@ -7567,23 +7567,30 @@ a:hover {
     width: 16px;
     color: #dee2e6; }
 
-.submenu-nav {
-  margin-bottom: .5em; }
-  .submenu-nav .nav-item {
+.submenu-box ul {
+  margin-bottom: .5em;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+  .submenu-box ul li {
     margin-right: 1em; }
-    .submenu-nav .nav-item .nav-link {
+    .submenu-box ul li a {
       color: #009de8;
       padding-left: 0;
       text-decoration: underline;
       padding-right: 5px;
-      padding-top: 0; }
-    .submenu-nav .nav-item .nav-link:hover,
-    .submenu-nav .nav-item .nav-link:focus {
+      display: block;
+      padding: 0 5px 1em 0; }
+    .submenu-box ul li a:hover,
+    .submenu-box ul li a:focus {
       text-decoration: none;
       color: rgba(0, 157, 232, 0.7); }
-  @media (min-width: 992px) {
-    .submenu-nav .nav-item {
-      margin-right: 1.5em; } }
+
+@media (min-width: 992px) {
+  .submenu-box ul li {
+    margin-right: 1.5em; } }
 
 .p-values {
   position: relative;

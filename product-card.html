@@ -1232,29 +1232,21 @@
             </div>
         </div>
         <div class="my-hr"></div>
-        <a id="instr"></a>
+        <a id="video"></a>
         <div class="section">
-            <p class="p-page-cap">Файлы для скачивания</p>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <button class="btn-pdf">
-                        Инструкция по сборке лестницы К-001М
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <button class="btn-pdf">
-                        Фирменный гарантийный талон ЛЕСТНИЦЫ-ПРОСТО
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <button class="btn-pdf">
-                        Условия эксплуатации лестницы
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <button class="btn-pdf">
-                        Еще один файл
-                    </button>
+            <div class="video-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="p-page-cap">Видеоинструкция по самостоятельной сборке Лестницы К-001М</p>
+                        <p>
+                            Здесь текст какой-нибудь
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vjmdSnz-zdQ" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1286,21 +1278,226 @@
                 Любую лестницу можно собрать и самостоятельно
             </p>
         </div>
-        <a id="video"></a>
+        <div class="my-hr"></div>
+        <a id="instr"></a>
         <div class="section">
-            <div class="video-block">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p class="p-page-cap">Видеоинструкция по самостоятельной сборке Лестницы К-001М</p>
-                        <p>
-                            Здесь текст какой-нибудь
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vjmdSnz-zdQ" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="font-weight-bolder">Скачать</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <button class="btn-pdf">
+                        Инструкция по сборке лестницы К-001М
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <button class="btn-pdf">
+                        Фирменный гарантийный талон ЛЕСТНИЦЫ-ПРОСТО
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <button class="btn-pdf">
+                        Условия эксплуатации лестницы
+                    </button>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <button class="btn-pdf">
+                        Еще один файл
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="my-hr"></div>
+        <a id="reviews"></a>
+        <div class="section">
+            <!-- Nav tabs -->
+            <ul class="nav nav-revs" id="myTab" role="tablist">
+                <li>
+                    <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                        Отзывы <span class="pink">(2)</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="" id="quest-tab" data-toggle="tab" href="#quest" role="tab" aria-controls="quest" aria-selected="false">
+                        Вопросы <span class="text-grey">(0)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="rth">
+                        <div class="collapse" id="ostotz">
+                            <div class="otzbox">
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <label for="myOpin" class="valmdl">Поставьте свою оценку</label>
+                                        <div class="rating-area">
+                                            <input type="radio" id="star-5" name="rating" value="5">
+                                            <label for="star-5" title="Оценка «5»"></label>
+                                            <input type="radio" id="star-4" name="rating" value="4">
+                                            <label for="star-4" title="Оценка «4»"></label>
+                                            <input type="radio" id="star-3" name="rating" value="3">
+                                            <label for="star-3" title="Оценка «3»"></label>
+                                            <input type="radio" id="star-2" name="rating" value="2">
+                                            <label for="star-2" title="Оценка «2»"></label>
+                                            <input type="radio" id="star-1" name="rating" value="1">
+                                            <label for="star-1" title="Оценка «1»"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="form-group mb-4">
+                                                <label for="fpluses">Достоинства</label>
+                                                <textarea class="form-control" id="fpluses" rows="3"></textarea>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="fminuses">Недостатки</label>
+                                                <textarea class="form-control" id="fminuses" rows="3"></textarea>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="fotz">Отзыв</label>
+                                                <textarea class="form-control" id="fotz" rows="5"></textarea>
+                                            </div>
+                                            <div class="form-check mb-4">
+                                                <input class="form-check-input" type="checkbox" id="iRec">
+                                                <label class="form-check-label" for="iRec">
+                                                    Рекомендую этот товар
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="form-group mb-4">
+                                                <label class="" for="fName">Ваше имя</label>
+                                                <input type="text" class="form-control" id="fName" placeholder="">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="fRecEmail">Email </label>
+                                                <input type="email" class="form-control mb-2" id="fRecEmail" placeholder="">
+                                                <p class="text-grey">Email не публикуется на сайте, он нужен для уведомлений об ответе на ваш отзыв или вопрос</p>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <div class="my-file">
+                                                    <label for="fdfile">Загрузить фото. Не более 4-х, максимальный размер каждого - 10 мб.</label>
+                                                    <input type="file" class="form-control-file" id="fdfile">
+                                                </div>
+                                            </div>
+                                            <div class="form-check mb-4">
+                                                <input class="form-check-input" type="checkbox" id="fimnot">
+                                                <label class="form-check-label" for="fimnot">
+                                                    Я не робот
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-simple float-right">Отправить отзыв</button>
+                                            <button type="submit" class="btn btn-sister float-right mr-2" type="button" data-toggle="collapse" data-target="#ostotz" aria-expanded="false" aria-controls="ostotz">Отмена</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="h3 d-inine-block mb-0">Общая оценка товара</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="rating-result">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-sister mx-auto" type="button" data-toggle="collapse" data-target="#ostotz" aria-expanded="false" aria-controls="ostotz" id="">Оставить отзыв</button>
+                            </div>
                         </div>
                     </div>
+                    <div class="rtb">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="p-nick">Nickname</p>
+                                <div class="rating-mini">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span></span>
+                                </div>
+                                <div class="prec rec">рекомендует</div>
+                                <p class="text-grey">20 апреля 2020</p>
+                            </div>
+                            <div class="col-md-9 col-lg-7">
+                                <h4>Достоинства</h4>
+                                <p>
+                                    За такие деньги шикарный вариант
+                                </p>
+                                <h4>
+                                    Недостатки
+                                </h4>
+                                <p>Немного скрипит</p>
+                                <h4>Отзыв</h4>
+                                <p>
+                                    Во-первых, в комплекте не хватило двух болтов. Во-вторых, конструкция не прочная, стул качается, ось к колесам никак не крепится, т.е. когда поднимаешь стул, колеса остаются, сиденье с осью снимается. В-третьих, колесики очень туго крутятся, можно поцарапать ламинат. Возвращать не стану, потому что долго ждали, и возврат тоже делается долго. Будем докупать болты и фиксировать ось самостоятельно.
+                                </p>
+                                <div class="fb">
+                                    <a data-fancybox="smf" href="img/prob_vert.jpg" class="a-zoom-img">
+                                        <img src="img/prob_vert.jpg" alt="" class="revf">
+                                    </a>
+                                    <a data-fancybox="smf" href="img/prod-5.jpg" class="a-zoom-img">
+                                        <img src="img/prod-5.jpg" alt="" class="revf">
+                                    </a>
+                                    <a data-fancybox="smf" href="img/prod-1.jpg" class="a-zoom-img">
+                                        <img src="img/prod-1.jpg" alt="" class="revf">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rtb">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="p-nick">Лазарева Таня</p>
+                                <div class="rating-mini">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class=""></span>
+                                    <span class=""></span>
+                                    <span></span>
+                                </div>
+                                <div class="prec norec">не рекомендует</div>
+                                <p class="text-grey">10 апреля 2020</p>
+                            </div>
+                            <div class="col-md-9 col-lg-7">
+                                <h4>Достоинства</h4>
+                                <p>
+                                    За такие деньги шикарный вариант
+                                </p>
+                                <h4>
+                                    Недостатки
+                                </h4>
+                                <p>Немного скрипит</p>
+                                <h4>Отзыв</h4>
+                                <p>
+                                    Во-первых, в комплекте не хватило двух болтов. Во-вторых, конструкция не прочная, стул качается, ось к колесам никак не крепится, т.е. когда поднимаешь стул, колеса остаются, сиденье с осью снимается. В-третьих, колесики очень туго крутятся, можно поцарапать ламинат. Возвращать не стану, потому что долго ждали, и возврат тоже делается долго. Будем докупать болты и фиксировать ось самостоятельно.
+                                </p>
+                                <div class="fb">
+                                    <a data-fancybox="smf" href="img/prob_vert.jpg" class="a-zoom-img">
+                                        <img src="img/prob_vert.jpg" alt="" class="revf">
+                                    </a>
+                                    <a data-fancybox="smf" href="img/prod-5.jpg" class="a-zoom-img">
+                                        <img src="img/prod-5.jpg" alt="" class="revf">
+                                    </a>
+                                    <a data-fancybox="smf" href="img/prod-1.jpg" class="a-zoom-img">
+                                        <img src="img/prod-1.jpg" alt="" class="revf">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="quest" role="tabpanel" aria-labelledby="quest-tab">
+                    Здесь вопросы будут
                 </div>
             </div>
         </div>
@@ -1675,7 +1872,7 @@
         <img src="img/up.svg" alt="">
     </div>
     <script src="js/libs.min.js"></script>
-    <script src="js/my.js"></script>
+    <script src="js/my.min.js"></script>
     <div class="footer">
         <div class="section">
             <div class="container-xl">

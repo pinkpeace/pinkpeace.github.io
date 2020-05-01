@@ -7436,15 +7436,6 @@ a:hover {
   background-color: #fff;
   left: 1em; }
 
-.my-modal .my-file {
-  padding: 20px;
-  border: 1px dashed #a8acae;
-  width: 100%;
-  background-color: #f2f5f6; }
-  .my-modal .my-file input {
-    width: inherit;
-    font-size: 0.8em; }
-
 .my-modal .modal-content {
   padding: 30px; }
 
@@ -7466,6 +7457,15 @@ a:hover {
 @media (min-width: 768px) {
   .my-modal .modal-content {
     padding: 40px 60px 50px; } }
+
+.my-file {
+  padding: 20px;
+  border: 1px dashed #a8acae;
+  width: 100%;
+  background-color: #f2f5f6; }
+  .my-file input {
+    width: inherit;
+    font-size: 0.8em; }
 
 .breadcrumb-box {
   margin-top: 0.5em;
@@ -7828,7 +7828,7 @@ select:focus {
 
 .btn-sister {
   border: 2px solid #ff3495;
-  padding: 12px 30px 15px;
+  padding: 12px 30px 13px;
   line-height: 1em; }
 
 .btn-sister:hover {
@@ -8130,26 +8130,27 @@ select:focus {
 
 .btn-radio-color:hover,
 .btn-radio-diametr:hover {
-  border-color: #00a6ff; }
+  border-color: #fee44c; }
 
 .btn-radio-color.active {
   padding: 0px;
-  border: 3px solid #00a6ff;
+  border: 3px solid #fee44c;
   outline: none; }
 
 .btn.active,
 .btn.focus {
   outline: none; }
 
-.btn-radio-diametr {
+.btn-group-toggle .btn-radio-diametr {
   border: 1px solid #e9ecef;
   margin-right: 3px;
-  margin-bottom: 5px; }
+  margin-bottom: 6px; }
+  .btn-group-toggle .btn-radio-diametr:hover {
+    border-color: #fee44c; }
 
-.btn-radio-diametr.active {
-  background-color: #00a6ff;
-  border-color: #00a6ff;
-  color: #fff; }
+.btn-group-toggle .btn-radio-diametr.active {
+  background-color: #fff8cf;
+  border-color: #fee44c; }
 
 .btn-povorot {
   border: 1px solid #dedede;
@@ -8285,7 +8286,12 @@ div.scrollup:hover {
 .rating-area {
   overflow: hidden;
   width: 265px;
+  display: inline-block;
+  vertical-align: middle;
   margin: 0 auto; }
+
+.valmdl {
+  vertical-align: middle; }
 
 .rating-area:not(:checked) > input {
   display: none; }
@@ -8337,6 +8343,22 @@ div.scrollup:hover {
   vertical-align: text-bottom; }
 
 .rating-mini > span.active {
+  color: #fee44c; }
+
+.rating-result {
+  width: 265px;
+  margin-bottom: 1em; }
+
+.rating-result span {
+  padding: 0;
+  font-size: 40px;
+  line-height: 1;
+  color: lightgrey; }
+
+.rating-result > span:before {
+  content: '★'; }
+
+.rating-result > span.active {
   color: #fee44c; }
 
 .data-img {
@@ -8880,9 +8902,60 @@ p.clrnm {
   margin-right: .3em;
   font-weight: 500; }
 
+.rtb {
+  margin-top: 1em;
+  margin-bottom: 1.5em; }
+  .rtb h4 {
+    margin-bottom: 0; }
+  .rtb .rating-mini {
+    margin-bottom: 0px;
+    display: block; }
+  .rtb .p-nick {
+    font-weight: 500;
+    margin-bottom: 0em;
+    margin-top: 1em; }
+  .rtb .prec {
+    padding-right: 35px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 25px auto;
+    display: inline-block;
+    height: 30px;
+    padding-top: 4px;
+    margin-bottom: 0; }
+  .rtb .prec.rec {
+    background-image: url(../img/rec.svg); }
+  .rtb .prec.norec {
+    background-image: url(../img/norec.svg);
+    background-position: right top 5px; }
+
 .mclr {
   display: inline-block;
   margin-right: .3em; }
+
+.fb a {
+  display: inline-block; }
+  .fb a .revf {
+    height: 110px;
+    width: auto;
+    margin-right: .5em;
+    margin-bottom: .5em; }
+
+.pink {
+  color: #ff3495; }
+
+.nav-revs li a {
+  margin-right: 2em;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px; }
+  .nav-revs li a.active, .nav-revs li a:hover {
+    border-bottom: 2px solid #fee44c; }
+
+.otzbox {
+  padding-top: 3em;
+  padding-bottom: 2em; }
 
 .footer .first-section {
   padding-top: 40px;

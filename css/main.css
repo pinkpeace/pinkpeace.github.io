@@ -7462,7 +7462,8 @@ a:hover {
   padding: 20px;
   border: 1px dashed #a8acae;
   width: 100%;
-  background-color: #f2f5f6; }
+  background-color: #f2f5f6;
+  border-radius: 3px; }
   .my-file input {
     width: inherit;
     font-size: 0.8em; }
@@ -7808,7 +7809,7 @@ select:focus {
   background-color: #ff3495;
   color: white;
   font-weight: 600;
-  padding: 12px 30px 15px;
+  padding: 12px 30px 13px;
   line-height: 1em; }
 
 .btn-simple:hover {
@@ -8084,9 +8085,8 @@ select:focus {
     border-color: #f2f5f6;
     background-color: #f2f5f6; }
   .main-right select.want-it {
-    background-color: #fff;
+    background-color: #fff8cf;
     color: inherit;
-    background: url(../img/select-ok.svg) right 15px top 10px no-repeat #fff;
     background-size: 13px;
     border-color: #fee44c; }
   .main-right .btn-hint {
@@ -8904,7 +8904,7 @@ p.clrnm {
 
 .rtb {
   margin-top: 1em;
-  margin-bottom: 1.5em; }
+  margin-bottom: 3em; }
   .rtb h4 {
     margin-bottom: 0; }
   .rtb .rating-mini {
@@ -8935,11 +8935,29 @@ p.clrnm {
 
 .fb a {
   display: inline-block; }
-  .fb a .revf {
-    height: 110px;
-    width: auto;
-    margin-right: .5em;
-    margin-bottom: .5em; }
+
+.fb .revf {
+  height: 110px;
+  width: auto;
+  margin-right: .5em;
+  margin-bottom: .5em; }
+
+.fb .loadimg {
+  display: inline-block;
+  position: relative; }
+  .fb .loadimg button {
+    position: absolute;
+    right: 4px;
+    top: -2px;
+    width: 16px;
+    height: 16px;
+    background-color: #ff3495;
+    border-radius: 50%;
+    padding: 0;
+    background-image: url(../img/minclose.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px 8px; }
 
 .pink {
   color: #ff3495; }
@@ -8956,6 +8974,20 @@ p.clrnm {
 .otzbox {
   padding-top: 3em;
   padding-bottom: 2em; }
+
+.answ {
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #f2f5f6;
+  position: relative; }
+  .answ:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #f2f5f6;
+    border-left: 10px solid #f2f5f6; }
 
 .footer .first-section {
   padding-top: 40px;

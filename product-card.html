@@ -700,7 +700,7 @@
                         </div>
                         <div class="form-group">
                             <label for="checkMaterial" class="">Материал</label>
-                            <select class="form-control product-sel" id="checkMaterial">
+                            <select class="form-control product-sel want-it" id="checkMaterial">
                                 <!--     <option class="placeholder" value="0">–</option> -->
                                 <option>Сосна</option>
                                 <option selected>Сосна под покраску</option>
@@ -803,7 +803,7 @@
                         <a class="nav-link " href="#instr">Инструкция по сборке</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#otzivy">Отзывы</a>
+                        <a class="nav-link" href="#reviews">Отзывы</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="#voprosy">Вопросы</a>
@@ -1377,6 +1377,21 @@
                                                 <p class="text-grey">Email не публикуется на сайте, он нужен для уведомлений об ответе на ваш отзыв или вопрос</p>
                                             </div>
                                             <div class="form-group mb-4">
+                                                <div class="fb">
+                                                    <div class="loadimg">
+                                                        <img src="img/prob_vert.jpg" alt="" class="revf">
+                                                        <button class="btn btn-close"></button>
+                                                    </div>
+                                                    <div class="loadimg">
+                                                        <img src="img/prod-1.jpg" alt="" class="revf">
+                                                        <button class="btn btn-close"></button>
+                                                    </div>
+                                                    <div class="loadimg">
+                                                        <img src="img/prod-5.jpg" alt="" class="revf">
+                                                        <button class="btn btn-close"></button>
+                                                    </div>
+                                                    
+                                                </div>
                                                 <div class="my-file">
                                                     <label for="fdfile">Загрузить фото. Не более 4-х, максимальный размер каждого - 10 мб.</label>
                                                     <input type="file" class="form-control-file" id="fdfile">
@@ -1409,7 +1424,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <button class="btn btn-sister mx-auto" type="button" data-toggle="collapse" data-target="#ostotz" aria-expanded="false" aria-controls="ostotz" id="">Оставить отзыв</button>
+                                <button class="btn btn-sister float-md-right" type="button" data-toggle="collapse" data-target="#ostotz" aria-expanded="false" aria-controls="ostotz" id="musthideR">Оставить отзыв</button>
                             </div>
                         </div>
                     </div>
@@ -1495,9 +1510,140 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="offset-md-3 col-md-9 col-lg-7">
+                            <button class="btn btn-simple">Все отзывы (7)</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane" id="quest" role="tabpanel" aria-labelledby="quest-tab">
-                    Здесь вопросы будут
+                    <div class="rth">
+                        <div class="collapse" id="askUs">
+                            <div class="askbox">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="form-group mb-4">
+                                                <label for="fpluses">Вопрос</label>
+                                                <textarea class="form-control" id="fquest" rows="12"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="form-group mb-4">
+                                                <label class="" for="fName">Ваше имя</label>
+                                                <input type="text" class="form-control" id="fName" placeholder="">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label for="fRecEmail">Email </label>
+                                                <input type="email" class="form-control mb-2" id="fRecEmail" placeholder="">
+                                                <p class="text-grey">Email не публикуется на сайте, он нужен для уведомлений об ответе на ваш отзыв или вопрос</p>
+                                            </div>
+                                            <p class="text-xs text-grey">
+                                                Нажимая на кнопку «Отправить», вы соглашаетесь с условиями <a class="a-link" href="">
+                                                    Публичной оферты.</a>
+                                            </p>
+                                            <button type="submit" class="btn btn-simple float-right">Отправить отзыв</button>
+                                            <button type="submit" class="btn btn-sister float-right mr-2" type="button" data-toggle="collapse" data-target="#askUs" aria-expanded="false" aria-controls="askUs">Отмена</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-md-3 col-md-9 col-lg-8">
+                                <button class="btn btn-sister float-md-right" type="button" data-toggle="collapse" data-target="#askUs" aria-expanded="false" aria-controls="askUs" id="musthideQ">Задать вопрос</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rtb">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="p-nick">Nickname</p>
+                                <p class="text-grey">20 апреля 2020</p>
+                            </div>
+                            <div class="col-md-9 col-lg-7">
+                                <h4>Вопрос</h4>
+                                <p>
+                                    Добрый день, подскажите пожалуйста, можно ли вписать лестницу К-001М в проем 1200 ммм(длина) на 870 мм (ширина)?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="p-nick">Lestnicy-prosto <span class="pink">.ru</span></p>
+                                <p class="text-grey">21 апреля 2020</p>
+                            </div>
+                            <div class="col-md-9 col-lg-7">
+                                <div class="answ">
+                                    <h4>Ответ</h4>
+                                    <p>
+                                        Да, это возможно с небольшой доработкой: для этого нужно "укоротить" высоту нижней ступени на 80 мм. Вы можете сделать это самостоятельно или с нашей помощью, обсудив детали с менеджером при обработке заказа
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rtb">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="p-nick">Nickname</p>
+                                <p class="text-grey">27 апреля 2020</p>
+                            </div>
+                            <div class="col-md-9 col-lg-7">
+                                <h4>Вопрос</h4>
+                                <p>
+                                    Можно ли заказать эту лестницу с другими ограждениями?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="p-nick">Lestnicy-prosto <span class="pink">.ru</span></p>
+                                <p class="text-grey">27 апреля 2020</p>
+                            </div>
+                            <div class="col-md-9 col-lg-7">
+                                <div class="answ">
+                                    <h4>Ответ</h4>
+                                    <p>
+                                        Да, вы можете выбрать любые ограждения из нашего каталога, при оформлении заказа, укажите, что вам необходимо заменить базовое ограждение.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rtb">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="p-nick">Иванов Петров</p>
+                                <p class="text-grey">5 мая 2020</p>
+                            </div>
+                            <div class="col-md-9 col-lg-7">
+                                <h4>Вопрос</h4>
+                                <p>
+                                    Сколько времени займет доставка в Белгородскую область?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="p-nick">Lestnicy-prosto <span class="pink">.ru</span></p>
+                                <p class="text-grey">5 мая 2020</p>
+                            </div>
+                            <div class="col-md-9 col-lg-7">
+                                <div class="answ">
+                                    <h4>Ответ</h4>
+                                    <p>
+                                        Здравствуйте, до Белгорода до 5 дней с момента оплаты, чтобы ответить точнее, нужно знать название населенного пункта.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-3 col-md-9 col-lg-7">
+                            <button class="btn btn-simple">Все вопросы (21)</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

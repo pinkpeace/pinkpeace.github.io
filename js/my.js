@@ -1,5 +1,5 @@
-// Слайдеры
-$(function() {
+$(document).ready(function() {
+    // Слайдеры
     $('.main-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -88,17 +88,17 @@ $(function() {
         speed: 300,
         slidesToShow: 4,
         responsive: [{
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
             {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    variableWidth:false,
-                    variableHight:true,
+                    variableWidth: false,
+                    variableHight: true,
                 }
             },
         ]
@@ -114,12 +114,27 @@ $(function() {
         $("html, body").animate({
             scrollTop: 0
         }, 1000);
-    })
-});
-
-//Инициируем карусель фото в анонсе товаров
-$(document).ready(function() {
+    });
+    //Инициируем карусель фото в анонсе товаров
     $(".prev-photo-item").brazzersCarousel();
+
+    // Скрываем кнопку "оставить отзыв" и показываем ее
+    $('#ostotz').on('show.bs.collapse', function() {
+       
+        $('#musthideR').hide();
+    });
+    $('#ostotz').on('hidden.bs.collapse', function() {
+        
+        $('#musthideR').show();
+    });
+    $('#askUs').on('show.bs.collapse', function() {
+       
+        $('#musthideQ').hide();
+    });
+    $('#askUs').on('hidden.bs.collapse', function() {
+        
+        $('#musthideQ').show();
+    });
 });
 
 

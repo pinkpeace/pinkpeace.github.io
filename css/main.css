@@ -8914,6 +8914,8 @@ p.clrnm {
     font-weight: 500;
     margin-bottom: 0em;
     margin-top: 1em; }
+  .rtb .text-grey {
+    margin-bottom: 0; }
   .rtb .prec {
     padding-right: 35px;
     background-repeat: no-repeat;
@@ -8983,7 +8985,7 @@ p.clrnm {
   .answ:before {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -12px;
     left: 0;
     border: 10px solid transparent;
     border-bottom: 10px solid #f2f5f6;

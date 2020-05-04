@@ -673,7 +673,13 @@
                     <form class="mb-3">
                         <div class="form-group">
                             <label for="checkHight" class="">Высота</label>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Высота от пола нижнего этажа до пола верхнего">
+                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content='
+                            <div  class="row">
+                                <div class="col">
+                                    <img src="img/scheme2.jpg" alt="" class="img-fluid">
+                                    Здесь будет картинка поясняющая, что такое высота лестницы
+                                </div>
+                            </div>'>
                                 ?
                             </button>
                             <select class="form-control product-sel" id="checkHight">
@@ -685,7 +691,13 @@
                         </div>
                         <div class="form-group">
                             <label for="checkLong" class="">Мин. проём (Д × Ш)</label>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
+                            <button type="button" data-html="true" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content='
+                            <div  class="row">
+                                <div class="col">
+                                    <img src="img/scheme2.jpg" alt="" class="img-fluid">
+                                    Здесь будет картинка поясняющая, что такое проём
+                                </div>
+                            </div>'>
                                 ?
                             </button>
                             <select class="form-control product-sel" id="checkLong">
@@ -698,6 +710,15 @@
                         </div>
                         <div class="form-group">
                             <label for="checkMaterial" class="">Материал</label>
+                            <button type="button" data-html="true" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content='
+                            <div  class="row">
+                                <div class="col">
+                                    <img src="img/07_Larch.jpg" alt="" class="img-fluid">
+                                    Здесь будет подсказка по материалам
+                                </div>
+                            </div>'>
+                                ?
+                            </button>
                             <select class="form-control product-sel" id="checkMaterial">
                                 <option class="placeholder" value="0">–</option>
                                 <option>Сосна</option>
@@ -706,32 +727,25 @@
                                 <option>Дуб</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group d-none">
                             <p class="p-param-label">Цвет каркаса:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio-color">
                                     <input type="radio" name="options" id="option10">
-                                    <img src="img/white.jpg" alt="" class="stair-color-img">
+                                    <img src="img/cg.jpg" alt="" class="stair-color-img">
                                 </label>
                                 <label class="btn  btn-radio-color">
                                     <input type="radio" name="options" id="option2">
-                                    <img src="img/venge.jpg" alt="" class="stair-color-img">
+                                    <img src="img/cb.jpg" alt="" class="stair-color-img">
                                 </label>
                                 <label class="btn  btn-radio-color">
                                     <input type="radio" name="options" id="option3">
-                                    <img src="img/sahara.jpg" alt="" class="stair-color-img">
-                                </label>
-                                <label class="btn  btn-radio-color">
-                                    <input type="radio" name="options" id="option4">
-                                    <img src="img/no.jpg" alt="" class="stair-color-img">
+                                    <img src="img/cw.jpg" alt="" class="stair-color-img">
                                 </label>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group d-none">
                             <p class="p-param-label">Выберите диаметр:</p>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
-                                ?
-                            </button>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio-diametr">
                                     <input type="radio" name="options" id="option1"> 120 мм
@@ -747,8 +761,22 @@
                                 </label>
                             </div>
                         </div>
+
                         <div class="form-group">
                             <p class="p-param-label">Выберите поворот:</p>
+                            <button type="button" class="btn btn-hint" data-container="body" data-content='
+                            <div  class="row">
+                                <div class="col-6">
+                                    <img src="img/prod-3p.jpg" alt="" class="img-fluid">
+                                    Поворот направо
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/prod-3l.jpg" alt="" class="img-fluid">
+                                    Поворот налево
+                                </div>
+                            </div>' data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true">
+                                ?
+                            </button>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-povorot">
                                     <input type="radio" name="options" id="option9"> направо
@@ -761,7 +789,17 @@
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                             <label class="custom-control-label" for="customCheck1">Добавить подступенки</label>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
+                            <button type="button" data-toggle="popover" data-html="true" class="btn btn-hint" data-container="body" data-content='
+                            <div  class="row">
+                                <div class="col-6">
+                                    <img src="img/prod-6.jpg" alt="" class="img-fluid">
+                                    Лестница без подступенков
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/prod-5.jpg" alt="" class="img-fluid">
+                                    Лестница с подступенками
+                                </div>
+                            </div>' data-placement="top" data-trigger="hover">
                                 ?
                             </button>
                         </div>

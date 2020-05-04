@@ -8991,6 +8991,10 @@ p.clrnm {
     border-bottom: 10px solid #f2f5f6;
     border-left: 10px solid #f2f5f6; }
 
+.hntbx {
+  display: inline-block;
+  position: relative; }
+
 .footer .first-section {
   padding-top: 40px;
   color: #454e5e; }

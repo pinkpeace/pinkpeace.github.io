@@ -675,7 +675,13 @@
                     <form class="mb-3">
                         <div class="form-group d-none">
                             <label for="checkHight" class="">Высота</label>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Высота от пола нижнего этажа до пола верхнего">
+                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content='
+                            <div  class="row">
+                                <div class="col">
+                                    <img src="img/scheme2.jpg" alt="" class="img-fluid">
+                                    Здесь будет картинка поясняющая, что такое высота лестницы
+                                </div>
+                            </div>'>
                                 ?
                             </button>
                             <select class="form-control product-sel" id="checkHight">
@@ -687,7 +693,13 @@
                         </div>
                         <div class="form-group d-none">
                             <label for="checkLong" class="">Мин. проём (Д × Ш)</label>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
+                            <button type="button" data-html="true" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content='
+                            <div  class="row">
+                                <div class="col">
+                                    <img src="img/scheme2.jpg" alt="" class="img-fluid">
+                                    Здесь будет картинка поясняющая, что такое проём
+                                </div>
+                            </div>'>
                                 ?
                             </button>
                             <select class="form-control product-sel" id="checkLong">
@@ -700,12 +712,42 @@
                         </div>
                         <div class="form-group">
                             <label for="checkMaterial" class="">Материал</label>
+                            <button type="button" data-html="true" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content='
+                            <div  class="row">
+                                <div class="col">
+                                    <img src="img/07_Larch.jpg" alt="" class="img-fluid">
+                                    Здесь будет подсказка по материалам
+                                </div>
+                            </div>'>
+                                ?
+                            </button>
                             <select class="form-control product-sel want-it" id="checkMaterial">
                                 <!--     <option class="placeholder" value="0">–</option> -->
                                 <option>Сосна</option>
                                 <option selected>Сосна под покраску</option>
                                 <option>Сосна + дуб</option>
                                 <option>Дуб</option>
+                            </select>
+                        </div>
+                        <div class="form-group d-none">
+                            <label for="checkMaterial" class="">Стойки ограждения</label>
+                            <button type="button" data-toggle="popover" data-html="true" class="btn btn-hint" data-container="body" data-content='
+                            <div  class="row">
+                                <div class="col-6">
+                                    <img src="img/st.jpg" alt="" class="img-fluid">
+                                    Нержавеющая сталь
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/st2.jpg" alt="" class="img-fluid">
+                                    Крашеные
+                                </div>
+                            </div>' data-placement="top" data-trigger="hover">
+                                ?
+                            </button>
+                            <select class="form-control product-sel want-it" id="checkMaterial">
+                                <!--     <option class="placeholder" value="0">–</option> -->
+                                <option selected>Крашеные</option>
+                                <option>Нержавеющая сталь</option>
                             </select>
                         </div>
                         <div class="form-group d-none">
@@ -731,9 +773,6 @@
                         </div>
                         <div class="form-group d-none">
                             <p class="p-param-label">Выберите диаметр:</p>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
-                                ?
-                            </button>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio-diametr">
                                     <input type="radio" name="options" id="d120"> 120 мм
@@ -749,8 +788,41 @@
                                 </label>
                             </div>
                         </div>
+                        <div class="form-group d-none">
+                            <p class="p-param-label">Высота шага:</p>
+                            <button type="button" class="btn btn-hint" data-container="body" data-content='
+                            <div  class="row">
+                                <div class="col">
+                                    <img src="img/prod-3p.jpg" alt="" class="img-fluid">
+                                    Здесь подсказка по высоте шага
+                                </div>
+                            </div>' data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true">
+                                ?
+                            </button>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn  btn-radio-diametr">
+                                    <input type="radio" name="options" id="option1"> 180 мм
+                                </label>
+                                <label class="btn  btn-radio-diametr">
+                                    <input type="radio" name="options" id="option5"> 220 мм
+                                </label>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <p class="p-param-label">Выберите поворот:</p>
+                            <button type="button" class="btn btn-hint" data-container="body" data-content='
+                            <div  class="row">
+                                <div class="col-6">
+                                    <img src="img/prod-3p.jpg" alt="" class="img-fluid">
+                                    Поворот направо
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/prod-3l.jpg" alt="" class="img-fluid">
+                                    Поворот налево
+                                </div>
+                            </div>' data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true">
+                                ?
+                            </button>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-povorot">
                                     <input type="radio" name="options" id="povright"> направо
@@ -763,13 +835,19 @@
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
                             <label class="custom-control-label" for="customCheck1">Добавить подступенки</label>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-content="Подсказка по проёму">
+                            <button type="button" class="btn btn-hint" data-container="body" data-content='
+                            <div  class="row">
+                                <div class="col-6">
+                                    <img src="img/prod-6.jpg" alt="" class="img-fluid">
+                                    Лестница без подступенков
+                                </div>
+                                <div class="col-6">
+                                    <img src="img/prod-5.jpg" alt="" class="img-fluid">
+                                    Лестница с подступенками
+                                </div>
+                            </div>' data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true">
                                 ?
                             </button>
-                        </div>
-                        <div class="modif-name-box d-none">
-                            <p class="d-inline"> После выбора параметров здесь появится название модификации</p>
-                            <a class="a-link d-inline" href="">и ссылка подробнее</a>
                         </div>
                         <!--  <button class="btn btn-buy mt-4 btn-block disabled">Купить</button> -->
                         <button class="btn btn-buy mt-4 btn-block">Купить</button>
@@ -1332,7 +1410,7 @@
                                 <form>
                                     <div class="form-group mb-4">
                                         <label for="myOpin" class="valmdl">Поставьте свою оценку</label>
-                                        <div class="rating-area">
+                                        <div class="rating-area" id="#myOpin">
                                             <input type="radio" id="star-5" name="rating" value="5">
                                             <label for="star-5" title="Оценка «5»"></label>
                                             <input type="radio" id="star-4" name="rating" value="4">
@@ -1372,8 +1450,8 @@
                                                 <input type="text" class="form-control" id="fName" placeholder="">
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label for="fRecEmail">Email </label>
-                                                <input type="email" class="form-control mb-2" id="fRecEmail" placeholder="">
+                                                <label for="fRecEmail2">Email </label>
+                                                <input type="email" class="form-control mb-2" id="fRecEmail2" placeholder="">
                                                 <p class="text-grey">Email не публикуется на сайте, он нужен для уведомлений об ответе на ваш отзыв или вопрос</p>
                                             </div>
                                             <div class="form-group mb-4">
@@ -1390,7 +1468,6 @@
                                                         <img src="img/prod-5.jpg" alt="" class="revf">
                                                         <button class="btn btn-close"></button>
                                                     </div>
-                                                    
                                                 </div>
                                                 <div class="my-file">
                                                     <label for="fdfile">Загрузить фото. Не более 4-х, максимальный размер каждого - 10 мб.</label>
@@ -1403,8 +1480,8 @@
                                                     Я не робот
                                                 </label>
                                             </div>
-                                            <button type="submit" class="btn btn-simple float-right">Отправить отзыв</button>
-                                            <button type="submit" class="btn btn-sister float-right mr-2" type="button" data-toggle="collapse" data-target="#ostotz" aria-expanded="false" aria-controls="ostotz">Отмена</button>
+                                            <button class="btn btn-simple float-right">Отправить отзыв</button>
+                                            <button class="btn btn-sister float-right mr-2" type="button" data-toggle="collapse" data-target="#ostotz" aria-expanded="false" aria-controls="ostotz">Отмена</button>
                                         </div>
                                     </div>
                                 </form>
@@ -1530,8 +1607,8 @@
                                         </div>
                                         <div class="col-lg-5">
                                             <div class="form-group mb-4">
-                                                <label class="" for="fName">Ваше имя</label>
-                                                <input type="text" class="form-control" id="fName" placeholder="">
+                                                <label class="" for="fName2">Ваше имя</label>
+                                                <input type="text" class="form-control" id="fName2" placeholder="">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label for="fRecEmail">Email </label>
@@ -1542,8 +1619,8 @@
                                                 Нажимая на кнопку «Отправить», вы соглашаетесь с условиями <a class="a-link" href="">
                                                     Публичной оферты.</a>
                                             </p>
-                                            <button type="submit" class="btn btn-simple float-right">Отправить отзыв</button>
-                                            <button type="submit" class="btn btn-sister float-right mr-2" type="button" data-toggle="collapse" data-target="#askUs" aria-expanded="false" aria-controls="askUs">Отмена</button>
+                                            <button class="btn btn-simple float-right">Задать вопрос</button>
+                                            <button class="btn btn-sister float-right mr-2" type="button" data-toggle="collapse" data-target="#askUs" aria-expanded="false" aria-controls="askUs">Отмена</button>
                                         </div>
                                     </div>
                                 </form>

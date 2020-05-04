@@ -104,9 +104,6 @@ $(document).ready(function() {
         ]
     });
     $('[data-fancybox="gallery"]').fancybox({});
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    });
 
     // при нажатии на кнопку scrollup
     $('.scrollup').click(function() {
@@ -120,24 +117,29 @@ $(document).ready(function() {
 
     // Скрываем кнопку "оставить отзыв" и показываем ее
     $('#ostotz').on('show.bs.collapse', function() {
-       
+
         $('#musthideR').hide();
     });
     $('#ostotz').on('hidden.bs.collapse', function() {
-        
+
         $('#musthideR').show();
     });
     $('#askUs').on('show.bs.collapse', function() {
-       
+
         $('#musthideQ').hide();
     });
     $('#askUs').on('hidden.bs.collapse', function() {
-        
+
         $('#musthideQ').show();
     });
+
 });
 
-
+$("[data-toggle=popover]").popover({
+    html: true,
+    trigger: 'hover',
+    placement: 'top'
+});
 // при прокрутке окна (window)
 $(window).scroll(function() {
     // если пользователь прокрутил страницу более чем на 200px

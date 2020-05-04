@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
+    <div class="modal fade" id="city_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog my-modal city-modal" role="document">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">
@@ -23,39 +23,184 @@
                         </svg>
                     </span>
                 </button>
-                <h2 class="" id="exampleModalLabel">Выберите город</h2>
-                <ul class="city-ul">
-                  <li><a href="#">Москва</a></li>
-                  <li><a href="#">Санкт-Петербург</a></li>
-                  <li><a href="#">Екатеринбург</a></li>
-                  <li><a href="#">Нижний Новгород</a></li>
-                  <li><a href="#">Волгоград</a></li>
-                  <li><a href="#">Воронеж</a></li>
-                  <li><a href="#">Челябинск</a></li>
-                  <li><a href="#">Уфа</a></li>
-                  <li><a href="#">Минск</a></li>
-                  <li><a href="#">Бишкек</a></li>
-                  <li><a href="#">Великий Новгород</a></li>
-                  <li><a href="#">Астрахань</a></li>
-                  <li><a href="#">Липецк</a></li>
-                  <li><a href="#">Химки</a></li>
-                  <li><a href="#">Брянск</a></li>
-                  <li><a href="#">Москва</a></li>
-                  <li><a href="#">Санкт-Петербург</a></li>
-                  <li><a href="#">Екатеринбург</a></li>
-                  <li><a href="#">Нижний Новгород</a></li>
-                  <li><a href="#">Волгоград</a></li>
-                  <li><a href="#">Воронеж</a></li>
-                  <li><a href="#">Челябинск</a></li>
-                  <li><a href="#">Уфа</a></li>
-                  <li><a href="#">Минск</a></li>
-                  <li><a href="#">Бишкек</a></li>
-                  <li><a href="#">Великий Новгород</a></li>
-                  <li><a href="#">Астрахань</a></li>
-                  <li><a href="#">Липецк</a></li>
-                  <li><a href="#">Химки</a></li>
-                  <li><a href="#">Брянск</a></li>
-                </ul>
+                <h2 class="" id="">Ваш город</h2>
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Ваш город">
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="city-list">
+                            <ul class="" data-letter="a">
+                                <li><a href="#">Абакан</a></li>
+                                <li><a href="#">Астрахань</a></li>
+                                <li><a href="#">Алтай</a></li>
+                                <li><a href="#">Алтайский край</a></li>
+                                <li><a href="#">Амурский край</a></li>
+                            </ul>
+                            <ul class="" data-letter="b">
+                                <li><a href="#">Бобров</a></li>
+                                <li><a href="#">Барнаул</a></li>
+                                <li><a href="#">Белгород</a></li>
+                                <li><a href="#">Брянская обл.</a></li>
+                                <li><a href="#">Бурятия</a></li>
+                            </ul>
+                            <ul class="" data-letter="v">
+                                <li><a href="#">Волгоград</a></li>
+                                <li><a href="#">Воронеж</a></li>
+                                <li><a href="#">Великий Новгород</a></li>
+                                <li><a href="#">Владимир</a></li>
+                                <li><a href="#">Вологда</a></li>
+                                <li><a href="#">Ватикан</a></li>
+                                <li><a href="#">Валериан</a></li>
+                            </ul>
+                            <ul class="" data-letter="g">
+                                <li><a href="#">Гондурас</a></li>
+                            </ul>
+                            <ul class="" data-letter="d">
+                                <li><a href="#">Дмитров</a></li>
+                                <li><a href="#">Дагестан</a></li>
+                            </ul>
+                            <ul class="" data-letter="e">
+                                <li><a href="#">Екатеринбург</a></li>
+                                <li><a href="#">Ереван</a></li>
+                            </ul>
+                            <ul class="" data-letter="j">
+                                <li><a href="#">Женева</a></li>
+                            </ul>
+                            <ul class="" data-letter="z">
+                                <li><a href="#">Задонск</a></li>
+                                <li><a href="#">Зеленоград</a></li>
+                                <li><a href="#">Зеленодольск</a></li>
+                                <li><a href="#">Забайкальский край</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="city-list">
+                            <ul class="" data-letter="i">
+                                <li><a href="#">Иркутск</a></li>
+                                <li><a href="#">Истра</a></li>
+                                <li><a href="#">Иванов</a></li>
+                                <li><a href="#">Ингушетия</a></li>
+                            </ul>
+                            <ul class="" data-letter="ii">
+                                <li><a href="#">Йошкар-ола</a></li>
+                            </ul>
+                            <ul class="" data-letter="k">
+                                <li><a href="#">Калининград</a></li>
+                                <li><a href="#">Киров</a></li>
+                                <li><a href="#">Кемерово</a></li>
+                                <li><a href="#">Калуга</a></li>
+                                <li><a href="#">Краснодар</a></li>
+                                <li><a href="#">Красногорск</a></li>
+                                <li><a href="#">Кострома</a></li>
+                                <li><a href="#">Крым</a></li>
+                                <li><a href="#">Калмыкия</a></li>
+                                <li><a href="#">Казань</a></li>
+                            </ul>
+                            <ul class="" data-letter="l">
+                                <li><a href="#">Липецк</a></li>
+                                <li><a href="#">Лыткарино</a></li>
+                            </ul>
+                            <ul class="" data-letter="m">
+                                <li><a href="#">Москва</a></li>
+                                <li><a href="#">Мурманск</a></li>
+                                <li><a href="#">Мытищи</a></li>
+                                <li><a href="#">Могилев</a></li>
+                                <li><a href="#">Минск</a></li>
+                                <li><a href="#">Магадан</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="city-list">
+                            <ul class="" data-letter="n">
+                                <li><a href="#">Нижний Новгород</a></li>
+                                <li><a href="#">Норильск</a></li>
+                                <li><a href="#">Нижний Волочек</a></li>
+                                <li><a href="#">Новгород</a></li>
+                                <li><a href="#">Новосибирск</a></li>
+                            </ul>
+                            <ul class="" data-letter="o">
+                                <li><a href="#">Оренбург</a></li>
+                                <li><a href="#">Омск</a></li>
+                                <li><a href="#">Орел</a></li>
+                            </ul>
+                            <ul class="" data-letter="p">
+                                <li><a href="#">Петрозаводск</a></li>
+                                <li><a href="#">Пермь</a></li>
+                                <li><a href="#">Пенза</a></li>
+                                <li><a href="#">Псков</a></li>
+                            </ul>
+                            <ul class="" data-letter="r">
+                                <li><a href="#">Ростов</a></li>
+                                <li><a href="#">Рязань</a></li>
+                                <li><a href="#">Рига</a></li>
+                                <li><a href="#">Сыктывкар</a></li>
+                                <li><a href="#">Сочи</a></li>
+                                <li><a href="#">Смоленск</a></li>
+                                <li><a href="#">Сахалин</a></li>
+                            </ul>
+                            <ul class="" data-letter="s">
+                                <li><a href="#">Санкт-Петербург</a></li>
+                                <li><a href="#">Саратов</a></li>
+                                <li><a href="#">Самара</a></li>
+                                <li><a href="#">Сыктывкар</a></li>
+                                <li><a href="#">Сочи</a></li>
+                                <li><a href="#">Смоленск</a></li>
+                                <li><a href="#">Сахалин</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="city-list">
+                            <ul class="" data-letter="t">
+                                <li><a href="#">Тамбов</a></li>
+                                <li><a href="#">Тюмень</a></li>
+                                <li><a href="#">Тверь</a></li>
+                                <li><a href="#">Томск</a></li>
+                                <li><a href="#">Тыва</a></li>
+                            </ul>
+                            <ul class="" data-letter="u">
+                                <li><a href="#">Уфа</a></li>
+                                <li><a href="#">Ульяновск</a></li>
+                            </ul>
+                            <ul class="" data-letter="f">
+                                <li><a href="#">Феодосия</a></li>
+                                <li><a href="#">Фергана</a></li>
+                            </ul>
+                            <ul class="" data-letter="h">
+                                <li><a href="#">Хакасия</a></li>
+                            </ul>
+                            <ul class="" data-letter="c">
+                                <li><a href="#">Цежгород</a></li>
+                            </ul>
+                            <ul class="" data-letter="ch">
+                                <li><a href="#">Челябинск</a></li>
+                                <li><a href="#">Чебоксары</a></li>
+                                <li><a href="#">Чувашия</a></li>
+                            </ul>
+                            <ul class="" data-letter="sh">
+                                <li><a href="#">Шереметьево</a></li>
+                                <li><a href="#">Шатура</a></li>
+                            </ul>
+                            <ul class="" data-letter="she">
+                                <li><a href="#">Щёлково</a></li>
+                            </ul>
+                            <ul class="" data-letter="aa">
+                                <li><a href="#">Энгельс</a></li>
+                                <li><a href="#">Эщегород</a></li>
+                            </ul>
+                            <ul class="" data-letter="u">
+                                <li><a href="#">Юрмала</a></li>
+                            </ul>
+                            <ul class="" data-letter="ya">
+                                <li><a href="#">Ярославль</a></li>
+                                <li><a href="#">Ямало-Ненецкий А.О.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -191,6 +336,52 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="notmysize" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h3 class="mb-3 text-center">Заказать <span class="pink">бесплатный</span> расчет стоимости с моими размерами</h3>
+                <p class="text-center mb-5 text-dgrey">Срок изготовление лестницы на заказ от 4-х недель.</p>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone1" class="my-label">Телефон</label>
+                            <input type="tel" class="form-control" id="inputPhone1">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="my-label" for="inputEmail1">Email</label>
+                            <input type="email" class="form-control" id="inputEmail1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label class="my-label" for="exampleFormControlTextarea1">Опишите необходимые параметры</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="my-file text-center">
+                            <input type="file" class="" id="inputGroupFile01">
+                            <label class="my-label sr-only" for="inputGroupFile01">Прикрепить файл</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>        
+                </form>
+            </div>
+        </div>
+    </div>
         <div class="header">
             <div class="container-fluid container-xl">
                 <nav class="navbar navbar-expand-lg align-items-center justify-content-around">
@@ -202,7 +393,7 @@
                         <p>Лестницы<br>просто<span>.ру</span></p>
                     </a>
                     <div class="d-none d-lg-inline flex-wrap mr-lg-4 mr-xl-5 flex-md-shrink-1">
-                        <a class="a-city text-nowrap" href="#" data-toggle="modal" data-target="#exampleModal">
+                        <a class="a-city text-nowrap" href="#" data-toggle="modal" data-target="#city_modal">
                             Нижний Новгород
                         </a>
                         <a class="text-nowrap" href="#">
@@ -331,7 +522,7 @@
                                 </p>
                             </li>
                             <li>
-                                <a class="a-city" href="#" data-toggle="modal" data-target="#exampleModal">
+                                <a class="a-city" href="#" data-toggle="modal" data-target="#city_modal">
                                     Нижний Новгород
                                 </a>
                             </li>
@@ -655,9 +846,9 @@
                                 </span>
                                 <span class="feature-val">42 °</span>
                             </p>
-                            <button data-toggle="modal" data-target="#order_measure" class="a-form-call a-zamer-order">
+                            <a href="#" data-toggle="modal" data-target="#notmysize" class="a-link">
                                 Не подходят размеры?
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

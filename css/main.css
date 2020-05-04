@@ -7436,27 +7436,112 @@ a:hover {
   background-color: #fff;
   left: 1em; }
 
+.my-modal h2,
+.my-modal h3 {
+  line-height: 1.2; }
+
+.my-modal p {
+  line-height: 1.3; }
+
 .my-modal .modal-content {
   padding: 30px; }
 
 .my-modal .btn-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px; }
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff0; }
+  .my-modal .btn-close svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5; }
 
-.my-modal .city-ul {
+.my-modal .city-list ul {
   list-style: none;
   margin: 0;
-  padding: 0; }
-
-.my-modal a {
-  color: inherit; }
+  padding: 0;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 2em; }
+  .my-modal .city-list ul:before {
+    font-weight: 500;
+    font-size: 21px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1em;
+    color: #ff3495; }
+  .my-modal .city-list ul[data-letter="a"]:before {
+    content: "А"; }
+  .my-modal .city-list ul[data-letter="b"]:before {
+    content: "Б"; }
+  .my-modal .city-list ul[data-letter="v"]:before {
+    content: "В"; }
+  .my-modal .city-list ul[data-letter="g"]:before {
+    content: "Г"; }
+  .my-modal .city-list ul[data-letter="d"]:before {
+    content: "Д"; }
+  .my-modal .city-list ul[data-letter="e"]:before {
+    content: "Е"; }
+  .my-modal .city-list ul[data-letter="j"]:before {
+    content: "Ж"; }
+  .my-modal .city-list ul[data-letter="z"]:before {
+    content: "З"; }
+  .my-modal .city-list ul[data-letter="i"]:before {
+    content: "И"; }
+  .my-modal .city-list ul[data-letter="ii"]:before {
+    content: "Й"; }
+  .my-modal .city-list ul[data-letter="k"]:before {
+    content: "К"; }
+  .my-modal .city-list ul[data-letter="l"]:before {
+    content: "Л"; }
+  .my-modal .city-list ul[data-letter="m"]:before {
+    content: "М"; }
+  .my-modal .city-list ul[data-letter="n"]:before {
+    content: "Н"; }
+  .my-modal .city-list ul[data-letter="o"]:before {
+    content: "О"; }
+  .my-modal .city-list ul[data-letter="p"]:before {
+    content: "П"; }
+  .my-modal .city-list ul[data-letter="r"]:before {
+    content: "Р"; }
+  .my-modal .city-list ul[data-letter="s"]:before {
+    content: "С"; }
+  .my-modal .city-list ul[data-letter="t"]:before {
+    content: "Т"; }
+  .my-modal .city-list ul[data-letter="u"]:before {
+    content: "У"; }
+  .my-modal .city-list ul[data-letter="f"]:before {
+    content: "Ф"; }
+  .my-modal .city-list ul[data-letter="h"]:before {
+    content: "Х"; }
+  .my-modal .city-list ul[data-letter="c"]:before {
+    content: "Ц"; }
+  .my-modal .city-list ul[data-letter="ch"]:before {
+    content: "Ч"; }
+  .my-modal .city-list ul[data-letter="sh"]:before {
+    content: "Ш"; }
+  .my-modal .city-list ul[data-letter="she"]:before {
+    content: "Щ"; }
+  .my-modal .city-list ul[data-letter="aa"]:before {
+    content: "Э"; }
+  .my-modal .city-list ul[data-letter="u"]:before {
+    content: "Ю"; }
+  .my-modal .city-list ul[data-letter="ya"]:before {
+    content: "Я"; }
+  .my-modal .city-list ul li a {
+    color: inherit; }
 
 @media (min-width: 768px) {
   .my-modal .modal-content {
-    padding: 40px 60px 50px; } }
+    padding: 30px 50px 40px; } }
+
+@media (min-width: 576px) {
+  .city-modal {
+    max-width: 90%;
+    height: 1000vh; } }
 
 .my-file {
   padding: 20px;

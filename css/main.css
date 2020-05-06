@@ -7690,6 +7690,10 @@ a:hover {
       cursor: default;
       text-decoration: none; } }
 
+.product-area {
+  margin-right: -15px;
+  margin-left: -15px; }
+
 .p-values {
   position: relative;
   width: 100%;
@@ -8201,6 +8205,8 @@ select:focus {
     background-color: #ffffff;
     border: 1px dotted #a8acae;
     margin-top: -2px; }
+  .main-right .old-price {
+    margin-bottom: 0; }
 
 .p-main-price {
   display: inline-block;

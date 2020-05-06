@@ -7682,7 +7682,13 @@ a:hover {
 
 @media (min-width: 992px) {
   .submenu-box ul li {
-    margin-right: 1.5em; } }
+    margin-right: 1.5em; }
+    .submenu-box ul li a {
+      color: #686e86; }
+    .submenu-box ul li a.active {
+      color: #a8acae;
+      cursor: default;
+      text-decoration: none; } }
 
 .p-values {
   position: relative;
@@ -8968,7 +8974,6 @@ p.clrnm {
   border-radius: 3px;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.1); }
   .btn-pdf:hover {
-    border-color: #009de8;
     color: #009de8; }
 
 .mnt {

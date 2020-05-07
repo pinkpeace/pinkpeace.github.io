@@ -249,6 +249,48 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="added_to_cart" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="h-cart">Товар добавлен в корзину</h2>
+                <p class="text-dgrey text-xs">Итого в вашей <a href="#" class="a-link">корзине</a> 1 товар на сумму 52 000 руб.</p>
+                <div class="my-hr"></div>
+                <div class="d-flex flex-md-nowrap justify-content-between crt_b">
+                    <div class="mr-2 mr-md-3">
+                        <img src="img/tw1.jpg" alt="">
+                    </div>
+                    <div class="mr-2">
+                        <p class="crt_nm bolder">Лестница Название П-образная с площадкой</p>
+                        <p class="text-xs text-dgrey">Цвет каркаса: Серый</p>
+                        <p class="text-xs text-dgrey">Материал: Бук</p>
+                        <p class="text-xs text-dgrey">Высота шага: 220 мм</p>
+                        <div class=" quantity">
+                            <button class="btn btn-q" type="button" id="btnminus4">-</button>
+                            <input type="text" class="form-control" placeholder="1">
+                            <button class="btn btn-q" type="button" id="btnplus4">+</button>
+                        </div>
+                    </div>
+                    <div class="qd">
+                        <p class="text-nowrap">
+                            52 000<span class="price-rouble"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="my-hr"></div>
+                <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+                    <button class="btn btn-sister" type="button" data-toggle="modal" data-target="#added_to_cart">Продолжить покупки</button>
+                    <a class="btn btn-simple" href="cart.html">Перейти в корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="ask_us" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog my-modal" role="document">
             <div class="modal-content">
@@ -1041,7 +1083,7 @@
                             </button>
                         </div>
                         <!--  <button class="btn btn-buy mt-4 btn-block disabled">Купить</button> -->
-                        <button class="btn btn-buy mt-4 btn-block">Купить</button>
+                        <button type="button" class="btn btn-buy mt-4 btn-block" data-toggle="modal" data-target="#added_to_cart">Купить</button>
                         <!-- <button class="btn btn-sister mt-2 btn-block">Вызвать замерщика</button> -->
                     </form>
                 </div>
@@ -1220,7 +1262,7 @@
                                 <input type="text" class="form-control" placeholder="1" aria-label="Example text with button addon">
                                 <button class="btn btn-q" type="button" id="btnminus1">-</button>
                             </div>
-                            <button class="btn btn-dop">Добавить к заказу</button>
+                            <button class="btn btn-dop" type="button" data-toggle="modal" data-target="#added_to_cart">Добавить к заказу</button>
                         </div>
                     </div>
                 </div>
@@ -1247,7 +1289,7 @@
                                 <input type="text" class="form-control" placeholder="1" aria-label="Example text with button addon">
                                 <button class="btn btn-q" type="button" id="btnminus2">-</button>
                             </div>
-                            <button class="btn btn-dop">Добавить к заказу</button>
+                            <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-dop">Добавить к заказу</button>
                         </div>
                     </div>
                 </div>
@@ -1274,7 +1316,7 @@
                                 <input type="text" class="form-control" placeholder="1" aria-label="Количество">
                                 <button class="btn btn-q" type="button" id="btnminus3">-</button>
                             </div>
-                            <button class="btn btn-dop">Добавить к заказу</button>
+                            <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-dop">Добавить к заказу</button>
                         </div>
                     </div>
                 </div>
@@ -1301,7 +1343,7 @@
                                 <input type="text" class="form-control" placeholder="1" aria-label="Example text with button addon">
                                 <button class="btn btn-q" type="button" id="btnminus4">-</button>
                             </div>
-                            <button class="btn btn-dop">Добавить к заказу</button>
+                            <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-dop">Добавить к заказу</button>
                         </div>
                     </div>
                 </div>
@@ -1327,7 +1369,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1341,7 +1383,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1355,7 +1397,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1369,7 +1411,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1383,7 +1425,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1397,7 +1439,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1411,7 +1453,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1425,7 +1467,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1439,7 +1481,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1453,7 +1495,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1467,7 +1509,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1481,7 +1523,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
                 <div class="clrb">
@@ -1495,7 +1537,7 @@
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
-                        <button class="btn btn-color">Заказать</button>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div>
                 </div>
             </div>

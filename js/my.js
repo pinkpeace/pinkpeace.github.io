@@ -193,11 +193,3 @@ $('#clearFilter').click(function() {
     $('.delselect').addClass('d-none');
     $('#clearFilter').removeClass('active');
 });
-
-$(".product-sel").change(function() {
-    if ($(this).val() == 0) {
-        $(this).removeClass('want-it');
-    } else {
-        $(this).addClass('want-it');
-    }
-});

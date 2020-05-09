@@ -249,6 +249,51 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="added_to_cart" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="h-cart">Товар добавлен в корзину</h2>
+                <p class="text-dgrey text-xs">Итого в вашей <a href="cart.html" class="a-link">корзине</a> 1 товар на сумму 52 000 руб.</p>
+                <div class="my-hr"></div>
+                <div class="crt_b">
+                    <div class="mr-2 mr-md-3">
+                        <img src="img/tw1.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="mr-3 mb-3">
+                            <p class="crt_nm bolder">Лестница Название П-образная с площадкой</p>
+                            <p class="text-xs text-dgrey">Цвет каркаса: Серый</p>
+                            <p class="text-xs text-dgrey">Материал: Бук</p>
+                            <p class="text-xs text-dgrey">Высота шага: 220 мм</p>
+                        </div>
+                        <div class="qd">
+                            <p class="p-price text-nowrap pink">
+                                52 000<span class="price-rouble"></span>
+                            </p>
+                            <p class="old-price">57 000<span class="price-rouble"> </span></p>
+                            <div class="counter mt-">
+                                <span class="counter-less" id="btnminus4">–</span>
+                                <input type="text" class="counter-inp" placeholder="1">
+                                <span class="counter-more" id="btnplus4">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-hr"></div>
+                <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+                    <button class="btn btn-sister" type="button" data-toggle="modal" data-target="#added_to_cart">Продолжить покупки</button>
+                    <a class="btn btn-simple" href="cart.html">Перейти в корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="ask_us" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog my-modal" role="document">
             <div class="modal-content">
@@ -336,29 +381,51 @@
             </div>
         </div>
     </div>
-    <div class="right-links-box link-a d-none d-lg-block">
-        <a href="#" data-toggle="modal" data-target="#ask_us">
-            <div class="right-link  shadow-lg d-flex align-items-center">
-                <img src="img/ask.svg" alt="">
-                <p class="mb-0">Задать вопрос</p>
+    <div class="modal fade" id="notmysize" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h3 class="mb-3 text-center">Заказать <span class="pink">бесплатный</span> расчет стоимости лестницы с моими размерами</h3>
+                <p class="text-center mb-5 text-dgrey">Срок изготовление лестницы на заказ от 4-х недель.</p>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone1" class="my-label">Телефон</label>
+                            <input type="tel" class="form-control" id="inputPhone1">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="my-label" for="inputEmail1">Email</label>
+                            <input type="email" class="form-control" id="inputEmail1">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label class="my-label" for="exampleFormControlTextarea1">Опишите необходимые параметры</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="my-file text-center">
+                            <input type="file" class="" id="inputGroupFile01">
+                            <label class="my-label sr-only" for="inputGroupFile01">Прикрепить файл</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>        
+                </form>
             </div>
-        </a>
-    </div>
-    <div class="right-links-box link-b d-none d-lg-block">
-        <a href="#">
-            <div class="right-link  shadow-lg d-flex align-items-center">
-                <img src="img/calculate.svg" alt="">
-                <p class="mb-0">Онлайн калькулятор</p>
-            </div>
-        </a>
-    </div>
-    <div class="right-links-box link-c d-none d-lg-block">
-        <a href="#" data-toggle="modal" data-target="#order_measure">
-            <div class="right-link shadow-lg d-flex align-items-center">
-                <img src="img/measure.svg" alt="">
-                <p class="mb-0">Заказать замер</p>
-            </div>
-        </a>
+        </div>
     </div>
         <div class="header">
             <div class="container-fluid container-xl">
@@ -531,217 +598,173 @@
         </div>
     </div>
     <!-- Конец меню -->
-    <!-- Главный баннер -->
-    <div class="container-fluid container-xl">
-        <a href="#">
-            <div class="main-banner-box">
-                <img class="main-banner-img img-fluid d-none d-lg-block" src="img/main_banner.jpg" alt="">
-                <img class="d-lg-none main-banner-img img-fluid" src="img/main-banner-md.jpg" alt="">
-            </div>
-        </a>
-        <!-- Блок преимущества -->
-        <div class="container-fluid container-xl">
-            <div class="row pluses-box mb-5 pb-lg-5">
-                <div class="col  border-left mb-3">
-                    <div class="media">
-                        <img src="img/best_price.svg" class="mr-3" alt="...">
-                        <div class="media-body">
-                            <p class="">
-                                лучшиe<br>цены
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-left mb-3">
-                    <div class="media">
-                        <img src="img/best_staircase.svg" class="mr-3" alt="...">
-                        <div class="media-body">
-                            <p class="">
-                                лестницы <br>на любой вкус
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-left mb-3">
-                    <div class="media">
-                        <img src="img/quality.svg" class="mr-3" alt="...">
-                        <div class="media-body">
-                            <p class="">
-                                гарантия<br> качества
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-left mb-3">
-                    <div class="media">
-                        <img src="img/130city.svg" class="mr-3" alt="...">
-                        <div class="media-body">
-                            <p class="">
-                                в 130 городах <br>россии
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col border-left mb-2">
-                    <div class="media">
-                        <img src="img/delivery.svg" class="mr-3" alt="...">
-                        <div class="media-body">
-                            <p class="">
-                                доставка<br> по рф
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Блок популярные категории -->
-        <div class="popcat-box mt-2">
-            <p class="h3 mb-3">
-                Популярные категории
-            </p>
-            <a href="" class="pop-a">
-                Недорогие лестницы
-            </a>
-            <a href="" class="pop-a">
-                Красивые лестницы
-            </a>
-            <a href="" class="pop-a">
-                Готовые лестницы
-            </a>
-            <a href="" class="pop-a">
-                Маленькие лестницы
-            </a>
-            <a href="" class="pop-a">
-                Лестницы для дачи
-            </a>
-        </div>
-        <div class="section mt-5">
-            <div class="row">
-                <div class="col-12 col-md-6 banner-box">
-                    <a href="">
-                        <img src="img/metal-banner.jpg" class="img-fluid" alt="">
+    <!-- Хлебные крошки -->
+    <div class="container-xl">
+        <h1 class="page-name">
+            Корзина
+        </h1>
+        <!-- Карточка-каталог -->
+        <div class="row">
+            <div class="col-lg-8 col-xl-9">
+                <div class="crt-it">
+                    <a href="product-card.html" class="mr-3 mr-xl-4">
+                        <img src="img/tw1.jpg" alt="">
                     </a>
+                    <div class="bx">
+                        <div class="mr-3 sb_a">
+                            <a class="a-crtnm" href="product-card.html">Лестница Название П-образная с площадкой</a>
+                            <p class="text-xs text-dgrey">Цвет каркаса: Серый</p>
+                            <p class="text-xs text-dgrey">Материал: Бук</p>
+                            <p class="text-xs text-dgrey">Высота шага: 220 мм</p>
+                            <div class="custom-control custom-checkbox mt-3">
+                                <input type="checkbox" class="custom-control-input" id="montagechk">
+                                <label class="custom-control-label" for="montagechk">Нужен монтаж <span class="text-grey text-nowrap">от 20 000 руб.</span></label>
+                            </div>
+                        </div>
+                        <div class="sb_b">
+                            <p class="p-price text-nowrap">
+                                52 000<span class="price-rouble"></span>
+                            </p>
+                            <p class="old-price">57 000<span class="price-rouble"> </span></p>
+                            <p class="text-xs pink">Экономия <span class="text-nowrap">5 000 р.</span></p>
+                        </div>
+                        <div class="sb_c">
+                            <div class="text-center">
+                                <div class="counter">
+                                    <span class="counter-less" id="btnminus4">–</span>
+                                    <input type="text" class="counter-inp" placeholder="1">
+                                    <span class="counter-more" id="btnplus4">+</span>
+                                </div>
+                                <p class="text-xs text-grey">осталось 4 шт.</p>
+                            </div>
+                            <button type="button" class="trsh">
+                                <img src="img/trsh.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 banner-box">
-                    <a href="">
-                        <img src="img/dub-banner.jpg" class="img-fluid" alt="">
+                <div class="crt-it">
+                    <a href="product-card.html#pokraska" class="mr-3 mr-xl-4">
+                        <img src="img/sahara.jpg" alt="">
                     </a>
+                    <div class="bx">
+                        <div class="mr-3 sb_a">
+                            <a class="a-crtnm" href="product-card.html#pokraska">Покраска деревянных элементов лестницы</a>
+                            <p class="text-xs text-dgrey">Цвет: 08 Слоновая кость 2009</p>
+                        </div>
+                        <div class="sb_b">
+                            <!--  <p class="old-price">57 000<span class="price-rouble"> </span></p> -->
+                            <p class="p-price text-nowrap">
+                                28 000<span class="price-rouble"></span>
+                            </p>
+                            <!--   <p class="text-xs pink">Скидка 5 000 р.</p> -->
+                        </div>
+                        <div class="sb_c">
+                            <div class="text-center">
+                                <div class="counter">
+                                    <span class="counter-less" id="btnminus4">–</span>
+                                    <input type="text" class="counter-inp" placeholder="1">
+                                    <span class="counter-more" id="btnplus4">+</span>
+                                </div>
+                                <p class="text-xs text-grey">осталось 4 шт.</p>
+                            </div>
+                            <button type="button" class="trsh">
+                                <img src="img/trsh.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6  banner-box">
-                    <a href="">
-                        <img src="img/vint-banner.jpg" class="img-fluid" alt="">
+                <div class="crt-it">
+                    <a href="product-card.html#pokraska" class="mr-3 mr-xl-4">
+                        <img src="img/kovr.jpg" alt="">
                     </a>
+                    <div class="bx">
+                        <div class="mr-3 sb_a">
+                            <a class="a-crtnm" href="product-card.html#pokraska">Покраска деревянных элементов лестницы</a>
+                            <!--  <p class="text-xs text-dgrey">Цвет: 08 Слоновая кость 2009</p> -->
+                        </div>
+                        <div class="sb_b">
+                            <!--  <p class="old-price">57 000<span class="price-rouble"> </span></p> -->
+                            <p class="p-price text-nowrap">
+                                5 600<span class="price-rouble"></span>
+                            </p>
+                            <!--   <p class="text-xs pink">Скидка 5 000 р.</p> -->
+                        </div>
+                         <div class="sb_c">
+                            <div class="text-center">
+                                <div class="counter">
+                                    <span class="counter-less" id="btnminus4">–</span>
+                                    <input type="text" class="counter-inp" placeholder="1">
+                                    <span class="counter-more" id="btnplus4">+</span>
+                                </div>
+                                <p class="text-xs text-grey">400 р./шт.</p>
+                            </div>
+                            <button type="button" class="trsh">
+                                <img src="img/trsh.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6  banner-box">
-                    <a href="">
-                        <img src="img/cher-banner.jpg" class="img-fluid" alt="">
-                    </a>
+                <div class="my-hr"></div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="main-right ord-bx">
+                    <a href="" class="btn btn-buy btn-block mb-2" data-toggle="modal" data-target="#added_to_cart">Оформить заказ</a>
+                    <p class="text-xs text-grey">Доступные способы доставки можно выбрать при оформлении</p>
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <h4 class="mt-0 mb-0">Корзина</h4>
+                        </div>
+                        <div class="col text-right">
+                            <p class="text-xs text-grey">413.5 кг</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <p class="text-xs">Количество товара</p>
+                        </div>
+                        <div class="col text-right">
+                            <p class="text-xs">4</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <p class="text-xs">Стоимость</p>
+                        </div>
+                        <div class="col text-right">
+                            <p class="text-nowrap text-xs">
+                                57 000<span class="price-rouble"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <p class="text-xs">Скидка</p>
+                        </div>
+                        <div class="col text-right">
+                            <p class="text-nowrap text-xs">
+                                5 000<span class="price-rouble"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col">
+                            <h4 class="mb-0 mt-0">Итого</h4>
+                        </div>
+                        <div class="col text-right">
+                            <p class="p-main-price text-nowrap mr-0">57 000<span class="price-rouble"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-box mb-3">
+                    <p class="mb-1"><i class="i_delivery"></i>Доставка по РФ от 1900<span class="price-rouble"></span></p>
+                    <p class="mb-1"><i class="i_guarantee"></i>Гарантия магазина 1 год</p>
                 </div>
             </div>
-            <a href="#">
-                <img class="d-none d-lg-block img-fluid" src="img/ph-banner.jpg" alt="">
-                <img class="d-lg-none img-fluid" src="img/ph-small-banner.jpg" alt="">
-            </a>
-        </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item list-group-item-action">
-                            <h4 class="">
-                                Помещение
-                            </h4>
-                        </li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы для дома</a></li>
-                        <li class="list-group-item list-group-item-action"><a class="" href="#">Лестницы для дачи</a></li>
-                        <li class="list-group-item list-group-item-action"><a class="" href="#">Лестницы для бани</a></li>
-                        <li class="list-group-item list-group-item-action"><a class="" href="#">На мансарду</a></li>
-                        <li class="list-group-item list-group-item-action"><a class="" href="#">Лестницы в подвал</a></li>
-                        <li class="list-group-item list-group-item-action"><a class="" href="#">Уличные лестницы</a></li>
-                        <li class="list-group-item list-group-item-action"><a class="" href="#">Входные лестницы</a></li>
-                        <li class="list-group-item list-group-item-action"><a class=" " href="#">Межэтажные лестницы</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item list-group-item-action">
-                            <h4 class="">
-                                Материал
-                            </h4>
-                        </li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из сосны</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из берёзы</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из лиственницы</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из бука</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из ясеня</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из дуба</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item list-group-item-action">
-                            <h4 class="">
-                                Форма лестницы
-                            </h4>
-                        </li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Винтовые лестницы</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Г-образные лестницы</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">П-образные лестницы</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Маршевые лестницы</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Поворотные лестницы</a></li>
-                    </ul>
-                </div>
-                <div class=" col-sm-6 col-md-3">
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item list-group-item-action">
-                            <h4 class="">
-                                Конструкция
-                            </h4>
-                        </li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы забежные</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы на косоурах</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы на тетивах</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы на больцах</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Модульные лестницы</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="#">Лестницы из дуба</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-md-4 banner-box"><a href=""><img src="img/banner-elit.jpg" alt="" class="img-fluid"></a></div>
-                <div class="col-md-4 banner-box"><a href=""><img src="img/banner-second-floor.jpg" alt="" class="img-fluid"></a></div>
-                <div class="col-md-4 banner-box"><a href=""><img src="img/banner-krilco.jpg" alt="" class="img-fluid"></a></div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 banner-box"><a href=""><img src="img/banner-oblicovka.jpg" alt="" class="img-fluid"></a></div>
-                <div class="col-md-6 banner-box"><a href=""><img src="img/banner-komplekt.jpg" alt="" class="img-fluid"></a></div>
-            </div>
-        </div>
-        <div class="section">
-            <h1>Заголовок для SEO</h1>
-            <p>
-                Мегамаркет "Лестницы-просто" - крупнейшая торгово-производственная компания - это означает, что у нас можно заказать изготовление лестниц и купить по ценам производителя более 500 готовых моделей.
-            </p>
-            <p>
-                В рамках нашего проекта мы объединили предложение ведущих российских и зарубежных производителей в сфере готовых серийных лестниц. Мы также располагаем возможностью размещать заказы на производстве по индивидуальным проектам.
-                У нас вы можете получить полный комплекс услуг, сопровождение на всех этапах от первичной консультации по подбору лестницы до установки ее в вашем доме.
-            </p>
-            <p>
-                Наиболее полный выбор, от самой простой лестницы для дачи или небольшого загородного дома, до комфортной, добротной лестницы с учетом предпочтений стиля и разнообразных материалов – это один из главных приоритетов нашей компании!
-                Мы работаем в сфере лестниц более 10 лет и накопили опыт, позволяющий удовлетворять самые разнообразные вкусы и делать это качественно и надежно! Российское производство позволяет нам гибко и оперативно реагировать на все изменения в нынешних реалиях современного рынка. При этом мы по-прежнему развиваем сотрудничество с зарубежными партнёрами, предоставляя нашим клиентам обширное предложение с учетом передовых технологий.
-            </p>
-            <p>
-                Наши цены, как правило, одни из самых низких на рынке и мы неустанно работаем над этим.
-                «Клиент всегда прав!»- для нас, даже в том случае, если в чем-то не очень осведомлен. Мы прекрасно понимаем, что главное в нашей работе – это даже не лестница, а прежде всего ее потенциальный владелец и мы стремимся сделать все возможное, чтобы Ваш выбор был правильным.
-            </p>
         </div>
     </div>
     <!-- Кнопка наверх -->
-    <div class="scrollup">
+    <div class="scrollup shadow-lg">
         <img src="img/up.svg" alt="">
     </div>
     <script src="js/libs.min.js"></script>

@@ -9030,8 +9030,8 @@ div.scrollup:hover {
           width: 17px;
           height: auto;
           opacity: 0.3; }
-          .crt-it .bx .sb_c .trsh img:hover {
-            opacity: 0.5; }
+        .crt-it .bx .sb_c .trsh:hover img {
+          opacity: 0.5; }
   .crt-it .qd {
     align-items: flex-start; }
   .crt-it img {
@@ -9250,6 +9250,40 @@ p.clrnm {
 .hntbx {
   display: inline-block;
   position: relative; }
+
+.fnl {
+  padding: 20px;
+  background-color: #fff; }
+
+form .final-form .box {
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 2em; }
+  form .final-form .box .form-group {
+    margin-bottom: 2em; }
+    form .final-form .box .form-group:last-child {
+      margin-bottom: 0; }
+    form .final-form .box .form-group label {
+      font-weight: 500; }
+  form .final-form .box .msk-group,
+  form .final-form .box .podmsk-group {
+    display: none; }
+
+form .final-form .h2-hidden {
+  visibility: hidden; }
+
+@media (min-width: 567px) {
+  form .final-form .box {
+    padding: 50px; } }
+
+.bold-hr {
+  height: 2px;
+  width: 100%;
+  background-color: #2e3038;
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 .footer .first-section {
   padding-top: 40px;

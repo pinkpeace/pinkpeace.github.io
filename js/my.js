@@ -140,6 +140,19 @@ $("[data-toggle=popover]").popover({
     trigger: 'hover',
     placement: 'top'
 });
+// Оформление заказа, скрытые поля
+$("input[name='radioDelivery']").change(function() {
+    if ($("input[value='Msk_val']").prop("checked")) {
+        $('.msk-group').css("display", "block");
+        $('.podmsk-group').css("display", "none");
+    } else if ($("input[value='Pod_Msk_val']").prop("checked")) {
+        $('.msk-group').css("display", "none");
+        $('.podmsk-group').css("display", "block");
+    } else {
+        $('.msk-group').css("display", "none");
+        $('.podmsk-group').css("display", "none");
+    }
+});
 // при прокрутке окна (window)
 $(window).scroll(function() {
     // если пользователь прокрутил страницу более чем на 200px

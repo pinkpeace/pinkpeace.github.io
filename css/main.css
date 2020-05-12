@@ -9317,6 +9317,33 @@ form .final-form .h2-hidden {
   margin-top: 1em;
   margin-bottom: 1em; }
 
+.sp-bx {
+  border-bottom: 1px solid #f2f5f6;
+  padding: .7em;
+  margin-bottom: .8em;
+  text-align: center;
+  background-color: #c3d3d8;
+  margin-top: -1.1em; }
+
+.kompl {
+  align-items: stretch; }
+  .kompl .bx {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    align-self: stretch;
+    margin-bottom: 20px; }
+    .kompl .bx:hover {
+      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 5px 5px 0 rgba(0, 0, 0, 0.12); }
+    .kompl .bx img {
+      margin-bottom: 1em; }
+    .kompl .bx p {
+      line-height: 1.3em;
+      font-size: 15px;
+      font-weight: 600;
+      min-height: 38px; }
+
 .footer .first-section {
   padding-top: 40px;
   color: #454e5e; }

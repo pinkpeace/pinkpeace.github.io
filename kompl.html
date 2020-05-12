@@ -204,6 +204,51 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="added_to_cart" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="h-cart">Товар добавлен в корзину</h2>
+                <p class="text-dgrey text-xs">Итого в вашей <a href="cart.html" class="a-link">корзине</a> 1 товар на сумму 52 000 руб.</p>
+                <div class="my-hr"></div>
+                <div class="crt_b">
+                    <div class="mr-2 mr-md-3">
+                        <img src="img/tw1.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="mr-3 mb-3">
+                            <p class="crt_nm bolder">Лестница Название П-образная с площадкой</p>
+                            <p class="text-xs text-dgrey">Цвет каркаса: Серый</p>
+                            <p class="text-xs text-dgrey">Материал: Бук</p>
+                            <p class="text-xs text-dgrey">Высота шага: 220 мм</p>
+                        </div>
+                        <div class="qd">
+                            <p class="p-price text-nowrap pink">
+                                52 000<span class="price-rouble"></span>
+                            </p>
+                            <p class="old-price">57 000<span class="price-rouble"> </span></p>
+                            <div class="counter mt-">
+                                <span class="counter-less" id="btnminus4">–</span>
+                                <input type="text" class="counter-inp" placeholder="1">
+                                <span class="counter-more" id="btnplus4">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-hr"></div>
+                <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+                    <button class="btn btn-sister" type="button" data-toggle="modal" data-target="#added_to_cart">Продолжить покупки</button>
+                    <a class="btn btn-simple" href="cart.html">Перейти в корзину</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="write_us" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog my-modal" role="document">
             <div class="modal-content">
@@ -508,6 +553,7 @@
         </div>
     </div>
     <!-- Конец меню -->
+    <!-- Хлебные крошки -->
     <div class="container-xl">
         <!-- Хлебные крошки -->
         <div class="breadcrumb-box">
@@ -518,155 +564,150 @@
                         <path d="M5.22 3.28a.75.75 0 011.06-1.06l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06-1.06L9.94 8 5.22 3.28z" fill="currentColor" fill-rule="nonzero" data-v-469cfe6c=""></path>
                     </g>
                 </svg>
-                <span>В корзину</span>
+                <span>назад</span>
             </a>
+            <nav aria-label="breadcrumb" class="nav-my-breadcrumbs">
+                <ol class="my-breadcrumb breadcrumb__slider">
+                    <li class="my-breadcrumb-item"><a href="index.html">Главная</a>
+                        <svg width="10" height="13" xmlns="http://www.w3.org/2000/svg" class="brc" data-v-469cfe6c="">
+                            <g fill="none" fill-rule="evenodd" data-v-469cfe6c="">
+                                <path d="M0 0h16v16H0z" data-v-469cfe6c=""></path>
+                                <path d="M5.22 3.28a.75.75 0 011.06-1.06l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06-1.06L9.94 8 5.22 3.28z" fill="currentColor" fill-rule="nonzero" data-v-469cfe6c=""></path>
+                            </g>
+                        </svg>
+                    </li>
+                    <li class="my-breadcrumb-item active" aria-current="page">Комплектующие
+                    </li>
+                </ol>
+            </nav>
+            <button class="a-share">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.1" height="11" viewBox="0 0 10.1 11">
+                    <path d="M8.3,7.3c-0.5,0-1,0.2-1.3,0.6L3.6,6c0.1-0.1,0.1-0.3,0.1-0.5s0-0.4-0.1-0.5l3.3-1.9c0.4,0.4,0.8,0.6,1.4,0.6
+    c1,0,1.8-0.8,1.8-1.8S9.3,0,8.3,0S6.5,0.8,6.5,1.8c0,0.1,0,0.3,0.1,0.4L3.1,4.2C2.8,3.9,2.3,3.7,1.8,3.7C0.8,3.7,0,4.5,0,5.5
+    s0.8,1.8,1.8,1.8c0.5,0,1-0.2,1.2-0.5l3.4,1.9c0,0.1-0.1,0.3-0.1,0.4c0,1,0.8,1.8,1.8,1.8S10,10.2,10,9.2S9.2,7.3,8.3,7.3z" />
+                </svg>
+            </button>
         </div>
         <!-- Конец хлебых крошек -->
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Оформление заказа
+            Комплектующие
         </h1>
-    </div>
-    <div class="grey-bckg position-relative">
-        <div class="container-xl">
-            <form>
-                <div class="row final-form">
-                    <div class="col-md-6 col-lg-5">
-                        <h2>1.Ваши данные</h2>
-                        <div class="box">
-                            <div class="form-group">
-                                <label for="phoneInput">Контактный телефон</label>
-                                <input type="phone" class="form-control" id="phoneInput" placeholder="+7(...)">
-                            </div>
-                            <div class="form-group">
-                                <label for="nameInput">Имя</label>
-                                <input type="name" class="form-control" id="nameInput" placeholder="Ваше имя">
-                            </div>
-                            <div class="form-group">
-                                <label for="emailInput">Email</label>
-                                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-                            </div>
-                        </div>
-                        <h2>2.Выберите способ доставки</h2>
-                        <div class="box">
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioDelivery" id="forMsk" value="Msk_val">
-                                <label class="form-check-label" for="forMsk">
-                                    Доставка по Москве
-                                </label>
-                            </div>
-                            <div class="form-group msk-group">
-                                <label for="adressInput" class="sr-only">Адрес</label>
-                                <input type="phone" class="form-control" id="adressInput" placeholder="Адрес">
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioDelivery" id="forPodMsk" value="Pod_Msk_val">
-                                <label class="form-check-label" for="forPodMsk">
-                                    Доставка по подмосковью
-                                </label>
-                            </div>
-                            <div class="form-group podmsk-group">
-                                <label for="adressInput" class="sr-only">Адрес</label>
-                                <input type="phone" class="form-control" id="adressInput" placeholder="Адрес">
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioDelivery" id="forSam" value="option3">
-                                <label class="form-check-label" for="forSam">
-                                    Самовывоз
-                                </label>
-                                <p class="text-grey">Адрес пункта самовывоза в этом городе</p>
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioDelivery" id="forTransp" value="option4">
-                                <label class="form-check-label" for="forTransp">
-                                    Доставка транспортной компанией
-                                </label>
-                            </div>
-                        </div>
-                        <h2>Выберите способ оплаты</h2>
-                        <div class="box">
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioPayval" id="pay_cash" value="cash_val">
-                                <label class="form-check-label" for="pay_cash">
-                                    Наличные
-                                </label>
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioPayval" id="Ur_sch" value="ur_val">
-                                <label class="form-check-label" for="Ur_sch">
-                                    Выставить счёт для юридических лиц
-                                </label>
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioPayval" id="Fiz_sch" value="fiz_val">
-                                <label class="form-check-label" for="Fiz_sch">
-                                    Выставить счёт для физических лиц
-                                </label>
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioPayval" id="card_pay" value="card_val">
-                                <label class="form-check-label" for="card_pay">
-                                    Visa, Mastercard, Pay keeper
-                                </label>
-                            </div>
-                        </div>
-                        <h2>Комментарий к заказу</h2>
-                        <div class="box">
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1" class="sr-only">Комментарий к заказу</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-5 offset-lg-2">
-                        <div class="sticky-top float-right w-100">
-                            <h2 class="d-none d-md-block h2-hidden">4.</h2>
-                            <div class="box">
-                                <div class="row mb-3 justify-content-between">
-                                    <div class="col">
-                                        <h4 class="mt-0 mb-0">Товары</h4>
-                                        <p class="text-grey text-xs">3 товара - 145 кг</p>
-                                    </div>
-                                    <div class="col text-right">
-                                        <p class="p-price">115 000 <span class="price-rouble"></span></p>
-                                    </div>
-                                </div>
-                                <div class="row mb-3 justify-content-between">
-                                    <div class="col">
-                                        <h4 class="mt-0 mb-0">Скидка</h4>
-                                    </div>
-                                    <div class="col text-right">
-                                        <p class="p-price pink"> - 15 000 <span class="price-rouble"></span></p>
-                                    </div>
-                                </div>
-                                <div class="row mb-3 justify-content-between">
-                                    <div class="col">
-                                        <h4 class="mt-0 mb-0">Доставка</h4>
-                                        <p class="text-grey text-xs">Москва, ул.Название ул.д.4, кв.5</p>
-                                    </div>
-                                    <div class="col text-right">
-                                        <p class="p-price"> от 1900 <span class="price-rouble"></span></p>
-                                    </div>
-                                </div>
-                                <div class="bold-hr"></div>
-                                <div class="row mb-4 justify-content-between">
-                                    <div class="col">
-                                        <h3 class="mt-0 mb-0">Итого</h3>
-                                    </div>
-                                    <div class="col text-right">
-                                        <p class="text-nowrap p-main-price"> 100 000 <span class="price-rouble"></span></p>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-simple btn-block">Оформить заказ</button>
-                            </div>
-                            <p class="text-xs text-grey">Нажимая кнопку, вы подтверждаете своё совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a class="a-link" href="usl.html">условиями</a>, а также с <a  class="a-link" href="usl.html">условиями продажи</a></p>
-                        </div>
-                    </div>
+        <!-- Комплектующие -->
+        <div class="row kompl">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/stp.jpg" alt="" class="img-fluid">
+                        <p class="">Ступени для лестниц</p>
+                    </a>
                 </div>
-            </form>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx"><a href="#">
+                        <img src="img/ogr.jpg" alt="" class="img-fluid">
+                        <p class="">Столбы, балясины</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx"> <a href="#">
+                        <img src="img/perila.jpg" alt="" class="img-fluid">
+                        <p class="">Перила, поручни</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx"> <a href="#">
+                        <img src="img/kosoury.jpg" alt="" class="img-fluid">
+                        <p class="">Площадки, тетивы, косоуры</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/verstak.jpg" alt="" class="img-fluid">
+                        <p class="">Верстаки</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/bal2.jpg" alt="" class="img-fluid">
+                        <p class="">Готовые ограждения</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/vorota.jpg" alt="" class="img-fluid">
+                        <p class="">Детские ворота</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/karkas.jpg" alt="" class="img-fluid">
+                        <p class="">Каркасы для лестниц</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/bolca.jpg" alt="" class="img-fluid">
+                        <p class="">Больцы для лестниц</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/svet1.jpg" alt="" class="img-fluid">
+                        <p class="">Светильники для лестниц</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/svet.jpg" alt="" class="img-fluid">
+                        <p class="">Подсветка для лестниц</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/kovrd.jpg" alt="" class="img-fluid">
+                        <p class="">Ковродержатели</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/kovr.jpg" alt="" class="img-fluid">
+                        <p class="">Коврики</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="bx">
+                    <a href="#">
+                        <img src="img/biofa.jpg" alt="" class="img-fluid">
+                        <p class="">Краска для лестниц</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Конец комлектующих -->
     <!-- Сео-блок -->
     <div class="container-xl">
         <div class="section">

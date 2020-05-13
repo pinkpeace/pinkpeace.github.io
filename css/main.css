@@ -9333,7 +9333,7 @@ form .final-form .h2-hidden {
     padding: 1em;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     align-self: stretch;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     .kompl .bx:hover {
       box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 5px 5px 0 rgba(0, 0, 0, 0.12); }
     .kompl .bx img {
@@ -9342,7 +9342,8 @@ form .final-form .h2-hidden {
       line-height: 1.3em;
       font-size: 15px;
       font-weight: 600;
-      min-height: 38px; }
+      min-height: 38px;
+      margin-bottom: 0; }
 
 .footer .first-section {
   padding-top: 40px;

@@ -8340,30 +8340,38 @@ div.scrollup:hover {
 .right-links-box {
   position: fixed;
   right: 0;
-  top: 25%;
+  top: 40%;
   z-index: 100; }
   .right-links-box a {
     text-decoration: none;
     color: inherit; }
   .right-links-box img {
-    width: 43px;
-    height: 43px;
-    margin-right: 23px; }
+    width: 23px;
+    height: auto;
+    margin-right: 13px; }
   .right-links-box .right-link {
     transition: all 0.3s ease;
     background-color: #fff;
-    padding: 23px;
-    width: 250px;
+    padding: 13px;
+    width: 220px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    margin-bottom: 23px;
-    margin-right: -164px; }
+    margin-right: -174px; }
   .right-links-box p {
     font-weight: 800;
     line-height: 1.3em; }
   .right-links-box .right-link:hover {
     margin-right: 0;
     transition: all 0.3s ease; }
+
+.link-b {
+  margin-top: 60px; }
+
+.link-c {
+  margin-top: 120px; }
+
+.link-d {
+  margin-top: 180px; }
 
 .top-panel {
   font-size: 12px;
@@ -8758,12 +8766,6 @@ div.scrollup:hover {
 .grey-bckg {
   background-color: #f2f5f6;
   padding: 1em 0; }
-
-.link-b {
-  margin-top: 109px; }
-
-.link-c {
-  margin-top: 218px; }
 
 .slick-list {
   overflow: hidden; }

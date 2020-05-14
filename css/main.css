@@ -8341,7 +8341,7 @@ div.scrollup:hover {
   position: fixed;
   right: 0;
   top: 40%;
-  z-index: 100; }
+  z-index: 10; }
   .right-links-box a {
     text-decoration: none;
     color: inherit; }
@@ -8360,9 +8360,6 @@ div.scrollup:hover {
   .right-links-box p {
     font-weight: 800;
     line-height: 1.3em; }
-  .right-links-box .right-link:hover {
-    margin-right: 0;
-    transition: all 0.3s ease; }
 
 .link-b {
   margin-top: 60px; }
@@ -8371,7 +8368,19 @@ div.scrollup:hover {
   margin-top: 120px; }
 
 .link-d {
-  margin-top: 180px; }
+  margin-top: 0; }
+
+.link-e {
+  margin-top: 60px; }
+
+@media (min-width: 992px) {
+  .right-link:hover {
+    margin-right: 0;
+    transition: all 0.3s ease; }
+  .link-d {
+    margin-top: 180px; }
+  .link-e {
+    margin-top: 240px; } }
 
 .top-panel {
   font-size: 12px;

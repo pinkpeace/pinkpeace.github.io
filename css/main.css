@@ -7440,6 +7440,10 @@ a:hover {
   .navbar-my-nav .nav-link {
     border-bottom: none; } }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar-my-nav .nav-link {
+    font-size: 13px; } }
+
 .bsnav-mobile,
 .bsnav-mobile .bsnav-mobile-overlay,
 .bsnav-sticky.navbar-fade,
@@ -7753,7 +7757,7 @@ a:hover {
     .a-back .a-share {
       background-color: #fff; }
   .a-back:hover {
-    border-color: #ff3495; }
+    background-color: #f2f5f6; }
   .a-share {
     width: 36px;
     height: 36px;
@@ -7805,14 +7809,17 @@ a:hover {
   margin-bottom: 0;
   list-style: none; }
   .submenu-box ul li {
-    margin-right: 1em; }
+    margin-right: 5px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin-bottom: 5px; }
     .submenu-box ul li a {
-      color: #009de8;
+      color: #686e86;
       padding-left: 0;
-      text-decoration: underline;
-      padding-right: 5px;
-      display: block;
-      padding: 0 5px .5em 0; }
+      text-decoration: none;
+      font-size: 11px;
+      display: block; }
     .submenu-box ul li a:hover,
     .submenu-box ul li a:focus {
       text-decoration: none;
@@ -7820,10 +7827,16 @@ a:hover {
 
 @media (min-width: 992px) {
   .submenu-box ul li {
-    margin-right: 1.5em; }
+    margin-right: 1.5em;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 10px; }
     .submenu-box ul li a {
-      color: #686e86; }
-    .submenu-box ul li a.active {
+      padding-right: 5px;
+      font-size: inherit;
+      text-decoration: underline; }
+    .submenu-box ul li a.active,
+    .submenu-box ul li a.hover {
       color: #a8acae;
       cursor: default;
       text-decoration: none; } }
@@ -7884,7 +7897,13 @@ select {
   outline: none; }
 
 .select-sort {
-  border-color: #e9ecef; }
+  border-color: #e9ecef;
+  height: 38px;
+  background-position: right 15px top 16px; }
+  @media (min-width: 992px) {
+    .select-sort {
+      height: inherit;
+      background-position: right 15px top 13px; } }
 
 .filter-btn {
   margin: 0;
@@ -8155,11 +8174,13 @@ select:focus {
     line-height: 1.3em; }
   .product-box .old-price,
   .similar-box .old-price {
-    font-size: 10px;
+    font-size: 11px;
     color: #a8acae;
     white-space: nowrap;
     display: inline;
-    line-height: 1.3em; }
+    line-height: 1.3em;
+    font-weight: 200;
+    vertical-align: baseline; }
   .product-box .p-descr,
   .similar-box .p-descr {
     margin-bottom: 0.6em;
@@ -9477,7 +9498,8 @@ form .final-form .h2-hidden {
     padding: 1em;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     align-self: stretch;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    overflow: hidden; }
     .kompl .bx:hover {
       box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 5px 5px 0 rgba(0, 0, 0, 0.12); }
     .kompl .bx img {

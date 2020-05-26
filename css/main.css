@@ -7172,19 +7172,19 @@ a:hover {
   height: 12px; }
 
 .i-eml {
-  height: 21px; }
+  height: 20px; }
 
 .i-whtsp {
-  height: 28px; }
+  height: 26px; }
 
 .i-ph {
-  height: 25px; }
+  height: 24px; }
 
 .i-pin {
-  height: 26px; }
+  height: 24px; }
 
 .i-srch {
-  height: 26px; }
+  height: 24px; }
   @media (min-width: 992px) {
     .i-srch {
       opacity: 0.5; } }
@@ -7223,7 +7223,8 @@ a:hover {
   .header .nvbr-hdr {
     align-items: center;
     justify-content: space-between;
-    font-size: 13px; }
+    font-size: 13px;
+    flex-wrap: nowrap; }
     .header .nvbr-hdr .navbar-toggler.toggler-spring .navbar-toggler-icon {
       top: 1px; }
     .header .nvbr-hdr .img-logo {
@@ -7307,7 +7308,7 @@ a:hover {
           font-size: 1.1em; }
         .header .nvbr-hdr .bx .pb i.fa-whatsapp {
           color: #4caf50;
-          font-size: 1.2em; }
+          font-size: 1.4em; }
       .header .nvbr-hdr .bx .bxx-clm {
         display: flex;
         flex-direction: column;
@@ -7330,7 +7331,7 @@ a:hover {
         align-items: center; }
         @media (min-width: 576px) {
           .header .nvbr-hdr .bx .bxx {
-            margin-right: 1.5em; } }
+            margin-right: 1.3em; } }
         @media (min-width: 768px) {
           .header .nvbr-hdr .bx .bxx {
             margin-right: 2em; } }

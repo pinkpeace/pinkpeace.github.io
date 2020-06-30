@@ -9593,28 +9593,22 @@ form .final-form .h2-hidden {
   margin-top: 1em;
   overflow: hidden;
   margin-bottom: 1em;
-  border: 1px solid #f2f5f6;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  padding: 1em 1em 0;
   justify-content: space-between;
-  flex-wrap: wrap;
-  border: 3px solid #fee44c; }
+  flex-wrap: wrap; }
   .pluses-box .pop-cat {
-    padding: 0 1em 1em 0;
+    padding: 0 1em .5em 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    width: 48%; }
+    width: 32%; }
 
 .pluses-box p {
   font-size: 0.5em;
   letter-spacing: .2px;
   font-weight: 700;
   margin-bottom: 0;
-  text-transform: uppercase;
-  line-height: 1.5em;
-  margin-top: 3px; }
+  text-transform: uppercase; }
 
 .pluses-box img {
   width: 25px;
@@ -9622,8 +9616,12 @@ form .final-form .h2-hidden {
   margin-right: 1em; }
 
 @media (min-width: 567px) {
-  .pluses-box .pop-cat {
-    width: 30%; } }
+  .pluses-box {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border: 3px solid #fee44c;
+    padding: 1em 1em 0; }
+    .pluses-box .pop-cat {
+      padding: 0 1em 1em 0; } }
 
 @media (min-width: 768px) {
   .pluses-box {

@@ -2745,9 +2745,7 @@ form .final-form .h2-hidden {
   justify-content: space-around;
   flex-wrap: wrap;
   display: flex;
-  flex-direction: row;
-  border: 3px solid #fee44c;
-  padding: 1em 0; }
+  flex-direction: row; }
   .pluses-box .my-hr {
     display: none; }
   .pluses-box p {
@@ -2772,18 +2770,21 @@ form .final-form .h2-hidden {
   height: auto;
   margin-right: .5em; }
 
-@media (min-width: 567px) {
+@media (min-width: 400px) {
   .pluses-box .pop-cat {
     width: 32%;
     padding: 1em;
     border: none; } }
 
 @media (min-width: 768px) {
-  .pluses-box .pop-cat {
-    width: auto;
-    padding: .6em 1em; }
-  .pluses-box img {
-    margin-right: 1em; } }
+  .pluses-box {
+    border: 3px solid #fee44c;
+    padding: 1em 0; }
+    .pluses-box .pop-cat {
+      width: auto;
+      padding: .6em 1em; }
+    .pluses-box img {
+      margin-right: 1em; } }
 
 @media (min-width: 992px) {
   .row-main {

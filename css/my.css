@@ -1463,10 +1463,15 @@ select:focus {
     margin-bottom: 1.5em; }
   .main-right .custom-control label {
     font-weight: 500; }
+  .main-right .custom-control-label::before {
+    top: 2px; }
   .main-right .custom-control-input:checked ~ .custom-control-label::before {
     color: #2e3038;
     border-color: #ff3495;
-    background-color: #ff3495; }
+    background-color: #ff3495;
+    top: 2px; }
+  .main-right .custom-control-label::after {
+    top: 2px; }
   .main-right .modif-name-box {
     margin-top: 1.5em; }
   .main-right label,
@@ -1485,8 +1490,8 @@ select:focus {
   .main-right .btn-hint {
     color: #a8acae;
     border-radius: 50%;
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     font-size: 9px;
     padding: 0;
     margin-left: .2em;

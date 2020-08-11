@@ -1271,7 +1271,6 @@ select:focus {
     margin-bottom: .5em; }
   .product-box .pr-name,
   .similar-box .pr-name {
-    min-height: 48px;
     font-weight: 500;
     line-height: 1.3; }
   .product-box .prod-descr-box,
@@ -1282,7 +1281,7 @@ select:focus {
     margin-right: 0; }
   .product-box .special-info,
   .similar-box .special-info {
-    padding: 10px 10px .6em;
+    padding: 10px 10px 0;
     font-size: 13px;
     border-radius: 3px;
     text-align: center;
@@ -1399,7 +1398,7 @@ select:focus {
       display: block;
       width: 100%;
       position: absolute;
-      padding: 0px 15px 5px;
+      padding: 0px 15px 15px;
       background-color: #fff;
       box-shadow: 0px 10px 20px rgba(73, 80, 87, 0.14);
       left: 0;
@@ -1477,7 +1476,12 @@ select:focus {
     font-weight: 600;
     display: inline-block;
     border-color: #f2f5f6;
-    background-color: #f2f5f6; }
+    background-color: #f2f5f6;
+    margin-bottom: 0.5em; }
+  .main-right .btn-radio-color,
+  .main-right .btn-povorot,
+  .main-right .btn-radio-diametr {
+    margin-bottom: .5em; }
   .main-right .btn-hint {
     color: #a8acae;
     border-radius: 50%;
@@ -1491,6 +1495,8 @@ select:focus {
     margin-top: -2px; }
   .main-right .old-price {
     margin-bottom: 0; }
+  .main-right .form-group {
+    margin-bottom: 1.3em; }
 
 .p-main-price {
   display: inline-block;
@@ -1513,19 +1519,18 @@ select:focus {
 .btn-radio-color {
   padding: 2px;
   border: 1px solid #f2f5f6;
-  width: 46px;
-  height: 46px;
   overflow: hidden;
   margin-right: 3px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  position: relative; }
 
 .btn-radio-color:hover,
 .btn-radio-diametr:hover {
   border-color: #fee44c; }
 
 .btn-radio-color.active {
-  padding: 0px;
-  border: 3px solid #fee44c;
+  padding: 1px;
+  border: 2px solid #ff3495;
   outline: none; }
 
 .btn.active,
@@ -1540,8 +1545,8 @@ select:focus {
     border-color: #fee44c; }
 
 .btn-group-toggle .btn-radio-diametr.active {
-  background-color: #fff8cf;
-  border-color: #fee44c; }
+  background-color: #f2f5f6;
+  border-color: #e9ecef; }
 
 .btn-povorot {
   border: 1px solid #dedede;
@@ -1555,7 +1560,7 @@ select:focus {
 
 .btn-povorot.active {
   background-color: #f2f5f6;
-  border-color: #f2f5f6;
+  border-color: #dee2e6;
   color: #2e3038; }
 
 .custom-control-input:checked ~ .custom-control-label::before {
@@ -1564,7 +1569,7 @@ select:focus {
   background-color: #ff3495; }
 
 .stair-color-img {
-  width: 40px;
+  width: 34px;
   height: auto; }
 
 @media (min-width: 567px) {
@@ -2470,18 +2475,19 @@ p.clrnm {
 
 .diams,
 .mclrs {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   margin-top: 1em; }
 
 .diam {
   display: inline-block;
-  padding: 3px 10px 3px 18px;
+  padding: 5px 10px 5px 28px;
   background-image: url(../img/diam.svg);
   background-repeat: no-repeat;
-  background-position: 0px center;
+  background-position: 10px center;
   background-size: 16px 16px;
   margin-right: .3em;
-  font-weight: 500; }
+  font-weight: 500;
+  border: 1px solid #f2f5f6; }
 
 .rtb {
   margin-top: 1em;
@@ -2581,7 +2587,8 @@ p.clrnm {
   background-color: #fff; }
 
 .form-group {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  position: relative; }
 
 form .final-form .box {
   padding: 30px 20px;
@@ -2713,7 +2720,8 @@ form .final-form .h2-hidden {
   margin-bottom: 1em; }
   .row-main .banner-col {
     margin-right: -15px;
-    margin-left: -15px; }
+    margin-left: -15px;
+    z-index: -5; }
 
 .row-pops {
   flex-direction: row;

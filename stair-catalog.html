@@ -931,9 +931,9 @@
                                 ?
                             </button>
                             <select class="form-control product-sel" id="checkHight">
-                                <option class="placeholder" value="0"> </option>
-                                <option>2730-2925 мм</option>
-                                <option>2721-2900 мм</option>
+                                <!--  <option class="placeholder" value="0"> </option> -->
+                                <option>2730 - 2925 мм</option>
+                                <option>2721 - 2900 мм</option>
                                 <option>2920 - 3100 ммм</option>
                             </select>
                         </div>
@@ -949,11 +949,11 @@
                                 ?
                             </button>
                             <select class="form-control product-sel" id="checkLong">
-                                <option class="placeholder" value="0"> </option>
-                                <option>2700 х 920 мм</option>
-                                <option>2480 х 1170 мм</option>
-                                <option>2920 х 920 ммм</option>
-                                <option>3140 х 920 ммм</option>
+                                <!--  <option class="placeholder" value="0"> </option> -->
+                                <option>2700 × 920 мм</option>
+                                <option>2480 × 1170 мм</option>
+                                <option>2920 × 920 ммм</option>
+                                <option>3140 × 920 ммм</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -968,44 +968,58 @@
                                 ?
                             </button>
                             <select class="form-control product-sel" id="checkMaterial">
-                                <option class="placeholder" value="0"> </option>
+                                <!--                            <option class="placeholder" value="0"> </option> -->
                                 <option>Сосна</option>
                                 <option>Сосна под покраску</option>
                                 <option>Сосна + дуб</option>
                                 <option>Дуб</option>
                             </select>
                         </div>
-                        <div class="form-group d-none">
-                            <p class="p-param-label">Цвет каркаса:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
+                        <div class="form-group">
+                            <p class="p-param-label">Диаметр:</p>
                             <div class="btn-group-toggle" data-toggle="buttons">
-                                <label class="btn  btn-radio-color">
-                                    <input type="radio" name="options" id="option10">
-                                    <img src="img/cg.jpg" alt="" class="stair-color-img">
+                                <label class="btn  btn-radio-diametr">
+                                    <input type="radio" name="options" id="option1"> 120 cм
                                 </label>
-                                <label class="btn  btn-radio-color">
-                                    <input type="radio" name="options" id="option2">
-                                    <img src="img/cb.jpg" alt="" class="stair-color-img">
+                                <label class="btn  btn-radio-diametr">
+                                    <input type="radio" name="options" id="option5"> 140 cм
                                 </label>
-                                <label class="btn  btn-radio-color">
-                                    <input type="radio" name="options" id="option3">
-                                    <img src="img/cw.jpg" alt="" class="stair-color-img">
+                                <label class="btn  btn-radio-diametr">
+                                    <input type="radio" name="options" id="option6"> 160 cм
                                 </label>
                             </div>
                         </div>
-                        <div class="form-group d-none">
-                            <p class="p-param-label">Выберите диаметр:</p>
+                        <div class="form-group">
+                            <p class="p-param-label">Цвет конструкции:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
-                                <label class="btn  btn-radio-diametr">
-                                    <input type="radio" name="options" id="option1"> 120 мм
+                                <label class="btn  btn-radio-color">
+                                    <input type="radio" name="options" id="option10">
+                                    <img src="img/cg.jpg" alt="Название цвета" class="stair-color-img">
                                 </label>
-                                <label class="btn  btn-radio-diametr">
-                                    <input type="radio" name="options" id="option5"> 140 мм
+                                <label class="btn  btn-radio-color">
+                                    <input type="radio" name="options" id="option2">
+                                    <img src="img/cb.jpg" alt="Название цвета" class="stair-color-img">
                                 </label>
-                                <label class="btn  btn-radio-diametr">
-                                    <input type="radio" name="options" id="option6"> 160 мм
+                                <label class="btn  btn-radio-color">
+                                    <input type="radio" name="options" id="option3">
+                                    <img src="img/cw.jpg" alt="Название цвета" class="stair-color-img">
                                 </label>
-                                <label class="btn  btn-radio-diametr">
-                                    <input type="radio" name="options" id="option7"> 180 мм
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="p-param-label">Цвет ступеней:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn  btn-radio-color">
+                                    <input type="radio" name="options" id="option10">
+                                    <img src="img/cg.jpg" alt="Название цвета" class="stair-color-img">
+                                </label>
+                                <label class="btn  btn-radio-color">
+                                    <input type="radio" name="options" id="option2">
+                                    <img src="img/cb.jpg" alt="Название цвета" class="stair-color-img">
+                                </label>
+                                <label class="btn  btn-radio-color">
+                                    <input type="radio" name="options" id="option3">
+                                    <img src="img/cw.jpg" alt="Название цвета" class="stair-color-img">
                                 </label>
                             </div>
                         </div>
@@ -1030,6 +1044,17 @@
                                 </label>
                                 <label class="btn  btn-povorot">
                                     <input type="radio" name="options" id="option8"> налево
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="p-param-label">Стойка перил:</p>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn  btn-povorot">
+                                    <input type="radio" name="options" id="option11"> Крашеная
+                                </label>
+                                <label class="btn  btn-povorot">
+                                    <input type="radio" name="options" id="option12"> Нержавеющая сталь
                                 </label>
                             </div>
                         </div>

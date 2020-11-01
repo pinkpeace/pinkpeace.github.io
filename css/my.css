@@ -1003,7 +1003,8 @@ a:hover {
     width: 100%; }
   .p-values .feature-val {
     width: 40%;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: bottom; }
 
 @media (min-width: 1200px) {
   .values-box .p-values {

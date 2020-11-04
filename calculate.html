@@ -379,46 +379,49 @@
             </div>
         </div>
     </div>
-    <div class="right-links-box link-a d-none d-lg-block">
-        <a href="#" data-toggle="modal" data-target="#ask_us">
-            <div class="right-link  shadow-lg d-flex align-items-center">
-                <img src="img/ask.svg" alt="">
-                <p class="mb-0">Задать вопрос</p>
+    <!-- Модальное окно "Запрос консультации" -->
+    <div class="modal fade" id="zapros" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="mb-2 text-center">Запрос консультации</h2>
+                <p class="mb-5 text-center">Вас интересует <b>Здесь Название лестницы</b></p>
+                <form>
+                    <div class="row">  
+                        <div class="form-group col-md-6">
+                            <label class="my-label" for="NameZapros">Имя</label>
+                            <input type="email" class="form-control" id="NameZapros">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone22" class="my-label">Телефон</label>
+                            <input type="tel" class="form-control" id="inputPhone22">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label class="my-label" for="textZapros">Ваш вопрос</label>
+                            <textarea class="form-control" id="textZapros" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="my-file text-center">
+                            <input type="file" class="" id="FileZapros">
+                            <label class="my-label sr-only" for="FileZapros">Прикрепить файл</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-simple btn-block mt-2 mb-4">Отправить</button>
+                    <p class="text-center">Мы перезвоним вам в ближайшее время и подробно ответим на все ваши вопросы</p>
+                </form>
             </div>
-        </a>
+        </div>
     </div>
-    <div class="right-links-box link-b d-none d-lg-block">
-        <a href="calculate.html">
-            <div class="right-link  shadow-lg d-flex align-items-center">
-                <img src="img/calculate.svg" alt="">
-                <p class="mb-0">Онлайн калькулятор</p>
-            </div>
-        </a>
-    </div>
-    <div class="right-links-box link-c d-none d-lg-block">
-        <a href="#" data-toggle="modal" data-target="#order_measure">
-            <div class="right-link shadow-lg d-flex align-items-center">
-                <img src="img/measure.svg" alt="">
-                <p class="mb-0">Заказать замер</p>
-            </div>
-        </a>
-    </div>
-    <!-- <div class="right-links-box link-d d-lg-block">
-        <a href="#" data-toggle="modal" data-target="#whatsapp">
-            <div class="right-link shadow-lg d-flex align-items-center">
-                <img src="img/whatsapp.svg" alt="">
-                <p class="mb-0">Спросить в WhatsApp</p>
-            </div>
-        </a>
-    </div> -->
-    <!-- <div class="right-links-box link-e d-lg-none">
-        <a href="#" data-toggle="modal" data-target="#openPhone">
-            <div class="right-link shadow-lg d-flex align-items-center">
-                <img src="img/tel.svg" alt="">
-                <p class="mb-0">Позвонить</p>
-            </div>
-        </a>
-    </div> -->
+    <!-- Конец Модальное окно "Запрос консультации" -->
     <div class="header">
         <div class="sp-bx d-none">Специальный блок для специальных сообщений</div>
         <div class="container-fluid container-xl">
@@ -609,7 +612,7 @@
     </div>
     <!-- Конец меню -->
     <!-- Хлебные крошки -->
-    <div class="container-xl">
+    <div class="container-fluid container-xl">
         <!-- Хлебные крошки -->
         <div class="breadcrumb-box">
             <a href="javascript:history.back()" class="a-back">
@@ -631,7 +634,7 @@
                             </g>
                         </svg>
                     </li>
-                    <li class="my-breadcrumb-item active" aria-current="page">Комплектующие
+                    <li class="my-breadcrumb-item active" aria-current="page">Рассчитать стоимость
                     </li>
                 </ol>
             </nav>
@@ -647,114 +650,43 @@
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Комплектующие
+            Онлайн калькулятор
         </h1>
-        <!-- Комплектующие -->
-        <div class="row kompl">
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/stp.jpg" alt="" class="img-fluid">
-                        <p class="">Ступени для лестниц</p>
-                    </a>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h2 class="p-caption">
+            Назначение лестницы
+        </h2>
+        <div class="">
+            <form>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="form-check">
+                            <img src="img/wooden.png" alt="" class="img-fluid">
+                            <input type="radio" class="custom-control-input" name="dlya" id="dlya-derev" value="derev">
+                            <label class="custom-control-label" for="dlya-derev">Для деревянного дома</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="form-check">
+                            <img src="img/kirpi4.png" alt="" class="img-fluid">
+                            <input type="radio" class="custom-control-input" name="dlya" id="dlya-kirpich" value="kirpich">
+                            <label class="custom-control-label" for="dlya-kirpich">Для дома из кирпича или блоков</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="form-check">
+                            <img src="img/kvartiry.png" alt="" class="img-fluid">
+                            <input type="radio" class="custom-control-input" name="dlya" id="dlya-kvartiry" value="kvartira">
+                            <label class="custom-control-label" for="dlya-kvartiry">Для квартиры</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx"><a href="#">
-                        <img src="img/ogr.jpg" alt="" class="img-fluid">
-                        <p class="">Столбы, балясины</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx"> <a href="#">
-                        <img src="img/perila.jpg" alt="" class="img-fluid">
-                        <p class="">Перила, поручни</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx"> <a href="#">
-                        <img src="img/kosoury.jpg" alt="" class="img-fluid">
-                        <p class="">Площадки, тетивы, косоуры</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/bal2.jpg" alt="" class="img-fluid">
-                        <p class="">Готовые ограждения</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/biofa.jpg" alt="" class="img-fluid">
-                        <p class="">Краска для лестниц</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/kovr.jpg" alt="" class="img-fluid">
-                        <p class="">Коврики</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/kovrd.jpg" alt="" class="img-fluid">
-                        <p class="">Ковродержатели</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/vorota.jpg" alt="" class="img-fluid">
-                        <p class="">Ворота безопасности</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/karkas.jpg" alt="" class="img-fluid">
-                        <p class="">Каркасы для лестниц</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/svet.jpg" alt="" class="img-fluid">
-                        <p class="">Подсветка для лестниц</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/svet1.jpg" alt="" class="img-fluid">
-                        <p class="">Светильники для лестниц</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-                <div class="bx">
-                    <a href="#">
-                        <img src="img/verstak.jpg" alt="" class="img-fluid">
-                        <p class="">Верстаки</p>
-                    </a>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
-    <!-- Конец комлектующих -->
+    </div>
     <!-- Сео-блок -->
     <div class="container-xl">
     

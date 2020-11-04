@@ -40,7 +40,7 @@ h2.h2mt {
 h3,
 .h3 {
   font-size: 21px;
-  line-height: 1.6em;
+  line-height: 1.3em;
   margin-bottom: 1em;
   font-weight: 800; }
 
@@ -2841,3 +2841,8 @@ form .final-form .h2-hidden {
 
 .a-hov:hover h4 {
   color: #009de8; }
+
+.adr-img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1em; }

@@ -652,63 +652,41 @@
         <h1 class="page-name">
             Онлайн калькулятор
         </h1>
-        <!--         <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div> -->
         <form class="form-var">
             <div class="row">
                 <div class="col-lg-3">
                     <h3 class="p-caption">
-                        Выберите назначение лестницы
+                        Размеры лестницы
                     </h3>
                 </div>
                 <div class="col-lg-9">
                     <div class="row mb-5">
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/wooden.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="dlya" id="dlya-derev" value="derev" checked>
-                                <label class="custom-control-label" for="dlya-derev">Для деревянного дома</label>
+                        <div class="col-sm-8 col-lg-5 col-var">
+                            <div class="form-group">
+                                <label for="heghtInput">Высота от пола нижнего этажа до пола верхнего</label>
+                                <input type="text" class="form-control" id="heghtInput" placeholder="2700 мм">
+                                <p class="text-grey">
+                                    Для точного расчета, необходима величина между чистовыми полами, укажите приблизительную, если не уверены.
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/kirpi4.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="dlya" id="dlya-kirpich" value="kirpich">
-                                <label class="custom-control-label" for="dlya-kirpich">Для дома из кирпича или блоков</label>
+                            <div class="form-group">
+                                <label for="wideInput">Ширина проёма</label>
+                                <input type="text" class="form-control" id="wideInput" placeholder="900 мм">
+                                <p class="text-grey">
+                                    Укажите ширину проёма в потолке, ширина измеряется перпендикулярно направлению движения по лестнице.
+                                </p>
                             </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/kvartiry.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="dlya" id="dlya-kvartiry" value="kvartira">
-                                <label class="custom-control-label" for="dlya-kvartiry">Для квартиры</label>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/banya.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="dlya" id="dlya-bany" value="banya">
-                                <label class="custom-control-label" for="dlya-bany">Для бани</label>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/bar.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="dlya" id="dlya-bara" value="bar">
-                                <label class="custom-control-label" for="dlya-bara">Для ресторана, бара, магазина</label>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/ulitca.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="dlya" id="dlya-ulitca" value="ulitca">
-                                <label class="custom-control-label" for="dlya-ulitca">На улицу</label>
+                            <div class="form-group">
+                                <label for="longInput">Длина проёма</label>
+                                <input type="text" class="form-control" id="LongInput" placeholder="1500 мм">
+                                <p class="text-grey">
+                                    Длина проёма измеряется вдоль линии движения по лестнице
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <a type="button" class="btn btn-simple" href="calculate-2.html">далее</a>
-                     <hr class="my-hr mt-5">
+                    <a type="button" class="btn btn-sister mr-3" href="calculate-6.html">назад</a><a type="button" class="btn btn-simple" href="calculate-8.html">далее</a>
+                    <hr class="my-hr mt-5">
                 </div>
             </div>
         </form>

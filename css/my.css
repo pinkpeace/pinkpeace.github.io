@@ -2846,3 +2846,24 @@ form .final-form .h2-hidden {
   width: 40px;
   height: 40px;
   margin-bottom: 1em; }
+
+.calc-img {
+  width: 100%;
+  max-width: 180px;
+  margin-bottom: 1em; }
+
+.col-var {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+
+.form-var {
+  margin-bottom: 2em;
+  margin-top: 1em; }
+  .form-var label {
+    font-weight: 500; }
+  .form-var .form-check {
+    margin-left: 1em; }
+
+.form-rass4et {
+  padding: 40px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12); }

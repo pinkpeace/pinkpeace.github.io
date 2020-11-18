@@ -650,36 +650,31 @@
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Онлайн калькулятор
+            Выберите поворот лестницы
         </h1>
         <form class="form-var">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h3 class="p-caption">
-                        Выберите поворот лестницы
-                    </h3>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row mb-5">
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
+            <div class="row radio-tile-group">
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="povorot" id="povorot-napravo" value="napravo">
+                    <div class="radio-tile">
+                        <div class="icon">
                             <img src="img/napravo.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="povorot" id="povorot-napravo" value="napravo"  checked>
-                                <label class="custom-control-label" for="povorot-napravo">Лестница с поворотом направо</label>
-                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/nalevo.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="povorot" id="povorot-nalevo" value="nalevo">
-                                <label class="custom-control-label" for="povorot-nalevo">Лестница с поворотом налево</label>
-                            </div>
-                        </div>
+                        <label class="radio-tile-label" for="povorot-napravo">Лестница с поворотом направо</label>
                     </div>
-                    <a type="button" class="btn btn-sister mr-3" href="calculate-5.html">назад</a><a type="button" class="btn btn-simple" href="calculate-7.html">далее</a>
-                    <hr class="my-hr mt-5">
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="povorot" id="povorot-nalevo" value="nalevo">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/nalevo.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="povorot-nalevo">Лестница с поворотом налево</label>
+                    </div>
                 </div>
             </div>
+            <a class="btn btn-forw mr-2" href="calculate-5.html">назад</a>
+            <a class="btn btn-simple" href="calculate-7.html">далее</a>
         </form>
     </div>
     <!-- Сео-блок -->

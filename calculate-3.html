@@ -650,54 +650,49 @@
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Онлайн калькулятор
+            Выберите форму лестницы
         </h1>
-        <!--         <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div> -->
         <form class="form-var">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h3 class="p-caption">
-                        Выберите форму лестницы
-                    </h3>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row mb-5">
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
+            <div class="row radio-tile-group">
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-vint" value="vint">
+                    <div class="radio-tile">
+                        <div class="icon">
                             <img src="img/vint.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-vint" value="vint" checked>
-                                <label class="custom-control-label" for="lest-vint">Винтовая</label>
-                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/pryamaya.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-pryamaya" value="pryamaya">
-                                <label class="custom-control-label" for="lest-pryamaya">Прямая</label>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/g-obraznaya.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-gobraznaya" value="gobraznaya">
-                                <label class="custom-control-label" for="lest-gobraznaya">Г-образная</label>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/p-obraznaya.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-pobraznaya" value="pobraznaya">
-                                <label class="custom-control-label" for="lest-pobraznaya">П-образная</label>
-                            </div>
-                        </div>
+                        <label class="radio-tile-label" for="lest-vint">Винтовая</label>
                     </div>
-
-                    <a type="button" class="btn btn-sister mr-3" href="calculate-2.html">назад</a><a type="button" class="btn btn-simple" href="calculate-karkas.html">далее</a>
-                    <hr class="my-hr mt-5">
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-pryamaya" value="pryamaya">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/pryamaya.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="lest-pryamaya">Прямая</label>
+                    </div>
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-gobraznaya" value="gobraznaya">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/g-obraznaya.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="lest-gobraznaya">Г-образная</label>
+                    </div>
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-pobraznaya" value="pobraznaya">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/p-obraznaya.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="lest-pobraznaya">П-образная</label>
+                    </div>
                 </div>
             </div>
+            <a class="btn btn-forw mr-2" href="calculate-2.html">назад</a>
+            <a class="btn btn-simple" href="calculate-karkas.html">далее</a>
         </form>
     </div>
     <!-- Сео-блок -->

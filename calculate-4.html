@@ -649,64 +649,79 @@
         <!-- Конец хлебых крошек -->
     </div>
     <div class="container-xl">
-        <h1 class="page-name">
-            Онлайн калькулятор
+        <h1>
+            Выберите породу дерева
         </h1>
         <form class="form-var">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h3 class="p-caption">
-                        Выберите породу дерева
-                    </h3>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row mb-5">
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
+            <div class="row  radio-tile-group">
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="poroda" id="poroda-sosna" value="sosna">
+                    <div class="radio-tile">
+                        <p class="text-xs p-class">
+                            эконом
+                        </p>
+                        <div class="icon">
                             <img src="img/sosna.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="poroda" id="poroda-sosna" value="sosna" checked>
-                                <label class="custom-control-label" for="poroda-sosna">Сосна</label>
-                                <p class="text-grey">Экономичная мягкая порода</p>
-                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/listv.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="poroda" id="poroda-listv" value="listv">
-                                <label class="custom-control-label" for="poroda-listv">Лиственница</label>
-                                <p class="text-grey">Идеальна для влажным помещений</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/yasen.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="poroda" id="poroda-yasen" value="yasen">
-                                <label class="custom-control-label" for="poroda-yasen">Ясень</label>
-                                <p class="text-grey">Благородный рисунок, плотность выше средних значений</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/buk.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="poroda" id="poroda-buk" value="buk">
-                                <label class="custom-control-label" for="poroda-buk">Бук</label>
-                                <p class="text-grey">Прочный и плотный, не терпит влаги</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/dub.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="poroda" id="poroda-dub" value="dub">
-                                <label class="custom-control-label" for="poroda-dub">Дуб</label>
-                                <p class="text-grey">Максимальная прочность и долговечность. Благородный рисунок</p>
-                            </div>
-                        </div>
+                        <label class="radio-tile-label" for="poroda-sosna">Сосна</label>
+                        <p class="text-grey">от 20 000 <span class="price-rouble"></span></p>
                     </div>
-
-                    <a type="button" class="btn btn-sister mr-3" href="calculate-2.html">назад</a><a type="button" class="btn btn-simple" href="calculate-5.html">далее</a>
-                    <hr class="my-hr mt-5">
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="poroda" id="poroda-listv" value="listv">
+                    <div class="radio-tile">
+                        <p class="text-xs p-class">
+                            средний
+                        </p>
+                        <div class="icon">
+                            <img src="img/listv.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="poroda-listv">Лиственница</label>
+                        <p class="text-grey">от 34 000 <span class="price-rouble"></span></p>
+                    </div>
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="poroda" id="poroda-buk" value="buk">
+                    <div class="radio-tile">
+                        <p class="text-xs p-class">
+                            оптимальный
+                        </p>
+                        <div class="icon">
+                            <img src="img/buk.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="poroda-buk">Бук</label>
+                        <p class="text-grey">от 42 000<span class="price-rouble"></span></p>
+                    </div>
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="poroda" id="poroda-yasen" value="yasen">
+                    <div class="radio-tile">
+                        <p class="text-xs p-class">
+                            премиум
+                        </p>
+                        <div class="icon">
+                            <img src="img/yasen.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="poroda-yasen">Ясень</label>
+                        <p class="text-grey">от 51 000 <span class="price-rouble"></span></p>
+                    </div>
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="poroda" id="poroda-dub" value="dub">
+                    <div class="radio-tile">
+                        <p class="text-xs p-class">
+                            люкс
+                        </p>
+                        <div class="icon">
+                            <img src="img/dub.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="poroda-dub">Дуб</label>
+                        <p class="text-grey">от 70 000 <span class="price-rouble"></span></p>
+                    </div>
                 </div>
             </div>
+            <a class="btn btn-forw mr-2" href="calculate-2.html">назад</a>
+            <a class="btn btn-simple" href="calculate-5.html">далее</a>
         </form>
     </div>
     <!-- Сео-блок -->

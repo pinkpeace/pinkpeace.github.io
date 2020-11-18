@@ -649,45 +649,41 @@
         <!-- Конец хлебых крошек -->
     </div>
     <div class="container-xl">
-        <h1 class="page-name">
-            Онлайн калькулятор
+         <h1 class="page-name">
+            Выберите материал каркаса и ступеней
         </h1>
-        <!--         <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div> -->
         <form class="form-var">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h3 class="p-caption">
-                        Выберите материал каркаса и ступеней
-                    </h3>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row mb-5">
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
+            <div class="row radio-tile-group">
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-derev" value="derev">
+                    <div class="radio-tile">
+                        <div class="icon">
                             <img src="img/les-derev.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-derev" value="derev" checked>
-                                <label class="custom-control-label" for="lest-derev">Лестница полностью из дерева</label>
-                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/wood-metal.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-wood-metal" value="wood-metal">
-                                <label class="custom-control-label" for="lest-wood-metal">Каркас лестницы из металла, а ступени деревянные</label>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/full-metal2.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-metal" value="metal">
-                                <label class="custom-control-label" for="lest-metal">Лестница полностью металлическая</label>
-                            </div>
-                        </div>
+                        <label class="radio-tile-label" for="lest-derev">Лестница полностью из дерева</label>
                     </div>
-                    <a type="button" class="btn btn-sister mr-3" href="calculate.html">назад</a><a type="button" class="btn btn-simple" href="calculate-3.html">далее</a>
-                     <hr class="my-hr mt-5">
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-wood-metal" value="wood-metal">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/wood-metal.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="lest-wood-metal">Каркас лестницы из металла, а ступени деревянные</label>
+                    </div>
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-metal" value="metal">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/full-metal2.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="lest-metal">Лестница полностью металлическая</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-forw mr-2" href="calculate.html">назад</a>
+                    <a class="btn btn-simple" href="calculate-3.html">далее</a>
                 </div>
             </div>
         </form>

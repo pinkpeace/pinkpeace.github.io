@@ -650,43 +650,37 @@
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Онлайн калькулятор
+            Размеры лестницы
         </h1>
         <form class="form-var">
             <div class="row">
-                <div class="col-lg-3">
-                    <h3 class="p-caption">
-                        Размеры лестницы
-                    </h3>
+                <div class="col-sm-6 col-lg-7">
+                    <img src="img/params.png" class="img-fluid mb-3" alt="">
                 </div>
-                <div class="col-lg-9">
-                    <div class="row mb-5">
-                        <div class="col-sm-8 col-lg-5 col-var">
-                            <div class="form-group">
-                                <label for="heghtInput">Высота от пола нижнего этажа до пола верхнего</label>
-                                <input type="text" class="form-control" id="heghtInput" placeholder="2700 мм">
-                                <p class="text-grey">
-                                    Для точного расчета, необходима величина между чистовыми полами, укажите приблизительную, если не уверены.
-                                </p>
-                            </div>
-                            <div class="form-group">
-                                <label for="wideInput">Ширина проёма</label>
-                                <input type="text" class="form-control" id="wideInput" placeholder="900 мм">
-                                <p class="text-grey">
-                                    Укажите ширину проёма в потолке, ширина измеряется перпендикулярно направлению движения по лестнице.
-                                </p>
-                            </div>
-                            <div class="form-group">
-                                <label for="longInput">Длина проёма</label>
-                                <input type="text" class="form-control" id="LongInput" placeholder="1500 мм">
-                                <p class="text-grey">
-                                    Длина проёма измеряется вдоль линии движения по лестнице
-                                </p>
-                            </div>
-                        </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="form-group">
+                        <label for="heghtInput">Высота от пола нижнего этажа до пола верхнего</label>
+                        <input type="text" class="form-control" id="heghtInput" placeholder="например 2700 мм">
+                        <p class="text-grey text-xs">
+                            Для точного расчета, необходима величина между чистовыми полами, укажите приблизительную, если не уверены.
+                        </p>
                     </div>
-                    <a type="button" class="btn btn-sister mr-3" href="calculate-6.html">назад</a><a type="button" class="btn btn-simple" href="calculate-8.html">далее</a>
-                    <hr class="my-hr mt-5">
+                    <div class="form-group">
+                        <label for="wideInput">Ширина проёма</label>
+                        <input type="text" class="form-control" id="wideInput" placeholder="например 900 мм">
+                        <p class="text-grey text-xs">
+                            Укажите ширину проёма в потолке, ширина измеряется перпендикулярно направлению движения по лестнице.
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="longInput">Длина проёма</label>
+                        <input type="text" class="form-control" id="LongInput" placeholder="например 1500 мм">
+                        <p class="text-grey text-xs">
+                            Длина проёма измеряется вдоль линии движения по лестнице
+                        </p>
+                    </div>
+                    <a class="btn btn-forw mr-2" href="calculate-6.html">назад</a>
+                    <a class="btn btn-simple" href="calculate-8.html">далее</a>
                 </div>
             </div>
         </form>

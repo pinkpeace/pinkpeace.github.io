@@ -650,51 +650,49 @@
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Онлайн калькулятор
+            Выберите тип каркаса
         </h1>
         <form class="form-var">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h3 class="p-caption">
-                        Выберите тип каркаса лестницы
-                    </h3>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row mb-5">
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
+            <div class="row  radio-tile-group">
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-module" value="module">
+                    <div class="radio-tile">
+                        <div class="icon">
                             <img src="img/les-module.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-module" value="module" checked>
-                                <label class="custom-control-label" for="lest-module">Модульная лестница</label>
-                            </div>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/les-centr.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-centr" value="centr">
-                                <label class="custom-control-label" for="lest-centr">На центральном металлическом каркасе</label>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/les-dvoynoy.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-dvoynoy" value="dvoynoy">
-                                <label class="custom-control-label" for="lest-dvoynoy">На двойном металлическом каркасе</label>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-var">
-                            <img src="img/les-tetivy.png" alt="" class="calc-img">
-                            <div class="form-check custom-control custom-checkbox">
-                                <input type="radio" class="custom-control-input" name="lest" id="lest-tetivi" value="tetivi">
-                                <label class="custom-control-label" for="lest-tetivi">Лестница на металлических тетивах</label>
-                            </div>
-                        </div>
-
+                        <label class="radio-tile-label" for="lest-module">Модульная лестница</label>
                     </div>
-                    <a type="button" class="btn btn-sister mr-3" href="calculate-3.html">назад</a><a type="button" class="btn btn-simple" href="calculate-4.html">далее</a>
-                    <hr class="my-hr mt-5">
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-centr" value="centr">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/les-centr.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="lest-centr">На центральном металлическом каркасе</label>
+                    </div>
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-dvoynoy" value="dvoynoy">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/les-dvoynoy.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="lest-dvoynoy">На двойном металлическом каркасе</label>
+                    </div>
+                </div>
+                <div class="input-container col-6 col-sm-4 col-md-2 col-var">
+                    <input type="radio" class="radio-button" name="lest" id="lest-tetivi" value="tetivi">
+                    <div class="radio-tile">
+                        <div class="icon">
+                            <img src="img/les-tetivy.png" alt="" class="calc-img">
+                        </div>
+                        <label class="radio-tile-label" for="lest-tetivi">Лестница на металлических тетивах</label>
+                    </div>
                 </div>
             </div>
+            <a type="" class="btn  btn-forw mr-2" href="calculate-3.html">назад</a>
+            <a type="" class="btn btn-simple" href="calculate-4.html">далее</a>
         </form>
     </div>
     <!-- Сео-блок -->

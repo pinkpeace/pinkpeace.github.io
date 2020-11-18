@@ -1216,6 +1216,14 @@ select:focus {
   background-color: #ff0e81;
   color: #fff; }
 
+.btn-forw {
+  border: 2px solid #e9ecef;
+  padding: 12px 30px 13px;
+  line-height: 1em; }
+
+.btn-forw:hover {
+  background-color: #e9ecef; }
+
 .btn-sister {
   border: 2px solid #ff3495;
   padding: 12px 30px 13px;
@@ -2858,12 +2866,50 @@ form .final-form .h2-hidden {
 
 .form-var {
   margin-bottom: 2em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 2em; }
   .form-var label {
     font-weight: 500; }
   .form-var .form-check {
     margin-left: 1em; }
+  .form-var .form-control {
+    margin-bottom: .5em; }
 
 .form-rass4et {
   padding: 40px;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12); }
+
+.radio-tile-group .input-container {
+  position: relative; }
+  .radio-tile-group .input-container .radio-button {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer; }
+  .radio-tile-group .input-container .radio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    padding: 1rem;
+    transition: transform 300ms ease; }
+  .radio-tile-group .input-container .radio-tile-label {
+    text-align: center; }
+  .radio-tile-group .input-container .radio-button:checked + .radio-tile {
+    border: 2px solid #fee44c;
+    transform: scale(1.1, 1.1);
+    box-shadow: none; }
+
+.p-class {
+  border-radius: 5px;
+  background-color: #fff7c8;
+  padding: 3px 10px;
+  color: #9c8601; }

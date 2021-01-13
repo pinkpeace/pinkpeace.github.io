@@ -131,7 +131,7 @@
                                 <li><a href="#">Псков</a></li>
                             </ul>
                             <ul class="" data-letter="r">
-                                <li><a href="#">Росто��</a></li>
+                                <li><a href="#">Ростов</a></li>
                                 <li><a href="#">Рязань</a></li>
                                 <li><a href="#">Рига</a></li>
                                 <li><a href="#">Сыктывкар</a></li>
@@ -198,6 +198,51 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="added_to_cart" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="h-cart">Товар добавлен в корзину</h2>
+                <p class="text-dgrey text-xs">Итого в вашей <a href="cart.html" class="a-link">корзине</a> 1 товар на сумму 52 000 руб.</p>
+                <div class="my-hr"></div>
+                <div class="crt_b">
+                    <div class="mr-2 mr-md-3">
+                        <img src="img/tw1.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="mr-3 mb-3">
+                            <p class="crt_nm bolder">Лестница Название П-образная с площадкой</p>
+                            <p class="text-xs text-dgrey">Цвет каркаса: Серый</p>
+                            <p class="text-xs text-dgrey">Материал: Бук</p>
+                            <p class="text-xs text-dgrey">Высота шага: 220 мм</p>
+                        </div>
+                        <div class="qd">
+                            <p class="p-price text-nowrap pink">
+                                52 000<span class="price-rouble"></span>
+                            </p>
+                            <p class="old-price">57 000<span class="price-rouble"> </span></p>
+                            <div class="counter mt-">
+                                <span class="counter-less" id="btnminus4">–</span>
+                                <input type="text" class="counter-inp" placeholder="1">
+                                <span class="counter-more" id="btnplus4">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-hr"></div>
+                <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+                    <button class="btn btn-sister" type="button" data-toggle="modal" data-target="#added_to_cart">Продолжить покупки</button>
+                    <a class="btn btn-simple" href="cart.html">Перейти в корзину</a>
                 </div>
             </div>
         </div>
@@ -334,46 +379,49 @@
             </div>
         </div>
     </div>
-    <div class="right-links-box link-a d-none d-lg-block">
-        <a href="#" data-toggle="modal" data-target="#ask_us">
-            <div class="right-link  shadow-lg d-flex align-items-center">
-                <img src="img/ask.svg" alt="">
-                <p class="mb-0">Задать вопрос</p>
+    <!-- Модальное окно "Запрос консультации" -->
+    <div class="modal fade" id="zapros" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="mb-2 text-center">Запрос консультации</h2>
+                <p class="mb-5 text-center">Вас интересует <b>Здесь Название лестницы</b></p>
+                <form>
+                    <div class="row">  
+                        <div class="form-group col-md-6">
+                            <label class="my-label" for="NameZapros">Имя</label>
+                            <input type="email" class="form-control" id="NameZapros">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone22" class="my-label">Телефон</label>
+                            <input type="tel" class="form-control" id="inputPhone22">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <label class="my-label" for="textZapros">Ваш вопрос</label>
+                            <textarea class="form-control" id="textZapros" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-group mb-4">
+                        <div class="my-file text-center">
+                            <input type="file" class="" id="FileZapros">
+                            <label class="my-label sr-only" for="FileZapros">Прикрепить файл</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-simple btn-block mt-2 mb-4">Отправить</button>
+                    <p class="text-center">Мы перезвоним вам в ближайшее время и подробно ответим на все ваши вопросы</p>
+                </form>
             </div>
-        </a>
+        </div>
     </div>
-    <div class="right-links-box link-b d-none d-lg-block">
-        <a href="calculate.html">
-            <div class="right-link  shadow-lg d-flex align-items-center">
-                <img src="img/calculate.svg" alt="">
-                <p class="mb-0">Онлайн калькулятор</p>
-            </div>
-        </a>
-    </div>
-    <div class="right-links-box link-c d-none d-lg-block">
-        <a href="#" data-toggle="modal" data-target="#order_measure">
-            <div class="right-link shadow-lg d-flex align-items-center">
-                <img src="img/measure.svg" alt="">
-                <p class="mb-0">Заказать замер</p>
-            </div>
-        </a>
-    </div>
-    <!-- <div class="right-links-box link-d d-lg-block">
-        <a href="#" data-toggle="modal" data-target="#whatsapp">
-            <div class="right-link shadow-lg d-flex align-items-center">
-                <img src="img/whatsapp.svg" alt="">
-                <p class="mb-0">Спросить в WhatsApp</p>
-            </div>
-        </a>
-    </div> -->
-    <!-- <div class="right-links-box link-e d-lg-none">
-        <a href="#" data-toggle="modal" data-target="#openPhone">
-            <div class="right-link shadow-lg d-flex align-items-center">
-                <img src="img/tel.svg" alt="">
-                <p class="mb-0">Позвонить</p>
-            </div>
-        </a>
-    </div> -->
+    <!-- Конец Модальное окно "Запрос консультации" -->
     <div class="header">
         <div class="sp-bx d-none">Специальный блок для специальных сообщений</div>
         <div class="container-fluid container-xl">
@@ -563,7 +611,8 @@
         </div>
     </div>
     <!-- Конец меню -->
-    <div class="container-xl">
+    <!-- Хлебные крошки -->
+    <div class="container-fluid container-xl">
         <!-- Хлебные крошки -->
         <div class="breadcrumb-box">
             <a href="javascript:history.back()" class="a-back">
@@ -585,7 +634,7 @@
                             </g>
                         </svg>
                     </li>
-                    <li class="my-breadcrumb-item active" aria-current="page">Деревянные
+                    <li class="my-breadcrumb-item active" aria-current="page">Рассчитать стоимость
                     </li>
                 </ol>
             </nav>
@@ -601,739 +650,155 @@
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Деревянные лестницы
+            О компании
         </h1>
-        <!-- Меню выборок (или подразделов) -->
-        <div class="submenu-box">
-            <ul class="">
-                <li>
-                    <a class="active" href="#">Из сосны</a>
-                </li>
-                <li>
-                    <a href="#">Из дуба</a>
-                </li>
-                <li>
-                    <a href="#">Из бука</a>
-                </li>
-                <li>
-                    <a href="#">Из лиственницы</a>
-                </li>
-                <li>
-                    <a href="#">Из ясеня</a>
-                </li>
-                <li>
-                    <a href="#">Из берёзы</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Фильтры и сортировки -->
-        <div class="filter-sort-box d-lg-flex justify-content-lg-between mb-3">
-            <button class="d-lg-none filter-btn" type="button" data-toggle="collapse" data-target="#filters" aria-controls="filters" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24">
-                    <path class="cls-filter" d="M21,13H10.9c-0.5,2.1-2.7,3.4-4.8,2.9c-1.4-0.4-2.5-1.5-2.9-2.9H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2.1C3.7,8.9,5.8,7.6,8,8.1
-                    c1.4,0.4,2.5,1.5,2.9,2.9H21c0.6,0,1,0.4,1,1S21.6,13,21,13z M7,10c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S8.1,10,7,10z M21,5h-2.1
-                    c-0.5,2.1-2.7,3.4-4.8,2.9c-1.4-0.4-2.5-1.5-2.9-2.9H1C0.4,5,0,4.6,0,4s0.4-1,1-1h10.1c0.5-2.1,2.7-3.4,4.8-2.9
-                    c1.4,0.4,2.5,1.5,2.9,2.9H21c0.6,0,1,0.4,1,1S21.6,5,21,5z M15,2c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S16.1,2,15,2z M1,19h10.1
-                    c0.5-2.1,2.7-3.4,4.8-2.9c1.4,0.4,2.5,1.5,2.9,2.9H21c0.6,0,1,0.4,1,1s-0.4,1-1,1h-2.1c-0.5,2.1-2.7,3.4-4.8,2.9
-                    c-1.4-0.4-2.5-1.5-2.9-2.9H1c-0.6,0-1-0.4-1-1S0.4,19,1,19z M15,22c1.1,0,2-0.9,2-2s-0.9-2-2-2s-2,0.9-2,2S13.9,22,15,22z" />
-                </svg>
-            </button>
-            <div class="select-box order-lg-last float-right">
-                <select class="select-sort form-control">
-                    <option value="0">Сначала популярные</option>
-                    <option>Сначала недорогие</option>
-                    <option>Сначала дорогие</option>
-                </select>
+        <div class="row mb-5">
+            <div class="col-md-5">
+                <h2 class="p-caption">
+                    Мегамаркет "Лестницы-просто" — крупнейшая торгово-производственная компания
+                </h2>
             </div>
-            <div class="collapse d-lg-block order-lg-first" id="filters">
-                <div class="d-lg-flex selects-wrap">
-                    <div class="select-box">
-                        <label for="filter-form" class="sr-only">Форма лестницы</label>
-                        <select class="form-control filter-sel" id="filter-form">
-                            <option class="placeholder" value="0">Форма</option>
-                            <option value="1">Прямая</option>
-                            <option value="2">Г-образная</option>
-                            <option value="3">П-образная</option>
-                            <option value="4">Винтовая</option>
-                        </select>
-                        <button class="d-none delselect">
-                            <img src="img/filter-close.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="select-box">
-                        <label for="filter-measure" class="sr-only">Длина проёма</label>
-                        <select class="form-control filter-sel" id="filter-measure">
-                            <option class="placeholder" value="0">Длина проёма</option>
-                            <option value="1">До 1300 мм</option>
-                            <option value="2">1300 - 1900 мм</option>
-                            <option value="3">1900 - 2300 мм</option>
-                            <option value="4">2300 - 2750 мм</option>
-                            <option value="5">2750 - 3400 мм</option>
-                            <option value="6">от 3400 мм</option>
-                        </select>
-                        <button class="d-none delselect">
-                            <img src="img/filter-close.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="select-box">
-                        <label for="filter-proyom" class="sr-only">Ширина проёма</label>
-                        <select class="form-control filter-sel" id="filter-proyom">
-                            <option class="placeholder" value="0">Ширина проёма</option>
-                            <option value="1">До 1300 мм</option>
-                            <option value="2">1300 - 1900 мм</option>
-                            <option value="3">1900 - 2300 мм</option>
-                            <option value="4">2300 - 2750 мм</option>
-                            <option value="5">2750 - 3400 мм</option>
-                            <option value="6">от 3400 мм</option>
-                        </select>
-                        <button class="d-none delselect">
-                            <img src="img/filter-close.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="select-box d-none">
-                        <label for="filter-measure" class="sr-only">Тип люка</label>
-                        <select class="form-control filter-sel" id="filter-probe">
-                            <option class="placeholder" value="0">Тип люка</option>
-                            <option value="1">Без утеплителя</option>
-                            <option value="2">Пожарный</option>
-                            <option value="3">Утеплённый</option>
-                        </select>
-                        <button class="d-none delselect">
-                            <img src="img/filter-close.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="select-box">
-                        <label for="filter-geometry" class="sr-only">Высота лестницы</label>
-                        <select class="form-control filter-sel my-select" id="filter-geometry">
-                            <option class="placeholder" value="0">Высота лестницы</option>
-                            <option value="1">До 2500 мм</option>
-                            <option value="2">2500 - 2700 мм</option>
-                            <option value="3">2700-2950 мм</option>
-                            <option value="4">2950-3200 мм</option>
-                            <option value="5">от 3200 мм</option>
-                        </select>
-                        <button class="d-none delselect">
-                            <img src="img/filter-close.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="select-box">
-                        <label for="filter-price" class="sr-only">Ценовая категория</label>
-                        <select class="form-control filter-sel" id="filter-price">
-                            <option class="placeholder" value="0">Цена</option>
-                            <option value="1">Эконом</option>
-                            <option value="2">Стандарт</option>
-                            <option value="3">Престиж</option>
-                        </select>
-                        <button class="d-none delselect">
-                        </button>
-                    </div>
-                    <div class="d-flex justify-content-between mobile-filter-btns d-lg-none">
-                        <a class="filter-dop-btn clear-btn" id="clearFilter">Очистить</a>
-                        <a class="filter-dop-btn" href="#filters" role="button" data-toggle="collapse" data-target="#filters" aria-controls="filters" aria-expanded="false" aria-label="Toggle navigation">Свернуть</a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-6">
+            <p class="lead"> у нас можно заказать изготовление лестниц и купить по ценам производителя более 500 готовых моделей. </p>
+            <p class="lead">
+                В рамках нашего проекта мы объединили предложение ведущих российских и зарубежных производителей в сфере готовых серийных лестниц. Мы также располагаем возможностью размещать заказы на производстве по индивидуальным проектам.
+                
+            </p>
         </div>
-        <!-- Конец -Фильтры и сортировка -->
-        <!-- Товары -->
-        <div class="product-area">
-            <div class="row no-gutters">
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <a href="stair-catalog.html">
-                        <div class="product-box">
-                            <div class="prev-photo-item">
-                                <div class="sale-marker">-15%</div>
-                                <img src="img/prod-1.jpg" alt="Alt">
-                                <img src="img/prod-2.jpg" alt="Alt">
-                                <img src="img/prod-3.jpg" alt="Alt">
-                            </div>
-                            <div class="prod-descr-box">
-                                <p class="p-descr text-xs">
-                                    В наличии 12 шт.
-                                </p>
-                                <div class="price-box">
-                                    <div class="">
-                                        <p class="p-price">
-                                            от 52 000<span class="price-rouble"></span>
-                                        </p>
-                                        <p class="old-price">от 57 000<span class="price-rouble"> </span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="pr-name">
-                                    Лестница К-001М/1
-                                </p>
-                            </div>
-                            <div class="hidden-descr">
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Высота:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">2750 - 3400 мм</span>
-                                </p>
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Угол наклона:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">42°</span>
-                                </p>
-                                <div class="diams d-none">
-                                    <div class="diam">
-                                        120
-                                    </div>
-                                    <div class="diam">
-                                        140
-                                    </div>
-                                    <div class="diam">
-                                        150
-                                    </div>
-                                    <div class="diam">
-                                        160
-                                    </div>
-                                </div>
-                                <p class="material">
-                                    <span>Сосна под покраску</span><span>сосна</span><span>сосна+дуб</span><span>дуб</span><span>бук</span>
-                                </p>
-                                <div class="mclrs d-none">
-                                    <div class="mclr">
-                                        <img src="img/al.jpg" alt="Алюминий" class="stair-color-img">
-                                    </div>
-                                    <div class="mclr">
-                                        <img src="img/bl.jpg" alt="Черный" class="stair-color-img">
-                                    </div>
-                                    <div class="mclr">
-                                        <img src="img/gl.jpg" alt="Золото" class="stair-color-img">
-                                    </div>
-                                </div>
-                                <p class="special-info d-none">
-                                    Более 24 вариантов размеров
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <a href="stair-catalog.html">
-                        <div class="product-box">
-                            <div class="prev-photo-item">
-                                <div class="sale-marker">-15%</div>
-                                <img src="img/kaskad1.jpg" alt="Alt">
-                                <img src="img/kaskad2.jpg" alt="Alt">
-                            </div>
-                            <div class="prod-descr-box">
-                                <p class="p-descr text-xs">
-                                    В наличии 12 шт.
-                                </p>
-                                <div class="price-box">
-                                    <div class="">
-                                        <p class="p-price">
-                                            от 52 000<span class="price-rouble"></span>
-                                        </p>
-                                        <p class="old-price">от 57 000<span class="price-rouble"> </span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="pr-name">
-                                    Лестница Каскад
-                                </p>
-                            </div>
-                            <div class="hidden-descr">
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Высота:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">2500 - 3210 мм</span>
-                                </p>
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Материал
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">металл</span>
-                                </p>
-                                <div class="diams">
-                                    <div class="diam">
-                                        120
-                                    </div>
-                                </div>
-                                <p class="material d-none">
-                                    <span>сосна</span>
-                                </p>
-                                <div class="mclrs">
-                                    <div class="mclr">
-                                        <img src="img/al.jpg" alt="Алюминий" class="stair-color-img">
-                                    </div>
-                                    <div class="mclr">
-                                        <img src="img/bl.jpg" alt="Черный" class="stair-color-img">
-                                    </div>
-                                    <div class="mclr">
-                                        <img src="img/gl.jpg" alt="Золото" class="stair-color-img">
-                                    </div>
-                                </div>
-                                <p class="special-info d-none">
-                                    Более 24 вариантов размеров
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <a href="stair-catalog.html">
-                        <div class="product-box">
-                            <div class="prev-photo-item">
-                                <div class="sale-marker">-5%</div>
-                                <img src="img/c1.jpg" alt="Alt">
-                                <img src="img/c2.jpg" alt="Alt">
-                                <img src="img/c3.jpg" alt="Alt">
-                            </div>
-                            <div class="prod-descr-box">
-                                <p class="p-descr text-xs">
-                                    В наличии 12 шт.
-                                </p>
-                                <div class="price-box">
-                                    <div class="">
-                                        <p class="p-price">
-                                            от 52 000<span class="price-rouble"></span>
-                                        </p>
-                                        <p class="old-price">от 57 000<span class="price-rouble"> </span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="pr-name">
-                                    Лестница К-002М
-                                </p>
-                            </div>
-                            <div class="hidden-descr">
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Высота:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">2650 - 3700 мм</span>
-                                </p>
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Материал
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">металл</span>
-                                </p>
-                                <div class="diams">
-                                    <div class="diam">
-                                        120
-                                    </div>
-                                    <div class="diam">
-                                        140
-                                    </div>
-                                    <div class="diam">
-                                        160
-                                    </div>
-                                </div>
-                                <div class="mclrs">
-                                    <div class="mclr">
-                                        <img src="img/cw.jpg" alt="Алюминий" class="stair-color-img">
-                                    </div>
-                                    <div class="mclr">
-                                        <img src="img/cb.jpg" alt="Черный" class="stair-color-img">
-                                    </div>
-                                    <div class="mclr">
-                                        <img src="img/cg.jpg" alt="Золото" class="stair-color-img">
-                                    </div>
-                                </div>
-                                <p class="material d-none">
-                                    <span>сосна</span><span>дуб</span><span>бук</span>
-                                </p>
-                                <p class="special-info">
-                                    Витринный образец
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <a href="stair-catalog.html">
-                        <div class="product-box">
-                            <div class="prev-photo-item">
-                                <img src="img/prod-5.jpg" alt="Alt">
-                                <img src="img/prod-1.jpg" alt="Alt">
-                            </div>
-                            <div class="prod-descr-box">
-                                <p class="p-descr text-xs">
-                                    В наличии 45 шт.
-                                </p>
-                                <div class="price-box">
-                                    <div class="">
-                                        <p class="p-price">
-                                            от 52 000<span class="price-rouble"></span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="pr-name">
-                                    Лестница К-003М
-                                </p>
-                            </div>
-                            <div class="hidden-descr">
-                                <p class="p-values">
-                                    <span class="feature-name">
-                                        <b>
-                                            Высота:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">2880 - 3250 мм</span>
-                                </p>
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Угол наклона:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">50°</span>
-                                </p>
-                                <p class="material">
-                                    <span>сосна</span><span>дуб</span><span>ольха</span>
-                                </p>
-                                <p class="special-info">
-                                    У этой лестницы есть фишка
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <a href="stair-catalog.html">
-                        <div class="product-box">
-                            <div class="prev-photo-item">
-                                <img src="img/prod-6.jpg" alt="Alt">
-                                <img src="img/prod-2.jpg" alt="Alt">
-                                <img src="img/prod-3.jpg" alt="Alt">
-                                <img src="img/prod-5.jpg" alt="Alt">
-                                <img src="img/prod-4.jpg" alt="Alt">
-                            </div>
-                            <div class="prod-descr-box">
-                                <p class="p-descr text-xs">
-                                    В наличии 120 шт.
-                                </p>
-                                <div class="price-box">
-                                    <div class="">
-                                        <p class="p-price">
-                                            от 52 000<span class="price-rouble"></span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="pr-name">
-                                    Лестница К-004М
-                                </p>
-                            </div>
-                            <div class="hidden-descr">
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Высота:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">2750 - 3200 мм</span>
-                                </p>
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Угол наклона:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">42°</span>
-                                </p>
-                                <p class="material">
-                                    <span>сосна</span><span>сосна под покраску</span>
-                                </p>
-                                <p class="special-info">
-                                    Самая недорогая лестница
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <a href="stair-catalog.html">
-                        <div class="product-box">
-                            <div class="prev-photo-item">
-                                <div class="sale-marker">-10%<span class="price-rouble"></span></div>
-                                <img src="img/prod-7.jpg" alt="Alt">
-                                <img src="img/prod-2.jpg" alt="Alt">
-                            </div>
-                            <div class="prod-descr-box">
-                                <p class="p-descr">
-                                    В наличии 7 шт.
-                                </p>
-                                <div class="price-box">
-                                    <div class="">
-                                        <p class="p-price">
-                                            от 52 000<span class="price-rouble"></span>
-                                        </p>
-                                        <p class="old-price">
-                                            от 57 500<span class="price-rouble"></span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="pr-name">
-                                    Лестница К-005М
-                                </p>
-                            </div>
-                            <div class="hidden-descr">
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Высота:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">2650 - 3700 мм</span>
-                                </p>
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Угол наклона:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">45°</span>
-                                </p>
-                                <p class="material">
-                                    <span>сосна</span><span> дуб</span><span> бук</span>
-                                </p>
-                                <p class="special-info">
-                                    Здесь описание фишки этой лестницы
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <a href="stair-catalog.html">
-                        <div class="product-box">
-                            <div class="prev-photo-item">
-                                <div class="sale-marker">-5 000<span class="price-rouble"></span></div>
-                                <img src="img/prod-3.jpg" alt="Alt">
-                                <img src="img/prod-2.jpg" alt="Alt">
-                                <img src="img/prod-1.jpg" alt="Alt">
-                            </div>
-                            <div class="prod-descr-box">
-                                <p class="p-descr text-xs">
-                                    В наличии 23 шт.
-                                </p>
-                                <div class="price-box">
-                                    <div class="">
-                                        <p class="p-price">
-                                            от 67 000<span class="price-rouble"></span>
-                                        </p>
-                                        <p class="old-price">от 72 000<span class="price-rouble"></span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="pr-name">
-                                    Лестница ЛЕС-03
-                                </p>
-                            </div>
-                            <div class="hidden-descr">
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Высота:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">2650 - 3700 мм</span>
-                                </p>
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Угол наклона:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">42°</span>
-                                </p>
-                                <p class="material">
-                                    <span>сосна</span><span> дуб</span><span> бук</span>
-                                </p>
-                                <p class="special-info">
-                                    Витринный образец
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <a href="stair-catalog.html">
-                        <div class="product-box">
-                            <div class="prev-photo-item">
-                                <img src="img/prod-2.jpg" alt="Alt">
-                                <img src="img/prod-2.jpg" alt="Alt">
-                                <img src="img/prod-3.jpg" alt="Alt">
-                            </div>
-                            <div class="prod-descr-box">
-                                <p class="p-descr text-xs">
-                                    Изготовление от 2-х недель
-                                </p>
-                                <div class="price-box">
-                                    <div class="">
-                                        <p class="p-price">
-                                            от 23 000<span class="price-rouble"></span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="pr-name">
-                                    Лестница Калина
-                                </p>
-                            </div>
-                            <div class="hidden-descr">
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Высота:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">2650 - 3700 мм</span>
-                                </p>
-                                <p class="p-values d-none d-sm-inline-block">
-                                    <span class="feature-name">
-                                        <b>
-                                            Угол наклона:
-                                        </b>
-                                    </span>
-                                    <span class="feature-val">42°</span>
-                                </p>
-                                <p class="material">
-                                    <span>сосна</span><span> дуб</span><span> бук</span>
-                                </p>
-                                <p class="special-info">
-                                    Витринный образец
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+    </div>
+
+        <img class="img-fluid mb-5" src="img/our-life.jpg" alt="">
+
+    <div class="row mb-3 mt-3">
+        <div class="col-md-4">
+            <img src="img/key.svg" alt="" class="mb-3">
+            <h3>Замер, покраска, доставка, монтаж</h3>
+            <p>
+                У нас вы можете получить полный комплекс услуг, сопровождение на всех этапах от первичной консультации по подбору лестницы до установки ее в вашем доме.
+            </p>
         </div>
-        <!-- Конец товаров -->
-        <!-- Пагинация -->
-        <div class="section">
-            <nav aria-label="Page navigation example">
-                <ul class="my-pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="my-page-link" href="#" tabindex="-1" aria-disabled="true">назад</a>
-                    </li>
-                    <li class="page-item active">
-                        <a class="my-page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="my-page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="my-page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                        <a class="my-page-link" href="#">вперед</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="col-md-4">
+              <img src="img/stair.svg" alt="" class="mb-3">
+            <h3>Все виды лестниц</h3>
+            <p>
+                Наиболее полный выбор, от самой простой лестницы для дачи или небольшого загородного дома, до комфортной, добротной лестницы с учетом предпочтений стиля и разнообразных материалов – это один из главных приоритетов нашей компании!
+            </p>
         </div>
-        <!-- Конец пагинации -->
+           <div class="col-md-4"> 
+              <img src="img/10let.svg" alt="" class="mb-3">
+            <h3>10 лет опыта</h3>
+            <p>
+                Мы работаем в сфере лестниц более 10 лет и накопили опыт, позволяющий удовлетворять самые разнообразные вкусы и делать это качественно и надежно! Российское производство позволяет нам гибко и оперативно реагировать на все изменения в нынешних реалиях современного рынка. При этом мы по-прежнему развиваем сотрудничество с зарубежными партнёрами, предоставляя нашим клиентам обширное предложение с учетом передовых технологий.
+            </p>
+        </div>
+        <div class="col-md-4">
+              <img src="img/price-2.svg" alt="" class="mb-3">
+            <h3>Гарантия лучше цены</h3>
+            <p>
+                Наши цены, как правило, одни из самых низких на рынке и мы неустанно работаем над этим.
+            </p>
+        </div>
+        <div class="col-md-4">
+              <img src="img/hot-air-balloon.svg" alt="" class="mb-3">
+            <h3>С любовью</h3>
+            <p>
+                Главное - Заказчик!
+                Мы прекрасно понимаем, что основное в нашей работе – это не лестница, а прежде всего ее потенциальный владелец, поэтому стремимся сделать все возможное, чтобы ваш выбор был правильным, а лестница в итоге получилась надежной,
+                красивой и удобной и радовала многие годы !
+            </p>
+        </div>
+    </div>
     </div>
     <!-- Сео-блок -->
-     <div class="container-xl">
-     
-             <div class="seo">
-                 <div class="row no-gutters">
-                     <div class="col">
-                         <ul class="seo-list">
-                             <li class="">
-                                 <h4 class="">
-                                     Помещение
-                                 </h4>
-                             </li>
-                             <li class="list-group-item-action"><a href="#">Лестницы для дома</a></li>
-                             <li class="list-group-item-action"><a class="" href="#">Лестницы для дачи</a></li>
-                             <li class="list-group-item-action"><a class="" href="#">Лестницы в коттедж</a></li>
-                             <li class="list-group-item-action"><a class="" href="#">Лестницы в таунхаус</a></li>
-                             <li class="list-group-item-action"><a class="" href="#">Лестницы для бани</a></li>
-                         </ul>
-                     </div>
-                     <div class="w-100 d-sm-none"></div>
-                     <div class="col">
-                         <ul class="seo-list mb-3">
-                             <li class="">
-                                 <h4 class="">
-                                     Материал
-                                 </h4>
-                             </li>
-                             <li class="list-group-item-action"><a href="#">Лестницы из сосны</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы из берёзы</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы из лиственницы</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы из бука</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы из ясеня</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы из дуба</a></li>
-                             <li class="list-group-item-action"><a href="#">Металлические</a></li>
-                              <li class="list-group-item-action"><a href="#">Комбинированные</a></li>
-                         </ul>
-                     </div>
-                      <div class="w-100 d-md-none"></div>
-                     <div class="col">
-                         <ul class="seo-list mb-3">
-                             <li class="">
-                                 <h4 class="">
-                                     Форма
-                                 </h4>
-                             </li>
-                             <li class="list-group-item-action"><a href="#">Винтовые лестницы</a></li>
-                             <li class="list-group-item-action"><a href="#">Маршевые лестницы (прямые)</a></li>
-                             <li class="list-group-item-action"><a href="#">Г-образные лестницы</a></li>
-                             <li class="list-group-item-action"><a href="#">П-образные лестницы</a></li>
-                             <li class="list-group-item-action"><a href="#">Поворотные лестницы</a></li>
-                         </ul>
-                     </div>
-                     <div class="w-100 d-sm-none"></div>
-                     <div class=" col">
-                         <ul class="seo-list mb-3">
-                             <li class="">
-                                 <h4 class="">
-                                     Конструкция
-                                 </h4>
-                             </li>
-                             <li class="list-group-item-action"><a href="#">Лестницы забежные</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы на косоурах</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы на тетивах</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы на больцах</a></li>
-                             <li class="list-group-item-action"><a href="#">Модульные лестницы</a></li>
-                             <li class="list-group-item-action"><a href="#">Гусиный шаг</a></li>
-                             <li class="list-group-item-action"><a href="#">Консольные лестницы</a></li>
-                         </ul>
-                     </div>
-                      <div class="w-100 d-md-none"></div>
-                     <div class=" col">
-                         <ul class="seo-list mb-3">
-                             <li class="">
-                                 <h4 class="">
-                                     Тип
-                                 </h4>
-                             </li>
-                             <li class="list-group-item-action"><a href="#">Лестницы на мансарду</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы на второй этаж</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы в подвал</a></li>
-                             <li class="list-group-item-action"><a href="#">Уличные лестницы</a></li>
-                             <li class="list-group-item-action"><a href="#">Входные лестницы</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы на крыльцо</a></li>
-                             <li class="list-group-item-action"><a href="#">Лестницы на крышу</a></li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-     
-     </div>
-
+    <div class="container-xl">
+    
+            <div class="seo">
+                <div class="row no-gutters">
+                    <div class="col">
+                        <ul class="seo-list">
+                            <li class="">
+                                <h4 class="">
+                                    Помещение
+                                </h4>
+                            </li>
+                            <li class="list-group-item-action"><a href="#">Лестницы для дома</a></li>
+                            <li class="list-group-item-action"><a class="" href="#">Лестницы для дачи</a></li>
+                            <li class="list-group-item-action"><a class="" href="#">Лестницы в коттедж</a></li>
+                            <li class="list-group-item-action"><a class="" href="#">Лестницы в таунхаус</a></li>
+                            <li class="list-group-item-action"><a class="" href="#">Лестницы для бани</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-100 d-sm-none"></div>
+                    <div class="col">
+                        <ul class="seo-list mb-3">
+                            <li class="">
+                                <h4 class="">
+                                    Материал
+                                </h4>
+                            </li>
+                            <li class="list-group-item-action"><a href="#">Лестницы из сосны</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы из берёзы</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы из лиственницы</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы из бука</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы из ясеня</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы из дуба</a></li>
+                            <li class="list-group-item-action"><a href="#">Металлические</a></li>
+                             <li class="list-group-item-action"><a href="#">Комбинированные</a></li>
+                        </ul>
+                    </div>
+                     <div class="w-100 d-md-none"></div>
+                    <div class="col">
+                        <ul class="seo-list mb-3">
+                            <li class="">
+                                <h4 class="">
+                                    Форма
+                                </h4>
+                            </li>
+                            <li class="list-group-item-action"><a href="#">Винтовые лестницы</a></li>
+                            <li class="list-group-item-action"><a href="#">Маршевые лестницы (прямые)</a></li>
+                            <li class="list-group-item-action"><a href="#">Г-образные лестницы</a></li>
+                            <li class="list-group-item-action"><a href="#">П-образные лестницы</a></li>
+                            <li class="list-group-item-action"><a href="#">Поворотные лестницы</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-100 d-sm-none"></div>
+                    <div class=" col">
+                        <ul class="seo-list mb-3">
+                            <li class="">
+                                <h4 class="">
+                                    Конструкция
+                                </h4>
+                            </li>
+                            <li class="list-group-item-action"><a href="#">Лестницы забежные</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы на косоурах</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы на тетивах</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы на больцах</a></li>
+                            <li class="list-group-item-action"><a href="#">Модульные лестницы</a></li>
+                            <li class="list-group-item-action"><a href="#">Гусиный шаг</a></li>
+                            <li class="list-group-item-action"><a href="#">Консольные лестницы</a></li>
+                        </ul>
+                    </div>
+                     <div class="w-100 d-md-none"></div>
+                    <div class=" col">
+                        <ul class="seo-list mb-3">
+                            <li class="">
+                                <h4 class="">
+                                    Тип
+                                </h4>
+                            </li>
+                            <li class="list-group-item-action"><a href="#">Лестницы на мансарду</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы на второй этаж</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы в подвал</a></li>
+                            <li class="list-group-item-action"><a href="#">Уличные лестницы</a></li>
+                            <li class="list-group-item-action"><a href="#">Входные лестницы</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы на крыльцо</a></li>
+                            <li class="list-group-item-action"><a href="#">Лестницы на крышу</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+    </div>
     <!-- Кнопка наверх -->
     <div class="scrollup shadow-lg">
         <img src="img/up.svg" alt="">

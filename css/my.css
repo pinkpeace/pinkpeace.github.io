@@ -2734,8 +2734,7 @@ form .final-form .h2-hidden {
   margin-bottom: 1em; }
   .row-main .banner-col {
     margin-right: -15px;
-    margin-left: -15px;
-    z-index: -5; }
+    margin-left: -15px; }
 
 .row-pops {
   flex-direction: row;

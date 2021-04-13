@@ -2864,9 +2864,8 @@ form .final-form .h2-hidden {
   margin-bottom: 2em; }
 
 .form-var {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   margin-top: 1em;
-  border-bottom: 1px solid #e9ecef;
   padding-bottom: 2em; }
   .form-var label {
     font-weight: 500; }
@@ -2944,3 +2943,9 @@ form .final-form .h2-hidden {
 .cap {
   font-size: 2em;
   line-height: 1.5; }
+
+.end-mess {
+  text-align: center;
+  padding: 40px;
+  background-color: #ff3495;
+  color: white; }

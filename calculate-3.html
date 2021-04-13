@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/my.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Проба</title>
+    <title>Проба_cпб</title>
 </head>
 
 <body>
@@ -653,9 +653,9 @@
             Выберите форму лестницы
         </h1>
         <form class="form-var">
-            <div class="row radio-tile-group">
+            <div class="row radio-tile-group" id="radios">
                 <div class="input-container col-6 col-sm-4 col-md-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-vint" value="vint">
+                    <input type="radio" class="radio-button" name="lest" id="lest-vint" value="calculate-7.html" onclick="go()">
                     <div class="radio-tile">
                         <div class="icon">
                             <img src="img/vint.png" alt="" class="calc-img">
@@ -664,7 +664,7 @@
                     </div>
                 </div>
                 <div class="input-container col-6 col-sm-4 col-md-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-pryamaya" value="pryamaya">
+                    <input type="radio" class="radio-button" name="lest" id="lest-pryamaya" value="calculate-7.html" onclick="go()">
                     <div class="radio-tile">
                         <div class="icon">
                             <img src="img/pryamaya.png" alt="" class="calc-img">
@@ -673,7 +673,7 @@
                     </div>
                 </div>
                 <div class="input-container col-6 col-sm-4 col-md-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-gobraznaya" value="gobraznaya">
+                    <input type="radio" class="radio-button" name="lest" id="lest-gobraznaya" value="calculate-6.html" onclick="go()">
                     <div class="radio-tile">
                         <div class="icon">
                             <img src="img/g-obraznaya.png" alt="" class="calc-img">
@@ -682,7 +682,7 @@
                     </div>
                 </div>
                 <div class="input-container col-6 col-sm-4 col-md-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-pobraznaya" value="pobraznaya">
+                    <input type="radio" class="radio-button" name="lest" id="lest-pobraznaya" value="calculate-6.html" onclick="go()">
                     <div class="radio-tile">
                         <div class="icon">
                             <img src="img/p-obraznaya.png" alt="" class="calc-img">
@@ -691,8 +691,12 @@
                     </div>
                 </div>
             </div>
-            <a class="btn btn-forw mr-2" href="calculate-2.html">назад</a>
-            <a class="btn btn-simple" href="calculate-4.html">далее</a>
+                <div class="col-12">
+                    <a class="btn btn-simple" href="javascript:history.back()">назад</a>
+                </div>
+                  <div class="text-grey mt-3">
+                             Вы можете самостоятельно произвести замер помещения и отправить нам необходимые размеры — мы подготовим расчёт нескольких, подходящих вариантов лестниц. Но если вы не уверены в том, что сможете сделать все замеры правильно (из-за особенностей помещения, данных о материалах стен, потолков или полов) —  рекомендуем вызвать нашего замерщика. Предварительный профессиональный замер гарантирует правильный подбор габаритов лестницы, предупреждает сложности при монтаже и исключает возможные дорогостоящие доработки. При заказе лестницы - замер бесплатный.
+                         </div>
         </form>
     </div>
     <!-- Сео-блок -->
@@ -961,6 +965,16 @@
             </div>
         </div>
     </div>
+     <script>
+    function go() {
+        var radios = document.getElementById("radios").getElementsByTagName("INPUT"),
+            radio
+        for (var i = 0, L = radios.length; i < L; i++) {
+            radio = radios[i]
+            if (radio.checked) { location.href = radio.value; break }
+        }
+    }
+    </script>
 </body>
 
 </html>

@@ -2864,15 +2864,17 @@ form .final-form .h2-hidden {
   margin-bottom: 2em; }
 
 .form-var {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-bottom: 2em; }
+  margin-top: 1em; }
   .form-var label {
     font-weight: 500; }
   .form-var .form-check {
     margin-left: 1em; }
   .form-var .form-control {
     margin-bottom: .5em; }
+
+.sp-ms {
+  padding: 10px 20px;
+  background-color: #fbf6dd; }
 
 .form-rass4et {
   padding: 40px;
@@ -2897,7 +2899,8 @@ form .final-form .h2-hidden {
     height: 100%;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     border-radius: 3px;
-    padding: 1rem;
+    padding: 0.5rem;
+    font-size: 12px;
     transition: transform 300ms ease;
     border: 2px solid white; }
   .radio-tile-group .input-container .radio-tile-label {
@@ -2911,11 +2914,16 @@ form .final-form .h2-hidden {
   border: 2px solid #fee44c;
   box-shadow: none; }
 
+@media (min-width: 992px) {
+  .radio-tile-group .input-container .radio-tile {
+    font-size: inherit;
+    padding: 1rem; } }
+
 .tz {
   padding: 1.2em;
   text-align: center;
   background-color: #f2f5f6;
-  margin-top: 2em; }
+  margin-top: 1em; }
 
 .p-class {
   border-radius: 5px;

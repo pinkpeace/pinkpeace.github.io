@@ -2646,7 +2646,7 @@ form .final-form .h2-hidden {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 1.5em;
+    padding: 2em;
     border: 1px solid #e9ecef;
     margin-right: -1px;
     margin-bottom: -1px;
@@ -2660,11 +2660,15 @@ form .final-form .h2-hidden {
       max-height: 150px;}
     .kompl .bx p {
       line-height: 1.3em;
-      font-size: 15px;
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 500;
       min-height: 38px;
       margin-bottom: 0; }
-
+.ctlg-cap {
+  margin-top: 2.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 .footer .first-section {
   padding-top: 40px;
   color: #454e5e; }

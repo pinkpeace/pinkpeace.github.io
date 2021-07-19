@@ -2643,17 +2643,21 @@ form .final-form .h2-hidden {
 .kompl {
   align-items: stretch; }
   .kompl .bx {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 1em;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    padding: 1.5em;
+    border: 1px solid #e9ecef;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    /*box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);*/
     align-self: stretch;
-    margin-bottom: 30px;
     overflow: hidden; }
     .kompl .bx:hover {
-      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 5px 5px 0 rgba(0, 0, 0, 0.12); }
+      box-shadow: 0 6px 18px 0 rgba(14, 21, 47, 0.10), 0 -2px 6px rgba(14, 21, 47, 0.02); }
     .kompl .bx img {
-      margin-bottom: 1em; }
+      margin-bottom: 2em; 
+      max-height: 150px;}
     .kompl .bx p {
       line-height: 1.3em;
       font-size: 15px;

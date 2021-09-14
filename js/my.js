@@ -206,3 +206,7 @@ $('#clearFilter').click(function() {
     $('.delselect').addClass('d-none');
     $('#clearFilter').removeClass('active');
 });
+// Кнопка калькулятора скрывается при нажатии на крестик
+$('#calc_cls').click(function() {
+    $('.calc-btn-bx').addClass('d-none');
+});

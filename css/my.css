@@ -4087,3 +4087,108 @@ form .final-form .h2-hidden {
     background-color: #ff3495;
     color: white;
 }
+
+/*-------------Кнопка калькулятора--------------------*/
+.calc-btn-bx {
+    position: fixed;
+    left: 20px;
+    bottom: 5px;
+    width: auto;
+    z-index: 200;
+    transition-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-name: ltsgo;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.a-calc-btn {
+    display: inline-block;
+    background: linear-gradient(#ff3e95, #f21e84); 
+    color: white;
+    padding: 10px 25px 10px 15px;
+    border-radius: 50px;
+    box-shadow: 1px 2px 10px 3px #ff34956e;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #ff3e95;
+}
+.a-calc-btn:hover {
+    background-color: #f21e84;
+    color: white;
+    border: 2px solid #fee44c;
+}
+.a-calc-btn:before {
+  content: '';
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0.5;
+  filter: blur;
+  background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+  transform: translate(-100%, -25%) rotate(10deg);
+  animation: blick 5s infinite;
+}
+@keyframes blick {
+  0% {
+    transform: translate(-100%, -25%) rotate(10deg);
+  }
+  20% {
+    transform: translate(100%, -25%) rotate(10deg);
+  }
+  100% {
+    transform: translate(100%, -25%) rotate(10deg);
+  }
+}
+
+.a-calc-btn i {
+    padding-right: 10px;
+    margin-right: 8px;
+    opacity: 0.7;
+    border-right: 1px solid #ffaad3; 
+}
+.calc-cls {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 2;
+    border: none;
+    box-shadow: 1px 3px 4px rgb(56 50 53 / 15%), -1px 1px 6px rgb(51 45 48 / 33%);
+    background-color: white;
+    line-height: 0;
+}
+
+.calc-cls i {
+    font-size: 12px;
+    line-height: 0;
+    color: #2e3038;
+
+}
+
+.a-calc-btn:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+}
+
+
+@keyframes ltsgo {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 20px;
+    }
+}

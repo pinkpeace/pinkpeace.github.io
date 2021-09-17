@@ -1188,9 +1188,19 @@
                                 ?
                             </button>
                         </div>
-                        <!--  <button class="btn btn-buy mt-4 btn-block disabled">Купить</button> -->
-                        <button type="button" class="btn btn-buy mt-4 btn-block" data-toggle="modal" data-target="#added_to_cart">Купить</button>
-                        <!-- <button class="btn btn-sister mt-2 btn-block">Вызвать замерщика</button> -->
+                        <!-- //////////////// Кнопка с количеством//////////////////// -->
+                        <div class="qd">
+                            <div class="counter">
+                                <span class="counter-less" id="btnminus4">–</span>
+                                <input type="text" class="counter-inp" placeholder="1">
+                                <span class="counter-more" id="btnplus4">+</span>
+                            </div>
+                            <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+                        </div>
+                        <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
+                        <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
+                            Заказать замер
+                        </button>
                     </form>
                 </div>
                 <div class="delivery-box mb-3">
@@ -2569,7 +2579,7 @@
         <img src="img/up.svg" alt="">
     </div>
     <script src="js/libs.min.js"></script>
-    <script src="js/my.min.js"></script>
+    <script src="js/my.js"></script>
     <div class="footer">
         <div class="section">
             <div class="container-xl">

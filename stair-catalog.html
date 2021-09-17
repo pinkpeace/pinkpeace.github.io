@@ -975,7 +975,7 @@
                                 <option>Дуб</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <!--                         <div class="form-group">
                             <p class="p-param-label">Диаметр:</p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio-diametr">
@@ -988,8 +988,8 @@
                                     <input type="radio" name="options" id="option6"> 160 cм
                                 </label>
                             </div>
-                        </div>
-                        <div class="form-group">
+                        </div> -->
+                        <!--                         <div class="form-group">
                             <p class="p-param-label">Цвет конструкции:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio-color">
@@ -1005,8 +1005,8 @@
                                     <img src="img/cw.jpg" alt="Название цвета" class="stair-color-img">
                                 </label>
                             </div>
-                        </div>
-                        <div class="form-group">
+                        </div> -->
+                        <!--                         <div class="form-group">
                             <p class="p-param-label">Цвет ступеней:&nbsp;<span class="text-xs text-grey">Не выбран</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio-color">
@@ -1022,7 +1022,7 @@
                                     <img src="img/cw.jpg" alt="Название цвета" class="stair-color-img">
                                 </label>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <p class="p-param-label">Выберите поворот:</p>
                             <button type="button" class="btn btn-hint" data-container="body" data-content='
@@ -1047,7 +1047,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <!--                         <div class="form-group">
                             <p class="p-param-label">Стойка перил:</p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-povorot">
@@ -1057,7 +1057,7 @@
                                     <input type="radio" name="options" id="option12"> Нержавеющая сталь
                                 </label>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                             <label class="custom-control-label" for="customCheck1">Добавить подступенки</label>
@@ -1079,7 +1079,19 @@
                             <p class="d-inline"> После выбора параметров здесь появится название модификации</p>
                             <a class="a-link d-inline" href="">и ссылка подробнее</a>
                         </div>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-buy mt-4 btn-block  disabled">Купить</button>
+                        <!-- //////////////// Кнопка с количеством//////////////////// -->
+                        <div class="qd">
+                            <div class="counter">
+                                <span class="counter-less" id="btnminus4">–</span>
+                                <input type="text" class="counter-inp" placeholder="1">
+                                <span class="counter-more" id="btnplus4">+</span>
+                            </div>
+                            <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+                        </div>
+                        <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
+                        <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
+                            Заказать замер
+                        </button>
                     </form>
                 </div>
                 <div class="delivery-box mb-3">

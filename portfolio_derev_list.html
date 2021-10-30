@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/my.css">
-  <link  rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Проба_cпб</title>
 </head>
 
 <body>
+    <div class="calc-btn-bx">
+        <button class="calc-cls btn-close" type="button" id="calc_cls" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <a href="calculate.html" class="a-calc-btn">
+            <i class="fa fa-calculator" aria-hidden="true"></i> Расчёт лестницы
+        </a>
+    </div>
     <div class="modal fade" id="city_modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog my-modal city-modal" role="document">
             <div class="modal-content">
@@ -202,51 +208,6 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="added_to_cart" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h2 class="h-cart">Товар добавлен в корзину</h2>
-                <p class="text-dgrey text-xs">Итого в вашей <a href="cart.html" class="a-link">корзине</a> 1 товар на сумму 52 000 руб.</p>
-                <div class="my-hr"></div>
-                <div class="crt_b">
-                    <div class="mr-2 mr-md-3">
-                        <img src="img/tw1.jpg" alt="">
-                    </div>
-                    <div class="box">
-                        <div class="mr-3 mb-3">
-                            <p class="crt_nm bolder">Лестница Название П-образная с площадкой</p>
-                            <p class="text-xs text-dgrey">Цвет каркаса: Серый</p>
-                            <p class="text-xs text-dgrey">Материал: Бук</p>
-                            <p class="text-xs text-dgrey">Высота шага: 220 мм</p>
-                        </div>
-                        <div class="qd">
-                            <p class="p-price text-nowrap pink">
-                                52 000<span class="price-rouble"></span>
-                            </p>
-                            <p class="old-price">57 000<span class="price-rouble"> </span></p>
-                            <div class="counter mt-">
-                                <span class="counter-less" id="btnminus4">–</span>
-                                <input type="text" class="counter-inp" placeholder="1">
-                                <span class="counter-more" id="btnplus4">+</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="my-hr"></div>
-                <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
-                    <button class="btn btn-sister" type="button" data-toggle="modal" data-target="#added_to_cart">Продолжить покупки</button>
-                    <a class="btn btn-simple" href="cart.html">Перейти в корзину</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="modal fade" id="write_us" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog my-modal" role="document">
             <div class="modal-content">
@@ -379,49 +340,46 @@
             </div>
         </div>
     </div>
-    <!-- Модальное окно "Запрос консультации" -->
-    <div class="modal fade" id="zapros" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h2 class="mb-2 text-center">Запрос консультации</h2>
-                <p class="mb-5 text-center">Вас интересует <b>Здесь Название лестницы</b></p>
-                <form>
-                    <div class="row">  
-                        <div class="form-group col-md-6">
-                            <label class="my-label" for="NameZapros">Имя</label>
-                            <input type="email" class="form-control" id="NameZapros">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPhone22" class="my-label">Телефон</label>
-                            <input type="tel" class="form-control" id="inputPhone22">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label class="my-label" for="textZapros">Ваш вопрос</label>
-                            <textarea class="form-control" id="textZapros" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="my-file text-center">
-                            <input type="file" class="" id="FileZapros">
-                            <label class="my-label sr-only" for="FileZapros">Прикрепить файл</label>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-simple btn-block mt-2 mb-4">Отправить</button>
-                    <p class="text-center">Мы перезвоним вам в ближайшее время и подробно ответим на все ваши вопросы</p>
-                </form>
+    <!--     <div class="right-links-box link-a d-none d-lg-block">
+        <a href="#" data-toggle="modal" data-target="#ask_us">
+            <div class="right-link  shadow-lg d-flex align-items-center">
+                <img src="img/ask.svg" alt="">
+                <p class="mb-0">Задать вопрос</p>
             </div>
-        </div>
+        </a>
     </div>
-    <!-- Конец Модальное окно "Запрос консультации" -->
+    <div class="right-links-box link-b d-none d-lg-block">
+        <a href="calculate.html">
+            <div class="right-link  shadow-lg d-flex align-items-center">
+                <img src="img/calculate.svg" alt="">
+                <p class="mb-0">Онлайн калькулятор</p>
+            </div>
+        </a>
+    </div>
+    <div class="right-links-box link-c d-none d-lg-block">
+        <a href="#" data-toggle="modal" data-target="#order_measure">
+            <div class="right-link shadow-lg d-flex align-items-center">
+                <img src="img/measure.svg" alt="">
+                <p class="mb-0">Заказать замер</p>
+            </div>
+        </a>
+    </div> -->
+    <!-- <div class="right-links-box link-d d-lg-block">
+        <a href="#" data-toggle="modal" data-target="#whatsapp">
+            <div class="right-link shadow-lg d-flex align-items-center">
+                <img src="img/whatsapp.svg" alt="">
+                <p class="mb-0">Спросить в WhatsApp</p>
+            </div>
+        </a>
+    </div> -->
+    <!-- <div class="right-links-box link-e d-lg-none">
+        <a href="#" data-toggle="modal" data-target="#openPhone">
+            <div class="right-link shadow-lg d-flex align-items-center">
+                <img src="img/tel.svg" alt="">
+                <p class="mb-0">Позвонить</p>
+            </div>
+        </a>
+    </div> -->
     <div class="header">
         <div class="sp-bx d-none">Специальный блок для специальных сообщений</div>
         <div class="container-fluid container-xl">
@@ -452,7 +410,7 @@
                     </a>
                     <div class="bxx">
                         <a class="dif-a" href="">
-                             <img class="i-img i-ph d-lg-none" src="img/phone-call.svg" alt="">
+                            <img class="i-img i-ph d-lg-none" src="img/phone-call.svg" alt="">
                             <div class="d-none d-lg-block">
                                 <p class="p-phone">
                                     +7 495 152-33-56
@@ -497,7 +455,7 @@
                     <form class="d-inline-flex search-form mr-2">
                         <input class="form-control" type="search" placeholder="Найти лестницу">
                         <button class="btn search-btn" type="submit">
-                             <img class="i-img i-srch" src="img/search.svg" alt="">
+                            <img class="i-img i-srch" src="img/search.svg" alt="">
                         </button>
                     </form>
                     <button type="button" class="d-inline-flex btn-close" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -514,6 +472,35 @@
         <div class="navbar navbar-expand-lg bsnav yel-bck mb-lg-2">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav navbar-my-nav navbar-mobile justify-content-lg-around align-items-lg-center">
+                    <li>
+                        <a class="nav-item nav-link nav-item-cat" href="kompl.html">
+                            <!-- <a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> -->
+                            Каталог
+                        </a>
+                        <div class="dropdown-menu pt-lg-3 pb-lg-4">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Лаки, краски, масла</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Коврики для лестниц</a>
+                                    <a class="dropdown-item" href="#">Ковродержатели</a>
+                                    <a class="dropdown-item" href="#">Освещение для лестниц</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Столбы, балясины</a>
+                                    <a class="dropdown-item" href="#">Перила, поручни</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Ступени</a>
+                                    <a class="dropdown-item" href="#">Больцы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line d-flex"></div>
+                    </li>
                     <li><a class="nav-item nav-link active" href="derev.html">Деревянные</a></li>
                     <li>
                         <div class="line d-flex"></div>
@@ -535,36 +522,11 @@
                         <div class="line d-flex"></div>
                     </li>
                     <li>
-                        <a class="nav-item nav-link " href="kompl.html">
-                        <!-- <a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> -->
-                            Комплектующие
-                        </a>
-    <!--                     <div class="dropdown-menu pt-lg-3 pb-lg-4">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <a class="dropdown-item" href="#">Лаки, краски, масла</a>
-                                </div>
-                                <div class="col-lg-3">
-                                    <a class="dropdown-item" href="#">Коврики для лестниц</a>
-                                    <a class="dropdown-item" href="#">Ковродержатели</a>
-                                    <a class="dropdown-item" href="#">Освещение для лестниц</a>
-                                </div>
-                                <div class="col-lg-3">
-                                    <a class="dropdown-item" href="#">Столбы, балясины</a>
-                                    <a class="dropdown-item" href="#">Перила, поручни</a>
-                                </div>
-                                <div class="col-lg-3">
-                                    <a class="dropdown-item" href="#">Ступени</a>
-                                    <a class="dropdown-item" href="#">Больцы</a>
-                                </div>
-                            </div>
-                        </div> -->
-                    </li>
-                    <li>
-                        <div class="line d-flex"></div>
-                    </li>
-                    <li>
                         <a class="nav-item nav-link " href="#">На заказ</a>
+                    </li>
+                     <div class="line d-flex"></div>
+                    <li>
+                        <a class="nav-item nav-link " href="portfolio.html">Портфолио</a>
                     </li>
                     <li class="d-lg-none mobile-dop-link mobile-measure-link">
                         <a class="nav-item nav-link " href="#" data-toggle="modal" data-target="#order_measure">Заказать замер</a>
@@ -611,8 +573,7 @@
         </div>
     </div>
     <!-- Конец меню -->
-    <!-- Хлебные крошки -->
-    <div class="container-fluid container-xl">
+    <div class="container-xl">
         <!-- Хлебные крошки -->
         <div class="breadcrumb-box">
             <a href="javascript:history.back()" class="a-back">
@@ -634,7 +595,9 @@
                             </g>
                         </svg>
                     </li>
-                    <li class="my-breadcrumb-item active" aria-current="page">Рассчитать стоимость
+                    <li class="my-breadcrumb-item" aria-current="page">Портфолио
+                    </li>
+                     <li class="my-breadcrumb-item active" aria-current="page">Деревянные лестницы
                     </li>
                 </ol>
             </nav>
@@ -650,180 +613,182 @@
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Выберите вид лестницы
+            Примеры выполненных работ деревянных лестниц
         </h1>
-        <form class="form-var">
-            <div class="row radio-tile-group" id="radios">
-                <div class="input-container col-6 col-sm-4 col-md-3 col-lg-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-derev" value="calculate-4.html" onclick="go()">
-                    <div class="radio-tile">
-                        <div class="icon">
-                            <img src="img/les-derev.png" alt="" class="calc-img">
+        <div class="portf-area">
+            <div class="row no-gutters">
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <a href="portfolio_detail.html">
+                        <div class="product-box">
+                            <div class="prev-photo-item">
+                                <img src="img/port_met_2.jpg" alt="Alt">
+                                <img src="img/port_met_1.jpg" alt="Alt">
+                                <img src="img/port_met_3.jpg" alt="Alt">
+                            </div>
+                            <div class="port_name">
+                                <p class="">
+                                    Лестница на двойном металлическом каркасе с дубовой облицовкой LP 436
+                                </p>
+                            </div>
+                            <div class="hidden-descr">
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Каркас:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Металл</span>
+                                </p>
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Ступени:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Дуб</span>
+                                </p>
+                            </div>
                         </div>
-                        <label class="radio-tile-label" for="lest-derev">Деревянная лестница</label>
-                    </div>
+                    </a>
                 </div>
-                <div class="input-container col-6 col-sm-4 col-md-3 col-lg-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-vint" value="calculate-7.html" onclick="go()">
-                    <div class="radio-tile">
-                        <div class="icon">
-                            <img src="img/type-vint.png" alt="" class="calc-img">
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <a href="portfolio_detail.html">
+                        <div class="product-box">
+                            <div class="prev-photo-item">
+                                <img src="img/port_derev_3.jpg" alt="Alt">
+                                <img src="img/port_derev_1.jpg" alt="Alt">
+                                <img src="img/port_derev_2.jpg" alt="Alt">
+                            </div>
+                            <div class="port_name">
+                                <p class="">
+                                    Винтовая лестница из ясеня с уникальными резными ограждениями LP 320
+                                </p>
+                            </div>
+                            <div class="hidden-descr">
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Каркас:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Ясень</span>
+                                </p>
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Ступени:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Ясень</span>
+                                </p>
+                            </div>
                         </div>
-                        <label class="radio-tile-label" for="lest-vint">Винтовая</label>
-                    </div>
+                    </a>
                 </div>
-                <div class="input-container col-6 col-sm-4 col-md-3 col-lg-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-module" value="calculate-3.html" onclick="go()">
-                    <div class="radio-tile">
-                        <div class="icon">
-                            <img src="img/les-module.png" alt="" class="calc-img">
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <a href="portfolio_detail.html">
+                        <div class="product-box">
+                            <div class="prev-photo-item">
+                                <img src="img/port_komb_1.jpg" alt="Alt">
+                                <img src="img/port_derev_1.jpg" alt="Alt">
+                                <img src="img/port_derev_2.jpg" alt="Alt">
+                            </div>
+                            <div class="port_name">
+                                <p class="">
+                                    Комбинированная современная лестница LP 689
+                                </p>
+                            </div>
+                            <div class="hidden-descr">
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Каркас:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Металл</span>
+                                </p>
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Ступени:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Ясень</span>
+                                </p>
+                            </div>
                         </div>
-                        <label class="radio-tile-label" for="lest-module">Модульная лестница</label>
-                    </div>
+                    </a>
                 </div>
-                <div class="input-container col-6 col-sm-4 col-md-3 col-lg-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-centr" value="calculate-3.html" onclick="go()">
-                    <div class="radio-tile">
-                        <div class="icon">
-                            <img src="img/les-centr2.png" alt="" class="calc-img">
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <a href="portfolio_detail.html">
+                        <div class="product-box">
+                            <div class="prev-photo-item">
+                                <img src="img/port_1.jpg" alt="Alt">
+                                <img src="img/port_derev_1.jpg" alt="Alt">
+                                <img src="img/port_derev_2.jpg" alt="Alt">
+                            </div>
+                            <div class="port_name">
+                                <p class="">
+                                    Белая лестница из ясеня с подступенками LP 421
+                                </p>
+                            </div>
+                            <div class="hidden-descr">
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Каркас:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Ясень</span>
+                                </p>
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Ступени:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Ясень</span>
+                                </p>
+                            </div>
                         </div>
-                        <label class="radio-tile-label" for="lest-centr">На центральном металлическом каркасе</label>
-                    </div>
+                    </a>
                 </div>
-                <div class="input-container col-6 col-sm-4 col-md-3 col-lg-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-dvoynoy" value="calculate-3.html" onclick="go()">
-                    <div class="radio-tile">
-                        <div class="icon">
-                            <img src="img/les-dvoynoy.png" alt="" class="calc-img">
+                <div class="col-sm-6 col-lg-4 col-xl-4">
+                    <a href="portfolio_detail.html">
+                        <div class="product-box">
+                            <div class="prev-photo-item">
+                                <img src="img/port_2.jpg" alt="Alt">
+                                <img src="img/port_derev_1.jpg" alt="Alt">
+                                <img src="img/port_derev_2.jpg" alt="Alt">
+                            </div>
+                            <div class="port_name">
+                                <p class="">
+                                   Лестница из дуба на косоуре LP 560
+                                </p>
+                            </div>
+                            <div class="hidden-descr">
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Каркас:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Ясень</span>
+                                </p>
+                                <p class="p-values d-none d-sm-inline-block">
+                                    <span class="feature-name">
+                                        <b>
+                                            Ступени:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">Ясень</span>
+                                </p>
+                            </div>
                         </div>
-                        <label class="radio-tile-label" for="lest-dvoynoy">На двойном металлическом каркасе</label>
-                    </div>
-                </div>
-                <div class="input-container col-6 col-sm-4 col-md-3 col-lg-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-tetivi" value="calculate-3.html" onclick="go()">
-                    <div class="radio-tile">
-                        <div class="icon">
-                            <img src="img/les-tetivy.png" alt="" class="calc-img">
-                        </div>
-                        <label class="radio-tile-label" for="lest-tetivi">Лестница на металлических тетивах</label>
-                    </div>
-                </div>
-                <div class="input-container col-6 col-sm-4 col-md-3 col-lg-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-metal" value="calculate-3.html" onclick="go()">
-                    <div class="radio-tile">
-                        <div class="icon">
-                            <img src="img/full-metal.png" alt="" class="calc-img">
-                        </div>
-                        <label class="radio-tile-label" for="lest-metal">Металлическая лестница</label>
-                    </div>
-                </div>
-                <div class="input-container col-6 col-sm-4 col-md-3 col-lg-2 col-var">
-                    <input type="radio" class="radio-button" name="lest" id="lest-oblicovka" value="calculate-8.html" onclick="go()">
-                    <div class="radio-tile">
-                        <div class="icon">
-                            <img src="img/oblicovka.png" alt="" class="calc-img">
-                        </div>
-                        <label class="radio-tile-label" for="lest-oblicovka">Облицовка лестницы</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <a class="btn btn-simple" href="javascript:history.back()">назад</a>
+                    </a>
                 </div>
             </div>
-        </form>
-         <div class="tz">
-                    Если нужна помощь в выборе лестницы - позвоните нам (круглосуточно) или <a href="#" data-toggle="modal" data-target="#order_measure" class="a-link">вызовите специалиста по замеру</a>
-                </div>
-    </div>
-    <!-- Сео-блок -->
-    <div class="container-xl">
-    
-            <div class="seo">
-                <div class="row no-gutters">
-                    <div class="col">
-                        <ul class="seo-list">
-                            <li class="">
-                                <h4 class="">
-                                    Помещение
-                                </h4>
-                            </li>
-                            <li class="list-group-item-action"><a href="#">Лестницы для дома</a></li>
-                            <li class="list-group-item-action"><a class="" href="#">Лестницы для дачи</a></li>
-                            <li class="list-group-item-action"><a class="" href="#">Лестницы в коттедж</a></li>
-                            <li class="list-group-item-action"><a class="" href="#">Лестницы в таунхаус</a></li>
-                            <li class="list-group-item-action"><a class="" href="#">Лестницы для бани</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-100 d-sm-none"></div>
-                    <div class="col">
-                        <ul class="seo-list mb-3">
-                            <li class="">
-                                <h4 class="">
-                                    Материал
-                                </h4>
-                            </li>
-                            <li class="list-group-item-action"><a href="#">Лестницы из сосны</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы из берёзы</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы из лиственницы</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы из бука</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы из ясеня</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы из дуба</a></li>
-                            <li class="list-group-item-action"><a href="#">Металлические</a></li>
-                             <li class="list-group-item-action"><a href="#">Комбинированные</a></li>
-                        </ul>
-                    </div>
-                     <div class="w-100 d-md-none"></div>
-                    <div class="col">
-                        <ul class="seo-list mb-3">
-                            <li class="">
-                                <h4 class="">
-                                    Форма
-                                </h4>
-                            </li>
-                            <li class="list-group-item-action"><a href="#">Винтовые лестницы</a></li>
-                            <li class="list-group-item-action"><a href="#">Маршевые лестницы (прямые)</a></li>
-                            <li class="list-group-item-action"><a href="#">Г-образные лестницы</a></li>
-                            <li class="list-group-item-action"><a href="#">П-образные лестницы</a></li>
-                            <li class="list-group-item-action"><a href="#">Поворотные лестницы</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-100 d-sm-none"></div>
-                    <div class=" col">
-                        <ul class="seo-list mb-3">
-                            <li class="">
-                                <h4 class="">
-                                    Конструкция
-                                </h4>
-                            </li>
-                            <li class="list-group-item-action"><a href="#">Лестницы забежные</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы на косоурах</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы на тетивах</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы на больцах</a></li>
-                            <li class="list-group-item-action"><a href="#">Модульные лестницы</a></li>
-                            <li class="list-group-item-action"><a href="#">Гусиный шаг</a></li>
-                            <li class="list-group-item-action"><a href="#">Консольные лестницы</a></li>
-                        </ul>
-                    </div>
-                     <div class="w-100 d-md-none"></div>
-                    <div class=" col">
-                        <ul class="seo-list mb-3">
-                            <li class="">
-                                <h4 class="">
-                                    Тип
-                                </h4>
-                            </li>
-                            <li class="list-group-item-action"><a href="#">Лестницы на мансарду</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы на второй этаж</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы в подвал</a></li>
-                            <li class="list-group-item-action"><a href="#">Уличные лестницы</a></li>
-                            <li class="list-group-item-action"><a href="#">Входные лестницы</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы на крыльцо</a></li>
-                            <li class="list-group-item-action"><a href="#">Лестницы на крышу</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    
+        </div>
     </div>
     <!-- Кнопка наверх -->
     <div class="scrollup shadow-lg">
@@ -857,7 +822,6 @@
                         <div class="footer-pluses-box">
                             <img class="footer-img" src="img/shop_quaranty.svg" alt="">
                             <h4>Гарантия магазина <span class="nowrp">1 год</span></h4>
-                            
                             <p class="lead text-muted mb-lg-4">Лестница без риска</p>
                             <p>Мы сотрудничаем только с проверенными и надежными производителями и готовы поручиться за каждую проданную лестницу. Поэтому, кроме гарантии продавца, мы </p>
                         </div>
@@ -1001,16 +965,6 @@
             </div>
         </div>
     </div>
-    <script>
-    function go() {
-        var radios = document.getElementById("radios").getElementsByTagName("INPUT"),
-            radio
-        for (var i = 0, L = radios.length; i < L; i++) {
-            radio = radios[i]
-            if (radio.checked) { location.href = radio.value; break }
-        }
-    }
-    </script>
 </body>
 
 </html>

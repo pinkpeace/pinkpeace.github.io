@@ -957,6 +957,7 @@ a:hover {
 
 .my-modal .form-control {
     background-color: #f2f5f6;
+    font-style: italic;
 }
 
 .my-modal label {
@@ -974,8 +975,11 @@ a:hover {
 
 .my-modal h2,
 .my-modal h3 {
-    line-height: 1.2;
+    line-height: 1.5;
     text-transform: uppercase;
+    margin-top: 0;
+    font-size: 21px;
+    font-weight: 500;
 }
 
 .my-modal p {

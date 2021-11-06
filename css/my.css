@@ -4370,3 +4370,47 @@ ul.portf_cat li:not(:last-child) {
         font-weight: normal;
     }
 }
+
+.shd-bck {
+    border-radius: 3px;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 1px 2px 0 rgb(0 0 0 / 12%);
+    padding: 2em;
+}
+
+.paymnts {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.paymnts img {
+    height: 100px;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+    .paymnts img {
+        height: 200px;
+        width: auto;
+    }
+}
+
+.paymnts p {
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.a-pls {
+    width: 100%;
+    height: auto;
+}
+
+.a-pls:hover .shd-bck {
+    transition: .5s;
+    box-shadow: 16px 16px 18px 0 rgb(202 207 209 / 62%), 4px 4px 20px 0px rgb(50 58 62 / 13%);
+}

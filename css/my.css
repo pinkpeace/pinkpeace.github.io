@@ -4439,6 +4439,9 @@ ul.portf_cat li:not(:last-child) {
 .artcl_an_bx {
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .artcl_an_bx h2 {
@@ -4455,18 +4458,35 @@ ul.portf_cat li:not(:last-child) {
     color: #a8acae;
 
 }
-
 @media (min-width: 600px) {
+    .artcl_img_bx {
+        width: 200px;
+        height: 200px;
+    }
+    .artcl_img_bx img {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (min-width: 900px) {
     .a-artcls {
         display: inline-block;
+        width: calc(50% - 1em);
+       /* min-width: 430px;*/
     }
+
+    .a-artcls:nth-child(odd) {
+        margin-right: 1em;
+    }
+
     .artcls {
-        max-width: 1000px;
+       
 
     }
 
     .artcl_an_bx {
         height: 150px;
+
     }
 
     .artcl_img_bx {

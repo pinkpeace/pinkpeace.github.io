@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/my.css">
-    <link  rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
     <title>Проба_cпб</title>
 </head>
 
@@ -524,7 +524,7 @@
                     <li>
                         <a class="nav-item nav-link " href="#">На заказ</a>
                     </li>
-                     <div class="line d-flex"></div>
+                    <div class="line d-flex"></div>
                     <li>
                         <a class="nav-item nav-link " href="portfolio.html">Наши работы</a>
                     </li>
@@ -586,8 +586,14 @@
                 <span>назад</span>
             </a>
             <nav aria-label="breadcrumb" class="nav-my-breadcrumbs">
-                <ol class="my-breadcrumb breadcrumb__slider">
-                    <li class="my-breadcrumb-item"><a href="index.html">Главная</a>
+                <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="my-breadcrumb breadcrumb__slider">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="my-breadcrumb-item">
+                        <a itemprop="item" href="index.html">
+                            <span itemprop="name">
+                                Главная
+                            </span>
+                            <meta itemprop="position" content="1" />
+                        </a>
                         <svg width="10" height="13" xmlns="http://www.w3.org/2000/svg" class="brc" data-v-469cfe6c="">
                             <g fill="none" fill-rule="evenodd" data-v-469cfe6c="">
                                 <path d="M0 0h16v16H0z" data-v-469cfe6c=""></path>
@@ -595,7 +601,11 @@
                             </g>
                         </svg>
                     </li>
-                    <li class="my-breadcrumb-item active" aria-current="page">Портфолио
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="my-breadcrumb-item active" aria-current="page">
+                        <span itemprop="name">
+                            Наши работы
+                        </span>
+                        <meta itemprop="position" content="2" />
                     </li>
                 </ol>
             </nav>
@@ -616,7 +626,6 @@
         <ul class="portf_cat mb-2 mb-lg-4">
             <li>
                 <a href="prt_derev_list.html">
-                   
                     <img src="img/der.png" alt="">
                     <p>Деревянные лестницы</p>
                 </a>
@@ -625,7 +634,7 @@
                 <a href="prt_derev.html">
                     <img src="img/vintov.png" alt="">
                     <p>
-                      Винтовые лестницы  
+                        Винтовые лестницы
                     </p>
                 </a>
             </li>
@@ -633,11 +642,12 @@
                 <a href="prt_derev.html">
                     <img src="img/metal.png" alt="">
                     <p>
-                      Лестницы на металлическом каркасе  
+                        Лестницы на металлическом каркасе
                     </p>
                 </a>
             </li>
         </ul>
+       
         <div class="portf-area">
             <div class="row no-gutters">
                 <div class="col-sm-6 col-lg-4 col-xl-4">
@@ -786,7 +796,7 @@
                             </div>
                             <div class="port_name">
                                 <p class="">
-                                   Лестница из дуба на косоуре LP 560
+                                    Лестница из дуба на косоуре LP 560
                                 </p>
                             </div>
                             <div class="hidden-descr">
@@ -897,7 +907,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Анкета для точного расчета стоимости</a>
                             </li>
-                             <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="polesnoye.html">Полезное</a>
                             </li>
                         </ul>

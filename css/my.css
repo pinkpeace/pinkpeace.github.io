@@ -1005,18 +1005,20 @@ a:hover {
     opacity: 0.5;
 }
 
-.my-modal .city-list ul {
+.my-modal .city-list ul,
+.char-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-left: 25px;
+    padding-left: 35px;
     position: relative;
     margin-bottom: 2em;
 }
 
-.my-modal .city-list ul:before {
-    font-weight: 500;
-    font-size: 21px;
+.my-modal .city-list ul:before,
+.char-list ul:before {
+    font-weight: 600;
+    font-size: 24px;
     position: absolute;
     left: 0;
     top: 0;
@@ -1024,119 +1026,148 @@ a:hover {
     color: #ff3495;
 }
 
-.my-modal .city-list ul[data-letter="a"]:before {
+.my-modal .city-list ul[data-letter="a"]:before,
+.char-list ul[data-letter="a"]:before {
     content: "А";
 }
 
-.my-modal .city-list ul[data-letter="b"]:before {
+.my-modal .city-list ul[data-letter="b"]:before,
+.char-list ul[data-letter="b"]:before {
     content: "Б";
 }
 
-.my-modal .city-list ul[data-letter="v"]:before {
+.my-modal .city-list ul[data-letter="v"]:before,
+.char-list ul[data-letter="v"]:before {
     content: "В";
 }
 
-.my-modal .city-list ul[data-letter="g"]:before {
+.my-modal .city-list ul[data-letter="g"]:before,
+.char-list ul[data-letter="g"]:before {
     content: "Г";
 }
 
-.my-modal .city-list ul[data-letter="d"]:before {
+.my-modal .city-list ul[data-letter="d"]:before,
+.char-list ul[data-letter="d"]:before {
     content: "Д";
 }
 
-.my-modal .city-list ul[data-letter="e"]:before {
+.my-modal .city-list ul[data-letter="e"]:before,
+.char-list ul[data-letter="e"]:before {
     content: "Е";
 }
 
-.my-modal .city-list ul[data-letter="j"]:before {
+.my-modal .city-list ul[data-letter="j"]:before,
+.char-list ul[data-letter="j"]:before {
     content: "Ж";
 }
 
-.my-modal .city-list ul[data-letter="z"]:before {
+.my-modal .city-list ul[data-letter="z"]:before,
+.char-list ul[data-letter="z"]:before {
     content: "З";
 }
 
-.my-modal .city-list ul[data-letter="i"]:before {
+.my-modal .city-list ul[data-letter="i"]:before,
+.char-list ul[data-letter="i"]:before {
     content: "И";
 }
 
-.my-modal .city-list ul[data-letter="ii"]:before {
+.my-modal .city-list ul[data-letter="ii"]:before,
+.char-list ul[data-letter="ii"]:before {
     content: "Й";
 }
 
-.my-modal .city-list ul[data-letter="k"]:before {
+.my-modal .city-list ul[data-letter="k"]:before,
+.char-list ul[data-letter="k"]:before {
     content: "К";
 }
 
-.my-modal .city-list ul[data-letter="l"]:before {
+.my-modal .city-list ul[data-letter="l"]:before,
+.char-list ul[data-letter="l"]:before {
     content: "Л";
 }
 
-.my-modal .city-list ul[data-letter="m"]:before {
+.my-modal .city-list ul[data-letter="m"]:before,
+.char-list ul[data-letter="m"]:before {
     content: "М";
 }
 
-.my-modal .city-list ul[data-letter="n"]:before {
+.my-modal .city-list ul[data-letter="n"]:before,
+.char-list ul[data-letter="n"]:before {
     content: "Н";
 }
 
-.my-modal .city-list ul[data-letter="o"]:before {
+.my-modal .city-list ul[data-letter="o"]:before,
+.char-list ul[data-letter="o"]:before {
     content: "О";
 }
 
-.my-modal .city-list ul[data-letter="p"]:before {
+.my-modal .city-list ul[data-letter="p"]:before,
+.char-list ul[data-letter="p"]:before {
     content: "П";
 }
 
-.my-modal .city-list ul[data-letter="r"]:before {
+.my-modal .city-list ul[data-letter="r"]:before,
+.char-list ul[data-letter="r"]:before {
     content: "Р";
 }
 
-.my-modal .city-list ul[data-letter="s"]:before {
+.my-modal .city-list ul[data-letter="s"]:before,
+.char-list ul[data-letter="s"]:before {
     content: "С";
 }
 
-.my-modal .city-list ul[data-letter="t"]:before {
+.my-modal .city-list ul[data-letter="t"]:before,
+.char-list ul[data-letter="t"]:before {
     content: "Т";
 }
 
-.my-modal .city-list ul[data-letter="u"]:before {
+.my-modal .city-list ul[data-letter="uu"]:before,
+.char-list ul[data-letter="uu"]:before {
     content: "У";
 }
 
-.my-modal .city-list ul[data-letter="f"]:before {
+.my-modal .city-list ul[data-letter="f"]:before,
+.char-list ul[data-letter="f"]:before {
     content: "Ф";
 }
 
-.my-modal .city-list ul[data-letter="h"]:before {
+.my-modal .city-list ul[data-letter="h"]:before,
+.char-list ul[data-letter="h"]:before {
     content: "Х";
 }
 
-.my-modal .city-list ul[data-letter="c"]:before {
+.my-modal .city-list ul[data-letter="c"]:before,
+.char-list ul[data-letter="c"]:before {
     content: "Ц";
 }
 
-.my-modal .city-list ul[data-letter="ch"]:before {
+.my-modal .city-list ul[data-letter="ch"]:before,
+.char-list ul[data-letter="ch"]:before {
     content: "Ч";
 }
 
-.my-modal .city-list ul[data-letter="sh"]:before {
+.my-modal .city-list ul[data-letter="sh"]:before,
+.char-list ul[data-letter="sh"]:before {
     content: "Ш";
 }
 
-.my-modal .city-list ul[data-letter="she"]:before {
+.my-modal .city-list ul[data-letter="she"]:before,
+.char-list ul[data-letter="she"]:before {
     content: "Щ";
 }
 
-.my-modal .city-list ul[data-letter="aa"]:before {
+.my-modal .city-list ul[data-letter="aa"]:before,
+.char-list ul[data-letter="aa"]:before {
     content: "Э";
 }
 
-.my-modal .city-list ul[data-letter="u"]:before {
+.my-modal .city-list ul[data-letter="u"]:before,
+.char-list ul[data-letter="u"]:before {
     content: "Ю";
 }
 
-.my-modal .city-list ul[data-letter="ya"]:before {
+.my-modal .city-list ul[data-letter="ya"]:before,
+.char-list ul[data-letter="ya"]:before {
     content: "Я";
 }
 
@@ -4458,31 +4489,31 @@ ul.portf_cat li:not(:last-child) {
     color: #a8acae;
 
 }
+
 @media (min-width: 600px) {
     .artcl_img_bx {
         width: 200px;
         height: 200px;
     }
+
     .artcl_img_bx img {
         width: 200px;
         height: 200px;
     }
 }
+
 @media (min-width: 900px) {
     .a-artcls {
         display: inline-block;
         width: calc(50% - 1em);
-       /* min-width: 430px;*/
+        /* min-width: 430px;*/
     }
 
     .a-artcls:nth-child(odd) {
         margin-right: 1em;
     }
 
-    .artcls {
-       
-
-    }
+    .artcls {}
 
     .artcl_an_bx {
         height: 150px;
@@ -4522,4 +4553,89 @@ ul.portf_cat li:not(:last-child) {
 a:hover .artcls {
     transition: .5s;
     box-shadow: 16px 16px 18px 0 rgb(202 207 209 / 62%), 4px 4px 20px 0px rgb(50 58 62 / 13%);
+}
+
+.char-list {
+    margin: 4em 0;
+}
+.char-list .city-list ul {
+    white-space: nowrap;
+}
+.char-list .city-list ul li {
+    margin-bottom: 0.4em;
+}
+.char-list .city-list ul li a:hover {
+   text-decoration: underline;
+}
+.char-list .city-list {
+    width: 100%;
+    column-count: 2;
+    column-gap: 2em;
+}
+
+@media (min-width: 768px) {
+ .char-list .city-list {
+        column-count: 3;
+    }
+}
+@media (min-width: 992px) {
+.char-list .city-list {
+        column-count: 4;
+    }
+}
+.upp {
+    text-transform: uppercase;
+}
+.termine p {
+    font-size: medium;
+    margin-top: 1em;
+}
+.termine p span:after {
+    content: " - ";
+}
+.faq{
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 1px 2px 0 rgb(0 0 0 / 12%); 
+    border-bottom: 1px solid whitesmoke;
+    max-width: 1100px;
+}
+.faq:hover{
+     transition: .5s;
+    box-shadow: 16px 16px 18px 0 rgb(202 207 209 / 62%), 4px 4px 20px 0px rgb(50 58 62 / 13%);
+    opacity: .99;
+    z-index: 10;
+}
+.btn-faq {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    background-color: white;
+    font-size: medium;
+    align-items: center;
+}
+.answr {
+padding: 0;
+font-size: 1.2em;
+}
+.btn-faq:before {
+    content:'\2014';
+    font-weight: 400;
+    text-align: center;
+    background-color: #fff09c;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 1em;
+    margin-left: -2em;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    box-sizing: content-box;
+    flex-shrink: 0;
+}
+.btn-faq.collapsed:before {
+    content: "\002B";
 }

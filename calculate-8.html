@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <!-- Кнопка калькулятора -->
+        <div class="calc-btn-bx">
+        <button class="calc-cls btn-close" type="button" id="calc_cls" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <a href="calculate.html" class="a-calc-btn">
+            <i class="fa fa-calculator" aria-hidden="true"></i> Расчёт лестницы
+        </a>
+    </div>
+    <!-- Конец кнопки калькулятора -->
     <div class="modal fade" id="city_modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog my-modal city-modal" role="document">
             <div class="modal-content">
@@ -629,9 +637,12 @@
         <!-- Конец хлебых крошек -->
     </div>
     <div class="container-xl">
-        <h1 class="page-name">
+       
+          <h1 class="page-name">
             Стоимость вашей лестницы от 63 000 р.
-        </h1>
+        </h1>  
+       
+        
         <div class="row">
             <div class="order-lg-2 col-md-12 col-lg-4">
                 <form class="form-rass4et mb-2">
@@ -667,7 +678,13 @@
                 </div>
             </div>
             <div class="col-lg-8 order-lg-1">
-                <h4>Вам могут подойти:</h4>
+                 <div class="d-flex justify-content-between align-items-center">
+                <h2 class="p-caption">Вам могут подойти варианты:</h2>
+                 
+                 <button class="btn btn-simple">
+            Узнать подробнее у менеджера
+        </button>
+        </div>
                 <div class="product-area">
                     <div class="row no-gutters">
                         <div class="col-6 col-lg-4">

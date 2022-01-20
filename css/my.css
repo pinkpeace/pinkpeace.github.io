@@ -1175,6 +1175,7 @@ a:hover {
     color: inherit;
 }
 
+
 @media (min-width: 768px) {
     .my-modal .modal-content {
         padding: 30px 50px 40px;
@@ -1182,9 +1183,12 @@ a:hover {
 }
 
 @media (min-width: 576px) {
-    .modal-dialog {
+    .modal-dialog:not(.modal-dost) {
         max-width: 550px;
         margin: 1.75rem auto;
+    }
+    .modal-dialog.modal-dost {
+        max-width: 80%;
     }
 }
 
@@ -2836,7 +2840,15 @@ div.scrollup:hover {
         margin-top: 1em;
     }
 }
-
+.dost-table {
+       border-right: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da; 
+}
+.dost-table td {
+    padding: 10px;
+    border-left: 1px solid #ced4da;
+    border-top: 1px solid #ced4da;
+}
 .btn-modif-vars {
     background-color: #fff;
     padding: 0;
@@ -3647,7 +3659,7 @@ p.clrnm {
 form .final-form .box {
     padding: 30px 20px;
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 6px;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     margin-bottom: 2em;
 }
@@ -3656,9 +3668,6 @@ form .final-form .box .form-group:last-child {
     margin-bottom: 0;
 }
 
-form .final-form .box .form-group label {
-    font-weight: 500;
-}
 
 form .final-form .box .msk-group,
 form .final-form .box .podmsk-group {
@@ -3671,10 +3680,20 @@ form .final-form .h2-hidden {
 
 @media (min-width: 567px) {
     form .final-form .box {
-        padding: 50px;
+        padding: 60px 50px;
     }
 }
-
+.final-form .hidden-dop{
+    height: 0px;
+    overflow: hidden;
+}
+.final-form input:checked ~ .hidden-dop {
+    height: auto;
+}
+.hidden-dop textarea {
+    resize: none;
+    margin-top: 15px;
+}
 .bold-hr {
     height: 2px;
     width: 100%;

@@ -334,6 +334,64 @@
             </div>
         </div>
     </div>
+    <!-- Модальное окно "Подробнее о доставке" -->
+    <div class="modal fade" id="dostavka" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dost my-modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
+                        </svg>
+                    </span>
+                </button>
+                <h2 class="mb-2 text-center">Тарифы на доставку</h2>
+                <p class="larger">
+                    Обратите внимание!
+                    Стоимость доставки приблизительная, зависит от выбранной ТК и габаритов заказа. Точную стоимость уточните у менеджера.
+                    Доставку до транспортной компании в Москве мы осущетсвляем бесплатно.
+                    Работаем со всеми известными транспортными компаниями.
+                </p>
+                <table class="dost-table table-hover">
+                    <tbody>
+                        <tr>
+                            <td>Доставка по Центральному Ф.О. </td>
+                            <td>1500 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка по Северо-Западному Ф.О.</td>
+                            <td>2000 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка по Южному Ф.О.</td>
+                            <td>2500 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка по Приволжскому Ф.О.</td>
+                            <td>2000 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка по Сибирскому Ф.О. </td>
+                            <td>2500 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка по Уральскому Ф.О.</td>
+                            <td>3500 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Доставка курьером за пределами МКАД</td>
+                            <td>500 руб. + 25 руб./км. </td>
+                        </tr>
+                        <tr>
+                            <td>Доставка по Москве</td>
+                            <td>500 руб.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Конец Модальное окно "Подробнее о доставке" -->
     <div class="header">
         <div class="sp-bx d-none">Специальный блок для специальных сообщений</div>
         <div class="container-fluid container-xl">
@@ -364,7 +422,7 @@
                     </a>
                     <div class="bxx">
                         <a class="dif-a" href="">
-                             <img class="i-img i-ph d-lg-none" src="img/phone-call.svg" alt="">
+                            <img class="i-img i-ph d-lg-none" src="img/phone-call.svg" alt="">
                             <div class="d-none d-lg-block">
                                 <p class="p-phone">
                                     +7 495 152-33-56
@@ -409,7 +467,7 @@
                     <form class="d-inline-flex search-form mr-2">
                         <input class="form-control" type="search" placeholder="Найти лестницу">
                         <button class="btn search-btn" type="submit">
-                             <img class="i-img i-srch" src="img/search.svg" alt="">
+                            <img class="i-img i-srch" src="img/search.svg" alt="">
                         </button>
                     </form>
                     <button type="button" class="d-inline-flex btn-close" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -426,6 +484,35 @@
         <div class="navbar navbar-expand-lg bsnav yel-bck mb-lg-2">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav navbar-my-nav navbar-mobile justify-content-lg-around align-items-lg-center">
+                    <li>
+                        <a class="nav-item nav-link nav-item-cat" href="kompl.html">
+                            <!-- <a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> -->
+                            Каталог
+                        </a>
+                        <div class="dropdown-menu pt-lg-3 pb-lg-4">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Лаки, краски, масла</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Коврики для лестниц</a>
+                                    <a class="dropdown-item" href="#">Ковродержатели</a>
+                                    <a class="dropdown-item" href="#">Освещение для лестниц</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Столбы, балясины</a>
+                                    <a class="dropdown-item" href="#">Перила, поручни</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Ступени</a>
+                                    <a class="dropdown-item" href="#">Больцы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line d-flex"></div>
+                    </li>
                     <li><a class="nav-item nav-link active" href="derev.html">Деревянные</a></li>
                     <li>
                         <div class="line d-flex"></div>
@@ -447,36 +534,10 @@
                         <div class="line d-flex"></div>
                     </li>
                     <li>
-                        <a class="nav-item nav-link " href="kompl.html">
-                        <!-- <a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> -->
-                            Комплектующие
-                        </a>
-    <!--                     <div class="dropdown-menu pt-lg-3 pb-lg-4">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <a class="dropdown-item" href="#">Лаки, краски, масла</a>
-                                </div>
-                                <div class="col-lg-3">
-                                    <a class="dropdown-item" href="#">Коврики для лестниц</a>
-                                    <a class="dropdown-item" href="#">Ковродержатели</a>
-                                    <a class="dropdown-item" href="#">Освещение для лестниц</a>
-                                </div>
-                                <div class="col-lg-3">
-                                    <a class="dropdown-item" href="#">Столбы, балясины</a>
-                                    <a class="dropdown-item" href="#">Перила, поручни</a>
-                                </div>
-                                <div class="col-lg-3">
-                                    <a class="dropdown-item" href="#">Ступени</a>
-                                    <a class="dropdown-item" href="#">Больцы</a>
-                                </div>
-                            </div>
-                        </div> -->
-                    </li>
-                    <li>
-                        <div class="line d-flex"></div>
-                    </li>
-                    <li>
                         <a class="nav-item nav-link " href="#">На заказ</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link " href="portfolio.html">Наши работы</a>
                     </li>
                     <li class="d-lg-none mobile-dop-link mobile-measure-link">
                         <a class="nav-item nav-link " href="#" data-toggle="modal" data-target="#order_measure">Заказать замер</a>
@@ -547,9 +608,9 @@
         <div class="container-xl">
             <form>
                 <div class="row final-form">
-                    <div class="col-md-6 col-lg-5">
-                        <h2>1.Ваши данные</h2>
+                    <div class="col-md-6 col-lg-6">
                         <div class="box">
+                            <h3>Ваши данные</h3>
                             <div class="form-group">
                                 <label for="phoneInput">Контактный телефон</label>
                                 <input type="phone" class="form-control" id="phoneInput" placeholder="+7(...)">
@@ -563,23 +624,31 @@
                                 <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
                             </div>
                         </div>
-                        <h2>2.Выберите способ доставки</h2>
                         <div class="box">
+                            <h3>Выберите способ доставки</h3>
                             <div class="form-group form-check">
                                 <input class="form-check-input" type="radio" name="radioDelivery" id="forMsk" value="Msk_val">
                                 <label class="form-check-label" for="forMsk">
                                     Доставка по Москве
                                 </label>
-                            </div>
-                            <div class="form-group msk-group">
-                                <label for="adressInput" class="sr-only">Адрес</label>
-                                <input type="phone" class="form-control" id="adressInput" placeholder="Адрес">
+                                <p class="text-grey">500 руб. (В пределах МКАД)</p>
+                                <div class="hidden-dop">
+                                    <label for="DostUlicaDom" class="sr-only">Адрес</label>
+                                    <textarea class="form-control" id="DostUlicaDom" rows="2" placeholder="Улица, дом, корпус, квартира"></textarea>
+                                </div>
                             </div>
                             <div class="form-group form-check">
                                 <input class="form-check-input" type="radio" name="radioDelivery" id="forPodMsk" value="Pod_Msk_val">
                                 <label class="form-check-label" for="forPodMsk">
-                                    Доставка по подмосковью
+                                    Доставка по области
                                 </label>
+                                <p class="text-grey">500 руб. +25 руб./км.</p>
+                                <div class="hidden-dop">
+                                    <label for="DostGorod" class="sr-only">Город</label>
+                                    <textarea class="form-control" id="DostGorod" rows="1" placeholder="Город"></textarea>
+                                    <label for="DostUlicaDom" class="sr-only">Адрес</label>
+                                    <textarea class="form-control" id="DostUlicaDom" rows="2" placeholder="Улица, дом, корпус, квартира"></textarea>
+                                </div>
                             </div>
                             <div class="form-group podmsk-group">
                                 <label for="adressInput" class="sr-only">Адрес</label>
@@ -590,57 +659,80 @@
                                 <label class="form-check-label" for="forSam">
                                     Самовывоз
                                 </label>
-                                <p class="text-grey">Адрес пункта самовывоза в этом городе</p>
+                                <p class="text-grey">0 руб.</p>
+                            </div>
+                            <div class="form-group form-check">
+                                <input class="form-check-input" type="radio" name="radioDelivery" id="doDveri" value="option5">
+                                <label class="form-check-label" for="doDveri">
+                                    Доставка до двери
+                                </label>
+                                <div class="hidden-dop">
+                                    <label for="DostGorod" class="sr-only">Город</label>
+                                    <textarea class="form-control" id="DostGorod" rows="1" placeholder="Город"></textarea>
+                                    <label for="DostUlicaDom" class="sr-only">Адрес</label>
+                                    <textarea class="form-control" id="DostUlicaDom" rows="2" placeholder="Улица, дом, корпус, квартира"></textarea>
+                                </div>
                             </div>
                             <div class="form-group form-check">
                                 <input class="form-check-input" type="radio" name="radioDelivery" id="forTransp" value="option4">
                                 <label class="form-check-label" for="forTransp">
-                                    Доставка транспортной компанией
+                                    Доставка до терминала ТК
                                 </label>
+                                <div class="hidden-dop">
+                                    <label for="DostGorod" class="sr-only">Город</label>
+                                    <textarea class="form-control" id="DostGorod" rows="1" placeholder="Город"></textarea>
+                                </div>
                             </div>
+                            <a class="a-link" href="#" data-toggle="modal" data-target="#dostavka">Подробнее о доставке</a>
                         </div>
-                        <h2>Выберите способ оплаты</h2>
                         <div class="box">
+                            <h3>Выберите способ оплаты</h3>
                             <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioPayval" id="pay_cash" value="cash_val">
+                                <input class="form-check-input" type="radio" name="radioPayval" id="pay_cash" value="cash_val" checked>
                                 <label class="form-check-label" for="pay_cash">
                                     Наличные
                                 </label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input class="form-check-input" type="radio" name="radioPayval" id="card_pay" value="card_val">
+                                <label class="form-check-label" for="card_pay">
+                                    Онлайн оплата
+                                </label>
+                                <div class="hidden-dop">
+                                    <p class="text-grey">Ссылка на оплату будет доступна после обработки заказа</p>
+                                </div>
                             </div>
                             <div class="form-group form-check">
                                 <input class="form-check-input" type="radio" name="radioPayval" id="Ur_sch" value="ur_val">
                                 <label class="form-check-label" for="Ur_sch">
                                     Выставить счёт для юридических лиц
                                 </label>
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioPayval" id="Fiz_sch" value="fiz_val">
-                                <label class="form-check-label" for="Fiz_sch">
-                                    Выставить счёт для физических лиц
-                                </label>
-                            </div>
-                            <div class="form-group form-check">
-                                <input class="form-check-input" type="radio" name="radioPayval" id="card_pay" value="card_val">
-                                <label class="form-check-label" for="card_pay">
-                                    Visa, Mastercard, Pay keeper
-                                </label>
+                                <div class="hidden-dop">
+                                    <div class="mt-3">
+                                        <!--  <label for="orgName">Название организации</label> -->
+                                        <input type="text" class="form-control" id="orgName" placeholder="Название организации">
+                                    </div>
+                                    <div class="mt-3">
+                                        <!--  <label for="orgInn">ИНН организации address</label> -->
+                                        <input type="text" class="form-control" id="orgInn" placeholder="ИНН организации">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <h2>Комментарий к заказу</h2>
                         <div class="box">
+                            <h3>Комментарий к заказу</h3>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1" class="sr-only">Комментарий к заказу</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-5 offset-lg-2">
+                    <div class="col-md-6 col-lg-5 offset-lg-1">
                         <div class="sticky-top float-right w-100">
-                            <h2 class="d-none d-md-block h2-hidden">4.</h2>
                             <div class="box">
                                 <div class="row mb-3 justify-content-between">
                                     <div class="col">
-                                        <h4 class="mt-0 mb-0">Товары</h4>
+                                        <p class="mt-0 mb-0">Товары</p>
                                         <p class="text-grey text-xs">3 товара - 145 кг</p>
                                     </div>
                                     <div class="col text-right">
@@ -649,7 +741,7 @@
                                 </div>
                                 <div class="row mb-3 justify-content-between">
                                     <div class="col">
-                                        <h4 class="mt-0 mb-0">Скидка</h4>
+                                        <p class="mt-0 mb-0">Скидка</h4>
                                     </div>
                                     <div class="col text-right">
                                         <p class="p-price pink"> - 15 000 <span class="price-rouble"></span></p>
@@ -657,8 +749,8 @@
                                 </div>
                                 <div class="row mb-3 justify-content-between">
                                     <div class="col">
-                                        <h4 class="mt-0 mb-0">Доставка</h4>
-                                        <p class="text-grey text-xs">Москва, ул.Название ул.д.4, кв.5</p>
+                                        <p class="mt-0 mb-0">Доставка</p>
+                                        <p class="text-grey text-xs">Здесь отображается выбранный способ доставки</p>
                                     </div>
                                     <div class="col text-right">
                                         <p class="p-price"> от 1900 <span class="price-rouble"></span></p>
@@ -675,7 +767,7 @@
                                 </div>
                                 <button type="submit" class="btn btn-simple btn-block">Оформить заказ</button>
                             </div>
-                            <p class="text-xs text-grey">Нажимая кнопку, вы подтверждаете своё совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a class="a-link" href="usl.html">условиями</a>, а также с <a  class="a-link" href="usl.html">условиями продажи</a></p>
+                            <p class="text-xs text-grey">Нажимая кнопку, вы подтверждаете своё совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a class="a-link" href="usl.html">условиями</a>, а также с <a class="a-link" href="usl.html">условиями продажи</a></p>
                         </div>
                     </div>
                 </div>
@@ -714,7 +806,6 @@
                         <div class="footer-pluses-box">
                             <img class="footer-img" src="img/shop_quaranty.svg" alt="">
                             <h4>Гарантия магазина <span class="nowrp">1 год</span></h4>
-                            
                             <p class="lead text-muted mb-lg-4">Лестница без риска</p>
                             <p>Мы сотрудничаем только с проверенными и надежными производителями и готовы поручиться за каждую проданную лестницу. Поэтому, кроме гарантии продавца, мы </p>
                         </div>
@@ -767,7 +858,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Анкета для точного расчета стоимости</a>
                             </li>
-                             <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="polesnoye.html">Полезное</a>
                             </li>
                         </ul>

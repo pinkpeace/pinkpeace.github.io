@@ -1188,6 +1188,7 @@ a:hover {
         max-width: 550px;
         margin: 1.75rem auto;
     }
+
     .modal-dialog.modal-dost {
         max-width: 80%;
     }
@@ -2841,15 +2842,37 @@ div.scrollup:hover {
         margin-top: 1em;
     }
 }
+
+@media (max-width: 750px) {
+    .bx-dost-table {
+        overflow: scroll;
+    }
+}
+
 .dost-table {
-       border-right: 1px solid #ced4da;
-    border-bottom: 1px solid #ced4da; 
+    border-radius: 3px;
+    min-width: 740px;
+    box-shadow: 5px 3px 16px 1px #dee3e5;
+    width: 80%;
+
 }
+
+.dost-table thead {
+    background-color: #f2f5f6;
+}
+
 .dost-table td {
-    padding: 10px;
-    border-left: 1px solid #ced4da;
-    border-top: 1px solid #ced4da;
+    padding: 10px 10px 0px 20px;
+    border-left: 1px solid #e9edef;
+    border-top: 1px solid #e9edef;
+
 }
+
+.dost-table tr {
+    border-bottom: 1px solid #e9edef;
+    border-right: 1px solid #e9edef;
+}
+
 .btn-modif-vars {
     background-color: #fff;
     padding: 0;
@@ -3684,17 +3707,21 @@ form .final-form .h2-hidden {
         padding: 60px 50px;
     }
 }
-.final-form .hidden-dop{
+
+.final-form .hidden-dop {
     height: 0px;
     overflow: hidden;
 }
-.final-form input:checked ~ .hidden-dop {
+
+.final-form input:checked~.hidden-dop {
     height: auto;
 }
+
 .hidden-dop textarea {
     resize: none;
     margin-top: 15px;
 }
+
 .bold-hr {
     height: 2px;
     width: 100%;
@@ -4693,6 +4720,7 @@ a:hover .artcls {
 
 
 }
+
 .calc-steps li:first-child a {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -4715,7 +4743,7 @@ a:hover .artcls {
     pointer-events: all;
     color: #2e3038;
     font-weight: 500;
-     background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .calc-steps li:not(:last-child) a:after {
@@ -4757,9 +4785,27 @@ a:hover .artcls {
         padding: 1em 4em 1em 4em;
     }
 }
+
 .calc-steps li a.access:after {
     border-left-color: #ffffff;
 }
+
 .p-med {
+    font-size: medium;
+}
+
+.final-table {
+    width: 100%;
+    border: 1px solid #f2f5f6;
+}
+
+.final-table td {
+    padding: 15px;
+}
+
+.special {
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #f9f4d6;
     font-size: medium;
 }

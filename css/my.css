@@ -1184,12 +1184,8 @@ a:hover {
 }
 
 @media (min-width: 576px) {
-    .modal-dialog:not(.modal-dost) {
-        max-width: 550px;
-        margin: 1.75rem auto;
-    }
-
-    .modal-dialog.modal-dost {
+    .modal-dialog.modal-dost,
+    .modal-dialog.city-modal {
         max-width: 80%;
     }
 }
@@ -2851,12 +2847,14 @@ div.scrollup:hover {
 
 .dost-table {
     border-radius: 3px;
-    min-width: 740px;
     box-shadow: 5px 3px 16px 1px #dee3e5;
-    width: 80%;
 
 }
-
+@media (min-width: 1100px){
+    .dost-table {
+        min-width: 740px;
+    }
+}
 .dost-table thead {
     background-color: #f2f5f6;
 }
@@ -4808,4 +4806,16 @@ a:hover .artcls {
     border-radius: 6px;
     background-color: #f9f4d6;
     font-size: medium;
+}
+.social-bx {
+    margin-top: 2em;
+}
+.social-bx a{
+     color: #a8acae;
+}
+.social-bx i.fa { 
+    margin-right: 7px;
+}
+.social-bx a:hover {
+    color: #fff;
 }

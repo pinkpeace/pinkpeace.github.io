@@ -977,7 +977,24 @@ a:hover {
 }
 .modal-town {
     width: fit-content;
-    margin: auto;
+    margin: 35% auto;
+}
+.my-modal.modal-town .modal-content {
+    padding: 25px;
+}
+@media (min-width:992px ){
+    .modal-town {
+        margin-top: 1em;
+        margin-left: 180px;
+        width: fit-content;
+    }
+}
+@media (min-width: 1300px){
+    .modal-town {
+        margin-top: 1em;
+        margin-left: calc((100% - 1300px)/2 + 150px);
+        width: fit-content;
+    }
 }
 .my-modal h2,
 .my-modal h3 {
@@ -4827,4 +4844,8 @@ a:hover .artcls {
 }
 .social-bx a:hover {
     color: #fff;
+}
+
+.modal-backdrop.show {
+  opacity: .4;
 }

@@ -211,11 +211,9 @@ $('#clearFilter').click(function() {
 $('#calc_cls').click(function() {
     $('.calc-btn-bx').addClass('d-none');
 });
-
-
-
 $(window).on('load', function() {
     $('#your_town').modal('show');
+    $('.modal-backdrop').style.backgroundColor = '#fff';
 });
 
 $('.yesTown').click(function() {

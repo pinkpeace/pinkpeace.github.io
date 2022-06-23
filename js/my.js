@@ -5,6 +5,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         speed: 400,
         dots: false,
+        adaptiveHeight: false,
         prevArrow: '<button class="prev-btn"></button>',
         nextArrow: '<button class="next-btn"></button>',
         infinite: true,
@@ -209,4 +210,18 @@ $('#clearFilter').click(function() {
 // Кнопка калькулятора скрывается при нажатии на крестик
 $('#calc_cls').click(function() {
     $('.calc-btn-bx').addClass('d-none');
+});
+
+
+
+$(window).on('load', function() {
+    $('#your_town').modal('show');
+});
+
+$('.yesTown').click(function() {
+    $('#your_town').modal('hide');
+});
+$('.noTown').click(function() {
+    $('#your_town').modal('hide');
+     $('#city_modal').modal('show');
 });

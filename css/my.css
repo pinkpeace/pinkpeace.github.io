@@ -123,7 +123,6 @@ div.text {
     line-height: 30px;
     font-size: medium;
 }
-
 @media (min-width: 1024px) {
     div.text {
         -moz-column-count: 2;
@@ -157,7 +156,10 @@ div.text {
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
-
+.p-medium {
+    font-size: medium;
+    line-height: 21px;
+}
 @media (min-width: 768px) {
     .p-descr {
         display: inline-block;
@@ -973,7 +975,10 @@ a:hover {
     background-color: #fff;
     left: 1em;
 }
-
+.modal-town {
+    width: fit-content;
+    margin: auto;
+}
 .my-modal h2,
 .my-modal h3 {
     line-height: 1.5;
@@ -4609,6 +4614,7 @@ a:hover .artcls {
 
 .char-list .city-list ul li {
     margin-bottom: 0.4em;
+    white-space: break-spaces;
 }
 
 .char-list .city-list ul li a:hover {
@@ -4617,10 +4623,13 @@ a:hover .artcls {
 
 .char-list .city-list {
     width: 100%;
-    column-count: 2;
     column-gap: 2em;
 }
-
+@media (min-width: 480px) {
+    .char-list .city-list {
+        column-count: 2;
+    }
+}
 @media (min-width: 768px) {
     .char-list .city-list {
         column-count: 3;

@@ -156,10 +156,7 @@ div.text {
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
-.p-medium {
-    font-size: medium;
-    line-height: 21px;
-}
+
 @media (min-width: 768px) {
     .p-descr {
         display: inline-block;
@@ -4815,7 +4812,8 @@ a:hover .artcls {
 }
 
 .p-med {
-    font-size: medium;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .final-table {

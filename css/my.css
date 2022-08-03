@@ -123,6 +123,7 @@ div.text {
     line-height: 30px;
     font-size: medium;
 }
+
 @media (min-width: 1024px) {
     div.text {
         -moz-column-count: 2;
@@ -575,7 +576,8 @@ a:hover {
 .header .nvbr-hdr .bx .pb {
     display: flex;
     align-items: center;
-    font-weight: 400;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .header .nvbr-hdr .bx .pb i {
@@ -708,7 +710,7 @@ a:hover {
     width: 100%;
     background-color: #fee44c;
     border-radius: 3px;
-    padding: 0 10px;
+    padding: 0;
     position: absolute;
 }
 
@@ -743,8 +745,27 @@ a:hover {
     text-transform: uppercase;
     font-size: 13px;
     padding-left: 25px;
-    border-bottom: 1px solid #fdea79;
     letter-spacing: .5px;
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        background-color: #ffed86;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav li {
+        flex-grow: 1;
+    }
 }
 
 .navbar-my-nav .mobile-nav-link {
@@ -972,27 +993,32 @@ a:hover {
     background-color: #fff;
     left: 1em;
 }
+
 .modal-town {
     width: fit-content;
     margin: 35% auto;
 }
+
 .my-modal.modal-town .modal-content {
     padding: 25px;
 }
-@media (min-width:992px ){
+
+@media (min-width:992px) {
     .modal-town {
         margin-top: 1em;
         margin-left: 180px;
         width: fit-content;
     }
 }
-@media (min-width: 1300px){
+
+@media (min-width: 1300px) {
     .modal-town {
         margin-top: 1em;
         margin-left: calc((100% - 1300px)/2 + 150px);
         width: fit-content;
     }
 }
+
 .my-modal h2,
 .my-modal h3 {
     line-height: 1.5;
@@ -1024,7 +1050,12 @@ a:hover {
     height: 20px;
     opacity: 0.5;
 }
-
+.modal-town .btn-sister,
+.modal-town .btn-simple {
+    font-weight: 500;
+    padding: 10px 24px 11px;
+    font-size: 13px;
+}s
 .my-modal .city-list ul,
 .char-list ul {
     list-style: none;
@@ -1203,6 +1234,7 @@ a:hover {
 }
 
 @media (min-width: 576px) {
+
     .modal-dialog.modal-dost,
     .modal-dialog.city-modal {
         max-width: 80%;
@@ -1737,8 +1769,9 @@ select:focus {
     background-color: #ff3495;
     color: white;
     font-weight: 600;
-    padding: 12px 30px 13px;
+    padding: 10px 30px 11px;
     line-height: 1em;
+    border: 2px solid #ff3495;
 }
 
 .btn-simple.disabled {
@@ -2344,10 +2377,10 @@ div.scrollup:hover {
     transition: all 0.3s ease;
     background-color: #fff;
     padding: 13px;
-    width: 220px;
+    width: 190px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    margin-right: -174px;
+    margin-right: -144px;
 }
 
 .right-links-box p {
@@ -2869,11 +2902,13 @@ div.scrollup:hover {
     box-shadow: 5px 3px 16px 1px #dee3e5;
 
 }
-@media (min-width: 1100px){
+
+@media (min-width: 1100px) {
     .dost-table {
         min-width: 740px;
     }
 }
+
 .dost-table thead {
     background-color: #f2f5f6;
 }
@@ -3544,7 +3579,15 @@ p.clrnm {
     font-weight: 500;
     margin-bottom: .5em;
 }
+@media (min-width: 530px) {
+    .mnt {
+        background-position: 0px 10px;
+        font-weight: 400;
+        font-size: 1.6em;
+        margin-left: 2em;
+    }
 
+}
 .diams,
 .mclrs {
     margin-bottom: .5em;
@@ -3798,12 +3841,16 @@ form .final-form .h2-hidden {
 
 .navbar-nav .nav-item.nav-item-cat {
     position: relative;
+    background-color: #ffdd14;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .navbar-nav .nav-item.nav-item-cat:before {
     font-family: "FontAwesome";
     content: "\f00a";
     font-weight: normal;
+    margin-right: 5px;
 
 }
 
@@ -3974,6 +4021,7 @@ form .final-form .h2-hidden {
     flex-wrap: nowrap;
     align-items: center;
     width: 47%;
+    flex-grow: 1;
 }
 
 .pluses-box p {
@@ -4002,11 +4050,12 @@ form .final-form .h2-hidden {
     .pluses-box {
         border: 3px solid #fee44c;
         padding: 1em 0;
+        justify-content: space-between;
     }
 
     .pluses-box .pop-cat {
         width: auto;
-        padding: .6em 1em;
+        padding: 0em 1em;
     }
 
     .pluses-box img {
@@ -4032,6 +4081,10 @@ form .final-form .h2-hidden {
         padding: 0;
     }
 
+    .pluses-box .pop-cat:not(:last-child) {
+        border-bottom: 1px solid #f1f1f1;
+    }
+
     .pluses-box p {
         font-size: 0.6em;
     }
@@ -4054,7 +4107,7 @@ form .final-form .h2-hidden {
 
     .pluses-box .pop-cat {
         width: auto;
-        padding: 1em 2em;
+        padding: 0em 2em;
     }
 
     .pluses-box p {
@@ -4080,11 +4133,14 @@ form .final-form .h2-hidden {
 }
 
 .adr-img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 1em;
 }
-
+.adress {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
 .calc-img {
     width: 100%;
     max-width: 180px;
@@ -4443,7 +4499,7 @@ ul.portf_cat li:not(:last-child) {
 }
 
 .col-step img {
-    width: 90px;
+    width: 80px;
     height: auto;
 }
 
@@ -4454,10 +4510,6 @@ ul.portf_cat li:not(:last-child) {
 }
 
 @media (min-width: 992px) {
-    .col-step img {
-        width: 130px;
-        height: auto;
-    }
 
     .col-step p {
         font-size: medium;
@@ -4639,11 +4691,13 @@ a:hover .artcls {
     width: 100%;
     column-gap: 2em;
 }
+
 @media (min-width: 480px) {
     .char-list .city-list {
         column-count: 2;
     }
 }
+
 @media (min-width: 768px) {
     .char-list .city-list {
         column-count: 3;
@@ -4831,19 +4885,23 @@ a:hover .artcls {
     background-color: #f9f4d6;
     font-size: medium;
 }
+
 .social-bx {
     margin-top: 2em;
 }
-.social-bx a{
-     color: #a8acae;
+
+.social-bx a {
+    color: #a8acae;
 }
-.social-bx i.fa { 
+
+.social-bx i.fa {
     margin-right: 7px;
 }
+
 .social-bx a:hover {
     color: #fff;
 }
 
 .modal-backdrop.show {
-  opacity: .4;
+    opacity: .4;
 }

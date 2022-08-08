@@ -4910,6 +4910,7 @@ a.zak-zam {
     cursor: pointer;
     font-weight: 500;
     text-decoration: underline;
+    font-size: 12px;
 }
 /*a.zak-zam:not(:hover) {
     cursor: pointer;

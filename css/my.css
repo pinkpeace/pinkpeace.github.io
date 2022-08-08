@@ -4905,3 +4905,16 @@ a:hover .artcls {
 .modal-backdrop.show {
     opacity: .4;
 }
+a.zak-zam {
+    color: #009de8;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+}
+/*a.zak-zam:not(:hover) {
+    cursor: pointer;
+    text-decoration: underline;
+}*/
+a.zak-zam:hover {
+    text-decoration: none;
+}

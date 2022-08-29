@@ -32,7 +32,7 @@ $(document).ready(function() {
     });
 
     $('.thumb-slider').slick({
-        slidesToShow: 6,
+        slidesToShow: 7,
         slidesToScroll: 1,
         dots: false,
         infinite: true,
@@ -213,7 +213,6 @@ $('#calc_cls').click(function() {
 });
 $(window).on('load', function() {
     $('#your_town').modal('show');
-    $('.modal-backdrop').style.backgroundColor = '#fff';
 });
 
 $('.yesTown').click(function() {

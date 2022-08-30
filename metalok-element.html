@@ -873,10 +873,10 @@
                                 <label class="btn  btn-radio btn-radio-stup">
                                     <input type="radio" name="options" id="stup_buk"> Бук
                                 </label>
-                                 <label class="btn  btn-radio btn-radio-stup">
+                                <label class="btn  btn-radio btn-radio-stup">
                                     <input type="radio" name="options" id="stup_yasen"> Ясень
                                 </label>
-                                                                 <label class="btn  btn-radio btn-radio-stup">
+                                <label class="btn  btn-radio btn-radio-stup">
                                     <input type="radio" name="options" id="stup_dub"> Дуб
                                 </label>
                             </div>
@@ -922,27 +922,35 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <p class="p-param-label">Цвет каркаса:&nbsp;<span class="text-xs text-grey">Белый</span></p>
-                            <div class="btn-group-toggle" data-toggle="buttons">
+                            <p class="p-param-label">Цвет каркаса:&nbsp;<span class="text-xs text-grey">Чёрный</span></p>
+                            <div class="btn-group-toggle" data-toggle="buttons"> 
                                 <label class="btn  btn-radio btn-radio-color">
-                                    <input type="radio" name="options" id="white_krks" checked>
-                                    <img src="img/white_karkas.jpg" alt="" class="stair-color-img">
-                                    <div class="detail-pic">
-                                        <img class="img-fluid" src="img/white_karkas.jpg" alt="">
-                                    </div>
-                                </label>
-                                <label class="btn  btn-radio btn-radio-color">
-                                    <input type="radio" name="options" id="black_krks">
+                                    <input type="radio" name="options" id="black_krks" checked>
                                     <img src="img/black_karkas.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/black_karkas.jpg" alt="">
                                     </div>
                                 </label>
                                 <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="white_krks">
+                                    <img src="img/white_karkas.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/white_karkas.jpg" alt="">
+                                    </div>
+                                </label>
+                               
+                                <label class="btn  btn-radio btn-radio-color">
                                     <input type="radio" name="options" id="grey_krks">
                                     <img src="img/grey_karkas.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/grey_karkas.jpg" alt="">
+                                    </div>
+                                </label>
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="gold_karkas">
+                                    <img src="img/gl.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/gl.jpg" alt="">
                                     </div>
                                 </label>
                             </div>
@@ -1022,16 +1030,22 @@
         <!-- Меню с якорями -->
         <div class="row">
             <div class="col-12 order-3 order-xl-4">
-                <ul class="nav nav-anchor nav-fill mt-4 mb-4">
+                <ul class="nav nav-anchor mt-4 mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#charact">Характеристики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#charact">Описание</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#schems">Чертежи</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#gabarity">Габариты упаковки</a>
                     </li>
-                    <li class="nav-item">
+                    <!--  <li class="nav-item">
                         <a class="nav-link" href="#pokraska">Покраска</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#video">Видео</a>
                     </li>
@@ -1050,12 +1064,751 @@
                 </ul>
             </div>
         </div>
+        <a id="pokraska"></a>
+        <div class="section">
+            <p class="p-page-cap">Покраска деревянных элементов лестницы</p>
+            <p class="text">Вы можете заказать предварительную покраску деревянных элементов лестницы.<br>Важно! Реальный цвет может отличаться от того, что вы видите на экране. Увидеть образцы цветов можно в нашем шоу-руме</p>
+            <div class="clrbm">
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8510.jpg" class="a-zoom-img">
+                            <img src="img/colors/8510.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">01 Белый 8510</p>
+                    <!--                     <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8511.jpg" class="a-zoom-img">
+                            <img src="img/colors/8511.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">02 Арктика 8511</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8531.jpg" class="a-zoom-img">
+                            <img src="img/colors/8531.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">03 Сахара 8531</p>
+                    <!--                     <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8532.jpg" class="a-zoom-img">
+                            <img src="img/colors/8532.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">04 Орех 8532</p>
+                    <!--  <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8533.jpg" class="a-zoom-img">
+                            <img src="img/colors/8533.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">05 Дуб копчёный 8533</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img//colors/8534.jpg" class="a-zoom-img">
+                            <img src="img/colors/8534.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">06 Серый 8534</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8535.jpg" class="a-zoom-img">
+                            <img src="img/colors/8535.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">07 Сталь 8535</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8536.jpg" class="a-zoom-img">
+                            <img src="img/colors/8536.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">08 Капучино 8536</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8537.jpg" class="a-zoom-img">
+                            <img src="img/colors/8537.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">08 Махагон 8537</p>
+                    <!--  <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8538.jpg" class="a-zoom-img">
+                            <img src="img/colors/8538.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">08 Бакаут 8538</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8539.jpg" class="a-zoom-img">
+                            <img src="img/colors/8539.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">08 Коричневый 8539</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8541.jpg" class="a-zoom-img">
+                            <img src="img/colors/8541.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">14 Бренди 8541</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8542.jpg" class="a-zoom-img">
+                            <img src="img/colors/8542.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">15 Тик тёмный 8542</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8543.jpg" class="a-zoom-img">
+                            <img src="img/colors/8543.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">16 Мербау 8543</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8544.jpg" class="a-zoom-img">
+                            <img src="img/colors/8544.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">17 Бразильский дуб 8544</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8545.jpg" class="a-zoom-img">
+                            <img src="img/colors/8545.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">18 Грецкий орех 8545</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8546.jpg" class="a-zoom-img">
+                            <img src="img/colors/8546.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">19 Венге 8546</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8547.jpg" class="a-zoom-img">
+                            <img src="img/colors/8547.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">20 Сандаловое дерево 8547</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8548.jpg" class="a-zoom-img">
+                            <img src="img/colors/8548.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">21 Дуб натуральный 8548</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8549.jpg" class="a-zoom-img">
+                            <img src="img/colors/8549.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">22 Серый кварц 8549</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8550.jpg" class="a-zoom-img">
+                            <img src="img/colors/8550.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">23 Оникс 8550</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8551.jpg" class="a-zoom-img">
+                            <img src="img/colors/8551.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">24 Городской туман 8551</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8552.jpg" class="a-zoom-img">
+                            <img src="img/colors/8552.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">25 Сафари 8552</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8553.jpg" class="a-zoom-img">
+                            <img src="img/colors/8553.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">26 Французский серый 8553</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8554.jpg" class="a-zoom-img">
+                            <img src="img/colors/8554.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">27 Циан 8554</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/some.jpg" class="a-zoom-img">
+                            <img src="img/colors/some.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">Любой цвет на ваш выбор</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <p class="p-page-cap">Покраска металлических элементов лестницы</p>
+            <p class="text">ЦВЕТА каркаса – золото, серебро, белый, чёрный – поддерживаются на складе и включены в стоимость. Другие цвета также доступны, но потребуют согласования стоимости и сроков.<br>Важно! Реальный цвет может отличаться от того, что вы видите на экране. Увидеть образцы цветов можно в нашем шоу-руме</p>
+            <div class="clrbm">
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8510.jpg" class="a-zoom-img">
+                            <img src="img/colors/8510.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">01 Белый 8510</p>
+                    <!--                     <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8511.jpg" class="a-zoom-img">
+                            <img src="img/colors/8511.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">02 Арктика 8511</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8531.jpg" class="a-zoom-img">
+                            <img src="img/colors/8531.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">03 Сахара 8531</p>
+                    <!--                     <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8532.jpg" class="a-zoom-img">
+                            <img src="img/colors/8532.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">04 Орех 8532</p>
+                    <!--  <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8533.jpg" class="a-zoom-img">
+                            <img src="img/colors/8533.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">05 Дуб копчёный 8533</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img//colors/8534.jpg" class="a-zoom-img">
+                            <img src="img/colors/8534.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">06 Серый 8534</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8535.jpg" class="a-zoom-img">
+                            <img src="img/colors/8535.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">07 Сталь 8535</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8536.jpg" class="a-zoom-img">
+                            <img src="img/colors/8536.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">08 Капучино 8536</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8537.jpg" class="a-zoom-img">
+                            <img src="img/colors/8537.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">08 Махагон 8537</p>
+                    <!--  <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8538.jpg" class="a-zoom-img">
+                            <img src="img/colors/8538.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">08 Бакаут 8538</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8539.jpg" class="a-zoom-img">
+                            <img src="img/colors/8539.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">08 Коричневый 8539</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8541.jpg" class="a-zoom-img">
+                            <img src="img/colors/8541.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">14 Бренди 8541</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8542.jpg" class="a-zoom-img">
+                            <img src="img/colors/8542.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">15 Тик тёмный 8542</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8543.jpg" class="a-zoom-img">
+                            <img src="img/colors/8543.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">16 Мербау 8543</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8544.jpg" class="a-zoom-img">
+                            <img src="img/colors/8544.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">17 Бразильский дуб 8544</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8545.jpg" class="a-zoom-img">
+                            <img src="img/colors/8545.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">18 Грецкий орех 8545</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8546.jpg" class="a-zoom-img">
+                            <img src="img/colors/8546.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">19 Венге 8546</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8547.jpg" class="a-zoom-img">
+                            <img src="img/colors/8547.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">20 Сандаловое дерево 8547</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8548.jpg" class="a-zoom-img">
+                            <img src="img/colors/8548.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">21 Дуб натуральный 8548</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8549.jpg" class="a-zoom-img">
+                            <img src="img/colors/8549.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">22 Серый кварц 8549</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8550.jpg" class="a-zoom-img">
+                            <img src="img/colors/8550.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">23 Оникс 8550</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8551.jpg" class="a-zoom-img">
+                            <img src="img/colors/8551.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">24 Городской туман 8551</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8552.jpg" class="a-zoom-img">
+                            <img src="img/colors/8552.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">25 Сафари 8552</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8553.jpg" class="a-zoom-img">
+                            <img src="img/colors/8553.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">26 Французский серый 8553</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8554.jpg" class="a-zoom-img">
+                            <img src="img/colors/8554.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">27 Циан 8554</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/some.jpg" class="a-zoom-img">
+                            <img src="img/colors/some.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">Любой цвет на ваш выбор</p>
+                    <!-- <div class="clrb_h">
+                        <p class="p-price">
+                            + 28 000<span class="price-rouble"></span>
+                        </p>
+                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
         <div class="section">
             <!-- Характеристики -->
-            <div class="params mt-3 mb-4">
-                <p class="p-page-cap">Характеристики:</p>
-                <div class="row">
-                    <div class="col-lg-6 col-xl-12">
+            <p class="p-page-cap">Характеристики:</p>
+            <div class="params">
                         <p class="p-values">
                             <span class="feature-name">
                                 <b>
@@ -1120,8 +1873,7 @@
                             </span>
                             <span class="feature-val">42 °</span>
                         </p>
-                    </div>
-                    <div class="col-lg-6 col-xl-12">
+
                         <p class="p-values">
                             <span class="feature-name">
                                 <b>
@@ -1190,8 +1942,6 @@
                             Не подходят размеры?
                         </a>
                     </div>
-                </div>
-            </div>
             <!-- Конец характеристик -->
         </div>
         <div class="section">
@@ -1427,309 +2177,6 @@
             </a>
         </div>
         <div class="my-hr"></div>
-        <a id="pokraska"></a>
-        <div class="section">
-            <p class="p-page-cap">Покраска деревянных элементов лестницы</p>
-            <p class=" ">Важно! Реальный цвет может отличаться от того, что вы видите на экране. Увидеть образцы цветов можно в нашем шоу-руме</p>
-            <div class="clrbm">
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col1.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">01 Белый 8510</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col2.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">02 Орех 8532</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col3.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">03 Капучино 8536</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col4.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">04 Венге 8546</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col5.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">05 Тик 3702</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col6.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">06 Биофа 1009</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col7.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">07 Арктика 8511</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col8.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Слоновая кость 2009</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col9.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Слоновая кость 2009</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col10.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Слоновая кость 2009</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col11.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Слоновая кость 2009</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col13.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">14 Сталь 8535</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col12.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">Любой цвет на ваш выбор</p>
-                    <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Цвета для металлических элементов (только для лестниц на металлокаркасе) -->
-        <div class="my-hr"></div>
-        <a id="pokraska"></a>
-        <div class="section">
-            <p class="p-page-cap">Покраска металлических элементов лестницы</p>
-            <p class=" ">Возможные цвета металлических элементов лестницы при изготовлении на заказ</p>
-            <div class="clrbm">
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col1.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">01 Белый 8510</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col2.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">02 Орех 8532</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col3.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">03 Капучино 8536</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col4.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">04 Венге 8546</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col5.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">05 Тик 3702</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col6.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">06 Биофа 1009</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col7.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">07 Арктика 8511</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col8.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Слоновая кость 2009</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col9.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Слоновая кость 2009</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col10.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Слоновая кость 2009</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col11.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Слоновая кость 2009</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col13.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">14 Сталь 8535</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors.jpg" class="a-zoom-img">
-                            <img src="img/col12.jpg" alt="" class="">
-                        </a>
-                    </div>
-                    <p class="clrnm">Любой цвет на ваш выбор</p>
-                </div>
-            </div>
-        </div>
-        <div class="my-hr"></div>
         <a id="video"></a>
         <div class="section">
             <div class="video-block">
@@ -1742,7 +2189,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vjmdSnz-zdQ" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dtZDwVk6O1g" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

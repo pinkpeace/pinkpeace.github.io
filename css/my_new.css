@@ -212,6 +212,10 @@ a:hover {
     border: 1px solid #fff;
 }
 
+.a-zoom-img:hover {
+    border-color: #ff3495;
+}
+
 .price-rouble:after {
     content: "\A0\20BD";
 }
@@ -2084,7 +2088,7 @@ select:focus {
 
 .a-form-call {
     display: flex;
-/*    color: #009de8;*/
+    /*    color: #009de8;*/
     padding: 5px 0px;
     border: 1px solid #fff;
     border-radius: 3px;
@@ -2130,7 +2134,12 @@ select:focus {
 .p-quantity .few {
     color: #ff3495;
 }
+@media(min-width: 992px){
+    .params {
+        column-count: 2;
+        column-gap: 2em;}
 
+}
 @media (min-width: 1200px) {
     .params .p-page-cap {
         font-size: 18px;
@@ -2261,6 +2270,7 @@ select:focus {
     line-height: 1em;
     position: relative;
     overflow: visible;
+    font-size: 0.85em;
 }
 
 .btn-group-toggle .btn-radio:hover {
@@ -2978,16 +2988,13 @@ div.scrollup:hover {
 @media (min-width: 992px) {
     .nav-anchor {
         display: flex;
-        box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
-        border-radius: 3px;
-        background-color: #f2f5f6;
     }
 
     .nav-anchor .nav-link {
-        padding: 10px 5px;
-        border-bottom: 2px solid #fff;
-        font-weight: 600;
-        font-size: 14px;
+        border-bottom: 1px dashed #2e3038;
+        margin-right: 2em;
+        padding: 0;
+        font-weight: 500;
     }
 
     .nav-anchor .nav-link.disabled {
@@ -2995,7 +3002,8 @@ div.scrollup:hover {
     }
 
     .nav-anchor .nav-link:not(.disabled):hover {
-        border-bottom: 2px solid #fee44c;
+        border-bottom: 1px solid #fff;
+        color: #009de8;
     }
 }
 
@@ -3547,29 +3555,35 @@ p.clrnm {
     margin-top: .5em;
     margin-bottom: 0em;
     font-size: 12px;
-    min-height: 38px;
 }
 
 .clrb {
-    width: 140px;
-    padding: 20px;
-    text-align: center;
+    width: 45%;
+    margin-bottom: 1em;
+}
+
+@media(min-width:510px) {
+    .clrb {
+        width: 30%;
+    }
+}
+@media(min-width:768px) {
+    .clrb {
+        width: 18%;
+    }
+}
+@media(min-width:1054px) {
+    .clrb {
+        width: 13%;
+    }
+}
+.clrb:not(:last-child) {
+    margin-right: 1em;
 }
 
 .clrb .p-price {
     margin-bottom: .5em;
     color: #ff3495;
-}
-
-.clrb .img {
-    width: 100px;
-    height: 100px;
-}
-
-@media (min-width: 1200px) {
-    .clrb:hover {
-        box-shadow: 0 0 15px #464a563d;
-    }
 }
 
 .btn-pdf {
@@ -4996,8 +5010,9 @@ a.zak-zam:hover {
 .btn-group-toggle .btn-radio:hover .detail-pic {
     display: block;
 }
+
 .stck {
-        position: sticky;
+    position: sticky;
     align-self: flex-start;
     top: 0;
 }

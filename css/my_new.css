@@ -79,7 +79,7 @@ h1.page-name {
     h1.page-name {
         font-size: 25px;
         margin-top: 1em;
-        margin-bottom: 0.3em;
+        margin-bottom: 1em;
     }
 }
 
@@ -2134,12 +2134,15 @@ select:focus {
 .p-quantity .few {
     color: #ff3495;
 }
-@media(min-width: 992px){
+
+@media(min-width: 992px) {
     .params {
         column-count: 2;
-        column-gap: 2em;}
+        column-gap: 2em;
+    }
 
 }
+
 @media (min-width: 1200px) {
     .params .p-page-cap {
         font-size: 18px;
@@ -3567,16 +3570,19 @@ p.clrnm {
         width: 30%;
     }
 }
+
 @media(min-width:768px) {
     .clrb {
         width: 18%;
     }
 }
+
 @media(min-width:1054px) {
     .clrb {
         width: 13%;
     }
 }
+
 .clrb:not(:last-child) {
     margin-right: 1em;
 }
@@ -3609,15 +3615,23 @@ p.clrnm {
 }
 
 .mnt {
-    padding-left: 30px;
-    background-image: url(../img/select-ok.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 4px;
-    background-size: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     text-align: left;
-    background-color: #fff;
     font-weight: 500;
     margin-bottom: .5em;
+    align-items: center;
+}
+
+.mnt img {
+    width: 60px;
+    margin-right: 1em;
+}
+
+.mnt p {
+    line-height: 0;
+    margin-bottom: 0;
 }
 
 @media (min-width: 530px) {
@@ -5015,4 +5029,86 @@ a.zak-zam:hover {
     position: sticky;
     align-self: flex-start;
     top: 0;
+}
+
+.mntg {
+    padding: 5em 0 4em;
+    background: url(../img/montage.jpg);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    color: white;
+}
+
+.mntg:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.p-mntg {
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+.btn-mntg {
+    border: 2px solid #fee44c;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.por_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.8em;
+    margin-bottom: 2.5em;
+}
+
+.por_bx {
+    text-align: center;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    transition: .5s;
+}
+.por_bx:not(:last-child){
+    margin-right: 12px;
+}
+.por_bx:hover {
+        box-shadow: 5px 7px 20px 2px rgb(73 91 98 / 28%);
+        border-color: #fff;
+        transition: .5s;
+}
+.por_bx img {
+    margin-bottom: 1.6rem;
+}
+.por_bx a {
+    border: 1px solid #e9ecef;
+}
+
+.p-head {
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-top: 1.2rem;
+    margin-bottom: 1.25rem;
+}
+.por-pr{
+    font-size: 0.8em;
+    color: #77797e;
+    line-height: 1em;
+    margin-bottom: 0.7em;
 }

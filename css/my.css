@@ -4932,7 +4932,6 @@ a.zak-zam:hover {
 .por_row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1.8em;
     margin-bottom: 2.5em;
 }
 
@@ -4992,6 +4991,9 @@ a.zak-zam:hover {
     }
 
     .p-head {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
+}
+.cat-bn {
+    margin-bottom: 1.8em;
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/my.css">
-   <link  rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
     <title>Проба_cпб</title>
 </head>
 
@@ -423,7 +423,7 @@
     </div>
     <!-- Конец Модальное окно "Запрос консультации" -->
     <div class="header">
-         <div class="sp-bx d-none">Специальный блок для специальных сообщений</div>
+        <div class="sp-bx d-none">Специальный блок для специальных сообщений</div>
         <div class="container-fluid container-xl">
             <nav class="navbar navbar-expand-lg nvbr-hdr">
                 <button class="navbar-toggler toggler-spring" type="button">
@@ -540,17 +540,11 @@
                             </div>
                         </div>
                     </li>
-
                     <li><a class="nav-item nav-link active" href="derev.html">Деревянные</a></li>
-
                     <li><a class="nav-item nav-link" href="#">Винтовые</a></li>
-
                     <li><a class="nav-item nav-link" href="#">Модульные</a></li>
-
                     <li><a class="nav-item nav-link " href="metallokarkas.html">На металлокаркасе</a></li>
-
                     <li><a class="nav-item nav-link " href="#">Чердачные</a></li>
-
                     <li>
                         <a class="nav-item nav-link " href="#">На заказ</a>
                     </li>
@@ -669,14 +663,16 @@
             </div>
             <p class="nowrp"> У лестницы&nbsp;</p><a href="#vars" class="a-border-dotted"> 7 вариантов размера</a>
             <p class="mr-4">Купили более 10 раз</p>
-            <p class="p-quantity">В наличии: <span class="few">2 шт.</span></p>
+            <p class="p-quantity mr-4">В наличии: <span class="few">2 шт.</span></p>
+            <a class="a-zapros" data-toggle="modal" href="" data-target="#zapros"><i class="i_ask"></i>
+                Запрос консультации по товару
+            </a>
         </div>
         <!-- Конец -верхней панели -->
         <!-- Карточка-каталог -->
         <div class="row">
-            <div class="col-md-7 col-xl-6 order-1">
+            <div class="col-sm-7 stck">
                 <div class="gallery-box">
-                    <div class="sale-marker">-15%</div>
                     <div class="data-img">
                         <div class="thumb-slider d-none d-lg-block">
                             <div>
@@ -704,267 +700,138 @@
                                 <img class="img-fluid" alt="" src="img/prod-6.jpg">
                             </div>
                         </div>
-                        <div class="main-slider">
-                            <div>
-                                <a data-fancybox="gallery" href="img/prod-3.jpg" rel="group" data-gallery="prod-photo">
-                                    <img src="img/prod-3.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="gallery" href="img/prod-2.jpg" rel="group" data-gallery="prod-photo">
-                                    <img src="img/prod-2.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="gallery" href="img/prod-1.jpg" rel="group" data-gallery="prod-photo">
-                                    <img src="img/prod-1.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="gallery" href="img/twister.jpg" rel="group" data-gallery="prod-photo">
-                                    <img src="img/twister.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="gallery" href="img/prob_hor.jpg" rel="group" data-gallery="prod-photo">
-                                    <img src="img/prob_hor.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="gallery" href="img/prod-4.jpg" rel="group" data-gallery="prod-photo">
-                                    <img src="img/prod-4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="gallery" href="img/prod-5.jpg" rel="group" data-gallery="prod-photo">
-                                    <img src="img/prod-5.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div>
-                                <a data-fancybox="gallery" href="img/prod-6.jpg" rel="group" data-gallery="prod-photo">
-                                    <img src="img/prod-6.jpg" alt="" class="img-fluid">
-                                </a>
+                        <div class="mrkrs-bx">
+                            <div class="lp-mrkr">Собственное производство</div>
+                            <div class="sale-marker">-15%</div>
+                            <div class="main-slider">
+                                <div>
+                                    <a data-fancybox="gallery" href="img/prod-3.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/prod-3.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a data-fancybox="gallery" href="img/prod-2.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/prod-2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a data-fancybox="gallery" href="img/prod-1.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/prod-1.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a data-fancybox="gallery" href="img/twister.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/twister.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a data-fancybox="gallery" href="img/prob_hor.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/prob_hor.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a data-fancybox="gallery" href="img/prod-4.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/prod-4.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a data-fancybox="gallery" href="img/prod-5.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/prod-5.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a data-fancybox="gallery" href="img/prod-6.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/prod-6.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col col-xl-3 order-4 order-xl-2 values-box">
-                <button class="a-form-call a-zapros" data-toggle="modal" data-target="#zapros"><i class="i_ask"></i>
-                    Запрос консультации по товару
-                </button>
-                <button data-toggle="modal" data-target="#order_measure" class="a-form-call a-zamer-order"><i class="i_tape"></i>
-                    Заказать замер
-                </button>
-                <div class="params mt-3 mb-4">
-                    <p class="p-page-cap">
-                        Характеристики:
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-6 col-xl-12">
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота
-                                    </b>
-                                </span>
-                                <span class="feature-val">2750 - 3400 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">40 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Угол наклона
-                                    </b>
-                                </span>
-                                <span class="feature-val">42°</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота
-                                    </b>
-                                </span>
-                                <span class="feature-val">2750 - 3400 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">40 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Угол наклона
-                                    </b>
-                                </span>
-                                <span class="feature-val">42 °</span>
-                            </p>
-                        </div>
-                        <div class="col-lg-6 col-xl-12">
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота
-                                    </b>
-                                </span>
-                                <span class="feature-val">2750 - 3400 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">40 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Угол наклона
-                                    </b>
-                                </span>
-                                <span class="feature-val">42 °</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота
-                                    </b>
-                                </span>
-                                <span class="feature-val">2750 - 3400 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">40 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Угол наклона
-                                    </b>
-                                </span>
-                                <span class="feature-val">42 °</span>
-                            </p>
-                        </div>
-                    </div>
-                    <p>
-                        <a class="a-border-dotted a-link" href="#vars">Посмотреть варианты размеров лестницы</a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-5 col-xl-3 order-2 order-xl-3">
+            <div class="col-sm-5">
                 <div class="main-right">
                     <div class="main-price-box">
-                        <p class="p-main-price">от 34 000
+                        <p class="p-main-price">34 000
                             <span class="price-rouble"></span>
                         </p>
                         <p class="old-price">
-                            от 40 000<span class="price-rouble"></span>
+                            40 000<span class="price-rouble"></span>
                         </p>
                     </div>
                     <form class="mb-3">
                         <div class="form-group">
-                            <label for="checkHight" class="">Высота</label>
-                            <button type="button" class="btn btn-hint" data-container="body" data-toggle="popover" data-html="true" data-placement="top" data-content='
-                            <div  class="row">
-                                <div class="col">
-                                    <img src="img/scheme2.jpg" alt="" class="img-fluid">
-                                    Здесь будет картинка поясняющая, что такое высота лестницы
-                                </div>
-                            </div>'>
-                                ?
-                            </button>
-                            <select class="form-control product-sel" id="checkHight">
-                                <!--  <option class="placeholder" value="0"> </option> -->
-                                <option>2730 - 2925 мм</option>
-                                <option>2721 - 2900 мм</option>
-                                <option>2920 - 3100 ммм</option>
-                            </select>
+                            <p class="p-param-label">Высота лестницы, мм:</p>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="h2540-2729" checked> 2540 - 2729
+                                </label>
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="h2730-2925"> 2730 - 2925
+                                </label>
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="h2721-2900"> 2721 - 2900
+                                </label>
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="h2920 - 3100"> 2920 - 3100
+                                </label>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="checkLong" class="">Мин. проём (Д × Ш)</label>
-                            <button type="button" data-html="true" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content='
-                            <div  class="row">
-                                <div class="col">
-                                    <img src="img/scheme2.jpg" alt="" class="img-fluid">
-                                    Здесь будет картинка поясняющая, что такое проём
-                                </div>
-                            </div>'>
-                                ?
-                            </button>
-                            <select class="form-control product-sel" id="checkLong">
-                                <!--  <option class="placeholder" value="0"> </option> -->
-                                <option>2700 × 920 мм</option>
-                                <option>2480 × 1170 мм</option>
-                                <option>2920 × 920 ммм</option>
-                                <option>3140 × 920 ммм</option>
-                            </select>
+                            <p class="p-param-label">Минимальный проём, мм:</p>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="p2700-920" checked> 2700 × 920
+                                </label>
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="p2480-1170"> 2480 × 1170
+                                </label>
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="p2920-920"> 2920 × 920
+                                </label>
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="p3140-920"> 3140 × 920
+                                </label>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="checkMaterial" class="">Материал</label>
-                            <button type="button" data-html="true" class="btn btn-hint" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content='
-                            <div  class="row">
-                                <div class="col">
-                                    <img src="img/07_Larch.jpg" alt="" class="img-fluid">
-                                    Здесь будет подсказка по материалам
-                                </div>
-                            </div>'>
-                                ?
-                            </button>
-                            <select class="form-control product-sel" id="checkMaterial">
-                                <!--                            <option class="placeholder" value="0"> </option> -->
-                                <option>Сосна</option>
-                                <option>Сосна под покраску</option>
-                                <option>Сосна + дуб</option>
-                                <option>Дуб</option>
-                            </select>
+                            <p class="p-param-label">Материал ступеней:&nbsp;<span class="text-xs text-grey">Только каркас</span></p>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn  btn-radio btn-radio-stup">
+                                    <input type="radio" name="options" id="stup_sos_pod" checked> Сосна под покраску
+                                </label>
+                                <label class="btn  btn-radio btn-radio-stup">
+                                    <input type="radio" name="options" id="stup_sos"> Сосна
+                                </label>
+                                <label class="btn  btn-radio btn-radio-stup">
+                                    <input type="radio" name="options" id="stup_listv"> Лиственница
+                                </label>
+                                <label class="btn  btn-radio btn-radio-stup">
+                                    <input type="radio" name="options" id="stup_buk"> Бук
+                                </label>
+                                <label class="btn  btn-radio btn-radio-stup">
+                                    <input type="radio" name="options" id="stup_yasen"> Ясень
+                                </label>
+                                <label class="btn  btn-radio btn-radio-stup">
+                                    <input type="radio" name="options" id="stup_dub"> Дуб
+                                </label>
+                            </div>
                         </div>
                         <!--                         <div class="form-group">
                             <p class="p-param-label">Диаметр:</p>
@@ -1015,30 +882,18 @@
                             </div>
                         </div> -->
                         <div class="form-group">
-                            <p class="p-param-label">Выберите поворот:</p>
-                            <button type="button" class="btn btn-hint" data-container="body" data-content='
-                            <div  class="row">
-                                <div class="col-6">
-                                    <img src="img/prod-3p.jpg" alt="" class="img-fluid">
-                                    Поворот направо
-                                </div>
-                                <div class="col-6">
-                                    <img src="img/prod-3l.jpg" alt="" class="img-fluid">
-                                    Поворот налево
-                                </div>
-                            </div>' data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true">
-                                ?
-                            </button>
+                            <p class="p-param-label">Поворот:</p>
                             <div class="btn-group-toggle" data-toggle="buttons">
-                                <label class="btn  btn-povorot">
-                                    <input type="radio" name="options" id="option9"> направо
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="nalevo" checked> Налево
                                 </label>
-                                <label class="btn  btn-povorot">
-                                    <input type="radio" name="options" id="option8"> налево
+                                <label class="btn  btn-radio btn-radio-hight">
+                                    <input type="radio" name="options" id="napravo"> Направо
                                 </label>
                             </div>
                         </div>
-                        <!--                         <div class="form-group">
+                        <!--                         
+                        <div class="form-group">
                             <p class="p-param-label">Стойка перил:</p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-povorot">
@@ -1090,39 +945,188 @@
                     <p class="mb-1"><i class="i_guarantee"></i>Гарантия магазина 1 год</p>
                 </div>
             </div>
-            <!-- Блок ниже только в карточке -->
-            <!-- <div class="col-12 order-3 order-xl-4">
-                <ul class="nav nav-anchor nav-fill mt-4 mb-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Чертежи</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Габариты упаковки</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Покраска</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#video">Видео</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Монтаж</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Инструкция по сборке</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Отзывы</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Вопросы</a>
-                    </li>
-                </ul>
-            </div> -->
+        </div>
+        <a id="charact"></a>
+        <div class="my-hr"></div>
+        <div class="section">
+            <!-- Характеристики -->
+            <p class="p-page-cap">Характеристики:</p>
+            <div class="params">
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота
+                        </b>
+                    </span>
+                    <span class="feature-val">2750 - 3400 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Толщина ступени
+                        </b>
+                    </span>
+                    <span class="feature-val">40 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота шага
+                        </b>
+                    </span>
+                    <span class="feature-val">195 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Угол наклона
+                        </b>
+                    </span>
+                    <span class="feature-val">42 °</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота
+                        </b>
+                    </span>
+                    <span class="feature-val">2750 - 3400 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Толщина ступени
+                        </b>
+                    </span>
+                    <span class="feature-val">40 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота шага
+                        </b>
+                    </span>
+                    <span class="feature-val">195 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Угол наклона
+                        </b>
+                    </span>
+                    <span class="feature-val">42 °</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота
+                        </b>
+                    </span>
+                    <span class="feature-val">2750 - 3400 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Толщина ступени
+                        </b>
+                    </span>
+                    <span class="feature-val">40 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота шага
+                        </b>
+                    </span>
+                    <span class="feature-val">195 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Угол наклона
+                        </b>
+                    </span>
+                    <span class="feature-val">42 °</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота
+                        </b>
+                    </span>
+                    <span class="feature-val">2750 - 3400 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Толщина ступени
+                        </b>
+                    </span>
+                    <span class="feature-val">40 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота шага
+                        </b>
+                    </span>
+                    <span class="feature-val">195 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Угол наклона
+                        </b>
+                    </span>
+                    <span class="feature-val">42 °</span>
+                </p>
+                <a href="#" data-toggle="modal" data-target="#notmysize" class="a-link">
+                    Не подходят размеры?
+                </a>
+            </div>
         </div>
         <div class="section">
+            <a id="gabarity"></a>
+            <p class="p-page-cap">Упаковка:</p>
+            <div class="params">
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Масса брутто, кг
+                        </b>
+                    </span>
+                    <span class="feature-val">93</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Количество упаковок
+                        </b>
+                    </span>
+                    <span class="feature-val">3</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Размеры наибольшей упаковки, мм
+                        </b>
+                    </span>
+                    <span class="feature-val">2500 × 350 × 180</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Общий объём, м³
+                        </b>
+                    </span>
+                    <span class="feature-val">2500 × 350 × 180</span>
+                </p>
+            </div>
+        </div>
+        <div class="my-hr"></div>
+        <div class="section">
             <p class="p-page-cap">Описание</p>
-            <p>
+            <p class="p-med">
                 Для изготовления лестницы под покраску используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
             </p>
         </div>
@@ -2607,7 +2611,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Анкета для точного расчета стоимости</a>
                             </li>
-                             <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="polesnoye.html">Полезное</a>
                             </li>
                         </ul>

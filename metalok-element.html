@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/my_new.css">
+    <link rel="stylesheet" href="css/my.css">
     <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
     <title>Проба_cпб</title>
 </head>
@@ -743,13 +743,16 @@
             <p class="p-quantity mr-4">Код товара: <span class="few">1526</span></p>
             <p class="nowrp"> У лестницы&nbsp;</p><a href="#vars" class="a-border-dotted"> 7 вариантов размера</a>
             <p class="mr-4">Купили более 10 раз</p>
-            <p class="p-quantity">В наличии: <span class="few">2 шт.</span></p>
+            <p class="p-quantity mr-4">В наличии: <span class="few">2 шт.</span></p>
+            <a class="a-zapros" data-toggle="modal" href="" data-target="#zapros"><i class="i_ask"></i>
+                Запрос консультации по товару
+            </a>
         </div>
         <!-- Конец -верхней панели -->
         <!-- Карточка-каталог -->
         <div class="row">
             <!-- Блок с фотографиями товара -->
-            <div class="col-md-7 stck">
+            <div class="col-sm-7 col-md-7 stck">
                 <div class="gallery-box">
                     <div class="data-img">
                         <div class="thumb-slider d-none d-lg-block">
@@ -845,7 +848,7 @@
             </div>
             <!-- Конец блока с фотографиями -->
             <!-- Блок с расчетом цены -->
-            <div class="col-md-5">
+            <div class="col-sm-5 col-md-5">
                 <div class="main-right">
                     <div class="main-price-box">
                         <p class="p-main-price">34 000<span class="price-rouble"></span></p>
@@ -871,7 +874,92 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="form-group">
+                                                <div class="form-group">
+                            <p class="p-param-label">Материал ступеней&nbsp;<span class="text-xs text-grey">Без ограждения</span></p>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="wtht_st" checked>
+                                    <img src="img/wtht_ogr.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/wtht_ogr.jpg" alt="">
+                                        <p>
+                                            Без ступеней
+                                        </p>
+                                    </div>
+                                </label>
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="st_ssn_ppkr">
+                                    <img src="img/sosna_pod_pokrasku.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/sosna_pod_pokrasku.jpg" alt="">
+                                        <p>
+                                            Сосна под покраску
+                                        </p>
+                                    </div>
+                                </label>
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="st_sosna">
+                                    <img src="img/st_sosna.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/st_sosna.jpg" alt="">
+                                        <p>
+                                            Сосна
+                                        </p>
+                                    </div>
+                                </label>
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="st_listv">
+                                    <img src="img/st_listv.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/st_listv.jpg" alt="">
+                                        <p>
+                                            Лиственница
+                                        </p>
+                                    </div>
+                                </label>
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="st_ber">
+                                    <img src="img/st_bereza.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/st_bereza.jpg" alt="">
+                                        <p>
+                                            Берёза
+                                        </p>
+                                    </div>
+                                </label>
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="st_buk">
+                                    <img src="img/st_buk.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/st_buk.jpg" alt="">
+                                        <p>
+                                            Бук
+                                        </p>
+                                    </div>
+                                </label>                                
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="st_yasen">
+                                    <img src="img/st_yasen.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/st_yasen.jpg" alt="">
+                                        <p>
+                                            Ясень
+                                        </p>
+                                    </div>
+                                </label>
+                                <label class="btn  btn-radio btn-radio-color">
+                                    <input type="radio" name="options" id="st_dub">
+                                    <img src="img/st_dub.jpg" alt="" class="stair-color-img">
+                                    <div class="detail-pic">
+                                        <img class="img-fluid" src="img/st_dub.jpg" alt="">
+                                        <p>
+                                            Дуб
+                                        </p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+<!--                         <div class="form-group">
                             <p class="p-param-label">Материал ступеней:&nbsp;<span class="text-xs text-grey">Только каркас</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio btn-radio-stup">
@@ -896,7 +984,7 @@
                                     <input type="radio" name="options" id="stup_dub"> Дуб
                                 </label>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <p class="p-param-label">Ограждение&nbsp;<span class="text-xs text-grey">Без ограждения</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
@@ -905,6 +993,9 @@
                                     <img src="img/wtht_ogr.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/wtht_ogr.jpg" alt="">
+                                        <p>
+                                            Без ограждения
+                                        </p>
                                     </div>
                                 </label>
                                 <label class="btn  btn-radio btn-radio-color">
@@ -912,6 +1003,9 @@
                                     <img src="img/derev_ogr.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/derev_ogr.jpg" alt="">
+                                        <p>
+                                            Тринити
+                                        </p>
                                     </div>
                                 </label>
                                 <label class="btn  btn-radio btn-radio-color">
@@ -919,6 +1013,9 @@
                                     <img src="img/kovka.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/kovka.jpg" alt="">
+                                        <p>
+                                            Название ограждения
+                                        </p>
                                     </div>
                                 </label>
                                 <label class="btn  btn-radio btn-radio-color">
@@ -926,6 +1023,9 @@
                                     <img src="img/nerj_rig.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/nerj_rig.jpg" alt="">
+                                        <p>
+                                            Другое название
+                                        </p>
                                     </div>
                                 </label>
                                 <label class="btn  btn-radio btn-radio-color">
@@ -933,10 +1033,14 @@
                                     <img src="img/trinity.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/trinity.jpg" alt="">
+                                        <p>
+                                            Ограждение №5
+                                        </p>
                                     </div>
                                 </label>
                             </div>
                         </div>
+
                         <div class="form-group">
                             <p class="p-param-label">Цвет каркаса:&nbsp;<span class="text-xs text-grey">Чёрный</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
@@ -945,6 +1049,9 @@
                                     <img src="img/black_karkas.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/black_karkas.jpg" alt="">
+                                        <p>
+                                            Чёрный глянец
+                                        </p>
                                     </div>
                                 </label>
                                 <label class="btn  btn-radio btn-radio-color">
@@ -952,6 +1059,9 @@
                                     <img src="img/white_karkas.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/white_karkas.jpg" alt="">
+                                        <p>
+                                            Белый глянец
+                                        </p>
                                     </div>
                                 </label>
                                 <label class="btn  btn-radio btn-radio-color">
@@ -959,6 +1069,9 @@
                                     <img src="img/grey_karkas.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/grey_karkas.jpg" alt="">
+                                        <p>
+                                            Серый муар
+                                        </p>
                                     </div>
                                 </label>
                                 <label class="btn  btn-radio btn-radio-color">
@@ -966,6 +1079,9 @@
                                     <img src="img/gl.jpg" alt="" class="stair-color-img">
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/gl.jpg" alt="">
+                                        <p>
+                                            Золотой муар
+                                        </p>
                                     </div>
                                 </label>
                             </div>
@@ -998,23 +1114,6 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                            <label class="custom-control-label" for="customCheck1">Добавить подступенки</label>
-                            <button type="button" class="btn btn-hint" data-container="body" data-content='
-                            <div  class="row">
-                                <div class="col-6">
-                                    <img src="img/prod-6.jpg" alt="" class="img-fluid">
-                                    Лестница без подступенков
-                                </div>
-                                <div class="col-6">
-                                    <img src="img/prod-5.jpg" alt="" class="img-fluid">
-                                    Лестница с подступенками
-                                </div>
-                            </div>' data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true">
-                                ?
-                            </button>
-                        </div>
                         <!-- //////////////// Кнопка с количеством//////////////////// -->
                         <div class="qd">
                             <div class="counter">
@@ -1029,13 +1128,10 @@
                             Заказать замер
                         </button>
                     </form>
-                    <button class="a-form-call a-zapros" data-toggle="modal" data-target="#zapros"><i class="i_ask"></i>
-                        Запрос консультации по товару
-                    </button>
-                    <div class="a-form-call"><i class="i_delivery"></i>
+                    <div class=""><i class="i_delivery"></i>
                         Доставка от 1900<span class="price-rouble"></span>
                     </div>
-                    <div class="a-form-call"><i class="i_guarantee"></i>
+                    <div class=""><i class="i_guarantee"></i>
                         Гарантия магазина 1 год
                     </div>
                 </div>
@@ -1044,7 +1140,7 @@
         <!-- Конец блока с расчетом цены -->
         <!-- Меню с якорями -->
         <div class="row">
-            <div class="col-12 order-3 order-xl-4">
+            <div class="col-12">
                 <ul class="nav nav-anchor mt-4 mb-4">
                     <li class="nav-item">
                         <a class="nav-link" href="#charact">Характеристики</a>
@@ -1070,19 +1166,21 @@
                     <li class="nav-item">
                         <a class="nav-link " href="#instr">Инструкция по сборке</a>
                     </li>
-                    <li class="nav-item">
+<!--                     <li class="nav-item">
                         <a class="nav-link" href="#reviews">Отзывы</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="#voprosy">Вопросы</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
         <a id="pokraska"></a>
         <div class="section">
             <p class="p-page-cap">Покраска деревянных элементов лестницы</p>
-            <p class="text">Вы можете заказать предварительную покраску деревянных элементов лестницы.<br>Важно! Реальный цвет может отличаться от того, что вы видите на экране. Увидеть образцы цветов можно в нашем шоу-руме</p>
+            <p class="p-med">Вы можете заказать у нас профессиональную покраску деревянных элементов лестницы.<br>
+            Ниже представлена палитра наиболее популярных расцветок. Выкрасы выыполнены на лиственнице. <br>
+            Обратите внимание! Оттенок на экране может отличаться от ожидаемого, мы настоятельно рекомендуем посетить наш шоу-рум для ознакомления с образцами выкрасов.<br> Всю доступную палитру на разных породах дерева можно посмотреть, перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
             <div class="clrbm">
                 <div class="clrb">
                     <div class="clrb-img">
@@ -1091,27 +1189,15 @@
                         </a>
                     </div>
                     <p class="clrnm">01 Белый 8510</p>
-                    <!--                     <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8511.jpg" class="a-zoom-img">
                             <img src="img/colors/8511.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">02 Арктика 8511</p>
-                    <!-- <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8531.jpg" class="a-zoom-img">
@@ -1154,20 +1240,20 @@
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div> -->
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img//colors/8534.jpg" class="a-zoom-img">
                             <img src="img/colors/8534.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">06 Серый 8534</p>
-                    <!-- <div class="clrb_h">
+                    <div class="clrb_h">
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
+                    </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8535.jpg" class="a-zoom-img">
@@ -1238,34 +1324,24 @@
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div> -->
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8541.jpg" class="a-zoom-img">
                             <img src="img/colors/8541.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">14 Бренди 8541</p>
-                    <!-- <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
-                <div class="clrb">
+
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8542.jpg" class="a-zoom-img">
                             <img src="img/colors/8542.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">15 Тик тёмный 8542</p>
-                    <!-- <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
+
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8543.jpg" class="a-zoom-img">
@@ -1280,34 +1356,28 @@
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div> -->
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8544.jpg" class="a-zoom-img">
                             <img src="img/colors/8544.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">17 Бразильский дуб 8544</p>
-                    <!-- <div class="clrb_h">
+                    <div class="clrb_h">
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
-                <div class="clrb">
+                    </div>
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8545.jpg" class="a-zoom-img">
                             <img src="img/colors/8545.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">18 Грецкий орех 8545</p>
-                    <!-- <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8546.jpg" class="a-zoom-img">
@@ -1322,20 +1392,20 @@
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div> -->
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8547.jpg" class="a-zoom-img">
                             <img src="img/colors/8547.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">20 Сандаловое дерево 8547</p>
-                    <!-- <div class="clrb_h">
+                    <div class="clrb_h">
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
+                    </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8548.jpg" class="a-zoom-img">
@@ -1364,34 +1434,22 @@
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div> -->
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8550.jpg" class="a-zoom-img">
                             <img src="img/colors/8550.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">23 Оникс 8550</p>
-                    <!-- <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8551.jpg" class="a-zoom-img">
                             <img src="img/colors/8551.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">24 Городской туман 8551</p>
-                    <!-- <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8552.jpg" class="a-zoom-img">
@@ -1406,53 +1464,51 @@
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
                     </div> -->
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8553.jpg" class="a-zoom-img">
                             <img src="img/colors/8553.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">26 Французский серый 8553</p>
-                    <!-- <div class="clrb_h">
-                        <p class="p-price">
-                            + 28 000<span class="price-rouble"></span>
-                        </p>
-                        <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/8554.jpg" class="a-zoom-img">
                             <img src="img/colors/8554.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">27 Циан 8554</p>
-                    <!-- <div class="clrb_h">
+                    <div class="clrb_h">
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
-                <div class="clrb">
+                    </div>
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/some.jpg" class="a-zoom-img">
                             <img src="img/colors/some.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">Любой цвет на ваш выбор</p>
-                    <!-- <div class="clrb_h">
+                    <div class="clrb_h">
                         <p class="p-price">
                             + 28 000<span class="price-rouble"></span>
                         </p>
                         <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-color">Заказать</button>
-                    </div> -->
-                </div>
+                    </div>
+                </div> -->
             </div>
+
         </div>
         <div class="section">
             <p class="p-page-cap">Покраска металлических элементов лестницы</p>
-            <p class="text">ЦВЕТА каркаса – золото, серебро, белый, чёрный – поддерживаются на складе и включены в стоимость. Другие цвета также доступны, но потребуют согласования стоимости и сроков.<br>Важно! Реальный цвет может отличаться от того, что вы видите на экране. Увидеть образцы цветов можно в нашем шоу-руме</p>
+            <p class="p-med">Покраска каркаса не влияет на стоимость.<br>
+             Вы можете выбрать любой цвет из палитры.<br>
+             Ниже представлены наиболее популярные расцветки каркаса.
+                <br>Ознакомиться с полной палитрой цветов металлокаркаса вы можете перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
             <div class="clrbm">
                 <div class="clrb">
                     <div class="clrb-img">
@@ -1462,54 +1518,54 @@
                     </div>
                     <p class="clrnm">9030A0136 Алюм.металик хром (ЭП)</p>
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/90306429.jpg" class="a-zoom-img">
                             <img src="img/colors/90306429.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">90306429 Алюм.металлик (ЭП), RAL 9006</p>
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5038A9006.jpg" class="a-zoom-img">
                             <img src="img/colors/5038A9006.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5038A9006 Алюм.металлик (ПЭ), RAL 9006</p>
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5348A0737.jpg" class="a-zoom-img">
                             <img src="img/colors/5348A0737.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5348A0737 Алюм.металлик матовый (ПЭ), RAL 9006</p>
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5268A9006.jpg" class="a-zoom-img">
                             <img src="img/colors/5268A9006.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5268A9006 Алюм.металлик струтур. (ПЭ), RAL 9006</p>
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5038A9007.jpg" class="a-zoom-img">
                             <img src="img/colors/5038A9007.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5038A9007 Алюм.металлик (ПЭ), RAL 9007</p>
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5038A9022.jpg" class="a-zoom-img">
                             <img src="img/colors/5038A9022.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5038A9022 Алюм.металлик (ПЭ), RAL 9022</p>
-                </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/93587983.jpg" class="a-zoom-img">
@@ -1518,22 +1574,22 @@
                     </div>
                     <p class="clrnm">93587983 Алюм.металлик "матовый муар" (ЭП)</p>
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/6348A0100.jpg" class="a-zoom-img">
                             <img src="img/colors/6348A0100.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">6348A0100 Алюм.металлик матовый (Э)</p>
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5030A0393.jpg" class="a-zoom-img">
                             <img src="img/colors/5030A0393.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5030A0393 Лак с блёстками "бриллиант" (ПЭ)</p>
-                </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5758A0646.jpg" class="a-zoom-img">
@@ -1582,14 +1638,14 @@
                     </div>
                     <p class="clrnm">90326428 Золотистый металлик (ЭП)</p>
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5033A1036.jpg" class="a-zoom-img">
                             <img src="img/colors/5033A1036.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5033A1036 Золотистый перламутр (ЭП)</p>
-                </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5033A0377.jpg" class="a-zoom-img">
@@ -1622,14 +1678,14 @@
                     </div>
                     <p class="clrnm">5053A8017 Коричневый "муар" п-мат. (ПЭ), RAL 8017</p>
                 </div>
-                <div class="clrb">
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5358A0557.jpg" class="a-zoom-img">
                             <img src="img/colors/5358A0557.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5358A0557 Алюм.металлик "муар" с блёстками (ПЭ)</p>
-                </div>
+                </div> -->
                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5359A0445.jpg" class="a-zoom-img">
@@ -1646,32 +1702,69 @@
                     </div>
                     <p class="clrnm">93531330 Медный металлик "муар" (ЭП)</p>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/5358A1294.jpg" class="a-zoom-img">
-                            <img src="img/colors/5358A1294.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">5358A1294 Серый "гранит" (ПЭ)</p>
-                </div>
-                <div class="clrb">
+
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5359A8645.jpg" class="a-zoom-img">
                             <img src="img/colors/5359A8645.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">5359A8645 Чёрный "муар" с блёстками (ПЭ)</p>
-                </div>
-                <div class="clrb">
+                </div> -->
+<!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/90593451.jpg" class="a-zoom-img">
                             <img src="img/colors/90593451.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <p class="clrnm">90593451 Чёрный "муар" (ЭП)</p>
+                </div> -->
+            </div>
+        </div>
+        <a id="schems"></a>
+        <div class="my-hr"></div>
+        <div class="section">
+            <p class="p-page-cap">Чертежи и схемы</p>
+            <div class="schemes-slider">
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/scheme2.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme2.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке</p>
+                </div>
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/scheme3.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme3.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Длинное пояснение к картинке в две строки и еще немного текста</p>
+                </div>
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/scheme4.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme4.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке</p>
+                </div>
+                <div class="schemes-slider-item ">
+                    <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Базовый вид ограждений лестницы</p>
+                </div>
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/scheme.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке ghj,f</p>
+                </div>
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/levaya.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/levaya.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Схема лестницы с поворотом налево</p>
                 </div>
             </div>
         </div>
+        <a id="charact"></a>
         <div class="my-hr"></div>
         <div class="section">
             <!-- Характеристики -->
@@ -1810,6 +1903,7 @@
                 </a>
             </div>
         </div>
+
         <div class="section">
             <a id="gabarity"></a>
             <p class="p-page-cap">Упаковка:</p>
@@ -1847,12 +1941,12 @@
                     <span class="feature-val">2500 × 350 × 180</span>
                 </p>
             </div>
-            <!-- Конец характеристик -->
+
         </div>
         <div class="my-hr"></div>
         <div class="section">
             <p class="p-page-cap">Описание</p>
-            <p>
+            <p class="p-med">
                 Для изготовления лестницы под покраску используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
             </p>
         </div>
@@ -1871,189 +1965,11 @@
             </div>
         </div>
         <!-- Блок показывается только для заказных лестниц -->
-        <a id="schems"></a>
-        <div class="my-hr"></div>
-        <div class="section">
-            <p class="p-page-cap">Чертежи и схемы</p>
-            <div class="schemes-slider">
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/scheme2.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/scheme2.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Пояснение к картинке</p>
-                </div>
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/scheme3.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/scheme3.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Длинное пояснение к картинке в две строки и еще немного текста</p>
-                </div>
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/scheme4.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/scheme4.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Пояснение к картинке</p>
-                </div>
-                <div class="schemes-slider-item ">
-                    <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Базовый вид ограждений лестницы</p>
-                </div>
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/scheme2.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/scheme2.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Пояснение к картинке ghj,f</p>
-                </div>
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/levaya.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/levaya.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Схема лестницы с поворотом налево</p>
-                </div>
-            </div>
-        </div>
-        <div class="my-hr"></div>
-        <div class="section">
-            <p class="p-page-cap">Дополнительно к этой лестнице</p>
-            <div class="row no-gutters row-s">
-                <div class="col-6 col-lg-3 col-s">
-                    <div class="dop-prod">
-                        <div>
-                            <a href="#">
-                                <img src="img/bal.jpg" alt="Балюстрада" class="img-fluid">
-                            </a>
-                            <div class="">
-                                <p class="p-price">
-                                    + 2 000<span class="price-rouble"></span>
-                                </p>
-                                <!--  <p class="old-price">от 57 000<span class="price-rouble"> </span></p> -->
-                            </div>
-                            <a href="#">
-                                <h4>
-                                    Балюстрада для ограждения проёма НАЗВАНИЕ БАЛЮСТРАДЫ 1м.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="qd">
-                            <div class="counter">
-                                <span class="counter-less" id="btnminus4">–</span>
-                                <input type="text" class="counter-inp" placeholder="1">
-                                <span class="counter-more" id="btnplus4">+</span>
-                            </div>
-                            <button class="btn btn-dop" type="button" data-toggle="modal" data-target="#added_to_cart">Добавить к заказу</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 col-s">
-                    <div class="dop-prod">
-                        <div>
-                            <a href="#">
-                                <img src="img/biofa.jpg" alt="Биофа" class="img-fluid">
-                            </a>
-                            <div class="">
-                                <p class="p-price">
-                                    + 3 500<span class="price-rouble"></span>
-                                </p>
-                            </div>
-                            <a href="#">
-                                <h4>
-                                    Воск бесцветный матовый BIOFA, 1 л.
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="qd">
-                            <div class="counter">
-                                <span class="counter-less" id="btnminus4">–</span>
-                                <input type="text" class="counter-inp" placeholder="1">
-                                <span class="counter-more" id="btnplus4">+</span>
-                            </div>
-                            <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-dop">Добавить к заказу</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 col-s">
-                    <div class="dop-prod">
-                        <div>
-                            <a href="#">
-                                <img src="img/kovr.jpg" alt="Картинка" class="img-fluid">
-                            </a>
-                            <div class="">
-                                <p class="p-price">
-                                    + 300<span class="price-rouble"></span>
-                                </p>
-                            </div>
-                            <a href="#">
-                                <h4>
-                                    Ковровая ступень Коричневая
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="qd">
-                            <div class="counter">
-                                <span class="counter-less" id="btnminus4">–</span>
-                                <input type="text" class="counter-inp" placeholder="1">
-                                <span class="counter-more" id="btnplus4">+</span>
-                            </div>
-                            <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-dop">Добавить к заказу</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 col-s">
-                    <div class="dop-prod">
-                        <div>
-                            <a href="#">
-                                <img src="img/stup.jpg" alt="" class="img-fluid">
-                            </a>
-                            <div class="">
-                                <p class="p-price">
-                                    + 123 000<span class="price-rouble"></span>
-                                </p>
-                            </div>
-                            <a href="#">
-                                <h4>
-                                    Комплект для увеличения высоты лестницы CIVIK 120 до 3540 мм
-                                </h4>
-                            </a>
-                        </div>
-                        <div class="qd">
-                            <div class="counter">
-                                <span class="counter-less" id="btnminus4">–</span>
-                                <input type="text" class="counter-inp" placeholder="1">
-                                <span class="counter-more" id="btnplus4">+</span>
-                            </div>
-                            <button type="button" data-toggle="modal" data-target="#added_to_cart" class="btn btn-dop">Добавить к заказу</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="my-hr"></div>
-        <a id="video"></a>
-        <div class="section">
-            <div class="video-block">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p class="p-page-cap">Видеоинструкция по самостоятельной сборке Лестницы К-001М</p>
-                        <p>
-                            Здесь текст какой-нибудь
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dtZDwVk6O1g" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <a id="montage"></a>
         <div class="section">
             <div class="mntg">
-                <div class="col-12">
-                    <p class="p-mntg">Монтаж лестницы</p>
-                </div>
+                <p class="p-page-cap">Монтаж лестницы</p>
+                <div class="row">
                 <div class="col-md-6">
                     <p class="p-main-price pink mb-3">15 990<span class="price-rouble"></span></p>
                     <p class="">
@@ -2065,19 +1981,20 @@
                 </div>
                 <div class="col-md-6">
                     <div class="mnt">
-                        <img src="img/1day.svg" alt="">
+                       
                         <p>Монтаж за 1-2 дня</p>
                     </div>
                     <div class="mnt">
-                        <img src="img/sbork.svg" alt="">
+                      
                         <p>
                             Бережная точная сборка лестницы</p>
                     </div>
                     <div class="mnt">
-                        <img src="img/clear.svg" alt="">
+                      
                         <p>Увезём за собой мусор</p>
                     </div>
                 </div>
+            </div>
             </div>
             <p class="mt-5">
                 *Любую лестницу можно собрать и самостоятельно
@@ -2111,9 +2028,28 @@
             </div>
         </div>
         <div class="my-hr"></div>
-        <a id="reviews"></a>
+        <a id="video"></a>
         <div class="section">
-            <!-- Nav tabs -->
+            <div class="video-block">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="p-page-cap">Видеоинструкция по самостоятельной сборке Лестницы К-001М</p>
+                        <p>
+                            Здесь текст какой-нибудь
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dtZDwVk6O1g" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Были отзывы -->
+<!--         <div class="my-hr"></div>
+        <a id="reviews"></a> -->
+<!--         <div class="section">
             <ul class="nav nav-revs" id="myTab" role="tablist">
                 <li>
                     <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
@@ -2128,7 +2064,6 @@
             </ul>
         </div>
         <div class="section">
-            <!-- Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="rth">
@@ -2450,6 +2385,213 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <!-- Были отзывы -->
+            <div class="section">
+
+            <p class="p-page-cap">Дополнительные товары</p>
+            <div class="similar-block">
+                <div class="similar similar-slider">
+                    <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <img src="img/bal.jpg" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">
+                                        Балюстрада для ограждения проёма НАЗВАНИЕ БАЛЮСТРАДЫ 1м.
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                2 000<span class="price-rouble"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <div class="sale-marker">-10%</div>
+                                    <img src="img/stup.jpg" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">    
+                                    Комплект для увеличения высоты лестницы CIVIK 120 до 3540 мм
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                23 300<span class="price-rouble"></span>
+                                            </p>
+                                            <p class="old-price">от 57 000<span class="price-rouble"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <img src="img/biofa.jpg" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">     
+                                        Воск бесцветный матовый BIOFA, 1 л.
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                5 100<span class="price-rouble"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <img src="img/kovr.jpg" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">
+                                        Ковровая ступень Лилия
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                600<span class="price-rouble"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <div class="sale-marker">-10%</div>
+                                    <img src="img/stupen.jpg" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">
+                                        Ступень из бука 800×400×25 мм Экстра
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                5 900<span class="price-rouble"></span>
+                                            </p>
+                                            <p class="old-price">6 400<span class="price-rouble"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <div class="sale-marker">-10%</div>
+                                    <img src="img/kovrdrj.jpg" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">
+                                        Ковродержатель PROSTO латунь-хром-золото, 300 см
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                3 695<span class="price-rouble"></span>
+                                            </p>
+                                            <p class="old-price">4 300<span class="price-rouble"> </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <img src="img/st.jpg" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">
+                                        Стойка из нержавеющей стали, 10 шт.
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                23 805<span class="price-rouble"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <img src="img/kvr2.jpg" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">
+                                        Ковродержатель, латунь
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                23 805<span class="price-rouble"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar-item">
+                        <a href="stair-catalog.html">
+                            <div class="similar-box">
+                                <div class="prev-photo">
+                                    <div class="sale-marker">-3 000 <span class="price-rouble"> </span></div>
+                                    <img src="img/stupen.png" alt="Alt" class="img-fluid">
+                                </div>
+                                <div class="prod-descr-box">
+                                    <h4 class="">
+                                        Ступень для лестницы из сосны 800×340×50 мм
+                                    </h4>
+                                    <div class="price-box">
+                                        <div class="">
+                                            <p class="p-price">
+                                                5 400<span class="price-rouble"></span>
+                                            </p>
+                                            <p class="old-price">6 100<span class="price-rouble"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section">
             <p class="p-page-cap">Похожие</p>
@@ -2749,94 +2891,6 @@
         </div>
     </div>
     <!-- Конец карточки каталога -->
-    <!-- Сео-блок -->
-    <div class="container-xl">
-        <div class="seo">
-            <div class="row no-gutters">
-                <div class="col">
-                    <ul class="seo-list">
-                        <li class="">
-                            <h4 class="">
-                                Помещение
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Лестницы для дома</a></li>
-                        <li class="list-group-item-action"><a class="" href="#">Лестницы для дачи</a></li>
-                        <li class="list-group-item-action"><a class="" href="#">Лестницы в коттедж</a></li>
-                        <li class="list-group-item-action"><a class="" href="#">Лестницы в таунхаус</a></li>
-                        <li class="list-group-item-action"><a class="" href="#">Лестницы для бани</a></li>
-                    </ul>
-                </div>
-                <div class="w-100 d-sm-none"></div>
-                <div class="col">
-                    <ul class="seo-list mb-3">
-                        <li class="">
-                            <h4 class="">
-                                Материал
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из сосны</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из берёзы</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из лиственницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из бука</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из ясеня</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из дуба</a></li>
-                        <li class="list-group-item-action"><a href="#">Металлические</a></li>
-                        <li class="list-group-item-action"><a href="#">Комбинированные</a></li>
-                    </ul>
-                </div>
-                <div class="w-100 d-md-none"></div>
-                <div class="col">
-                    <ul class="seo-list mb-3">
-                        <li class="">
-                            <h4 class="">
-                                Форма
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Винтовые лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Маршевые лестницы (прямые)</a></li>
-                        <li class="list-group-item-action"><a href="#">Г-образные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">П-образные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Поворотные лестницы</a></li>
-                    </ul>
-                </div>
-                <div class="w-100 d-sm-none"></div>
-                <div class=" col">
-                    <ul class="seo-list mb-3">
-                        <li class="">
-                            <h4 class="">
-                                Конструкция
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Лестницы забежные</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на косоурах</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на тетивах</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на больцах</a></li>
-                        <li class="list-group-item-action"><a href="#">Модульные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Гусиный шаг</a></li>
-                        <li class="list-group-item-action"><a href="#">Консольные лестницы</a></li>
-                    </ul>
-                </div>
-                <div class="w-100 d-md-none"></div>
-                <div class=" col">
-                    <ul class="seo-list mb-3">
-                        <li class="">
-                            <h4 class="">
-                                Тип
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на мансарду</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на второй этаж</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы в подвал</a></li>
-                        <li class="list-group-item-action"><a href="#">Уличные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Входные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на крыльцо</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на крышу</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Кнопка наверх -->
     <div class="scrollup shadow-lg">
         <img src="img/up.svg" alt="">

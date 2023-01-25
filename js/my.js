@@ -15,7 +15,7 @@ $(document).ready(function() {
         responsive: [{
                 breakpoint: 992,
                 settings: {
-                    dots: true,
+                    dots: false,
                     fade: true,
                     dotsClass: 'my-dots'
                 }
@@ -76,7 +76,32 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 900,
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+        ]
+    });
+    $('.dp-prd-sldr').slick({
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        dots: false,
+        infinite: false,
+        responsive: [{
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                 }

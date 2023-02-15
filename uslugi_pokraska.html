@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <title>Проба_cпб</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="sp-bx d-none">Специальный блок для специальных сообщений</div>
+        <div class="container-fluid container-xl">
+            <nav class="navbar navbar-expand-lg nvbr-hdr">
+                <button class="navbar-toggler toggler-spring" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="bx">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-logo d-none d-sm-inline-block" src="img/brand_small.svg" alt="Лестницы-просто. Гипермаркет лестниц">
+                        <p class="d-none d-sm-inline-block">Лестницы<br>просто<span>.ру</span></p>
+                        <p class="d-sm-none">lestnicy-<br>prosto<span>.ru</span></p>
+                    </a>
+                    <div class="bxx-clm d-none d-lg-flex">
+                        <a class="a-city" href="#" data-toggle="modal" data-target="#city_modal">
+                            Нижний Новгород
+                        </a>
+                        <a class="zak-zam" href="kontakty.html">
+                            Пункт выдачи
+                        </a>
+                    </div>
+                    <form class="bxx d-none d-sm-inline-flex search-form">
+                        <input class="form-control" type="search" placeholder="Найти лестницу">
+                        <button class="btn search-btn" type="submit"><img class="i-img i-srch" src="img/search.svg" alt=""></button>
+                    </form>
+                    <a class="bxx d-none d-sm-flex d-lg-none" href="#" data-toggle="modal" data-target="#city_modal">
+                        <img src="img/map.svg" alt="" class="i-img i-pin d-lg-none">
+                    </a>
+                    <div class="bxx">
+                        <a class="dif-a" href="">
+                            <img class="i-img i-ph d-lg-none" src="img/phone-call.svg" alt="">
+                            <div class="d-none d-lg-block">
+                                <p class="p-phone">
+                                    +7 495 152-33-56
+                                </p>
+                                <a class="zak-zam">Заказать замер</a>
+                            </div>
+                        </a>
+                    </div>
+                    <a type="button" class="bxx d-sm-none btn-search d-inline-flex dif-a order-md-3" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <img class="i-img i-srch" src="img/search.svg" alt="">
+                    </a>
+                    <a class="bxx d-xl-none order-md-6" href="">
+                        <img class="i-img i-whtsp" src="img/whatsapp.svg" alt="">
+                    </a>
+                    <a class="bxx a-eml order-md-5" data-toggle="modal" data-target="#write_us" href="">
+                        <img class="i-img i-eml" src="img/email2.svg" alt="">
+                    </a>
+                    <div class="bxx-clm d-none d-xl-flex">
+                        <a class="text-xs pb" href="">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>WhatsApp
+                        </a>
+                        <a class="pb text-xs" href="" data-toggle="modal" data-target="#write_us">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>написать нам
+                        </a>
+                    </div>
+                    <a href="cart.html" class="a-basket d-inline-flex align-items-center flex-nowrap order-md-7">
+                        <div class="basket-box d-flex mr-lg-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21">
+                                <path data-name="Ellipse 2 copy 6" class="header-svg" d="M1507,122l-0.99,1.009L1492,123l-1-1-1-9h-3a0.88,0.88,0,0,1-1-1,1.059,1.059,0,0,1,1.22-1h2.45c0.31,0,.63.006,0.63,0.006a1.272,1.272,0,0,1,1.4.917l0.41,3.077H1507l1,1v1ZM1492.24,117l0.43,3.995h12.69l0.82-4Zm2.27,7.989a3.5,3.5,0,1,1-3.5,3.5A3.495,3.495,0,0,1,1494.51,124.993Zm8.99,0a3.5,3.5,0,1,1-3.49,3.5A3.5,3.5,0,0,1,1503.5,124.993Zm-9,2.006a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1494.5,127Zm9,0a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,1503.5,127Z" transform="translate(-1486 -111)" />
+                            </svg>
+                            <span class="count">2</span>
+                        </div>
+                        <p class="header-price d-none d-xl-flex text-nowrap">
+                            35 900 <span class="price-rouble"></span>
+                        </p>
+                    </a>
+                </div>
+            </nav>
+            <!-- поиск -->
+            <div class="collapse mb-1 mt-3" id="collapseExample">
+                <div class="d-flex justify-content-between align-items-center">
+                    <form class="d-inline-flex search-form mr-2">
+                        <input class="form-control" type="search" placeholder="Найти лестницу">
+                        <button class="btn search-btn" type="submit">
+                            <img class="i-img i-srch" src="img/search.svg" alt="">
+                        </button>
+                    </form>
+                    <button type="button" class="d-inline-flex btn-close" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="img/filter-close.svg" alt="" class="i-img i-cls">
+                    </button>
+                </div>
+            </div>
+            <!-- Конец.поиск -->
+        </div>
+    </div>
+    <!-- Конец хедера -->
+    <!-- Меню -->
+    <div class="container-xl">
+        <div class="navbar navbar-expand-lg bsnav yel-bck mb-lg-2">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav navbar-my-nav navbar-mobile justify-content-lg-around align-items-lg-center">
+                    <li>
+                        <a class="nav-item nav-link nav-item-cat" href="kompl.html">
+                            <!-- <a class="nav-item nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> -->
+                            Каталог
+                        </a>
+                        <div class="dropdown-menu pt-lg-3 pb-lg-4">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Лаки, краски, масла</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Коврики для лестниц</a>
+                                    <a class="dropdown-item" href="#">Ковродержатели</a>
+                                    <a class="dropdown-item" href="#">Освещение для лестниц</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Столбы, балясины</a>
+                                    <a class="dropdown-item" href="#">Перила, поручни</a>
+                                </div>
+                                <div class="col-lg-3">
+                                    <a class="dropdown-item" href="#">Ступени</a>
+                                    <a class="dropdown-item" href="#">Больцы</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="nav-item nav-link active" href="derev.html">Деревянные</a></li>
+                    <li><a class="nav-item nav-link" href="#">Винтовые</a></li>
+                    <li><a class="nav-item nav-link" href="#">Модульные</a></li>
+                    <li><a class="nav-item nav-link " href="metallokarkas.html">На металлокаркасе</a></li>
+                    <li><a class="nav-item nav-link " href="#">Чердачные</a></li>
+                    <li>
+                        <a class="nav-item nav-link " href="#">На заказ</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link " href="uslugi.html">Услуги</a>
+                    </li>
+                    <li>
+                        <a class="nav-item nav-link " href="portfolio.html">Наши работы</a>
+                    </li>
+                    <li class="d-lg-none mobile-dop-link mobile-measure-link">
+                        <a class="nav-item nav-link " href="#" data-toggle="modal" data-target="#order_measure">Заказать замер</a>
+                    </li>
+                    <li class="d-lg-none mobile-dop-link mobile-calculate-link">
+                        <a class="nav-item nav-link " href="#">Онлайн-калькулятор лестницы</a>
+                    </li>
+                    <li class="d-lg-none mobile-dop-info">
+                        <ul class="ul-dop-info">
+                            <li>
+                                <p class="caption">
+                                    Контактная информация
+                                </p>
+                            </li>
+                            <li>
+                                <a class="a-city" href="#" data-toggle="modal" data-target="#city_modal">
+                                    Нижний Новгород
+                                </a>
+                            </li>
+                            <li>
+                                <p>ул.Приборостроителей, д.4</p>
+                            </li>
+                            <li>
+                                <p class="phone mr-2 text-nowrap">+7 495 152-33-56
+                                    <span class="description">Круглосуточно</span></p>
+                            </li>
+                            <li>
+                                <a href='#' class="mobile-mail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14">
+                                        <path class="cls-1" d="M1695,612h-15a2,2,0,0,1-2-2V600a2,2,0,0,1,2-2h15a2,2,0,0,1,2,2v10A2,2,0,0,1,1695,612Zm-13.88-2h12.75l-3.12-2.929,1.62-1.134L1695,608.3v-6.2l-7,4.9h-1l-7-4.9v6.2l2.62-2.363,1.62,1.128Zm13.46-10h-14.16l7.07,5Z" transform="translate(-1678 -598)"></path>
+                                    </svg>
+                                    zakaz@lestnicy-prosto.ru
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bsnav-mobile">
+            <div class="bsnav-mobile-overlay"></div>
+            <div class="navbar">
+            </div>
+        </div>
+    </div>
+    <!-- Конец меню -->
+    <div class="container-xl">
+        <!-- Хлебные крошки -->
+        <div class="breadcrumb-box">
+            <a href="javascript:history.back()" class="a-back">
+                <svg width="10" height="13" xmlns="http://www.w3.org/2000/svg" class="brc" data-v-469cfe6c="">
+                    <g fill="none" fill-rule="evenodd" data-v-469cfe6c="">
+                        <path d="M0 0h16v16H0z" data-v-469cfe6c=""></path>
+                        <path d="M5.22 3.28a.75.75 0 011.06-1.06l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06-1.06L9.94 8 5.22 3.28z" fill="currentColor" fill-rule="nonzero" data-v-469cfe6c=""></path>
+                    </g>
+                </svg>
+                <span>назад</span>
+            </a>
+            <nav aria-label="breadcrumb" class="nav-my-breadcrumbs">
+                <ol class="my-breadcrumb breadcrumb__slider">
+                    <li class="my-breadcrumb-item"><a href="index.html">Главная</a>
+                        <svg width="10" height="13" xmlns="http://www.w3.org/2000/svg" class="brc" data-v-469cfe6c="">
+                            <g fill="none" fill-rule="evenodd" data-v-469cfe6c="">
+                                <path d="M0 0h16v16H0z" data-v-469cfe6c=""></path>
+                                <path d="M5.22 3.28a.75.75 0 011.06-1.06l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06-1.06L9.94 8 5.22 3.28z" fill="currentColor" fill-rule="nonzero" data-v-469cfe6c=""></path>
+                            </g>
+                        </svg>
+                    </li>
+                    <li class="my-breadcrumb-item"><a href="uslugi.html">Услуги</a>
+                        <svg width="10" height="13" xmlns="http://www.w3.org/2000/svg" class="brc" data-v-469cfe6c="">
+                            <g fill="none" fill-rule="evenodd" data-v-469cfe6c="">
+                                <path d="M0 0h16v16H0z" data-v-469cfe6c=""></path>
+                                <path d="M5.22 3.28a.75.75 0 011.06-1.06l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06-1.06L9.94 8 5.22 3.28z" fill="currentColor" fill-rule="nonzero" data-v-469cfe6c=""></path>
+                            </g>
+                        </svg>
+                    </li>
+                    <li class="my-breadcrumb-item active" aria-current="page">Покраска</li>
+                </ol>
+            </nav>
+            <button class="a-share">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10.1" height="11" viewBox="0 0 10.1 11">
+                    <path d="M8.3,7.3c-0.5,0-1,0.2-1.3,0.6L3.6,6c0.1-0.1,0.1-0.3,0.1-0.5s0-0.4-0.1-0.5l3.3-1.9c0.4,0.4,0.8,0.6,1.4,0.6
+    c1,0,1.8-0.8,1.8-1.8S9.3,0,8.3,0S6.5,0.8,6.5,1.8c0,0.1,0,0.3,0.1,0.4L3.1,4.2C2.8,3.9,2.3,3.7,1.8,3.7C0.8,3.7,0,4.5,0,5.5
+    s0.8,1.8,1.8,1.8c0.5,0,1-0.2,1.2-0.5l3.4,1.9c0,0.1-0.1,0.3-0.1,0.4c0,1,0.8,1.8,1.8,1.8S10,10.2,10,9.2S9.2,7.3,8.3,7.3z" />
+                </svg>
+            </button>
+        </div>
+        <!-- Конец хлебых крошек -->
+    </div>
+    <div class="container-xl">
+        <h1 class="page-name">
+            Покраска
+        </h1>
+        <div class="row">
+            <div class="col-md-3 col-lg-2">
+                <div class="bx_anchnav">
+                    <p class="p-cap2">
+                        Образцы выкрасов по дереву
+                    </p>
+                    <ul class="anchnav">
+                        <li><a href="#sosna">
+                                На сосне
+                            </a></li> 
+                            <li><a href="#listv">
+                                На лиственнице
+                            </a></li>
+                        <li><a href="#bereza">
+                                На берёзе
+                            </a></li>
+                        <li><a href="#buk">
+                                На буке
+                            </a></li>
+                        <li><a href="#yasen">
+                                На ясене
+                            </a></li>
+                        <li><a href="#dub">
+                                На дубе
+                            </a></li>
+                       
+                    </ul>
+                </div>
+                <div class="bx_anchnav">
+                    <p class="p-cap2">
+                        Образцы выкрасов по металлу
+                    </p>
+                    <ul class="anchnav">
+                        <li><a href="#eurodec">
+                                Евродекор
+                            </a></li>
+                        <li><a href="#ral">
+                                RAL
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="bx_anchnav">
+                    <p class="p-cap2">
+                        Самостоятельная покраска лестницы
+                    </p>
+                    <ul class="anchnav">
+                        <li><a href="#eurodec">
+                                Как покрасить лестницу самому
+                            </a></li>
+                        <li><a href="#ral">
+                                Лаки, краски, масла для лестниц
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-9 offset-lg-1">
+                <div class="bx_frst">
+                	<img src="img/pokr_bann.jpg" alt="" class="img-fluid">
+                    <p class="p-med d-none">
+                        Предлагаем профессиональную покраску деревянных и металлических элементов лестницы.<br>
+                        Стоимость покраски зависит от ее объема и сложности. В среднем, стоимость покраски готовой типовой лестницы -  13000- 18000 руб. Срок покраски занимает около недели. Мы предпочитаем использовать краски и масла мировых брендов, хорошо зарекомендовавших себя на практике - это прежде всего Немецкая компания Biofa и американские Varatan, а также Osmo.
+                    </p>
+                    <div class="row rw-pkrs">
+                        <div class="col col-pkrs">
+                            <p class="uslg_cp">15 000 - 18 000 руб.</p>
+                            <p class="text-grey">Средняя стоимость покраски готовой лестницы</p>
+                        </div>
+                        <div class="col col-pkrs">
+                            <p class="uslg_cp">5-10 рабочих дней</p>
+                            <p class="text-grey">Срок покраски деревянной лестницы</p>
+                        </div>
+                        <div class="col col-pkrs">
+                            <p class="uslg_cp">BIOFA, VARATAN</p>
+                            <p class="text-grey">Используем краски и масла мировых брендов</p>
+                        </div>
+                    </div>
+                </div>
+                <a id="sosna"></a>
+                <div class="section">
+                    <p class="p-page-cap">Образцы выкрасов на сосне</p>
+                    <p class="p-med">
+                        Ниже представлена палитра наиболее популярных расцветок. <br>
+                        На образцы нанесен 1 слой краски и 2 слоя воска.<br>
+                        Обратите внимание! Оттенок на экране может отличаться от ожидаемого, мы настоятельно рекомендуем посетить наш шоу-рум для ознакомления с образцами выкрасов.
+                        <div class="clrbm">
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8510.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8510.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">01 Белый 8510</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8531.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8531.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">03 Сахара 8531</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8532.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8532.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">04 Орех 8532</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8533.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8533.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">05 Дуб копчёный 8533</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8535.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8535.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">07 Сталь 8535</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8536.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8536.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">08 Капучино 8536</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8537.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8537.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">08 Махагон 8537</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8538.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8538.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">08 Бакаут 8538</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8541.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8541.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">14 Бренди 8541</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8542.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8542.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">15 Тик тёмный 8542</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8543.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8543.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">16 Мербау 8543</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8544.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8544.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">17 Бразильский дуб 8544</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8546.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8546.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">19 Венге 8546</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8547.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8547.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">20 Сандаловое дерево 8547</p>
+                            </div>
+
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/sb8554.jpg" class="a-zoom-img">
+                                        <img src="img/colors/s8554.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">27 Циан 8554</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/ssome.jpg" class="a-zoom-img">
+                                        <img src="img/colors/ssome.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">Любой цвет на ваш выбор</p>
+                            </div>
+                        </div>
+                </div>
+                <a id="listv"></a>
+                <div class="section">
+                    <p class="p-page-cap">Образцы выкрасов на лиственнице</p>
+                    <p class="p-med">
+                        Ниже представлена палитра наиболее популярных расцветок. <br>
+                        На образцы нанесен 1 слой краски и 2 слоя воска.<br>
+                        Обратите внимание! Оттенок на экране может отличаться от ожидаемого, мы настоятельно рекомендуем посетить наш шоу-рум для ознакомления с образцами выкрасов.
+                        <div class="clrbm">
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8510.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8510.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">01 Белый 8510</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8511.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8511.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">02 Арктика 8511</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8531.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8531.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">03 Сахара 8531</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8532.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8532.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">04 Орех 8532</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8533.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8533.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">05 Дуб копчёный 8533</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img//colors/8534.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8534.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">06 Серый 8534</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8535.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8535.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">07 Сталь 8535</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8536.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8536.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">08 Капучино 8536</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8537.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8537.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">08 Махагон 8537</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8538.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8538.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">08 Бакаут 8538</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8539.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8539.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">08 Коричневый 8539</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8541.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8541.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">14 Бренди 8541</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8542.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8542.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">15 Тик тёмный 8542</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8543.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8543.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">16 Мербау 8543</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8544.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8544.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">17 Бразильский дуб 8544</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8545.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8545.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">18 Грецкий орех 8545</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8546.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8546.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">19 Венге 8546</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8547.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8547.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">20 Сандаловое дерево 8547</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8548.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8548.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">21 Дуб натуральный 8548</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8549.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8549.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">22 Серый кварц 8549</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8550.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8550.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">23 Оникс 8550</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8551.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8551.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">24 Городской туман 8551</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8552.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8552.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">25 Сафари 8552</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8553.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8553.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">26 Французский серый 8553</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/8554.jpg" class="a-zoom-img">
+                                        <img src="img/colors/8554.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">27 Циан 8554</p>
+                            </div>
+                            <div class="clrb">
+                                <div class="clrb-img">
+                                    <a data-fancybox="colors" href="img/colors/some.jpg" class="a-zoom-img">
+                                        <img src="img/colors/some.jpg" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                                <p class="clrnm">Любой цвет на ваш выбор</p>
+                            </div>
+                        </div>
+                </div>
+                <a id="eurodec"></a>
+                 <div class="section">
+            <p class="p-page-cap">Палитра EURODECOR</p>
+            <p class="p-med">
+             Обратите внимание! Фотографии представлены в ознакомительных целях, цвета, которые вы видите на экране, могут значительно отличаться от реальных результатов покраски.<br> Мы настоятельно рекомендуем перед заказом изучить образцы в нашем шоу-руме.
+          </p>
+            <div class="clrbm">
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/9030A0136.jpg" class="a-zoom-img">
+                            <img src="img/colors/9030A0136.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">9030A0136 Алюм.металик хром (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90306429.jpg" class="a-zoom-img">
+                            <img src="img/colors/90306429.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90306429 Алюм.металлик (ЭП), RAL 9006</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A9006.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A9006.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A9006 Алюм.металлик (ПЭ), RAL 9006</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5348A0737.jpg" class="a-zoom-img">
+                            <img src="img/colors/5348A0737.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5348A0737 Алюм.металлик матовый (ПЭ), RAL 9006</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5268A9006.jpg" class="a-zoom-img">
+                            <img src="img/colors/5268A9006.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5268A9006 Алюм.металлик струтур. (ПЭ), RAL 9006</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A9007.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A9007.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A9007 Алюм.металлик (ПЭ), RAL 9007</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A9022.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A9022.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A9022 Алюм.металлик (ПЭ), RAL 9022</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/93587983.jpg" class="a-zoom-img">
+                            <img src="img/colors/93587983.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">93587983 Алюм.металлик "матовый муар" (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/6348A0100.jpg" class="a-zoom-img">
+                            <img src="img/colors/6348A0100.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">6348A0100 Алюм.металлик матовый (Э)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5030A0393.jpg" class="a-zoom-img">
+                            <img src="img/colors/5030A0393.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5030A0393 Лак с блёстками "бриллиант" (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5758A0646.jpg" class="a-zoom-img">
+                            <img src="img/colors/5758A0646.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5758A0646 Алюм.металлик "бриллиантовый муар" (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/1R489006.jpg" class="a-zoom-img">
+                            <img src="img/colors/1R489006.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">1R489006 Алюм.металлик "архитектурный муар" (ПЭ), RAL 9006</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90336285.jpg" class="a-zoom-img">
+                            <img src="img/colors/90336285.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90336285 Бежевый металлик (ЭП), RAL 1035</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8L421036.jpg" class="a-zoom-img">
+                            <img src="img/colors/8L421036.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">8L421036 Золотистый металлик бонд. (ПУ), RAL 1036</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90328405.jpg" class="a-zoom-img">
+                            <img src="img/colors/90328405.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90328405 Золотистый металлик (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90326428.jpg" class="a-zoom-img">
+                            <img src="img/colors/90326428.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90326428 Золотистый металлик (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5033A1036.jpg" class="a-zoom-img">
+                            <img src="img/colors/5033A1036.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5033A1036 Золотистый перламутр (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5033A0377.jpg" class="a-zoom-img">
+                            <img src="img/colors/5033A0377.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5033A0377 Бронзовый металлик (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A1220.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A1220.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A1220 Медный металлик (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5B238017.jpg" class="a-zoom-img">
+                            <img src="img/colors/5B238017.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5B238017 Коричневый структ. (ПЭ), RAL 8017</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5053A8017.jpg" class="a-zoom-img">
+                            <img src="img/colors/5053A8017.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5053A8017 Коричневый "муар" п-мат. (ПЭ), RAL 8017</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5358A0557.jpg" class="a-zoom-img">
+                            <img src="img/colors/5358A0557.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5358A0557 Алюм.металлик "муар" с блёстками (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5359A0445.jpg" class="a-zoom-img">
+                            <img src="img/colors/5359A0445.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5359A0445 Серый "муар" с блёстками (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/93531330.jpg" class="a-zoom-img">
+                            <img src="img/colors/93531330.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">93531330 Медный металлик "муар" (ЭП)</p>
+                </div>
+
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5359A8645.jpg" class="a-zoom-img">
+                            <img src="img/colors/5359A8645.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5359A8645 Чёрный "муар" с блёстками (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90593451.jpg" class="a-zoom-img">
+                            <img src="img/colors/90593451.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90593451 Чёрный "муар" (ЭП)</p>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <!-- Кнопка наверх -->
+    <div class="scrollup shadow-lg">
+        <img src="img/up.svg" alt="">
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/my.js"></script>
+    <div class="footer">
+        <div class="section">
+            <div class="container-xl">
+                <div class="text-center pt-5 mb-5">
+                    <p class="p-caption">Дизайнер, архитектор или строитель?</p>
+                    <p class="lead">
+                        С нами можно выгодно сотрудничать. </p>
+                    <a href="sotrudnichestvo.html" class="btn btn-simple">Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="section first-section">
+            <div class="container-xl">
+                <div class="row align-items-stretch">
+                    <div class="col-sm-6 col-lg-3 pb-4">
+                        <div class="footer-pluses-box">
+                            <img class="footer-img" src="img/low_price.svg" alt="">
+                            <h4>У нас самые низкие цены</h4>
+                            <p class="lead text-muted mb-lg-4">В других магазинах дороже!</p>
+                            <p>Попробуйте найти более низкую стоимость, чем указана у нас на сайте и мы продадим вам товар еще дешевле!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 pb-4">
+                        <div class="footer-pluses-box">
+                            <img class="footer-img" src="img/shop_quaranty.svg" alt="">
+                            <h4>Гарантия магазина <span class="nowrp">1 год</span></h4>
+                            <p class="lead text-muted mb-lg-4">Лестница без риска</p>
+                            <p>Мы сотрудничаем только с проверенными и надежными производителями и готовы поручиться за каждую проданную лестницу. Поэтому, кроме гарантии продавца, мы </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 pb-4">
+                        <div class="footer-pluses-box">
+                            <img class="footer-img" src="img/profi.svg" alt="">
+                            <h4>Профессиональная консультация</h4>
+                            <p class="lead text-muted mb-lg-4">Вы обращаетесь к гуру</p>
+                            <p>Как обойти "сложные углы", "что делать с окном", как вписаться в нестандартный проём на чем сэкономить, а на чем категорически нельзя -
+                                Мы знаем о лестницах всё!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 pb-4">
+                        <div class="footer-pluses-box">
+                            <img class="footer-img" src="img/region_delivery.svg" alt="">
+                            <h4>Доставка в любые регионы РФ</h4>
+                            <p class="lead text-muted mb-lg-4">от 1900<span class="price-rouble"> </span></p>
+                            <p>Москва и Мо - 1 день <br>
+                                Регионы РФ - от 5 дней <br>
+                                Белоруссия - от 4 дней </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-section  pt-5 pb-5">
+            <div class="container-xl">
+                <div class="row mt-lg-4">
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <h3>
+                            Лестницы-просто.ру
+                        </h3>
+                        <ul class="nav flex-column mb-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="o-kompanii.html">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Написать нам</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Гарантия</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Сотрудничество</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Анкета для точного расчета стоимости</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="polesnoye.html">Полезное</a>
+                            </li>
+                        </ul>
+                        <a href="" class="btn btn-simple">Стать дилером</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <h3>
+                            Услуги
+                        </h3>
+                        <ul class="nav flex-column mb-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Вызвать замерщика</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доставка лестниц</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pokraska.html">Покраска лестниц</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Монтаж лестниц</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Условия оплаты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Облицовка лестниц</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Спросить специалиста</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <h3>
+                            Каталог лестниц
+                        </h3>
+                        <ul class="nav flex-column mb-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Лестницы из дерева</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы на металлокаркасе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы на второй этаж</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы Profi&Hobby</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Межэтажные лестницы </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы на тетивах</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лестницы на косоурах </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" href="#">Карта сайта </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <p class="footer-phone mb-2 mt-1">
+                            8 (495) 374-57-17
+                        </p>
+                        <p class="footer-phone mb-2">
+                            8 (495) 374-61-15
+                        </p>
+                        <p class="footer-phone mb-4">
+                            8 800 152 33 56
+                        </p>
+                        <a href="" class="mt-5 a-link">
+                            zakaz@lestnicy-prosto.ru</a>
+                        <p class="mt-4">
+                            г. Название длинное, ул.Такая-то, д.234, стр.4
+                        </p>
+                        <a href="" class="mt-5 a-link">На карте</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third-sec  pt-3 pb-3">
+            <div class="container-xl">
+                <p>
+                    1995-2020 © Lestnicy-prosto.ru — Мегамаркет интерьерных, наружных и чердачных лестниц. Комплектующие к лестницам. Производство лестниц.
+                    Все права защищены. Доставка по РФ, Беларуси, Казахстану
+                </p>
+            </div>
+        </div>
+    </div>
+</body>

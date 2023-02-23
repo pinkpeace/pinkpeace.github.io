@@ -252,6 +252,10 @@ a:hover {
     -webkit-font-smoothing: antialiased;
 }
 
+.i_guarantee:before {
+    content: "\e017";
+}
+
 .i_tape:before {
     content: "\e010";
 }
@@ -5164,13 +5168,20 @@ a.zak-zam:hover {
     top: 0;
 }
 .delivery-box {
-    padding: 1em 2.2em;
+    padding: 1.5em;
     background-color: #f2f5f6;
-    line-height: 2em;
     border-radius: 0.25rem;
 }
 .delivery-box i {
     font-size: 1.4em;
+}
+.delivery-box div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.delivery-box p {
+    margin-bottom: 1em;
 }
 /*-------------стили новые----------------*/
 

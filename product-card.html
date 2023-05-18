@@ -773,7 +773,7 @@
         <!-- Конец -верхней панели -->
         <!-- Карточка-каталог -->
         <div class="row">
-            <div class="col-sm-7 stck">
+            <div class="col-sm-7 col-md-6 stck">
                 <div class="gallery-box">
                     <div class="data-img">
                         <div class="thumb-slider d-none d-lg-block">
@@ -867,7 +867,124 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5 col-md-6">
+                <div class="main-right">
+                    <div class="main-price-box">
+                        <p class="p-main-price">34 000<span class="price-rouble"></span></p>
+                        <p class="old-price">
+                            40 000<span class="price-rouble"></span>
+                        </p>
+                    </div>
+                    <form class="mb-3">
+                        <div class="form-group">
+                             <div class="inpt-bx">
+                                <p class="p-param-label">Высота лестницы, мм:</p>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2540-2729" checked>2540 - 2729
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2730-2925">2730 - 2925
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2721-2900">2721 - 2900
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2920 - 3100" disabled>2920 - 3100
+                                    </label></div>
+                            </div>
+                        </div>
+                                                <div class="form-group">
+                            <div class="inpt-bx">
+                                <p class="p-param-label">Минимальный проём:</p>
+                                <div class="radio">
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="proem" id="pr_2700_920" checked>2700 × 920 мм
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="proem" id="pr_2480_1170">2480 × 1170 мм
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="proem" id="pr_2920_920">2920 × 920 ммм
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="proem" id="pr_3140_920">3140 × 920 ммм
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="inpt-bx">
+                                <p class="p-param-label">Порода:</p>
+                                <div class="radio">
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_sos_pod" checked>Сосна под покраску
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_sos">Сосна
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_listv">Лиственница
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_buk">Бук
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_yasen">Ясень
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_dub">Дуб
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                <div class="form-group">
+                     <div class="inpt-bx">
+                    <p class="p-param-label">Поворот:</p>
+                    <div class="radio">
+                        <label class="btn-radio btn-radio-hight">
+                            <input type="radio" name="options" id="nalevo" checked> Налево
+                        </label>
+                        <label class="btn-radio btn-radio-hight">
+                            <input type="radio" name="options" id="napravo"> Направо
+                        </label>
+                    </div>
+                </div>
+            </div>
+                            <div class="form-group">
+                     <div class="inpt-bx">
+                    <p class="p-param-label">Подступёнки:</p>
+                    <div class="radio">
+                        <label class="btn-radio btn-radio-hight">
+                            <input type="radio" name="podstup" id="est" checked> Нет
+                        </label>
+                        <label class="btn-radio btn-radio-hight">
+                            <input type="radio" name="podstup" id="net"> Есть
+                        </label>
+                    </div>
+                </div>
+            </div>
+                <!-- //////////////// Кнопка с количеством//////////////////// -->
+                <div class="qd">
+                    <div class="counter">
+                        <span class="counter-less" id="btnminus4">–</span>
+                        <input type="text" class="counter-inp" placeholder="1">
+                        <span class="counter-more" id="btnplus4">+</span>
+                    </div>
+                    <button type="button" class="btn btn-buy mr-3" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+               
+                <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
+                <button data-toggle="modal" data-target="#order_measure" class="btn addzamer">
+                    Заказать замер
+                </button> 
+            </div>
+                </form>
+<!--             <div class="col-sm-5">
                 <div class="main-right">
                     <div class="main-price-box">
                         <p class="p-main-price">34 000<span class="price-rouble"></span></p>
@@ -932,7 +1049,7 @@
                                 ?
                             </button>
                             <select class="form-control product-sel want-it" id="checkMaterial">
-                                <!--     <option class="placeholder" value="0">–</option> -->
+                            <option class="placeholder" value="0">–</option>
                                 <option selected>Крашеные</option>
                                 <option>Нержавеющая сталь</option>
                             </select>
@@ -1024,7 +1141,7 @@
                             </button>
                         </div>
                         <!-- //////////////// Кнопка с количеством//////////////////// -->
-                        <div class="qd">
+<!--                         <div class="qd">
                             <div class="counter">
                                 <span class="counter-less" id="btnminus4">–</span>
                                 <input type="text" class="counter-inp" placeholder="1">
@@ -1033,16 +1150,24 @@
                             <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
                         </div>
                         <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
-                        <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
+                   <!--      <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
                             Заказать замер
                         </button>
-                    </form>
+                    </form> -->
                 </div>
-                <div class="delivery-box mb-3">
-                    <p class="mb-1"><i class="i_delivery"></i>Доставка по РФ от 1900<span class="price-rouble"></span></p>
-                    <p class="mb-1"><i class="i_guarantee"></i>Гарантия магазина 1 год</p>
+                <div class="delivery-box">
+                    <div class=""><i class="i_box"></i>
+                        <p>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p>
+                    </div>
+                    <div class=""><i class="i_point"></i>
+                        <p>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p>
+                    </div>
+                    <div class=""><i class="i_delivery"></i>
+                        <p>Доставка в <a href="">Кызыл:</a> <span class="pink nowrp"> 5 - 7 дней</span></p>
+                    </div>
+                    <a href="">Условия доставки</a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="row">
             <!-- Меню с якорями -->

@@ -646,7 +646,7 @@
                         <a class="nav-item nav-link " href="#" data-toggle="modal" data-target="#order_measure">Заказать замер</a>
                     </li>
                     <li class="d-lg-none mobile-dop-link mobile-calculate-link">
-                        <a class="nav-item nav-link " href="#">Онлайн-калькулятор лестницы</a>
+                        <a class="nav-item nav-link " href="#">Калькулятор лестницы</a>
                     </li>
                     <li class="d-lg-none mobile-dop-info">
                         <ul class="ul-dop-info">
@@ -744,18 +744,20 @@
         </h1>
         <div class="top-panel">
             <p class="p-quantity mr-4">Код товара: <span class="few">1526</span></p>
-            <p class="nowrp"> У лестницы&nbsp;</p><a href="#vars" class="a-border-dotted"> 7 вариантов размера</a>
-            <p class="mr-4">Купили более 10 раз</p>
+          <!--   <p class="nowrp"> У лестницы&nbsp;</p><a href="#vars" class="a-border-dotted"> 7 вариантов размера</a> -->
+           <!--  <p class="mr-4">Купили более 10 раз</p> -->
             <!--  <p class="p-quantity mr-4">В наличии: <span class="few">2 шт.</span></p> -->
-            <a class="a-zapros" data-toggle="modal" href="" data-target="#zapros"><i class="i_ask"></i>
-                Запрос консультации по товару
-            </a>
+           
+           <p class="mr-4"> <i class="i_box"></i>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p>
+            <p class="mr-4"><i class="i_point"></i>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p>
+             <p class="mr-4"><i class="i_delivery"></i>Доставка в <a href="">Нижний Новгород:</a><span class="pink nowrp"> 5 - 7 дней</span></p>
+              <a class="a-zapros" data-toggle="modal" href="" data-target="#zapros"><!-- <i class="i_ask"></i> --><i class="i_delivery"></i>Условия доставки</a>      
         </div>
         <!-- Конец -верхней панели -->
         <!-- Карточка-каталог -->
         <div class="row">
             <!-- Блок с фотографиями товара -->
-            <div class="col-sm-7 col-md-7 stck">
+            <div class="col-md-6 stck">
                 <div class="gallery-box">
                     <div class="data-img">
                         <div class="thumb-slider d-none d-lg-block">
@@ -851,7 +853,7 @@
             </div>
             <!-- Конец блока с фотографиями -->
             <!-- Блок с расчетом цены -->
-            <div class="col-sm-5 col-md-5">
+            <div class="col-md-6">
                 <div class="main-right">
                     <div class="main-price-box">
                         <p class="p-main-price">34 000<span class="price-rouble"></span></p>
@@ -860,6 +862,141 @@
                         </p>
                     </div>
                     <form class="mb-3">
+                        <div class="form-group">
+                             <div class="inpt-bx">
+                                <p class="p-param-label">Высота лестницы, мм:</p>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2540-2729" checked>2540 - 2729
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2730-2925">2730 - 2925
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2721-2900">2721 - 2900
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2920 - 3100" disabled>2920 - 3100
+                                    </label></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="inpt-bx">
+                                <p class="p-param-label">Материал ступеней:</p>
+                                <div class="radio">
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_bez" checked>Без ступеней
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_sos_pod">Сосна под покраску
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_sos">Сосна
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_listv">Лиственница
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_buk">Бук
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_yasen">Ясень
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_dub">Дуб
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <div class="inpt-bx">
+                                <p class="p-param-label">Ограждение:</p>
+                                              <div class="radio">
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="ograjd" id="ss_ograjd" checked>С ограждением
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="ograjd" id="bez_ogr">Без ораждения
+                                    </label>
+                                </div>
+                  
+                            </div>
+                        </div>
+                        <div class="form-group">
+                             <div class="inpt-bx">
+                                <p class="p-param-label">Цвет каркаса:</p>
+                                <div class="radio" >
+                                    <label class="btn-radio">
+                                        <input type="radio" name="cvet" id="black_krks" checked>Чёрный
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="btn-radio">
+                                        <input type="radio" name="cvet" id="white_krks">Белый
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="btn-radio">
+                                        <input type="radio" name="cvet" id="grey_krks">Серебро
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="btn-radio">
+                                        <input type="radio" name="cvet" id="gold_karkas">Золото
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                
+                <!-- <div class="form-group">
+                            <p class="p-param-label">Выберите диаметр, см:</p>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn  btn-radio btn-radio-diametr">
+                                    <input type="radio" name="options" id="d120"> 120
+                                </label>
+                                <label class="btn  btn-radio btn-radio-diametr">
+                                    <input type="radio" name="options" id="d140"> 140
+                                </label>
+                                <label class="btn  btn-radio btn-radio-diametr">
+                                    <input type="radio" name="options" id="d160"> 160
+                                </label>
+                                <label class="btn  btn-radio btn-radio-diametr">
+                                    <input type="radio" name="options" id="d180"> 180
+                                </label>
+                            </div>
+                        </div> -->
+                <div class="form-group">
+                     <div class="inpt-bx">
+                    <p class="p-param-label">Поворот:</p>
+                    <div class="radio">
+                        <label class="btn-radio btn-radio-hight">
+                            <input type="radio" name="options" id="nalevo" checked> Налево
+                        </label>
+                        <label class="btn-radio btn-radio-hight">
+                            <input type="radio" name="options" id="napravo"> Направо
+                        </label>
+                    </div>
+                </div>
+            </div>
+                <!-- //////////////// Кнопка с количеством//////////////////// -->
+                <div class="qd">
+                    <div class="counter">
+                        <span class="counter-less" id="btnminus4">–</span>
+                        <input type="text" class="counter-inp" placeholder="1">
+                        <span class="counter-more" id="btnplus4">+</span>
+                    </div>
+                    <button type="button" class="btn btn-buy mr-3" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+               
+                <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
+                <button data-toggle="modal" data-target="#order_measure" class="btn addzamer">
+                    Заказать замер
+                </button> </div>
+                </form>
+                <!--                     <form class="mb-3">
                         <div class="form-group">
                             <p class="p-param-label">Высота лестницы, мм:</p>
                             <div class="btn-group-toggle" data-toggle="buttons">
@@ -877,7 +1014,7 @@
                                 </label>
                             </div>
                         </div>
-                        <!--                         <div class="form-group">
+                        <div class="form-group">
                             <p class="p-param-label">Материал ступеней&nbsp;<span class="text-xs text-grey">Без ограждения</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio btn-radio-color">
@@ -961,7 +1098,7 @@
                                     </div>
                                 </label>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="form-group">
                             <p class="p-param-label">Материал ступеней:&nbsp;<span class="text-xs text-grey">Только каркас</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
@@ -1092,9 +1229,9 @@
                                 </label>
                             </div>
                         </div>
-                        <!-- 
+                        
                         <div class="form-group">
-                            <p class="p-param-label">Цвет каркаса:&nbsp;<span class="text-xs text-grey">Чёрный</span></p>
+                            <p class="p-param-label">Цвет каркаса:&nbsp;<span class="text-xs text-grey">Чёрный RAL 46008</span></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio btn-radio-color">
                                     <input type="radio" name="options" id="black_krks" checked>
@@ -1102,7 +1239,7 @@
                                     <div class="detail-pic">
                                         <img class="img-fluid" src="img/black_karkas.jpg" alt="">
                                         <p>
-                                            Чёрный глянец
+                                            Чёрный RAL 46008
                                         </p>
                                     </div>
                                 </label>
@@ -1137,8 +1274,8 @@
                                     </div>
                                 </label>
                             </div>
-                        </div> -->
-                        <!--                         <div class="form-group">
+                        </div>
+                        <!-- <div class="form-group">
                             <p class="p-param-label">Выберите диаметр, см:</p>
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 <label class="btn  btn-radio btn-radio-diametr">
@@ -1155,237 +1292,239 @@
                                 </label>
                             </div>
                         </div> -->
-                        <div class="form-group">
-                            <p class="p-param-label">Поворот:</p>
-                            <div class="btn-group-toggle" data-toggle="buttons">
-                                <label class="btn  btn-radio btn-radio-hight">
-                                    <input type="radio" name="options" id="nalevo" checked> Налево
-                                </label>
-                                <label class="btn  btn-radio btn-radio-hight">
-                                    <input type="radio" name="options" id="napravo"> Направо
-                                </label>
-                            </div>
+                <!--    <div class="form-group">
+                        <p class="p-param-label">Поворот:</p>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label class="btn  btn-radio btn-radio-hight">
+                                <input type="radio" name="options" id="nalevo" checked> Налево
+                            </label>
+                            <label class="btn  btn-radio btn-radio-hight">
+                                <input type="radio" name="options" id="napravo"> Направо
+                            </label>
                         </div>
-                        <!-- //////////////// Кнопка с количеством//////////////////// -->
-                        <div class="qd">
-                            <div class="counter">
-                                <span class="counter-less" id="btnminus4">–</span>
-                                <input type="text" class="counter-inp" placeholder="1">
-                                <span class="counter-more" id="btnplus4">+</span>
-                            </div>
-                            <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+                    </div> -->
+                <!-- //////////////// Кнопка с количеством//////////////////// -->
+                <!--                   <div class="qd">
+                        <div class="counter">
+                            <span class="counter-less" id="btnminus4">–</span>
+                            <input type="text" class="counter-inp" placeholder="1">
+                            <span class="counter-more" id="btnplus4">+</span>
                         </div>
-                        <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
-                        <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
-                            Заказать замер
-                        </button>
-                    </form>
-                    <div class="delivery-box">
-                        <div class=""><i class="i_box"></i>
-                            <p>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p>
-                        </div>
-                        <div class=""><i class="i_point"></i>
-                            <p>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p>
-                        </div>
-                        <div class=""><i class="i_delivery"></i>
-                            <p>Доставка в <a href="">Кызыл:</a> <span class="pink nowrp"> 5 - 7 дней</span></p>
-                        </div>
+                        <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+                    </div> -->
+                <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
+                <!-- <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
+                        Заказать замер
+                    </button>
+                    </form> -->
+                <div class="delivery-box d-none">
+                    <div class=""><i class="i_box"></i>
+                        <p>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p>
                     </div>
+                    <div class=""><i class="i_point"></i>
+                        <p>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p>
+                    </div>
+                    <div class=""><i class="i_delivery"></i>
+                        <p>Доставка в <a href="">Кызыл:</a> <span class="pink nowrp"> 5 - 7 дней</span></p>
+                    </div>
+                    <a href="">Условия доставки</a>
                 </div>
             </div>
         </div>
-        <!-- Конец блока с расчетом цены -->
-        <!-- Меню с якорями -->
-        <div class="row">
-            <div class="col-12">
-                <ul class="nav nav-anchor mt-4 mb-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#charact">Характеристики</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#charact">Описание</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#schems">Чертежи</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gabarity">Габариты упаковки</a>
-                    </li>
-                    <!--  <li class="nav-item">
-                        <a class="nav-link" href="#pokraska">Покраска</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#video">Видео</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#montage">Монтаж</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#instr">Инструкция по сборке</a>
-                    </li>
-                    <!--                     <li class="nav-item">
+    </div>
+    <!-- Конец блока с расчетом цены -->
+    <!-- Меню с якорями -->
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-anchor mt-4 mb-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#pokraska">Покраска</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#charact">Характеристики</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#charact">Описание</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#schems">Чертежи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gabarity">Габариты упаковки</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#video">Видео</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#montage">Монтаж</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#instr">Инструкция по сборке</a>
+                </li>
+                <!--                     <li class="nav-item">
                         <a class="nav-link" href="#reviews">Отзывы</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="#voprosy">Вопросы</a>
                     </li> -->
-                </ul>
+            </ul>
+        </div>
+    </div>
+    <a id="pokraska"></a>
+    <div class="section">
+        <p class="p-page-cap">Покраска деревянных элементов лестницы</p>
+        <p class="p-med">Вы можете заказать у нас профессиональную покраску деревянных элементов лестницы.<br>
+            Ниже представлена палитра наиболее популярных расцветок. Выкрасы выыполнены на сосне. <br>
+            На образцы нанесен 1 слой краски и 2 слоя воска.<br>
+            Обратите внимание! Оттенок на экране может отличаться от ожидаемого, мы настоятельно рекомендуем посетить наш шоу-рум для ознакомления с образцами выкрасов.<br> Всю доступную палитру на разных породах дерева можно посмотреть, перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
+        <div class="clrbm us">
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8510.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8510.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">01 Белый 8510</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8531.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8531.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">03 Сахара 8531</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8532.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8532.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">04 Орех 8532</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8533.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8533.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">05 Дуб копчёный 8533</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8535.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8535.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">07 Сталь 8535</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8536.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8536.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">08 Капучино 8536</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8537.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8537.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">08 Махагон 8537</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8538.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8538.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">08 Бакаут 8538</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8541.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8541.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">14 Бренди 8541</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8542.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8542.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">15 Тик тёмный 8542</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8543.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8543.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">16 Мербау 8543</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8544.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8544.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">17 Бразильский дуб 8544</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8546.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8546.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">19 Венге 8546</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8547.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8547.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">20 Сандаловое дерево 8547</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/sb8554.jpg" class="a-zoom-img">
+                        <img src="img/colors/s8554.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">27 Циан 8554</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/ssome.jpg" class="a-zoom-img">
+                        <img src="img/colors/ssome.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="clrnm">Любой цвет на ваш выбор</p>
             </div>
         </div>
-        <a id="pokraska"></a>
-        <div class="section">
-            <p class="p-page-cap">Покраска деревянных элементов лестницы</p>
-            <p class="p-med">Вы можете заказать у нас профессиональную покраску деревянных элементов лестницы.<br>
-                Ниже представлена палитра наиболее популярных расцветок. Выкрасы выыполнены на сосне. <br>
-                На образцы нанесен 1 слой краски и 2 слоя воска.<br>
-                Обратите внимание! Оттенок на экране может отличаться от ожидаемого, мы настоятельно рекомендуем посетить наш шоу-рум для ознакомления с образцами выкрасов.<br> Всю доступную палитру на разных породах дерева можно посмотреть, перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
-            <div class="clrbm us">
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8510.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8510.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">01 Белый 8510</p>
+    </div>
+    <div class="section">
+        <p class="p-page-cap">Покраска металлических элементов лестницы</p>
+        <p class="p-med">Покраска каркаса не влияет на стоимость.<br>
+            Вы можете выбрать любой цвет из палитры.<br>
+            Ниже представлены наиболее популярные расцветки каркаса.
+            <br>Ознакомиться с полной палитрой цветов металлокаркаса вы можете перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
+        <div class="clrbm">
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/9030A0136.jpg" class="a-zoom-img">
+                        <img src="img/colors/9030A0136.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8531.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8531.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">03 Сахара 8531</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8532.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8532.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">04 Орех 8532</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8533.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8533.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">05 Дуб копчёный 8533</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8535.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8535.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">07 Сталь 8535</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8536.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8536.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Капучино 8536</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8537.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8537.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Махагон 8537</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8538.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8538.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">08 Бакаут 8538</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8541.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8541.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">14 Бренди 8541</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8542.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8542.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">15 Тик тёмный 8542</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8543.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8543.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">16 Мербау 8543</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8544.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8544.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">17 Бразильский дуб 8544</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8546.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8546.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">19 Венге 8546</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8547.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8547.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">20 Сандаловое дерево 8547</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/sb8554.jpg" class="a-zoom-img">
-                            <img src="img/colors/s8554.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">27 Циан 8554</p>
-                </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/ssome.jpg" class="a-zoom-img">
-                            <img src="img/colors/ssome.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">Любой цвет на ваш выбор</p>
-                </div>
+                <p class="clrnm">9030A0136 Алюм.металик хром (ЭП)</p>
             </div>
-        </div>
-        <div class="section">
-            <p class="p-page-cap">Покраска металлических элементов лестницы</p>
-            <p class="p-med">Покраска каркаса не влияет на стоимость.<br>
-                Вы можете выбрать любой цвет из палитры.<br>
-                Ниже представлены наиболее популярные расцветки каркаса.
-                <br>Ознакомиться с полной палитрой цветов металлокаркаса вы можете перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
-            <div class="clrbm">
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/9030A0136.jpg" class="a-zoom-img">
-                            <img src="img/colors/9030A0136.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">9030A0136 Алюм.металик хром (ЭП)</p>
-                </div>
-                <!--                 <div class="clrb">
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/90306429.jpg" class="a-zoom-img">
                             <img src="img/colors/90306429.jpg" alt="" class="img-fluid">
@@ -1393,7 +1532,7 @@
                     </div>
                     <p class="clrnm">90306429 Алюм.металлик (ЭП), RAL 9006</p>
                 </div> -->
-                <!--                 <div class="clrb">
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5038A9006.jpg" class="a-zoom-img">
                             <img src="img/colors/5038A9006.jpg" alt="" class="img-fluid">
@@ -1401,7 +1540,7 @@
                     </div>
                     <p class="clrnm">5038A9006 Алюм.металлик (ПЭ), RAL 9006</p>
                 </div> -->
-                <!--                 <div class="clrb">
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5348A0737.jpg" class="a-zoom-img">
                             <img src="img/colors/5348A0737.jpg" alt="" class="img-fluid">
@@ -1409,7 +1548,7 @@
                     </div>
                     <p class="clrnm">5348A0737 Алюм.металлик матовый (ПЭ), RAL 9006</p>
                 </div> -->
-                <!--                 <div class="clrb">
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5268A9006.jpg" class="a-zoom-img">
                             <img src="img/colors/5268A9006.jpg" alt="" class="img-fluid">
@@ -1417,7 +1556,7 @@
                     </div>
                     <p class="clrnm">5268A9006 Алюм.металлик струтур. (ПЭ), RAL 9006</p>
                 </div> -->
-                <!--                 <div class="clrb">
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5038A9007.jpg" class="a-zoom-img">
                             <img src="img/colors/5038A9007.jpg" alt="" class="img-fluid">
@@ -1425,7 +1564,7 @@
                     </div>
                     <p class="clrnm">5038A9007 Алюм.металлик (ПЭ), RAL 9007</p>
                 </div> -->
-                <!--                 <div class="clrb">
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5038A9022.jpg" class="a-zoom-img">
                             <img src="img/colors/5038A9022.jpg" alt="" class="img-fluid">
@@ -1433,15 +1572,15 @@
                     </div>
                     <p class="clrnm">5038A9022 Алюм.металлик (ПЭ), RAL 9022</p>
                 </div> -->
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/93587983.jpg" class="a-zoom-img">
-                            <img src="img/colors/93587983.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">93587983 Алюм.металлик "матовый муар" (ЭП)</p>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/93587983.jpg" class="a-zoom-img">
+                        <img src="img/colors/93587983.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <!--                 <div class="clrb">
+                <p class="clrnm">93587983 Алюм.металлик "матовый муар" (ЭП)</p>
+            </div>
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/6348A0100.jpg" class="a-zoom-img">
                             <img src="img/colors/6348A0100.jpg" alt="" class="img-fluid">
@@ -1449,7 +1588,7 @@
                     </div>
                     <p class="clrnm">6348A0100 Алюм.металлик матовый (Э)</p>
                 </div> -->
-                <!--                 <div class="clrb">
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5030A0393.jpg" class="a-zoom-img">
                             <img src="img/colors/5030A0393.jpg" alt="" class="img-fluid">
@@ -1457,55 +1596,55 @@
                     </div>
                     <p class="clrnm">5030A0393 Лак с блёстками "бриллиант" (ПЭ)</p>
                 </div> -->
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/5758A0646.jpg" class="a-zoom-img">
-                            <img src="img/colors/5758A0646.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">5758A0646 Алюм.металлик "бриллиантовый муар" (ПЭ)</p>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/5758A0646.jpg" class="a-zoom-img">
+                        <img src="img/colors/5758A0646.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/1R489006.jpg" class="a-zoom-img">
-                            <img src="img/colors/1R489006.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">1R489006 Алюм.металлик "архитектурный муар" (ПЭ), RAL 9006</p>
+                <p class="clrnm">5758A0646 Алюм.металлик "бриллиантовый муар" (ПЭ)</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/1R489006.jpg" class="a-zoom-img">
+                        <img src="img/colors/1R489006.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/90336285.jpg" class="a-zoom-img">
-                            <img src="img/colors/90336285.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">90336285 Бежевый металлик (ЭП), RAL 1035</p>
+                <p class="clrnm">1R489006 Алюм.металлик "архитектурный муар" (ПЭ), RAL 9006</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/90336285.jpg" class="a-zoom-img">
+                        <img src="img/colors/90336285.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/8L421036.jpg" class="a-zoom-img">
-                            <img src="img/colors/8L421036.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">8L421036 Золотистый металлик бонд. (ПУ), RAL 1036</p>
+                <p class="clrnm">90336285 Бежевый металлик (ЭП), RAL 1035</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/8L421036.jpg" class="a-zoom-img">
+                        <img src="img/colors/8L421036.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/90328405.jpg" class="a-zoom-img">
-                            <img src="img/colors/90328405.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">90328405 Золотистый металлик (ЭП)</p>
+                <p class="clrnm">8L421036 Золотистый металлик бонд. (ПУ), RAL 1036</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/90328405.jpg" class="a-zoom-img">
+                        <img src="img/colors/90328405.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/90326428.jpg" class="a-zoom-img">
-                            <img src="img/colors/90326428.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">90326428 Золотистый металлик (ЭП)</p>
+                <p class="clrnm">90328405 Золотистый металлик (ЭП)</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/90326428.jpg" class="a-zoom-img">
+                        <img src="img/colors/90326428.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <!--                 <div class="clrb">
+                <p class="clrnm">90326428 Золотистый металлик (ЭП)</p>
+            </div>
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5033A1036.jpg" class="a-zoom-img">
                             <img src="img/colors/5033A1036.jpg" alt="" class="img-fluid">
@@ -1513,39 +1652,39 @@
                     </div>
                     <p class="clrnm">5033A1036 Золотистый перламутр (ЭП)</p>
                 </div> -->
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/5033A0377.jpg" class="a-zoom-img">
-                            <img src="img/colors/5033A0377.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">5033A0377 Бронзовый металлик (ПЭ)</p>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/5033A0377.jpg" class="a-zoom-img">
+                        <img src="img/colors/5033A0377.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/5038A1220.jpg" class="a-zoom-img">
-                            <img src="img/colors/5038A1220.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">5038A1220 Медный металлик (ПЭ)</p>
+                <p class="clrnm">5033A0377 Бронзовый металлик (ПЭ)</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/5038A1220.jpg" class="a-zoom-img">
+                        <img src="img/colors/5038A1220.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/5B238017.jpg" class="a-zoom-img">
-                            <img src="img/colors/5B238017.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">5B238017 Коричневый структ. (ПЭ), RAL 8017</p>
+                <p class="clrnm">5038A1220 Медный металлик (ПЭ)</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/5B238017.jpg" class="a-zoom-img">
+                        <img src="img/colors/5B238017.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/5053A8017.jpg" class="a-zoom-img">
-                            <img src="img/colors/5053A8017.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">5053A8017 Коричневый "муар" п-мат. (ПЭ), RAL 8017</p>
+                <p class="clrnm">5B238017 Коричневый структ. (ПЭ), RAL 8017</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/5053A8017.jpg" class="a-zoom-img">
+                        <img src="img/colors/5053A8017.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <!--                 <div class="clrb">
+                <p class="clrnm">5053A8017 Коричневый "муар" п-мат. (ПЭ), RAL 8017</p>
+            </div>
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5358A0557.jpg" class="a-zoom-img">
                             <img src="img/colors/5358A0557.jpg" alt="" class="img-fluid">
@@ -1553,23 +1692,23 @@
                     </div>
                     <p class="clrnm">5358A0557 Алюм.металлик "муар" с блёстками (ПЭ)</p>
                 </div> -->
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/5359A0445.jpg" class="a-zoom-img">
-                            <img src="img/colors/5359A0445.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">5359A0445 Серый "муар" с блёстками (ПЭ)</p>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/5359A0445.jpg" class="a-zoom-img">
+                        <img src="img/colors/5359A0445.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <div class="clrb">
-                    <div class="clrb-img">
-                        <a data-fancybox="colors" href="img/colors/93531330.jpg" class="a-zoom-img">
-                            <img src="img/colors/93531330.jpg" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <p class="clrnm">93531330 Медный металлик "муар" (ЭП)</p>
+                <p class="clrnm">5359A0445 Серый "муар" с блёстками (ПЭ)</p>
+            </div>
+            <div class="clrb">
+                <div class="clrb-img">
+                    <a data-fancybox="colors" href="img/colors/93531330.jpg" class="a-zoom-img">
+                        <img src="img/colors/93531330.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
-                <!--                 <div class="clrb">
+                <p class="clrnm">93531330 Медный металлик "муар" (ЭП)</p>
+            </div>
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/5359A8645.jpg" class="a-zoom-img">
                             <img src="img/colors/5359A8645.jpg" alt="" class="img-fluid">
@@ -1577,7 +1716,7 @@
                     </div>
                     <p class="clrnm">5359A8645 Чёрный "муар" с блёстками (ПЭ)</p>
                 </div> -->
-                <!--                 <div class="clrb">
+            <!--                 <div class="clrb">
                     <div class="clrb-img">
                         <a data-fancybox="colors" href="img/colors/90593451.jpg" class="a-zoom-img">
                             <img src="img/colors/90593451.jpg" alt="" class="img-fluid">
@@ -1585,257 +1724,257 @@
                     </div>
                     <p class="clrnm">90593451 Чёрный "муар" (ЭП)</p>
                 </div> -->
-            </div>
         </div>
-        <a id="schems"></a>
-        <div class="my-hr"></div>
-        <div class="section">
-            <p class="p-page-cap">Чертежи и схемы</p>
-            <div class="schemes-slider">
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/scheme2.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/scheme2.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Пояснение к картинке</p>
-                </div>
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/scheme3.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/scheme3.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Длинное пояснение к картинке в две строки и еще немного текста</p>
-                </div>
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/scheme4.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/scheme4.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Пояснение к картинке</p>
-                </div>
-                <div class="schemes-slider-item ">
-                    <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Базовый вид ограждений лестницы</p>
-                </div>
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/scheme.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/scheme.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Пояснение к картинке ghj,f</p>
-                </div>
-                <div class="schemes-slider-item">
-                    <a data-fancybox="gallery" href="img/levaya.jpg" rel="group" data-gallery="scheme-photo">
-                        <img src="img/levaya.jpg" alt="Картинка" class="img-fluid">
-                    </a>
-                    <p>Схема лестницы с поворотом налево</p>
-                </div>
-            </div>
-        </div>
-        <a id="charact"></a>
-        <div class="my-hr"></div>
-        <div class="section">
-            <!-- Характеристики -->
-            <p class="p-page-cap">Характеристики:</p>
-            <div class="params">
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота
-                        </b>
-                    </span>
-                    <span class="feature-val">2750 - 3400 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Толщина ступени
-                        </b>
-                    </span>
-                    <span class="feature-val">40 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота шага
-                        </b>
-                    </span>
-                    <span class="feature-val">195 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Угол наклона
-                        </b>
-                    </span>
-                    <span class="feature-val">42 °</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота
-                        </b>
-                    </span>
-                    <span class="feature-val">2750 - 3400 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Толщина ступени
-                        </b>
-                    </span>
-                    <span class="feature-val">40 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота шага
-                        </b>
-                    </span>
-                    <span class="feature-val">195 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Угол наклона
-                        </b>
-                    </span>
-                    <span class="feature-val">42 °</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота
-                        </b>
-                    </span>
-                    <span class="feature-val">2750 - 3400 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Толщина ступени
-                        </b>
-                    </span>
-                    <span class="feature-val">40 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота шага
-                        </b>
-                    </span>
-                    <span class="feature-val">195 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Угол наклона
-                        </b>
-                    </span>
-                    <span class="feature-val">42 °</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота
-                        </b>
-                    </span>
-                    <span class="feature-val">2750 - 3400 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Толщина ступени
-                        </b>
-                    </span>
-                    <span class="feature-val">40 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота шага
-                        </b>
-                    </span>
-                    <span class="feature-val">195 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Угол наклона
-                        </b>
-                    </span>
-                    <span class="feature-val">42 °</span>
-                </p>
-                <a href="#" data-toggle="modal" data-target="#notmysize" class="a-link">
-                    Не подходят размеры?
+    </div>
+    <a id="schems"></a>
+    <div class="my-hr"></div>
+    <div class="section">
+        <p class="p-page-cap">Чертежи и схемы</p>
+        <div class="schemes-slider">
+            <div class="schemes-slider-item">
+                <a data-fancybox="gallery" href="img/scheme2.jpg" rel="group" data-gallery="scheme-photo">
+                    <img src="img/scheme2.jpg" alt="Картинка" class="img-fluid">
                 </a>
+                <p>Пояснение к картинке</p>
+            </div>
+            <div class="schemes-slider-item">
+                <a data-fancybox="gallery" href="img/scheme3.jpg" rel="group" data-gallery="scheme-photo">
+                    <img src="img/scheme3.jpg" alt="Картинка" class="img-fluid">
+                </a>
+                <p>Длинное пояснение к картинке в две строки и еще немного текста</p>
+            </div>
+            <div class="schemes-slider-item">
+                <a data-fancybox="gallery" href="img/scheme4.jpg" rel="group" data-gallery="scheme-photo">
+                    <img src="img/scheme4.jpg" alt="Картинка" class="img-fluid">
+                </a>
+                <p>Пояснение к картинке</p>
+            </div>
+            <div class="schemes-slider-item ">
+                <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
+                    <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
+                </a>
+                <p>Базовый вид ограждений лестницы</p>
+            </div>
+            <div class="schemes-slider-item">
+                <a data-fancybox="gallery" href="img/scheme.jpg" rel="group" data-gallery="scheme-photo">
+                    <img src="img/scheme.jpg" alt="Картинка" class="img-fluid">
+                </a>
+                <p>Пояснение к картинке ghj,f</p>
+            </div>
+            <div class="schemes-slider-item">
+                <a data-fancybox="gallery" href="img/levaya.jpg" rel="group" data-gallery="scheme-photo">
+                    <img src="img/levaya.jpg" alt="Картинка" class="img-fluid">
+                </a>
+                <p>Схема лестницы с поворотом налево</p>
             </div>
         </div>
-        <div class="section">
-            <a id="gabarity"></a>
-            <p class="p-page-cap">Упаковка:</p>
-            <div class="params">
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Масса брутто, кг
-                        </b>
-                    </span>
-                    <span class="feature-val">93</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Количество упаковок
-                        </b>
-                    </span>
-                    <span class="feature-val">3</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Размеры наибольшей упаковки, мм
-                        </b>
-                    </span>
-                    <span class="feature-val">2500 × 350 × 180</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Общий объём, м³
-                        </b>
-                    </span>
-                    <span class="feature-val">2500 × 350 × 180</span>
-                </p>
-            </div>
-        </div>
-        <div class="my-hr"></div>
-        <div class="section">
-            <p class="p-page-cap">Описание</p>
-            <p class="p-med">
-                Для изготовления лестницы под покраску используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
+    </div>
+    <a id="charact"></a>
+    <div class="my-hr"></div>
+    <div class="section">
+        <!-- Характеристики -->
+        <p class="p-page-cap">Характеристики:</p>
+        <div class="params">
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Высота
+                    </b>
+                </span>
+                <span class="feature-val">2750 - 3400 мм</span>
             </p>
-        </div>
-        <!-- Блок показывается только для заказных лестниц -->
-        <div class="my-hr"></div>
-        <div class="section">
-            <p class="p-page-cap">
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Толщина ступени
+                    </b>
+                </span>
+                <span class="feature-val">40 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Высота шага
+                    </b>
+                </span>
+                <span class="feature-val">195 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Угол наклона
+                    </b>
+                </span>
+                <span class="feature-val">42 °</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Высота
+                    </b>
+                </span>
+                <span class="feature-val">2750 - 3400 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Толщина ступени
+                    </b>
+                </span>
+                <span class="feature-val">40 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Высота шага
+                    </b>
+                </span>
+                <span class="feature-val">195 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Угол наклона
+                    </b>
+                </span>
+                <span class="feature-val">42 °</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Высота
+                    </b>
+                </span>
+                <span class="feature-val">2750 - 3400 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Толщина ступени
+                    </b>
+                </span>
+                <span class="feature-val">40 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Высота шага
+                    </b>
+                </span>
+                <span class="feature-val">195 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Угол наклона
+                    </b>
+                </span>
+                <span class="feature-val">42 °</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Высота
+                    </b>
+                </span>
+                <span class="feature-val">2750 - 3400 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Толщина ступени
+                    </b>
+                </span>
+                <span class="feature-val">40 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Высота шага
+                    </b>
+                </span>
+                <span class="feature-val">195 мм</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Угол наклона
+                    </b>
+                </span>
+                <span class="feature-val">42 °</span>
+            </p>
+            <a href="#" data-toggle="modal" data-target="#notmysize" class="a-link">
                 Не подходят размеры?
+            </a>
+        </div>
+    </div>
+    <div class="section">
+        <a id="gabarity"></a>
+        <p class="p-page-cap">Упаковка:</p>
+        <div class="params">
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Масса брутто, кг
+                    </b>
+                </span>
+                <span class="feature-val">93</span>
             </p>
-            <p>Возможно изготовление лестницы по индивидуальным размерам от 4 недель</p>
-            <div class="d-flex flex-column flex-md-row align-items-start">
-                <button class="btn btn-simple btn-zamer-order">Заказать расчет с моими размерами</button>
-                <div class="order-vars">
-                    <a href="" class="a-link mr-4">Или оставьте заявку и мы вышлем вам 5-7 вариантов подходящих лестниц</a>
-                </div>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Количество упаковок
+                    </b>
+                </span>
+                <span class="feature-val">3</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Размеры наибольшей упаковки, мм
+                    </b>
+                </span>
+                <span class="feature-val">2500 × 350 × 180</span>
+            </p>
+            <p class="p-values">
+                <span class="feature-name">
+                    <b>
+                        Общий объём, м³
+                    </b>
+                </span>
+                <span class="feature-val">2500 × 350 × 180</span>
+            </p>
+        </div>
+    </div>
+    <div class="my-hr"></div>
+    <div class="section">
+        <p class="p-page-cap">Описание</p>
+        <p class="p-med">
+            Для изготовления лестницы под покраску используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
+        </p>
+    </div>
+    <!-- Блок показывается только для заказных лестниц -->
+    <div class="my-hr"></div>
+    <div class="section">
+        <p class="p-page-cap">
+            Не подходят размеры?
+        </p>
+        <p>Возможно изготовление лестницы по индивидуальным размерам от 4 недель</p>
+        <div class="d-flex flex-column flex-md-row align-items-start">
+            <button class="btn btn-simple btn-zamer-order">Заказать расчет с моими размерами</button>
+            <div class="order-vars">
+                <a href="" class="a-link mr-4">Или оставьте заявку и мы вышлем вам 5-7 вариантов подходящих лестниц</a>
             </div>
         </div>
-        <!-- Блок показывается только для заказных лестниц -->
-        <!--         <a id="montage"></a>
+    </div>
+    <!-- Блок показывается только для заказных лестниц -->
+    <a id="montage"></a>
         <div class="section">
             <div class="mntg">
                 <p class="p-page-cap">Монтаж лестницы</p>
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="p-main-price pink mb-3">15 990<span class="price-rouble"></span></p>
+                        <p class="p-main-price pink mb-3">от 15 990<span class="price-rouble"></span></p>
                         <p class="">
                             Указана стоимость исключительно на монтаж лестницы, любые дополнительные работы, связанные с несовершенством стен, углов, устранением дополнительных препятствий при установке лестницы - изменят стоимость работ.
                             Точную стоимость на монтаж мы можем объявить только после осмотра помещения специалистом и совершения необходимых замеров.
@@ -1860,57 +1999,57 @@
             <p class="mt-5">
                 *Любую лестницу можно собрать и самостоятельно
             </p>
-        </div> -->
-        <div class="my-hr"></div>
-        <a id="instr"></a>
-        <div class="section">
-            <p class="font-weight-bolder">Скачать</p>
+        </div> 
+    <div class="my-hr"></div>
+    <a id="instr"></a>
+    <div class="section">
+        <p class="font-weight-bolder">Скачать</p>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <button class="btn-pdf">
+                    Инструкция по сборке лестницы К-001М
+                </button>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <button class="btn-pdf">
+                    Фирменный гарантийный талон ЛЕСТНИЦЫ-ПРОСТО
+                </button>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <button class="btn-pdf">
+                    Условия эксплуатации лестницы
+                </button>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <button class="btn-pdf">
+                    Еще один файл
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="my-hr"></div>
+    <a id="video"></a>
+    <div class="section">
+        <div class="video-block">
             <div class="row">
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <button class="btn-pdf">
-                        Инструкция по сборке лестницы К-001М
-                    </button>
+                <div class="col-lg-6">
+                    <p class="p-page-cap">Видеоинструкция по самостоятельной сборке Лестницы К-001М</p>
+                    <p>
+                        Здесь текст какой-нибудь
+                    </p>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <button class="btn-pdf">
-                        Фирменный гарантийный талон ЛЕСТНИЦЫ-ПРОСТО
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <button class="btn-pdf">
-                        Условия эксплуатации лестницы
-                    </button>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <button class="btn-pdf">
-                        Еще один файл
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="my-hr"></div>
-        <a id="video"></a>
-        <div class="section">
-            <div class="video-block">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p class="p-page-cap">Видеоинструкция по самостоятельной сборке Лестницы К-001М</p>
-                        <p>
-                            Здесь текст какой-нибудь
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dtZDwVk6O1g" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                <div class="col-lg-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dtZDwVk6O1g" style="border:0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Были отзывы -->
-        <!--         <div class="my-hr"></div>
+    </div>
+    <!-- Были отзывы -->
+    <!--         <div class="my-hr"></div>
         <a id="reviews"></a> -->
-        <!--         <div class="section">
+    <!--         <div class="section">
             <ul class="nav nav-revs" id="myTab" role="tablist">
                 <li>
                     <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
@@ -2247,508 +2386,508 @@
                 </div>
             </div>
         </div> -->
-        <!-- Были отзывы -->
-        <div class="section">
-            <p class="p-page-cap">Дополнительные товары</p>
-            <div class="similar-block">
-                <div class="similar similar-slider">
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <img src="img/bal.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Балюстрада для ограждения проёма НАЗВАНИЕ БАЛЮСТРАДЫ 1м.
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                2 000<span class="price-rouble"></span>
-                                            </p>
-                                        </div>
+    <!-- Были отзывы -->
+    <div class="section">
+        <p class="p-page-cap">Дополнительные товары</p>
+        <div class="similar-block">
+            <div class="similar similar-slider">
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <img src="img/bal.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Балюстрада для ограждения проёма НАЗВАНИЕ БАЛЮСТРАДЫ 1м.
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            2 000<span class="price-rouble"></span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <div class="sale-marker">-10%</div>
-                                    <img src="img/stup.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Комплект для увеличения высоты лестницы CIVIK 120 до 3540 мм
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                23 300<span class="price-rouble"></span>
-                                            </p>
-                                            <p class="old-price">от 57 000<span class="price-rouble"></span></p>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <div class="sale-marker">-10%</div>
+                                <img src="img/stup.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Комплект для увеличения высоты лестницы CIVIK 120 до 3540 мм
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            23 300<span class="price-rouble"></span>
+                                        </p>
+                                        <p class="old-price">от 57 000<span class="price-rouble"></span></p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <img src="img/biofa.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Воск бесцветный матовый BIOFA, 1 л.
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                5 100<span class="price-rouble"></span>
-                                            </p>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <img src="img/biofa.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Воск бесцветный матовый BIOFA, 1 л.
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            5 100<span class="price-rouble"></span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <img src="img/kovr.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Ковровая ступень Лилия
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                600<span class="price-rouble"></span>
-                                            </p>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <img src="img/kovr.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Ковровая ступень Лилия
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            600<span class="price-rouble"></span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <div class="sale-marker">-10%</div>
-                                    <img src="img/stupen.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Ступень из бука 800×400×25 мм Экстра
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                5 900<span class="price-rouble"></span>
-                                            </p>
-                                            <p class="old-price">6 400<span class="price-rouble"></span></p>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <div class="sale-marker">-10%</div>
+                                <img src="img/stupen.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Ступень из бука 800×400×25 мм Экстра
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            5 900<span class="price-rouble"></span>
+                                        </p>
+                                        <p class="old-price">6 400<span class="price-rouble"></span></p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <div class="sale-marker">-10%</div>
-                                    <img src="img/kovrdrj.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Ковродержатель PROSTO латунь-хром-золото, 300 см
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                3 695<span class="price-rouble"></span>
-                                            </p>
-                                            <p class="old-price">4 300<span class="price-rouble"> </span>
-                                            </p>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <div class="sale-marker">-10%</div>
+                                <img src="img/kovrdrj.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Ковродержатель PROSTO латунь-хром-золото, 300 см
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            3 695<span class="price-rouble"></span>
+                                        </p>
+                                        <p class="old-price">4 300<span class="price-rouble"> </span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <img src="img/st.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Стойка из нержавеющей стали, 10 шт.
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                23 805<span class="price-rouble"></span>
-                                            </p>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <img src="img/st.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Стойка из нержавеющей стали, 10 шт.
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            23 805<span class="price-rouble"></span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <img src="img/kvr2.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Ковродержатель, латунь
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                23 805<span class="price-rouble"></span>
-                                            </p>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <img src="img/kvr2.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Ковродержатель, латунь
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            23 805<span class="price-rouble"></span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <div class="sale-marker">-3 000 <span class="price-rouble"> </span></div>
-                                    <img src="img/stupen.png" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Ступень для лестницы из сосны 800×340×50 мм
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                5 400<span class="price-rouble"></span>
-                                            </p>
-                                            <p class="old-price">6 100<span class="price-rouble"></span></p>
-                                        </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <div class="sale-marker">-3 000 <span class="price-rouble"> </span></div>
+                                <img src="img/stupen.png" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Ступень для лестницы из сосны 800×340×50 мм
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            5 400<span class="price-rouble"></span>
+                                        </p>
+                                        <p class="old-price">6 100<span class="price-rouble"></span></p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <p class="p-page-cap">Похожие</p>
-            <div class="similar-block">
-                <div class="similar similar-slider">
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <img src="img/prod-1.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Лестница К-001М
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                от 57 000<span class="price-rouble"></span>
-                                            </p>
-                                        </div>
+    </div>
+    <div class="section">
+        <p class="p-page-cap">Похожие</p>
+        <div class="similar-block">
+            <div class="similar similar-slider">
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <img src="img/prod-1.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Лестница К-001М
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 57 000<span class="price-rouble"></span>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="similar-descr">
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Высота:
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">2950 - 3200 мм</span>
-                                    </p>
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Угол наклона
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">42 °</span>
-                                    </p>
-                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <div class="sale-marker">-10%</div>
-                                    <img src="img/prod-2.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Лестница К-002М
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                от 51 300<span class="price-rouble"></span>
-                                            </p>
-                                            <p class="old-price">от 57 000<span class="price-rouble"></span></p>
-                                        </div>
+                            <div class="similar-descr">
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2950 - 3200 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Угол наклона
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">42 °</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <div class="sale-marker">-10%</div>
+                                <img src="img/prod-2.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Лестница К-002М
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 51 300<span class="price-rouble"></span>
+                                        </p>
+                                        <p class="old-price">от 57 000<span class="price-rouble"></span></p>
                                     </div>
                                 </div>
-                                <div class="similar-descr">
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Высота:
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">2750 - 3400 мм</span>
-                                    </p>
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Угол наклона
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">42 °</span>
-                                    </p>
-                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <img src="img/prod-7.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Лестница К-003М
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                от 49 000<span class="price-rouble"></span>
-                                            </p>
-                                        </div>
+                            <div class="similar-descr">
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2750 - 3400 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Угол наклона
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">42 °</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <img src="img/prod-7.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Лестница К-003М
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 49 000<span class="price-rouble"></span>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="similar-descr">
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Высота:
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">2650 - 3120 мм</span>
-                                    </p>
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Угол наклона
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">42 °</span>
-                                    </p>
-                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <img src="img/prod-4.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Лестница К-004М
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                от 64 000<span class="price-rouble"></span>
-                                            </p>
-                                        </div>
+                            <div class="similar-descr">
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2650 - 3120 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Угол наклона
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">42 °</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <img src="img/prod-4.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Лестница К-004М
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 64 000<span class="price-rouble"></span>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="similar-descr">
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Высота:
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">2750 - 3400 мм</span>
-                                    </p>
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Угол наклона
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">42 °</span>
-                                    </p>
-                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <div class="sale-marker">-10%</div>
-                                    <img src="img/prod-8.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Лестница К-005М
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                от 61 000<span class="price-rouble"></span>
-                                            </p>
-                                            <p class="old-price">от 65 300<span class="price-rouble"></span></p>
-                                        </div>
+                            <div class="similar-descr">
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2750 - 3400 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Угол наклона
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">42 °</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <div class="sale-marker">-10%</div>
+                                <img src="img/prod-8.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Лестница К-005М
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 61 000<span class="price-rouble"></span>
+                                        </p>
+                                        <p class="old-price">от 65 300<span class="price-rouble"></span></p>
                                     </div>
                                 </div>
-                                <div class="similar-descr">
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Высота:
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">2650 - 3120 мм</span>
-                                    </p>
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Угол наклона
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">42 °</span>
-                                    </p>
-                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <div class="sale-marker">-10%</div>
-                                    <img src="img/prod-9.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Лестница К-007М
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                от 61 000<span class="price-rouble"></span>
-                                            </p>
-                                            <p class="old-price">от 65 300<span class="price-rouble"> </span>
-                                            </p>
-                                        </div>
+                            <div class="similar-descr">
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2650 - 3120 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Угол наклона
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">42 °</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <div class="sale-marker">-10%</div>
+                                <img src="img/prod-9.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Лестница К-007М
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 61 000<span class="price-rouble"></span>
+                                        </p>
+                                        <p class="old-price">от 65 300<span class="price-rouble"> </span>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="similar-descr">
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Высота:
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">2650 - 3120 мм</span>
-                                    </p>
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Угол наклона
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">42 °</span>
-                                    </p>
-                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="similar-item">
-                        <a href="stair-catalog.html">
-                            <div class="similar-box">
-                                <div class="prev-photo">
-                                    <div class="sale-marker">-3 000 <span class="price-rouble"> </span></div>
-                                    <img src="img/prod-10.jpg" alt="Alt" class="img-fluid">
-                                </div>
-                                <div class="prod-descr-box">
-                                    <h4 class="">
-                                        Лестница К-005М
-                                    </h4>
-                                    <div class="price-box">
-                                        <div class="">
-                                            <p class="p-price">
-                                                от 61 000<span class="price-rouble"></span>
-                                            </p>
-                                            <p class="old-price">от 65 300<span class="price-rouble"></span></p>
-                                        </div>
+                            <div class="similar-descr">
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2650 - 3120 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Угол наклона
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">42 °</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="similar-item">
+                    <a href="stair-catalog.html">
+                        <div class="similar-box">
+                            <div class="prev-photo">
+                                <div class="sale-marker">-3 000 <span class="price-rouble"> </span></div>
+                                <img src="img/prod-10.jpg" alt="Alt" class="img-fluid">
+                            </div>
+                            <div class="prod-descr-box">
+                                <h4 class="">
+                                    Лестница К-005М
+                                </h4>
+                                <div class="price-box">
+                                    <div class="">
+                                        <p class="p-price">
+                                            от 61 000<span class="price-rouble"></span>
+                                        </p>
+                                        <p class="old-price">от 65 300<span class="price-rouble"></span></p>
                                     </div>
                                 </div>
-                                <div class="similar-descr">
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Высота:
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">2650 - 3120 мм</span>
-                                    </p>
-                                    <p class="p-values">
-                                        <span class="feature-name">
-                                            <b>
-                                                Угол наклона
-                                            </b>
-                                        </span>
-                                        <span class="feature-val">42 °</span>
-                                    </p>
-                                </div>
                             </div>
-                        </a>
-                    </div>
+                            <div class="similar-descr">
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">2650 - 3120 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Угол наклона
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">42 °</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="banner-horiz text-center">
-                <a href="#">
-                    <p class="h1">Заголовок баннера</p>
-                </a>
-            </div>
+    </div>
+    <div class="section">
+        <div class="banner-horiz text-center">
+            <a href="#">
+                <p class="h1">Заголовок баннера</p>
+            </a>
         </div>
+    </div>
     </div>
     <!-- Конец карточки каталога -->
     <!-- Кнопка наверх -->

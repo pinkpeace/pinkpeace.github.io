@@ -78,6 +78,7 @@ h1.page-name {
     h1.page-name {
         font-size: 25px;
         margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
 
@@ -2200,7 +2201,7 @@ select:focus {
 .main-right .form-group {
     margin-bottom: 1.5em;
     min-width: 150px;
-    margin-right: 1.5em;
+    margin-right: 1.8em;
     display: inline-flex;
 }
 
@@ -2469,7 +2470,6 @@ div.scrollup:hover {
     .top-panel a,
     .top-panel p {
      /*   font-size: 13px;*/
-     font-weight: 500;
         margin-bottom: 6px;
 
     }

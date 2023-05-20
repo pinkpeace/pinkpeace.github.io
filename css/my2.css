@@ -2121,7 +2121,7 @@ select:focus {
 }
 
 @media(min-width: 992px) {
-    .params {
+    .params:not(.short-params){
         column-count: 2;
         column-gap: 2em;
     }
@@ -2142,7 +2142,14 @@ select:focus {
     /* box-shadow: 5px 8px 12px 4px rgb(0 0 0 / 6%), 1px 2px 20px 5px rgb(0 0 0 / 12%);*/
     background-color: #fff;
 }
-
+.price-right {
+    padding: 2em;
+    margin-bottom: 1em;
+     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    /*border: 2px solid #ff3495;*/
+    /* box-shadow: 5px 8px 12px 4px rgb(0 0 0 / 6%), 1px 2px 20px 5px rgb(0 0 0 / 12%);*/
+    background-color:#f2f5f6;
+}
 .main-right .main-price-box {
     margin-bottom: 1.5em;
 }
@@ -2273,8 +2280,8 @@ select:focus {
 }
 
 .btn-group-toggle .btn-radio.active {
-    border-color: #fee44c;
-    background-color: #fff8d0;
+    border-color: #ff3495;
+   /* background-color: #fff8d0;*/
     color: inherit;
 }
 
@@ -2475,9 +2482,6 @@ div.scrollup:hover {
     }
 }
 
-.top-panel a {
-    color: #009de8;
-}
 
 .rating-box {
     display: inline-block;
@@ -3288,6 +3292,7 @@ button.addzamer {
     border: 1px solid #c8d3d7;
     flex-grow: 1;
         padding: 10px 20px 12px;
+        background-color: white;
 }
 
 button.addzamer:hover {
@@ -3401,11 +3406,11 @@ button.addzamer:hover {
     align-items: center;
     justify-content: space-between;
     padding: 5px 0px;
-    border:1px solid #ff3495;
+    border:1px solid #c8d3d7;
     white-space: nowrap;
     border-radius: 3px;
-    width: 120px;
     margin-right: 5px;
+    background-color: white;
 }
 
 .counter span {
@@ -5167,10 +5172,16 @@ margin-bottom: 0.3em;
     align-self: flex-start;
     top: 0;
 }
-.delivery-box {
+.delivery-box, {
     padding: 1.5em;
     background-color: #f2f5f6;
     border-radius: 0.25rem;
+}
+.main-prms {
+ padding: 1.5em;
+    background-color: #f2f5f6;
+    border-radius: 0.25rem;
+    margin-top: 2em;
 }
 .delivery-box i {
     font-size: 1.4em;
@@ -5506,4 +5517,8 @@ ul.anchnav li:hover a {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.4em;
+}
+.mntg {
+    padding: 2em;
+    box-shadow: 0px 3px 20px #cad6db;
 }

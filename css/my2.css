@@ -78,7 +78,7 @@ h1.page-name {
     h1.page-name {
         font-size: 25px;
         margin-top: 1em;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -2263,12 +2263,12 @@ select:focus {
     border: 2px solid #eef2f3;
     margin-right: 6px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px;
     line-height: 1em;
     position: relative;
     overflow: visible;
-    font-size: 1em;
+/*    font-size: 1em;*/
 }
 /*---------------Новые стили-----------------*/
 .radio .btn-radio {
@@ -2447,7 +2447,7 @@ div.scrollup:hover {
 
 @media (min-width: 576px) {
     .top-panel {
-        margin-bottom: 1.2em;
+        margin-bottom: 3em;
     }
 }
 
@@ -2697,7 +2697,7 @@ div.scrollup:hover {
 }
 
 .main-slider div a div.sld-img-bx {
-    height: 350px;
+    height: 50vh;
 }
 
 .slick-slide img {
@@ -2709,9 +2709,9 @@ div.scrollup:hover {
 }
 
 @media (min-width: 576px) {
-    .main-slider div a div.sld-img-bx {
+   /* .main-slider div a div.sld-img-bx {
         height: 300px;
-    }
+    }*/
 
     .slick-slide img {
         max-height: none;
@@ -5166,12 +5166,14 @@ margin-bottom: 0.3em;
 .btn-group-toggle .btn-radio:hover .detail-pic {
     display: block;
 }
-
-.stck {
+@media (min-width: 992px){
+   .stck {
     position: sticky;
     align-self: flex-start;
     top: 0;
+} 
 }
+
 .delivery-box, {
     padding: 1.5em;
     background-color: #f2f5f6;

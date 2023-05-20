@@ -32,7 +32,7 @@ $(document).ready(function() {
     });
 
     $('.thumb-slider').slick({
-        slidesToShow: 7,
+        slidesToShow: 6,
         slidesToScroll: 1,
         dots: false,
         infinite: true,

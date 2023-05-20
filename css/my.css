@@ -2202,7 +2202,7 @@ select:focus {
     margin-bottom: 1.5em;
     min-width: 150px;
     margin-right: 1.8em;
-    display: inline-flex;
+/*    display: inline-flex;*/
 }
 
 .p-main-price {
@@ -5107,7 +5107,7 @@ a.zak-zam:hover {
 }
 
 .p-param-label {
-font-weight: 500;
+/*font-weight: 500;*/
 }
 
 .p-param-label span {

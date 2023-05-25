@@ -1640,9 +1640,9 @@ select:focus {
         min-width: 140px;
     }
 
-/*    .filter-sort-box .selects-wrap label {
+    .filter-sort-box .selects-wrap label {
         margin-bottom: 3px;
-    }*/
+    }
 
     .filter-sort-box .selects-wrap .delselect {
         min-width: 140px;
@@ -2570,7 +2570,7 @@ div.scrollup:hover {
     padding-bottom: 20px;
     margin-bottom: 2em;
 }
-@media (min-width: 768px){
+@media (min-width: 992px){
     .data-img {
         margin-bottom: 0;
     }
@@ -5124,7 +5124,7 @@ margin-bottom: 0.3em;
 .btn-group-toggle .btn-radio:hover .detail-pic {
     display: block;
 }
-@media (min-width: 768px){
+@media (min-width: 992px){
    .stck {
     position: sticky;
     align-self: flex-start;
@@ -5506,15 +5506,16 @@ margin-right: 1em;
     flex-grow: 1;
 
 }
-@media(min-width: 400px){
+@media(min-width: 1950px){
     .chc-bx .form-group {
-        width: auto;
+        width: 33%; 
+        flex-grow: 0;
     }
 }
-@media(min-width: 1000px){
-     .chc-bx .form-group{
-        font-size: 1em;
-        flex-grow: 0;
+@media(min-width: 1200px){
+     .chc-bx .custom-control {
+        font-size: 15px;
+       
      }
 }
 .sch-bx {

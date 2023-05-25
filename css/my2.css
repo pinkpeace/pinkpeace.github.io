@@ -1640,9 +1640,9 @@ select:focus {
         min-width: 140px;
     }
 
-    .filter-sort-box .selects-wrap label {
+/*    .filter-sort-box .selects-wrap label {
         margin-bottom: 3px;
-    }
+    }*/
 
     .filter-sort-box .selects-wrap .delselect {
         min-width: 140px;
@@ -2154,25 +2154,6 @@ select:focus {
     margin-bottom: 1.5em;
 }
 
-.main-right .custom-control label {
-    font-weight: 500;
-}
-
-.main-right .custom-control-label::before {
-    top: 2px;
-}
-
-.main-right .custom-control-input:checked~.custom-control-label::before {
-    color: #2e3038;
-    border-color: #ff3495;
-    background-color: #ff3495;
-    top: 2px;
-}
-
-.main-right .custom-control-label::after {
-    top: 2px;
-}
-
 .main-right .modif-name-box {
     margin-top: 1.5em;
 }
@@ -2301,7 +2282,9 @@ select:focus {
     border-color: #dee2e6;
     color: #2e3038;
 }
-
+.custom-control {
+    margin-bottom: 0.3em;
+}
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     border-color: #ff3495;
@@ -5501,6 +5484,7 @@ ul.anchnav li:hover a {
 }
 .rdo-bx {
 margin-right: 1em;
+
 }
 .rdo-bx .btn-radio {
     margin-right: 1.4em;
@@ -5517,6 +5501,21 @@ margin-right: 1em;
     display: inline-flex;
     flex-direction: column;
     margin-bottom: 1em;
+    width: 50%;
+    font-size: 0.9em;
+    flex-grow: 1;
+
+}
+@media(min-width: 400px){
+    .chc-bx .form-group {
+        width: auto;
+    }
+}
+@media(min-width: 1000px){
+     .chc-bx .form-group{
+        font-size: 1em;
+        flex-grow: 0;
+     }
 }
 .sch-bx {
     padding: 1em;

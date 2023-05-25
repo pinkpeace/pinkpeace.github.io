@@ -2585,9 +2585,13 @@ div.scrollup:hover {
 
 .data-img {
     padding-bottom: 20px;
-    /*    margin-bottom: 1em;*/
+    margin-bottom: 2em;
 }
-
+@media (min-width: 768px){
+    .data-img {
+        margin-bottom: 0;
+    }
+}
 .data-img *,
 .data-img *:before,
 .data-img *:after {
@@ -2622,14 +2626,20 @@ div.scrollup:hover {
         height: 320px;
     }
 }
-
+@media (min-width: 1000px) {
+    .prtf .image-wrap {
+        height: 450px;
+    }
+}
 .brazzers-daddy img {
     height: 100%;
     /*    object-fit: cover;*/
     object-position: center;
     object-fit: contain;
 }
-
+.prtf .brazzers-daddy img {
+     object-fit: cover;
+}
 .my-dots {
     position: absolute;
     display: block;
@@ -2697,7 +2707,7 @@ div.scrollup:hover {
 }
 
 .main-slider div a div.sld-img-bx {
-    height: 50vh;
+    height: 40vh;
 }
 
 .slick-slide img {
@@ -2723,64 +2733,20 @@ div.scrollup:hover {
     }
 }
 
-
-
-
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .data-img {
         display: grid;
         grid-template-columns: 100px calc(100% - 100px);
         padding-bottom: 0;
     }
-
-    .thumb-slider {
-        text-align: center;
-        padding-right: 20px;
-    }
-
-    .thumb-slider div {
-        width: 80px;
-        height: 80px;
-    }
-
-    .thumb-slider .slick-slide {
-        width: 80px;
-        height: 80px !important;
-        cursor: pointer;
-        overflow: hidden;
-        padding: 10px;
-        background-color: #fff;
-        text-align: center;
-    }
-
-    .thumb-slider .slick-slide img {
-        max-width: 58px;
-        max-height: 58px;
-    }
-
-    .thumb-slider .slick-slide.slick-current {
-        border-color: #ff3495;
-        outline: none;
-    }
-}
-
-.main-slider div a:hover,
-.main-slider div a:focus {
-    outline: none;
-}
-
-@media (min-width: 992px) {
-    .data-img {
-        display: grid;
-        grid-template-columns: 100px calc(100% - 100px);
-        padding-bottom: 0;
-    }
-
     .main-slider div {
         position: relative;
         text-align: center;
     }
-
+     .main-slider div a div.sld-img-bx {
+        width: 600px;
+        height: 460px;
+    }
     .thumb-slider {
         text-align: center;
         padding-right: 20px;
@@ -2808,13 +2774,22 @@ div.scrollup:hover {
         border-color: #ff3495;
         outline: none;
     }
+
+    .thumb-slider div {
+        width: 80px;
+        height: 80px;
+    }
+
+    .thumb-slider .slick-slide.slick-current {
+        border-color: #ff3495;
+        outline: none;
+    }
+
 }
 
-@media (min-width: 992px) {
-    .main-slider div a div.sld-img-bx {
-        width: 600px;
-        height: 460px;
-    }
+.main-slider div a:hover,
+.main-slider div a:focus {
+    outline: none;
 }
 
 @media (min-width: 1200px) {
@@ -3419,17 +3394,17 @@ button.addzamer:hover {
 }
 
 .counter span.counter-more {
-    padding-right: 15px;
+    padding-right: 10px;
 }
 
 .counter span.counter-less {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 .counter input {
     border: none;
     text-align: center;
-    width: 50px;
+    width: 30px;
 }
 
 .crt-bx .bxx {
@@ -5166,7 +5141,7 @@ margin-bottom: 0.3em;
 .btn-group-toggle .btn-radio:hover .detail-pic {
     display: block;
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
    .stck {
     position: sticky;
     align-self: flex-start;
@@ -5523,4 +5498,42 @@ ul.anchnav li:hover a {
 .mntg {
     padding: 2em;
     box-shadow: 0px 3px 20px #cad6db;
+}
+.rdo-bx {
+margin-right: 1em;
+}
+.rdo-bx .btn-radio {
+    margin-right: 1.4em;
+}
+.chc-bx .p-param-label {
+    margin-bottom: .5em;
+}
+.chc-bx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start ;
+}
+.chc-bx .form-group {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+.sch-bx {
+    padding: 1em;
+    border: 1px solid #dbdedf;
+    margin-left: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.sch-bx:hover{
+    position: relative;
+    z-index: 3;
+        transition: .5s;
+    box-shadow: 16px 16px 18px 0 rgb(202 207 209 / 62%), 4px 4px 20px 0px rgb(50 58 62 / 13%);
+}
+.sch-bx img {
+    margin-bottom: 1em;
 }

@@ -11,505 +11,6 @@
 </head>
 
 <body>
-    <div class="modal fade" id="city_modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal city-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="st0" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h2 class="">Ваш город</h2>
-                <div class="input-group mb-4">
-                    <input type="text" class="form-control" aria-label="Sizing example input" placeholder="Ваш город">
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="city-list">
-                            <ul class="" data-letter="a">
-                                <li><a href="#">Абакан</a></li>
-                                <li><a href="#">Астрахань</a></li>
-                                <li><a href="#">Алтай</a></li>
-                                <li><a href="#">Алтайский край</a></li>
-                                <li><a href="#">Амурский край</a></li>
-                            </ul>
-                            <ul class="" data-letter="b">
-                                <li><a href="#">Бобров</a></li>
-                                <li><a href="#">Барнаул</a></li>
-                                <li><a href="#">Белгород</a></li>
-                                <li><a href="#">Брянская обл.</a></li>
-                                <li><a href="#">Бурятия</a></li>
-                            </ul>
-                            <ul class="" data-letter="v">
-                                <li><a href="#">Волгоград</a></li>
-                                <li><a href="#">Воронеж</a></li>
-                                <li><a href="#">Великий Новгород</a></li>
-                                <li><a href="#">Владимир</a></li>
-                                <li><a href="#">Вологда</a></li>
-                                <li><a href="#">Ватикан</a></li>
-                                <li><a href="#">Валериан</a></li>
-                            </ul>
-                            <ul class="" data-letter="g">
-                                <li><a href="#">Гондурас</a></li>
-                            </ul>
-                            <ul class="" data-letter="d">
-                                <li><a href="#">Дмитров</a></li>
-                                <li><a href="#">Дагестан</a></li>
-                            </ul>
-                            <ul class="" data-letter="e">
-                                <li><a href="#">Екатеринбург</a></li>
-                                <li><a href="#">Ереван</a></li>
-                            </ul>
-                            <ul class="" data-letter="j">
-                                <li><a href="#">Женева</a></li>
-                            </ul>
-                            <ul class="" data-letter="z">
-                                <li><a href="#">Задонск</a></li>
-                                <li><a href="#">Зеленоград</a></li>
-                                <li><a href="#">Зеленодольск</a></li>
-                                <li><a href="#">Забайкальский край</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="city-list">
-                            <ul class="" data-letter="i">
-                                <li><a href="#">Иркутск</a></li>
-                                <li><a href="#">Истра</a></li>
-                                <li><a href="#">Иванов</a></li>
-                                <li><a href="#">Ингушетия</a></li>
-                            </ul>
-                            <ul class="" data-letter="ii">
-                                <li><a href="#">Йошкар-ола</a></li>
-                            </ul>
-                            <ul class="" data-letter="k">
-                                <li><a href="#">Калининград</a></li>
-                                <li><a href="#">Киров</a></li>
-                                <li><a href="#">Кемерово</a></li>
-                                <li><a href="#">Калуга</a></li>
-                                <li><a href="#">Краснодар</a></li>
-                                <li><a href="#">Красногорск</a></li>
-                                <li><a href="#">Кострома</a></li>
-                                <li><a href="#">Крым</a></li>
-                                <li><a href="#">Калмыкия</a></li>
-                                <li><a href="#">Казань</a></li>
-                            </ul>
-                            <ul class="" data-letter="l">
-                                <li><a href="#">Липецк</a></li>
-                                <li><a href="#">Лыткарино</a></li>
-                            </ul>
-                            <ul class="" data-letter="m">
-                                <li><a href="#">Москва</a></li>
-                                <li><a href="#">Мурманск</a></li>
-                                <li><a href="#">Мытищи</a></li>
-                                <li><a href="#">Могилев</a></li>
-                                <li><a href="#">Минск</a></li>
-                                <li><a href="#">Магадан</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="city-list">
-                            <ul class="" data-letter="n">
-                                <li><a href="#">Нижний Новгород</a></li>
-                                <li><a href="#">Норильск</a></li>
-                                <li><a href="#">Нижний Волочек</a></li>
-                                <li><a href="#">Новгород</a></li>
-                                <li><a href="#">Новосибирск</a></li>
-                            </ul>
-                            <ul class="" data-letter="o">
-                                <li><a href="#">Оренбург</a></li>
-                                <li><a href="#">Омск</a></li>
-                                <li><a href="#">Орел</a></li>
-                            </ul>
-                            <ul class="" data-letter="p">
-                                <li><a href="#">Петрозаводск</a></li>
-                                <li><a href="#">Пермь</a></li>
-                                <li><a href="#">Пенза</a></li>
-                                <li><a href="#">Псков</a></li>
-                            </ul>
-                            <ul class="" data-letter="r">
-                                <li><a href="#">Ростов</a></li>
-                                <li><a href="#">Рязань</a></li>
-                                <li><a href="#">Рига</a></li>
-                                <li><a href="#">Сыктывкар</a></li>
-                                <li><a href="#">Сочи</a></li>
-                                <li><a href="#">Смоленск</a></li>
-                                <li><a href="#">Сахалин</a></li>
-                            </ul>
-                            <ul class="" data-letter="s">
-                                <li><a href="#">Санкт-Петербург</a></li>
-                                <li><a href="#">Саратов</a></li>
-                                <li><a href="#">Самара</a></li>
-                                <li><a href="#">Сыктывкар</a></li>
-                                <li><a href="#">Сочи</a></li>
-                                <li><a href="#">Смоленск</a></li>
-                                <li><a href="#">Сахалин</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3">
-                        <div class="city-list">
-                            <ul class="" data-letter="t">
-                                <li><a href="#">Тамбов</a></li>
-                                <li><a href="#">Тюмень</a></li>
-                                <li><a href="#">Тверь</a></li>
-                                <li><a href="#">Томск</a></li>
-                                <li><a href="#">Тыва</a></li>
-                            </ul>
-                            <ul class="" data-letter="u">
-                                <li><a href="#">Уфа</a></li>
-                                <li><a href="#">Ульяновск</a></li>
-                            </ul>
-                            <ul class="" data-letter="f">
-                                <li><a href="#">Феодосия</a></li>
-                                <li><a href="#">Фергана</a></li>
-                            </ul>
-                            <ul class="" data-letter="h">
-                                <li><a href="#">Хакасия</a></li>
-                            </ul>
-                            <ul class="" data-letter="c">
-                                <li><a href="#">Цежгород</a></li>
-                            </ul>
-                            <ul class="" data-letter="ch">
-                                <li><a href="#">Челябинск</a></li>
-                                <li><a href="#">Чебоксары</a></li>
-                                <li><a href="#">Чувашия</a></li>
-                            </ul>
-                            <ul class="" data-letter="sh">
-                                <li><a href="#">Шереметьево</a></li>
-                                <li><a href="#">Шатура</a></li>
-                            </ul>
-                            <ul class="" data-letter="she">
-                                <li><a href="#">Щёлково</a></li>
-                            </ul>
-                            <ul class="" data-letter="aa">
-                                <li><a href="#">Энгельс</a></li>
-                                <li><a href="#">Эщегород</a></li>
-                            </ul>
-                            <ul class="" data-letter="u">
-                                <li><a href="#">Юрмала</a></li>
-                            </ul>
-                            <ul class="" data-letter="ya">
-                                <li><a href="#">Ярославль</a></li>
-                                <li><a href="#">Ямало-Ненецкий А.О.</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="write_us" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                        <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                    </svg>
-                </button>
-                <h2 class="mb-5 text-center">Написать нам</h2>
-                <form>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="inputPhone1" class="my-label">Телефон</label>
-                            <input type="tel" class="form-control" id="inputPhone1">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label class="my-label" for="inputEmail1">Email</label>
-                            <input type="email" class="form-control" id="inputEmail1">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label class="my-label" for="exampleFormControlTextarea1">Ваше сообщение</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="my-file text-center">
-                            <input type="file" class="" id="inputGroupFile01">
-                            <label class="my-label sr-only" for="inputGroupFile01">Прикрепить файл</label>
-                        </div>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="added_to_cart" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h2 class="h-cart">Товар добавлен в корзину</h2>
-                <p class="text-dgrey text-xs">Итого в вашей <a href="cart.html" class="a-link">корзине</a> 1 товар на сумму 52 000 руб.</p>
-                <div class="my-hr"></div>
-                <div class="crt_b">
-                    <div class="mr-2 mr-md-3">
-                        <img src="img/tw1.jpg" alt="">
-                    </div>
-                    <div class="box">
-                        <div class="mr-3 mb-3">
-                            <p class="crt_nm bolder">Лестница Название П-образная с площадкой</p>
-                            <p class="text-xs text-dgrey">Цвет каркаса: Серый</p>
-                            <p class="text-xs text-dgrey">Материал: Бук</p>
-                            <p class="text-xs text-dgrey">Высота шага: 220 мм</p>
-                        </div>
-                        <div class="qd">
-                            <p class="p-price text-nowrap pink">
-                                52 000<span class="price-rouble"></span>
-                            </p>
-                            <p class="old-price">57 000<span class="price-rouble"> </span></p>
-                            <div class="counter mt-">
-                                <span class="counter-less" id="btnminus4">–</span>
-                                <input type="text" class="counter-inp" placeholder="1">
-                                <span class="counter-more" id="btnplus4">+</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="my-hr"></div>
-                <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
-                    <button class="btn btn-sister" type="button" data-toggle="modal" data-target="#added_to_cart">Продолжить покупки</button>
-                    <a class="btn btn-simple" href="cart.html">Перейти в корзину</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Модальное окно "Задать вопрос" -->
-    <div class="modal fade" id="ask_us" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h2 class="mb-5 text-center">Задать вопрос</h2>
-                <form>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="inputPhone2" class="my-label">Телефон</label>
-                            <input type="tel" class="form-control" id="inputPhone2">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label class="my-label" for="inputEmail2">Email</label>
-                            <input type="email" class="form-control" id="inputEmail2">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label class="my-label" for="exampleFormControlTextarea2">Ваш вопрос</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="my-file text-center">
-                            <input type="file" class="" id="inputGroupFile02">
-                            <label class="my-label sr-only" for="inputGroupFile02">Прикрепить файл</label>
-                        </div>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                        <label class="form-check-label" for="defaultCheck2">
-                            Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Конец Модальное окно "Задать вопрос" -->
-    <div class="modal fade" id="order_measure" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h2 class="mb-5 text-center">Заказать замер помещения</h2>
-                <form>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label class="my-label" for="inputName3">Ваше имя</label>
-                            <input type="text" class="form-control" id="inputName3">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPhone3" class="my-label">Телефон</label>
-                            <input type="tel" class="form-control" id="inputPhone3">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label class="my-label" for="exampleFormControlTextarea3">Адрес</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                        <label class="form-check-label" for="defaultCheck3">
-                            Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-simple btn-block mt-4 mb-3">Отправить</button>
-                    <p class="text-center">
-                        Мы перезвоним вам, чтобы договориться об удобном для вас времени
-                    </p>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="notmysize" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h3 class="mb-3 text-center">Заказать <span class="pink">бесплатный</span> расчет стоимости лестницы с моими размерами</h3>
-                <p class="text-center mb-5 text-dgrey">Срок изготовление лестницы на заказ от 4-х недель.</p>
-                <form>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="inputPhone1" class="my-label">Телефон</label>
-                            <input type="tel" class="form-control" id="inputPhone1">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label class="my-label" for="inputEmail1">Email</label>
-                            <input type="email" class="form-control" id="inputEmail1">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label class="my-label" for="exampleFormControlTextarea1">Опишите необходимые параметры</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="my-file text-center">
-                            <input type="file" class="" id="inputGroupFile01">
-                            <label class="my-label sr-only" for="inputGroupFile01">Прикрепить файл</label>
-                        </div>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Я даю согласие на обработку персональных данных в соответствии с законом №152-ФЗ "О персональных данных"
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-simple btn-block mt-4">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Модальное окно "нашли дешевле" -->
-    <div class="modal fade" id="cheaper" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h2 class="mb-5 text-center">Нашли дешевле</h2>
-                <form>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="inputPhoneCheaper" class="my-label">Телефон</label>
-                            <input type="tel" class="form-control" id="inputPhoneCheaper">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label class="my-label" for="inputNameCheaper">Ваше имя</label>
-                            <input type="text" class="form-control" id="inputNameCheaper">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label for="inputLink" class="my-label">Ссылка на товар</label>
-                            <input type="url" class="form-control" id="inputLink">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label for="inputPrice" class="my-label">Цена, Р</label>
-                            <input type="number" class="form-control" id="inputPrice">
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-simple btn-block mt-2 mb-4">Отправить ссылку</button>
-                    <p class="text-center">Мы рассмотрим ваше предложение на соответствие <a class="a-link text-center" href="akciya.html">условиям акции</a> и перезвоним</p>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Конец -Модальное окно "нашли дешевле" -->
-    <!-- Модальное окно "Запрос консультации" -->
-    <div class="modal fade" id="zapros" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog my-modal" role="document">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                            <polygon class="" points="26,1.1 24.9,0 13,11.9 1.1,0 0,1.1 11.9,13 0,24.9 1.1,26 13,14.1 24.9,26 26,24.9 14.1,13 " />
-                        </svg>
-                    </span>
-                </button>
-                <h2 class="mb-2 text-center">Запрос консультации</h2>
-                <p class="mb-5 text-center">Вас интересует <b>Здесь Название лестницы</b></p>
-                <form>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label class="my-label" for="NameZapros">Имя</label>
-                            <input type="email" class="form-control" id="NameZapros">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPhone22" class="my-label">Телефон</label>
-                            <input type="tel" class="form-control" id="inputPhone22">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col">
-                            <label class="my-label" for="textZapros">Ваш вопрос</label>
-                            <textarea class="form-control" id="textZapros" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="input-group mb-4">
-                        <div class="my-file text-center">
-                            <input type="file" class="" id="FileZapros">
-                            <label class="my-label sr-only" for="FileZapros">Прикрепить файл</label>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-simple btn-block mt-2 mb-4">Отправить</button>
-                    <p class="text-center">Мы перезвоним вам в ближайшее время и подробно ответим на все ваши вопросы</p>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Конец Модальное окно "Запрос консультации" -->
     <div class="header">
         <div class="sp-bx d-none">Специальный блок для специальных сообщений</div>
         <div class="container-fluid container-xl">
@@ -762,10 +263,10 @@
                 <!-- <i class="i_ask"></i> --><i class="i_delivery"></i>Условия доставки</a>
         </div>
         <!-- Конец -верхней панели -->
-        <!-- Карточка-каталог -->
+ <!-- Карточка-каталог -->
         <div class="row">
             <!-- Блок с фотографиями товара -->
-            <div class="col-md-6 col-xl-5 stck">
+            <div class="col-md-6 col-xl-6 stck">
                 <div class="gallery-box">
                     <div class="data-img">
                         <div class="thumb-slider d-none d-xl-block">
@@ -861,249 +362,143 @@
             </div>
             <!-- Конец блока с фотографиями -->
             <!-- Блок с расчетом цены -->
-            <div class="col-md-6 col-xl-7">
-                <div class="row">
-                    <div class="col-xl-7">
-                        <form class="mb-3">
-                            <p class="d-none">Выберите параметры лестницы:</p>
-                            <div class="chc-bx">
-                                <div class="form-group">
-                                    <div class="rdo-bx">
-                                        <p class="p-param-label">Высота лестницы, мм:</p>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="visota" id="h2540-2729" checked>
-                                            <label class="  btn-radio  custom-control-label" for="h2540-2729">
-                                                2540 - 2729
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="visota" id="h2730-2925">
-                                            <label class="  btn-radio  custom-control-label" for="h2730-2925">
-                                                2730 - 2925
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="visota" id="h2721-2900">
-                                            <label class="  btn-radio  custom-control-label" for="h2721-2900">
-                                                2721 - 2900
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="visota" id="h2920-3100" disabled>
-                                            <label class="  btn-radio  custom-control-label" for="h2920-3100">
-                                                2920 - 3100
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="rdo-bx">
-                                        <p class="p-param-label">Материал ступеней:</p>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="poroda" id="stup_bez" checked>
-                                            <label class="btn-radio  custom-control-label" for="stup_bez">
-                                                Без ступеней
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="poroda" id="stup_sos_pod">
-                                            <label class="btn-radio  custom-control-label" for="stup_sos_pod">
-                                                Сосна под покраску
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="poroda" id="stup_sos">
-                                            <label class="btn-radio  custom-control-label" for="stup_sos">
-                                                Сосна
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="poroda" id="stup_listv">
-                                            <label class="btn-radio  custom-control-label" for="stup_listv">
-                                                Лиственница
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="poroda" id="stup_buk">
-                                            <label class="btn-radio  custom-control-label" for="stup_buk">
-                                                Бук
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="poroda" id="stup_yasen">
-                                            <label class="btn-radio  custom-control-label" for="stup_yasen">
-                                                Ясень
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="poroda" id="stup_dub">
-                                            <label class="btn-radio  custom-control-label" for="stup_dub">
-                                                Дуб
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="rdo-bx">
-                                        <p class="p-param-label">Ограждение:</p>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="ograjd" id="s_ograjd" checked>
-                                            <label class="btn-radio custom-control-label" for="s_ograjd">
-                                                С ограждением
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="ograjd" id="bez_ogr">
-                                            <label class="btn-radio custom-control-label" for="bez_ogr">
-                                                Без ораждения
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="rdo-bx">
-                                        <p class="p-param-label">Цвет каркаса:</p>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="cvet" id="black_krks" checked>
-                                            <label class="btn-radio custom-control-label" for="black_krks">
-                                                Чёрный
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="cvet" id="white_krks">
-                                            <label class="btn-radio custom-control-label" for='white_krks'>
-                                                Белый
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="cvet" id="grey_krks">
-                                            <label class="btn-radio custom-control-label" for='grey_krks'>
-                                                Серебро
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="cvet" id="gold_karkas">
-                                            <label class="btn-radio custom-control-label" for='gold_karkas'>
-                                                Золото
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="rdo-bx">
-                                        <p class="p-param-label">Поворот:</p>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="options" id="nalevo" checked>
-                                            <label class="btn-radio custom-control-label" for="nalevo">
-                                                Налево
-                                            </label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input class="custom-control-input" type="radio" name="options" id="napravo">
-                                            <label class="btn-radio custom-control-label" for="napravo">
-                                                Направо
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //////////////// Кнопка с количеством//////////////////// -->
-                            <div class="delivery-box d-none">
-                                <div class=""><i class="i_box"></i>
-                                    <p>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p>
-                                </div>
-                                <div class=""><i class="i_point"></i>
-                                    <p>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p>
-                                </div>
-                                <div class=""><i class="i_delivery"></i>
-                                    <p>Доставка в <a href="">Кызыл:</a> <span class="pink nowrp"> 5 - 7 дней</span></p>
-                                </div>
-                                <a href="">Условия доставки</a>
-                            </div>
-                        </form>
+            <div class="col-md-6">
+                <div class="main-right">
+                    <div class="main-price-box">
+                        <p class="p-main-price">34 000<span class="price-rouble"></span></p>
+                        <p class="old-price">
+                            40 000<span class="price-rouble"></span>
+                        </p>
+                        <p class="text-xs text-grey">Без покраски и монтажа</p>
                     </div>
-                    <div class="col-xl-5">
-                        <div class="price-right">
-                            <div class="main-price-box">
-                                <p class="p-main-price">34 000<span class="price-rouble"></span>
-                                </p>
-                                <p class="old-price">
-                                    40 000<span class="price-rouble"></span>
-                                </p>
-                            </div>
-                            <!-- //////////////// Кнопка с количеством//////////////////// -->
-                            <div class="qd">
-                                <div class="counter">
-                                    <span class="counter-less" id="btnminus4">–</span>
-                                    <input type="text" class="counter-inp" placeholder="1">
-                                    <span class="counter-more" id="btnplus4">+</span>
+                    <form class="mb-3">
+                        <p class="">Выберите параметры лестницы:</p>
+                        <div class="form-group">
+                            <div class="inpt-bx">
+                                <p class="p-param-label">Высота лестницы, мм:</p>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2540-2729" checked="">2540 - 2729, 9 ступеней
+                                    </label>
                                 </div>
-                                <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2730-2925">2730 - 2925, 10 ступеней
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2721-2900">2721 - 2900, 11 ступеней
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="  btn-radio btn-radio-hight">
+                                        <input type="radio" name="visota" id="h2920 - 3100" disabled="">2920 - 3100, 12 ступеней
+                                    </label></div>
                             </div>
-                            <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
-                            <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
-                                Заказать замер
-                            </button>
                         </div>
-                        <div class="d-none  params short-params">
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Количество ступеней
-                                    </b>
-                                </span>
-                                <span class="feature-val">10</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">40 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Длина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">700 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Минимальный проём:
-                                    </b>
-                                </span>
-                                <span class="feature-val">900 × 1600 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина стали
-                                    </b>
-                                </span>
-                                <span class="feature-val">5 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Сечение каркаса
-                                    </b>
-                                </span>
-                                <span class="feature-val">40×40 мм</span>
-                            </p>
-                            <a href="#charact" class="">Все характеристики</a>
+                        <div class="form-group">
+                            <div class="inpt-bx">
+                                <p class="p-param-label">Материал ступеней:</p>
+                                <div class="radio">
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_bez" checked="">Без ступеней
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_sos_pod">Сосна под покраску
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_sos">Сосна
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_listv">Лиственница
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_buk">Бук
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_yasen">Ясень
+                                    </label>
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="poroda" id="stup_dub">Дуб
+                                    </label>
+                                </div>
+                            </div>
                         </div>
+                        <div class="form-group">
+                            <div class="inpt-bx">
+                                <p class="p-param-label">Ограждение:</p>
+                                <div class="radio">
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="ograjd" id="ss_ograjd" checked="">С ограждением
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="btn-radio btn-radio-stup">
+                                        <input type="radio" name="ograjd" id="bez_ogr">Без ораждения
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="inpt-bx">
+                                <p class="p-param-label">Цвет каркаса:</p>
+                                <div class="radio">
+                                    <label class="btn-radio">
+                                        <input type="radio" name="cvet" id="black_krks" checked="">Чёрный
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label class="btn-radio">
+                                        <input type="radio" name="cvet" id="white_krks">Белый
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="btn-radio">
+                                        <input type="radio" name="cvet" id="grey_krks">Серебро
+                                    </label></div>
+                                <div class="radio">
+                                    <label class="btn-radio">
+                                        <input type="radio" name="cvet" id="gold_karkas">Золото
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="inpt-bx">
+                                <p class="p-param-label">Поворот:</p>
+                                <div class="radio">
+                                    <label class="btn-radio btn-radio-hight">
+                                        <input type="radio" name="options" id="nalevo" checked=""> Налево
+                                    </label>
+                                    <label class="btn-radio btn-radio-hight">
+                                        <input type="radio" name="options" id="napravo"> Направо
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //////////////// Кнопка с количеством//////////////////// -->
+                        <div class="delivery-box d-none">
+                            <div class=""><i class="i_box"></i>
+                                <p>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p>
+                            </div>
+                            <div class=""><i class="i_point"></i>
+                                <p>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p>
+                            </div>
+                            <div class=""><i class="i_delivery"></i>
+                                <p>Доставка в <a href="">Кызыл:</a> <span class="pink nowrp"> 5 - 7 дней</span></p>
+                            </div>
+                            <a href="">Условия доставки</a>
+                        </div>
+                    </form>
+                    <div class="qd">
+                        <div class="counter">
+                            <span class="counter-less" id="btnminus4">–</span>
+                            <input type="text" class="counter-inp" placeholder="1">
+                            <span class="counter-more" id="btnplus4">+</span>
+                        </div>
+                        <button type="button" class="btn btn-buy mr-3" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+                        <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
+                        <button data-toggle="modal" data-target="#order_measure" class="btn addzamer">
+                            Заказать замер
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1170,22 +565,22 @@
         <div class="section">
             <p class="font-weight-bolder">Скачать</p>
             <div class="row">
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
                     <button class="btn-pdf">
                         Инструкция по сборке лестницы К-001М
                     </button>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
                     <button class="btn-pdf">
                         Фирменный гарантийный талон ЛЕСТНИЦЫ-ПРОСТО
                     </button>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
                     <button class="btn-pdf">
                         Условия эксплуатации лестницы
                     </button>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
                     <button class="btn-pdf">
                         Еще один файл
                     </button>
@@ -1209,14 +604,6 @@
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Высота шага
-                        </b>
-                    </span>
-                    <span class="feature-val">195 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
                             Толщина ступени
                         </b>
                     </span>
@@ -1225,74 +612,10 @@
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Длина ступени
+                            Высота шага
                         </b>
                     </span>
-                    <span class="feature-val">800 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Материал ступеней
-                        </b>
-                    </span>
-                    <span class="feature-val">Сосна паркетной склейки АВ</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Прямых ступеней
-                        </b>
-                    </span>
-                    <span class="feature-val">6</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Поворотных ступеней
-                        </b>
-                    </span>
-                    <span class="feature-val">4</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Сечение каркаса
-                        </b>
-                    </span>
-                    <span class="feature-val">40 × 40 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Толщина стали
-                        </b>
-                    </span>
-                    <span class="feature-val">4 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Цвет каркаса
-                        </b>
-                    </span>
-                    <span class="feature-val">чёрный</span>
-                </p>
-                 <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Цвет фурнитуры
-                        </b>
-                    </span>
-                    <span class="feature-val">металл</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Покрытие металла
-                        </b>
-                    </span>
-                    <span class="feature-val">порошковым способом</span>
+                    <span class="feature-val">195 мм</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
@@ -1305,26 +628,98 @@
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Минимальный проём
+                            Высота
                         </b>
                     </span>
-                    <span class="feature-val">900 × 1400 мм</span>
+                    <span class="feature-val">2750 - 3400 мм</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Форма поставки
+                            Толщина ступени
                         </b>
                     </span>
-                    <span class="feature-val">в разобранном виде</span>
+                    <span class="feature-val">40 мм</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Максимальная нагрузка
+                            Высота шага
                         </b>
                     </span>
-                    <span class="feature-val">350 кг</span>
+                    <span class="feature-val">195 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Угол наклона
+                        </b>
+                    </span>
+                    <span class="feature-val">42 °</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота
+                        </b>
+                    </span>
+                    <span class="feature-val">2750 - 3400 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Толщина ступени
+                        </b>
+                    </span>
+                    <span class="feature-val">40 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота шага
+                        </b>
+                    </span>
+                    <span class="feature-val">195 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Угол наклона
+                        </b>
+                    </span>
+                    <span class="feature-val">42 °</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота
+                        </b>
+                    </span>
+                    <span class="feature-val">2750 - 3400 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Толщина ступени
+                        </b>
+                    </span>
+                    <span class="feature-val">40 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Высота шага
+                        </b>
+                    </span>
+                    <span class="feature-val">195 мм</span>
+                </p>
+                <p class="p-values">
+                    <span class="feature-name">
+                        <b>
+                            Угол наклона
+                        </b>
+                    </span>
+                    <span class="feature-val">42 °</span>
                 </p>
                 <a href="#" data-toggle="modal" data-target="#notmysize" class="a-link">
                     Не подходят размеры?
@@ -1341,7 +736,7 @@
                             Масса брутто, кг
                         </b>
                     </span>
-                    <span class="feature-val">193</span>
+                    <span class="feature-val">93</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
@@ -1354,15 +749,7 @@
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Упаковка 1, мм
-                        </b>
-                    </span>
-                    <span class="feature-val">500 × 270 × 90</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Упаковка 2, мм
+                            Размеры наибольшей упаковки, мм
                         </b>
                     </span>
                     <span class="feature-val">2500 × 350 × 180</span>
@@ -1370,18 +757,10 @@
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Упаковка 3, мм
-                        </b>
-                    </span>
-                    <span class="feature-val">120 × 700 × 700</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
                             Общий объём, м³
                         </b>
                     </span>
-                    <span class="feature-val">1.4</span>
+                    <span class="feature-val">2500 × 350 × 180</span>
                 </p>
             </div>
         </div>
@@ -1392,66 +771,9 @@
             <p class="p-med">
                 Для изготовления лестницы под покраску используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
             </p>
-        </div>
+        </div> 
         <div class="my-hr"></div>
         <!-- ------------------------------Конец описания ---------------------------------------------------->
-        <!-- --------------------------------Чертежи и схемы---------------------------------------------------- -->
-        <a id="schems"></a>
-        <div class="section">
-            <p class="p-page-cap">Чертежи и схемы</p>
-            <div class="row no-gutters">
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/scheme2.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/scheme2.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Пояснение к картинке</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/scheme3.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/scheme3.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Длинное пояснение к картинке в две строки и еще немного текста</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/scheme4.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/scheme4.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Пояснение к картинке</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Базовый вид ограждений лестницы</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/scheme.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/scheme.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Пояснение к картинке ghj,f</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/levaya.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/levaya.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Схема лестницы с поворотом налево</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="my-hr"></div>
-        <!-- -------------------------------Конец Чертежи и схемы---------------------------------------------- -->
         <!-- -----------------------------Покраска деревянных элементов------------------------------------- -->
         <a id="pokraska"></a>
         <div class="section">
@@ -1591,9 +913,9 @@
                 </div>
             </div>
         </div>
-        <div class="my-hr"></div>
-        <!-- ---------------------------Конец покраски деревянных элементов---------------------------- -->
-        <!-- ----------------------------Покраска металлических элементов------------------------------- -->
+         <div class="my-hr"></div>
+         <!-- ---------------------------Конец покраски деревянных элементов---------------------------- -->
+         <!-- ----------------------------Покраска металлических элементов------------------------------- -->
         <div class="section">
             <p class="p-page-cap">Покраска металлических элементов лестницы</p>
             <p class="p-med">Покраска каркаса не влияет на стоимость.<br>
@@ -1813,6 +1135,64 @@
         </div>
         <div class="my-hr"></div>
         <!-- ------------------------------Конец покраски металлических элементов----------------------------- -->
+        <!-- --------------------------------Чертежи и схемы---------------------------------------------------- -->
+        <a id="schems"></a>
+        <div class="section">
+            <p class="p-page-cap">Чертежи и схемы</p>
+            <div class="row no-gutters">
+
+           <div class="col-md-6 col-lg-4 col-xl-3">
+            <div class="sch-bx">
+               <a data-fancybox="gallery" href="img/scheme2.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme2.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке</p>
+                </div>
+           </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">        
+               <div class="sch-bx">
+                    <a data-fancybox="gallery" href="img/scheme3.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme3.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Длинное пояснение к картинке в две строки и еще немного текста</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="sch-bx">
+                    <a data-fancybox="gallery" href="img/scheme4.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme4.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке</p>
+                </div>
+                </div>
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="sch-bx">
+                    <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Базовый вид ограждений лестницы</p>
+                </div>
+                </div>
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="sch-bx">
+                    <a data-fancybox="gallery" href="img/scheme.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке ghj,f</p>
+                </div>
+            </div>
+               <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="sch-bx">
+                    <a data-fancybox="gallery" href="img/levaya.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/levaya.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Схема лестницы с поворотом налево</p>
+                </div>
+</div>
+        </div>
+    </div>
+         <div class="my-hr"></div>
+         <!-- -------------------------------Конец Чертежи и схемы---------------------------------------------- -->
         <!--------------------------------- Не подходят размеры. Блок показывается только для заказных лестниц ------------------------>
         <div class="section">
             <p class="p-page-cap">
@@ -1885,8 +1265,8 @@
                 </div>
             </div>
         </div>
-        <div class="my-hr"></div>
-        <!-- ---------------------------------Конец видео------------------------------------------------------------------------ -->
+         <div class="my-hr"></div>
+         <!-- ---------------------------------Конец видео------------------------------------------------------------------------ -->
         <!-- Были отзывы -->
         <!--         <div class="my-hr"></div>
         <a id="reviews"></a> -->

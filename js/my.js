@@ -13,9 +13,9 @@ $(document).ready(function() {
         cssEase: 'linear',
         asNavFor: '.thumb-slider',
         responsive: [{
-                breakpoint: 992,
+                breakpoint: 1200,
                 settings: {
-                    dots: false,
+                    dots: true,
                     fade: true,
                     dotsClass: 'my-dots'
                 }

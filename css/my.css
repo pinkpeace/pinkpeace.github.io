@@ -2133,7 +2133,13 @@ select:focus {
         font-size: 18px;
     }
 }
+@media(min-width: 992px) {
+    .params:not(.short-params){
+        column-count: 2;
+        column-gap: 2em;
+    }
 
+}
 .main-right {
     padding: 2em;
     margin-bottom: 1em;
@@ -2202,7 +2208,6 @@ select:focus {
     margin-bottom: 1.5em;
     min-width: 150px;
     margin-right: 1.8em;
-/*    display: inline-flex;*/
 }
 
 .p-main-price {
@@ -2212,7 +2217,21 @@ select:focus {
     margin-right: 6px;
         color: #ff3495;
 }
-
+.chc-bx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start ;
+}
+.chc-bx .form-group {
+    display: inline-flex;
+    flex-direction: column;
+}
+.rdo-bx {
+margin-right: 1.5em;
+}
+.rdo-bx .btn-radio {
+    margin-right: 1.4em;
+}
 .old-price {
     vertical-align: top;
     display: inline-block;
@@ -2618,14 +2637,20 @@ div.scrollup:hover {
         height: 320px;
     }
 }
-
+@media (min-width: 1000px) {
+    .prtf .image-wrap {
+        height: 450px;
+    }
+}
 .brazzers-daddy img {
     height: 100%;
     /*    object-fit: cover;*/
     object-position: center;
     object-fit: contain;
 }
-
+.prtf .brazzers-daddy img {
+     object-fit: cover;
+}
 .my-dots {
     position: absolute;
     display: block;
@@ -5377,6 +5402,9 @@ a.zak-zam:hover {
 .inpt-bx .p-param-label {
         margin-bottom: 7px;
     }
+.chc-bx .p-param-label {
+    margin-bottom: .7em;
+}
 .col-schms {
     min-height: 300px;
     min-width: 300px;
@@ -5503,4 +5531,12 @@ ul.anchnav li:hover a {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.4em;
+}
+.price-right {
+    padding: 2em;
+    margin-bottom: 1em;
+     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    /*border: 2px solid #ff3495;*/
+    /* box-shadow: 5px 8px 12px 4px rgb(0 0 0 / 6%), 1px 2px 20px 5px rgb(0 0 0 / 12%);*/
+    background-color:#f2f5f6;
 }

@@ -2261,8 +2261,8 @@ select:focus {
 }
 
 .btn-group-toggle .btn-radio.active {
-    border-color: #ff3495;
-   /* background-color: #fff8d0;*/
+   border-color: #fee44c;
+    background-color: #fff19e;
     color: inherit;
 }
 

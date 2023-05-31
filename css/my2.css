@@ -2202,9 +2202,9 @@ select:focus {
 }
 
 .price-right {
-     padding: 1.5em;
+    padding: 1.5em;
     margin-bottom: 1em;
-      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 
     /*  background-color:#f2f5f6;*/
 }
@@ -5602,6 +5602,7 @@ ul.anchnav li:hover a {
         flex-grow: 0;
     }
 }
+
 .sch-bx {
     padding: 1em;
     border: 1px solid #dbdedf;
@@ -5634,19 +5635,23 @@ ul.anchnav li:hover a {
 .col-pr {
     flex-grow: 2;
 }
-@media (min-width: 400px){
-  .col-pr {
-    min-width: 380px;
-}  
+
+@media (min-width: 400px) {
+    .col-pr {
+        min-width: 380px;
+    }
 }
+
 @media (min-width: 835px) {
     .col-pic {
         max-width: 45%;
     }
-    .col-pr {
-   
-    min-width: 380px;
 
+    .col-pr {
+
+        min-width: 380px;
+
+    }
 }
 
 @media (min-width: 1200px) {
@@ -5683,6 +5688,7 @@ ul.anchnav li:hover a {
     align-items: flex-start;
     position: relative;
 }
+
 .trck:not(.active):after {
     content: "";
     position: absolute;

@@ -247,3 +247,18 @@ $('.noTown').click(function() {
     $('#your_town').modal('hide');
      $('#city_modal').modal('show');
 });
+
+
+$('#descr').click(function() {
+     var text = $('#descr').text();
+    $('#descr').text(
+        text == "Развернуть описание" ? "Свернуть описание" : "Развернуть описание"); 
+    $(this).parent().toggleClass('active');
+});
+
+$('#chrs').click(function() {    
+     var text = $('#chrs').text();
+    $('#chrs').text(
+        text == "Развернуть характеристики" ? "Свернуть характеристики" : "Развернуть характеристики");
+    $(this).parent().toggleClass('active');
+});

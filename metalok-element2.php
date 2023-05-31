@@ -531,14 +531,6 @@
                             Пункт выдачи
                         </a>
                     </div>
-                    <div class="bxx-clm d-none d-lg-flex">
-                        <a class="text-xs pb a-link" href="O_kompanii.html">
-                            О компании
-                        </a>
-                        <a class="text-xs pb a-link" href="kontakty.html">
-                            Контакты
-                        </a>
-                    </div>
                     <form class="bxx d-none d-sm-inline-flex search-form">
                         <input class="form-control" type="search" placeholder="Найти лестницу">
                         <button class="btn search-btn" type="submit"><img class="i-img i-srch" src="img/search.svg" alt=""></button>
@@ -654,7 +646,7 @@
                         <a class="nav-item nav-link " href="#" data-toggle="modal" data-target="#order_measure">Заказать замер</a>
                     </li>
                     <li class="d-lg-none mobile-dop-link mobile-calculate-link">
-                        <a class="nav-item nav-link " href="#">Онлайн-калькулятор лестницы</a>
+                        <a class="nav-item nav-link " href="#">Калькулятор лестницы</a>
                     </li>
                     <li class="d-lg-none mobile-dop-info">
                         <ul class="ul-dop-info">
@@ -696,82 +688,56 @@
     </div>
     <!-- Конец меню -->
     <div class="container-xl">
-        <!-- Хлебные крошки -->
-        <div class="breadcrumb-box">
-            <a href="javascript:history.back()" class="a-back">
-                <svg width="10" height="13" xmlns="http://www.w3.org/2000/svg" class="brc" data-v-469cfe6c="">
-                    <g fill="none" fill-rule="evenodd" data-v-469cfe6c="">
-                        <path d="M0 0h16v16H0z" data-v-469cfe6c=""></path>
-                        <path d="M5.22 3.28a.75.75 0 011.06-1.06l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06-1.06L9.94 8 5.22 3.28z" fill="currentColor" fill-rule="nonzero" data-v-469cfe6c=""></path>
-                    </g>
-                </svg>
-                <span>назад</span>
-            </a>
-            <nav aria-label="breadcrumb" class="nav-my-breadcrumbs d-none d-lg-block">
-                <ol class="my-breadcrumb">
-                    <li class="my-breadcrumb-item"><a href="index.html">Главная</a>
-                    </li>
-                    <li class="my-breadcrumb-item"><a href="derev.html">Деревянные</a>
-                    </li>
-                    <li class="my-breadcrumb-item"><a href="stair-catalog.html">Лестница К-001М</a>
-                    </li>
-                    <li class="my-breadcrumb-item active" aria-current="page">Лестница К-001М/1 Л сосна под покраску с подступёнками</li>
-                </ol>
-            </nav>
-            <button class="a-share">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10.1" height="11" viewBox="0 0 10.1 11">
-                    <path d="M8.3,7.3c-0.5,0-1,0.2-1.3,0.6L3.6,6c0.1-0.1,0.1-0.3,0.1-0.5s0-0.4-0.1-0.5l3.3-1.9c0.4,0.4,0.8,0.6,1.4,0.6
-    c1,0,1.8-0.8,1.8-1.8S9.3,0,8.3,0S6.5,0.8,6.5,1.8c0,0.1,0,0.3,0.1,0.4L3.1,4.2C2.8,3.9,2.3,3.7,1.8,3.7C0.8,3.7,0,4.5,0,5.5
-    s0.8,1.8,1.8,1.8c0.5,0,1-0.2,1.2-0.5l3.4,1.9c0,0.1-0.1,0.3-0.1,0.4c0,1,0.8,1.8,1.8,1.8S10,10.2,10,9.2S9.2,7.3,8.3,7.3z" />
-                </svg>
-            </button>
-        </div>
-        <!-- Конец хлебых крошек -->
+        <?php include ("blocks/breadcrumb.php");?>
+
+
     </div>
     <div class="container-xl">
         <h1 class="page-name">
-            Лестница К-001М/1 Л сосна под покраску с подступёнками
+            Лестница PROSTO MONO Г-образная
         </h1>
-        <!-- Строка информации -->
         <div class="top-panel">
             <p class="p-quantity mr-4">Код товара: <span class="few">1526</span></p>
-            <p class="mr-4">Купили более 10 раз</p>
-            <p class="mr-4"> <i class="i_box"></i>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p>
+            <!--   <p class="nowrp"> У лестницы&nbsp;</p><a href="#vars" class="a-border-dotted"> 7 вариантов размера</a> -->
+            <!--  <p class="mr-4">Купили более 10 раз</p> -->
+            <!--  <p class="p-quantity mr-4">В наличии: <span class="few">2 шт.</span></p> -->
+            <p class="mr-4"> <i class="i_box"></i>Срок изготовления:<span class="pink nowrp"> 35 дней</span></p>
             <p class="mr-4"><i class="i_point"></i>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p>
-            <p class="mr-4"><i class="i_clock"></i>Доставка в <a href="">Нижний Новгород:</a><span class="pink nowrp"> 5 - 7 дней</span></p>
-             <a href="/delivery.html"><i class="i_delivery"></i>Условия доставки</a>
+            <p class="mr-4"><i class="i_delivery"></i>Доставка в <a href="">Нижний Новгород:</a><span class="pink nowrp"> 5 - 7 дней</span></p>
+            <a class="a-zapros" data-toggle="modal" href="" data-target="#zapros">
+                <!-- <i class="i_ask"></i> --><i class="i_delivery"></i>Условия доставки</a>
         </div>
-        <!-- Конец строки информации -->
+        <!-- Конец -верхней панели -->
         <!-- Карточка-каталог -->
         <div class="row">
             <!-- Блок с фотографиями товара -->
-            <div class="col-md-7 col-lg-6 col-xl-6">
+            <div class="col-lg-6 col-xl-5 stck">
                 <div class="gallery-box">
                     <div class="data-img">
                         <div class="thumb-slider d-none d-xl-block">
                             <div>
-                                <img class="img-fluid" alt="" src="img/k-001_1.jpg">
+                                <img class="img-fluid" alt="" src="img/metk1.jpg">
                             </div>
                             <div>
-                                <img class="img-fluid" alt="" src="img/k-001_2.jpg">
+                                <img class="img-fluid" alt="" src="img/metk4.jpg">
                             </div>
                             <div>
-                                <img class="img-fluid" alt="" src="img/k-001_3.jpg">
+                                <img class="img-fluid" alt="" src="img/metk6.jpg">
                             </div>
                             <div>
-                                <img class="img-fluid" alt="" src="img/k-001_4.jpg">
+                                <img class="img-fluid" alt="" src="img/1.jpg">
                             </div>
                             <div>
-                                <img class="img-fluid" alt="" src="img/k-001_5.jpg">
+                                <img class="img-fluid" alt="" src="img/metk5.jpg">
                             </div>
                             <div>
-                                <img class="img-fluid" alt="" src="img/k-001_6.jpg">
+                                <img class="img-fluid" alt="" src="img/4.jpg">
                             </div>
                             <div>
-                                <img class="img-fluid" alt="" src="img/k-001_7.jpg">
+                                <img class="img-fluid" alt="" src="img/metk3.jpg">
                             </div>
                             <div>
-                                <img class="img-fluid" alt="" src="img/k-001_7.jpg">
+                                <img class="img-fluid" alt="" src="img/metk2.jpg">
                             </div>
                         </div>
                         <div class="mrkrs-bx">
@@ -779,58 +745,58 @@
                             <div class="sale-marker">-15%</div>
                             <div class="main-slider">
                                 <div>
-                                    <a data-fancybox="gallery" href="img/k-001_1.jpg" rel="group" data-gallery="prod-photo">
+                                    <a data-fancybox="gallery" href="img/metk1.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
-                                            <img src="img/k-001_1.jpg" alt="Картинка" class="">
+                                            <img src="img/metk1.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
                                 <div>
-                                    <a data-fancybox="gallery" href="img/k-001_2.jpg" rel="group" data-gallery="prod-photo">
+                                    <a data-fancybox="gallery" href="img/metk4.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
-                                            <img src="img/k-001_2.jpg" alt="Картинка" class="">
+                                            <img src="img/metk4.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
                                 <div>
-                                    <a data-fancybox="gallery" href="img/k-001_3.jpg" rel="group" data-gallery="prod-photo">
+                                    <a data-fancybox="gallery" href="img/metk6.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
-                                            <img src="img/k-001_3.jpg" alt="Картинка" class="">
+                                            <img src="img/metk6.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
                                 <div>
-                                    <a data-fancybox="gallery" href="img/k-001_4.jpg" rel="group" data-gallery="prod-photo">
+                                    <a data-fancybox="gallery" href="img/1.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
-                                            <img src="img/k-001_4.jpg" alt="Картинка" class="">
+                                            <img src="img/1.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
                                 <div>
-                                    <a data-fancybox="gallery" href="img/k-001_5.jpg" rel="group" data-gallery="prod-photo">
+                                    <a data-fancybox="gallery" href="img/metk5.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
-                                            <img src="img/k-001_5.jpg" alt="Картинка" class="">
+                                            <img src="img/metk5.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
                                 <div>
-                                    <a data-fancybox="gallery" href="img/k-001_6.jpg" rel="group" data-gallery="prod-photo">
+                                    <a data-fancybox="gallery" href="img/4.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
-                                            <img src="img/k-001_6.jpg" alt="Картинка" class="">
+                                            <img src="img/4.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
                                 <div>
-                                    <a data-fancybox="gallery" href="img/k-001_7.jpg" rel="group" data-gallery="prod-photo">
+                                    <a data-fancybox="gallery" href="img/metk3.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
-                                            <img src="img/k-001_7.jpg" alt="Картинка" class="">
+                                            <img src="img/metk3.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
                                 <div>
-                                    <a data-fancybox="gallery" href="img/k-001_7.jpg" rel="group" data-gallery="prod-photo">
+                                    <a data-fancybox="gallery" href="img/metk2.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
-                                            <img src="img/k-001_7.jpg" alt="Картинка" class="">
+                                            <img src="img/metk2.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
@@ -841,297 +807,287 @@
             </div>
             <!-- Конец блока с фотографиями -->
             <!-- Блок с расчетом цены -->
-            <div class="col-md-5 col-lg-6 col-xl-6">
-                <div class="row pr">
-                    <!-- Блок col-pr выводится только для головной карточки -->
-                    <div class="col col-pr d-none">
-                        <p class="d-none">Выберите параметры лестницы:</p>
-                        <div class="chc-bx">
-                            <div class="form-group">
-                                <p class="p-param-label">Высота лестницы, мм:</p>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="visota" id="h2540-2729" checked>
-                                    <label class="  btn-radio  custom-control-label" for="h2540-2729">
-                                        2540 - 2729
-                                    </label>
+            <div class="col-lg-6 col-xl-7">
+                <form class="mb-3">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-12 col-xl-7">
+                            <div class="inpt-bx">
+                                <div class="form-group">
+                                    <p class="p-param-label">Высота лестницы, мм:</p>
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="h2540-2729" checked> 2540 - 2729
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="h2730-2925"> 2730 - 2925
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="h2721-2900"> 2721 - 2900
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="h2920 - 3100"> 2920 - 3100
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="visota" id="h2730-2925">
-                                    <label class="  btn-radio  custom-control-label" for="h2730-2925">
-                                        2730 - 2925
-                                    </label>
+                                <div class="form-group">
+                                    <p class="p-param-label">Цвет каркаса:&nbsp;<span class="text-xs text-grey">Белый RAL 4567</span></p>
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-radio btn-radio-color">
+                                            <input type="radio" name="options" id="white" checked>
+                                            <img src="img/white_karkas.jpg" alt="" class="stair-color-img">
+                                        </label>
+                                        <label class="btn btn-radio btn-radio-color">
+                                            <input type="radio" name="options" id="venge">
+                                            <img src="img/black_karkas.jpg" alt="" class="stair-color-img">
+                                        </label>
+                                        <label class="btn btn-radio btn-radio-color">
+                                            <input type="radio" name="options" id="sahara">
+                                            <img src="img/grey_karkas.jpg" alt="" class="stair-color-img">
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="visota" id="h2721-2900">
-                                    <label class="  btn-radio  custom-control-label" for="h2721-2900">
-                                        2721 - 2900
-                                    </label>
+                                <div class="form-group">
+                                    <p class="p-param-label">Материал ступеней:&nbsp;<span class="text-xs text-grey">Только каркас</span></p>
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn  btn-radio btn-radio-stup">
+                                            <input type="radio" name="options" id="stup_bez" checked> Без ступеней
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-stup">
+                                            <input type="radio" name="options" id="stup_sos_pod"> Сосна под покраску
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-stup">
+                                            <input type="radio" name="options" id="stup_sos"> Сосна
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-stup">
+                                            <input type="radio" name="options" id="stup_listv"> Лиственница
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-stup">
+                                            <input type="radio" name="options" id="stup_buk"> Бук
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-stup">
+                                            <input type="radio" name="options" id="stup_yasen"> Ясень
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-stup">
+                                            <input type="radio" name="options" id="stup_dub"> Дуб
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="visota" id="h2920-3100" disabled>
-                                    <label class="  btn-radio  custom-control-label" for="h2920-3100">
-                                        2920 - 3100
-                                    </label>
+                                <div class="form-group">
+                                    <p class="p-param-label">Ограждение:</p>
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="bez_ogr" checked> Без ограждения
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="s_ograjd"> С ограждением
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <p class="p-param-label">Минимальный проём:</p>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="projem" id="920 × 2700" checked>
-                                    <label class="btn-radio custom-control-label" for="920 × 2700">
-                                        920 × 2700
-                                    </label>
+                                <div class="form-group">
+                                    <p class="p-param-label">Поворот:</p>
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="nalevo" checked> Налево
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="napravo"> Направо
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="projem" id="920 × 2920" disabled>
-                                    <label class="btn-radio custom-control-label" for="920 × 2920">
-                                        920 × 2920
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="projem" id="1170 × 2480" disabled>
-                                    <label class="btn-radio custom-control-label" for="1170 × 2480">
-                                        1170 × 2480
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="projem" id="920 × 3140" disabled>
-                                    <label class="btn-radio custom-control-label" for="920 × 3140">
-                                        920 × 3140
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <p class="p-param-label">Материал ступеней:</p>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="poroda" id="stup_sos_pod" checked>
-                                    <label class="btn-radio  custom-control-label" for="stup_sos_pod">
-                                        Сосна под покраску
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="poroda" id="stup_sos">
-                                    <label class="btn-radio  custom-control-label" for="stup_sos">
-                                        Сосна
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="poroda" id="stup_listv">
-                                    <label class="btn-radio  custom-control-label" for="stup_listv">
-                                        Лиственница
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="poroda" id="stup_buk">
-                                    <label class="btn-radio  custom-control-label" for="stup_buk">
-                                        Бук
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="poroda" id="stup_yasen">
-                                    <label class="btn-radio  custom-control-label" for="stup_yasen">
-                                        Ясень + сосна
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="poroda" id="stup_dub">
-                                    <label class="btn-radio  custom-control-label" for="stup_dub">
-                                        Дуб + сосна
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <p class="p-param-label">Подступёнки:</p>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="cvet" id="bez_podstup" checked>
-                                    <label class="btn-radio custom-control-label" for="bez_podstup">
-                                        Без подступёнок
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="cvet" id="s_podstup">
-                                    <label class="btn-radio custom-control-label" for='s_podstup'>
-                                        С подступёнкамми
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <p class="p-param-label">Поворот:</p>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="options" id="nalevo" checked>
-                                    <label class="btn-radio custom-control-label" for="nalevo">
-                                        Налево
-                                    </label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input class="custom-control-input" type="radio" name="options" id="napravo">
-                                    <label class="btn-radio custom-control-label" for="napravo">
-                                        Направо
-                                    </label>
+                                <div class="form-group d-none">
+                                    <p class="p-param-label">Подступёнки:</p>
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="bez" checked> Без подступёнок
+                                        </label>
+                                        <label class="btn  btn-radio btn-radio-hight">
+                                            <input type="radio" name="options" id="spodstupenkami"> С подступёнками
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Блок col-pr выводится только для головной карточки -->
-                    <!-- -------------------------------------------------- -->
-                    <div class="col col-buy order-1 order-xl-2  stck">
-                        <div class="price-right">
-                            <div class="main-price-box">
-                                <p class="p-main-price">51 200<span class="price-rouble"></span>
+                        <div class="col-md-6 col-lg-12 col-xl-5">
+                            <div class="price-right">
+                                <div class="main-price-box">
+                                    <p class="p-main-price">34 000<span class="price-rouble"></span>
+                                    </p>
+                                    <p class="old-price">
+                                        40 000<span class="price-rouble"></span>
+                                    </p>
+                                </div>
+                                <!-- //////////////// Кнопка с количеством//////////////////// -->
+                                <div class="qd">
+                                    <div class="counter">
+                                        <span class="counter-less" id="btnminus4">–</span>
+                                        <input type="text" class="counter-inp" placeholder="1">
+                                        <span class="counter-more" id="btnplus4">+</span>
+                                    </div>
+                                    <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
+                                </div>
+                                <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
+                                <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
+                                    Заказать замер
+                                </button>
+                            </div>
+                           
+                            <div class="d-none d-md-block d-lg-none d-xl-block params short-params">
+                           
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Количество ступеней
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">10</span>
                                 </p>
-                                <p class="old-price">
-                                    54 000<span class="price-rouble"></span>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Толщина ступени
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">40 мм</span>
                                 </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Высота шага
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">195 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Длина ступени
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">700 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Минимальный проём:
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">900 × 1600 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Толщина стали
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">5 мм</span>
+                                </p>
+                                <p class="p-values">
+                                    <span class="feature-name">
+                                        <b>
+                                            Сечение каркаса
+                                        </b>
+                                    </span>
+                                    <span class="feature-val">40×40 мм</span>
+                                </p> 
+                                <a href="#charact" class="">Все характеристики</a>
                             </div>
-                            <!-- //////////////// Кнопка с количеством//////////////////// -->
-                            <div class="qd">
-                                <div class="counter">
-                                    <span class="counter-less" id="btnminus4">–</span>
-                                    <input type="text" class="counter-inp" placeholder="1">
-                                    <span class="counter-more" id="btnplus4">+</span>
-                                </div>
-                                <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
-                            </div>
-                            <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
-                            <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
-                                Заказать замер
-                            </button>
+                          
                         </div>
                     </div>
-                    <!-- Блок col-chrs выводится только для модификации -->
-                    <div class="col col-chrs d-sm-block order-2 order-xl-1">
-                        <div class="params short-params">
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота
-                                    </b>
-                                </span>
-                                <span class="feature-val">2750 - 3400 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Количество ступеней
-                                    </b>
-                                </span>
-                                <span class="feature-val">14</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">40 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Длина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">700 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Ширина марша
-                                    </b>
-                                </span>
-                                <span class="feature-val">900 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Минимальный проём:
-                                    </b>
-                                </span>
-                                <span class="feature-val">900 × 1600 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Порода
-                                    </b>
-                                </span>
-                                <span class="feature-val">Сосна под покраску</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Категория
-                                    </b>
-                                </span>
-                                <span class="feature-val">АВ</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Габариты в плане
-                                    </b>
-                                </span>
-                                <span class="feature-val">1390 × 2700 мм</span>
-                            </p>
-                            <a href="#charact" class="">Все характеристики</a>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
+        <!-- Конец блока с расчетом цены -->
         <div class="main-prms">
             <div class="row">
                 <div class="col-md-4">
                     <p class="font-weight-bold">Комплектация:</p>
-                    <p>Каркас лестницы стальной, ступени сосна категории А/В паркетной склейки - 12 шт.: 4 поворотные и 8 прямых 900×400×40 мм, стойки из нержавеющей стали - 12 шт., перила пвх - 3 м., фурнитура (за исключением креплений к стене, инструкция по сборке, гарантийный талон</p>
+                    <p>Каркас лестницы стальной, ступени сосна категории А/В паркетной склейки - 12 шт.: 4 поворотные и 8 прямых, стойки из нержавеющей стали - 12 шт., перила пвх - 3 м., фурнитура (за исключением креплений к стене, инструкция по сборке, гарантийный талон</p>
                 </div>
                 <div class="col-md-4">
                     <p class="font-weight-bold">Покраска/покрытие:</p>
-                    <p>Элементы лестницы и ограждение без покрытия, фурнитура чёрного цвета. </p>
-                    <p>Возможна предварительная профессиональная покраска в любой цвет в нашем цеху, цена от 12 т.р. <a class="a-link" href="#pokraska">подробнее о покраске</a></p>
+                    <p>Все деревянные элементы лестницы и ограждения поставляются без какого-либо покрытия, фурнитура чёрного цвета, металлические элементы ограждения окрашены в цвет каркаса. </p>
+                    <p>Возможна предварительная профессиональная покраска в любой цвет в нашем цеху, стоимость услуги от 12 т.р. <a class="a-link" href="#pokraska">подробнее о покраске</a></p>
                 </div>
                 <div class="col-md-4">
                     <p class="font-weight-bold">Монтаж:</p>
                     <p>Лестница поставляется в разобранном виде. Монтаж и сборка лестницы не входят в указанную стоимость.
                     </p>
-                    <p>Стоимость монтажа нашими специалистами от 16 т.р. <a class="a-link" href="#montage">Подробнее о монтаже</a></p>
+                    <p>При необходимости, вы можете заказать услугу монтажа лестницы в нашей компании. Стоимость монтажа от 25 т.р., точную стоимость мы можем объявить только после осмотра помещения специалистом и совершения необходимых замеров. <a class="a-link" href="#montage">Подробнее о монтаже</a></p>
                 </div>
             </div>
         </div>
-        <div class="my-hr"></div>
+        <!-- Меню с якорями -->
+        <div class="row d-none">
+            <div class="col-12">
+                <ul class="nav nav-anchor mt-4 mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pokraska">Покраска</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#charact">Характеристики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#charact">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schems">Чертежи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gabarity">Габариты упаковки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Видео</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#montage">Монтаж</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#instr">Инструкция по сборке</a>
+                    </li>
+                    <!--                     <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" tabindex="-1" aria-disabled="true" href="#voprosy">Вопросы</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
         <a id="instr"></a>
         <div class="section">
             <p class="font-weight-bolder">Скачать</p>
             <div class="row">
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
                     <button class="btn-pdf">
                         Инструкция по сборке лестницы К-001М
                     </button>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
                     <button class="btn-pdf">
                         Фирменный гарантийный талон ЛЕСТНИЦЫ-ПРОСТО
                     </button>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
                     <button class="btn-pdf">
                         Условия эксплуатации лестницы
                     </button>
                 </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-md-6 col-lg-4 col-xl-3">
                     <button class="btn-pdf">
                         Еще один файл
                     </button>
                 </div>
             </div>
+        </div>
+        <div class="section">
+            <p class="p-page-cap">Описание</p>
+            <p class="p-med">
+                Основой лестницы служит цельносварной центральный косоур.<br>
+                Под заказ возможно изготовление каркаса лестницы PROSTO MONO с поворотом начинающимся с любой ступени, а также, возможно реализовать поворот через площадку. Звоните нам по любым возникающим вопросам, мы поможем сориентироваться и сделать правильный выбор.<br>
+                ЦВЕТА каркаса – ЗОЛОТО, СЕРЕБРО, БЕЛЫЙ, ЧЕРНЫЙ – поддерживаются на складе и включены в стоимость. Другие цвета также доступны, но потребуют согласования стоимости и сроков.
+            </p>
+            </p>
         </div>
         <a id="charact"></a>
         <div class="my-hr"></div>
@@ -1174,58 +1130,58 @@
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Высота
+                            Толщина стенки каркаса
                         </b>
                     </span>
-                    <span class="feature-val">2750 - 3400 мм</span>
+                    <span class="feature-val">5 мм</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Толщина ступени
+                            Сечение каркаса
                         </b>
                     </span>
-                    <span class="feature-val">40 мм</span>
+                    <span class="feature-val">40×40 мм</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Высота шага
+                            Прямых ступеней
                         </b>
                     </span>
-                    <span class="feature-val">195 мм</span>
+                    <span class="feature-val">7</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Угол наклона
+                            Поворотных ступеней
                         </b>
                     </span>
-                    <span class="feature-val">42 °</span>
+                    <span class="feature-val">5</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Высота
+                            Опоры каркаса
                         </b>
                     </span>
-                    <span class="feature-val">2750 - 3400 мм</span>
+                    <span class="feature-val">2</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Толщина ступени
+                            Минимальный проём:
                         </b>
                     </span>
-                    <span class="feature-val">40 мм</span>
+                    <span class="feature-val">900 × 1600 мм</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
                         <b>
-                            Высота шага
+                            Минимальная нагрузка
                         </b>
                     </span>
-                    <span class="feature-val">195 мм</span>
+                    <span class="feature-val">300 кг</span>
                 </p>
                 <p class="p-values">
                     <span class="feature-name">
@@ -1311,68 +1267,11 @@
             </div>
         </div>
         <div class="my-hr"></div>
-        <div class="section">
-            <p class="p-page-cap">Описание</p>
-            <p class="p-med">
-                Для изготовления лестницы под покраску используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
-            </p>
-        </div>
-        <div class="my-hr"></div>
-        <!-- Блок показывается только для заказных лестниц -->
-        <div class="section">
-            <p class="p-page-cap">
-                Не подходят размеры?
-            </p>
-            <p>Возможно изготовление лестницы по индивидуальным размерам от 4 недель</p>
-            <div class="d-flex flex-column flex-md-row align-items-start">
-                <button class="btn btn-simple btn-zamer-order">Заказать расчет с моими размерами</button>
-                <div class="order-vars">
-                    <a href="" class="a-link mr-4">Или оставьте заявку и мы вышлем вам 5-7 вариантов подходящих лестниц</a>
-                </div>
-            </div>
-        </div>
-        <div class="my-hr"></div>
-        <!-- Блок показывается только для заказных лестниц -->
-        <!-- --------------------------------Чертежи и схемы---------------------------------------------------- -->
-        <a id="schems"></a>
-        <div class="section">
-            <p class="p-page-cap">Чертежи и схемы</p>
-            <div class="row no-gutters">
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/К-001М 1_l.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/К-001М 1_l.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Схема лестницы К-001М/1</p>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Вид балясины</p>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/sineva.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/sineva.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Вид сосны под покраску</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="my-hr"></div>
-        <!-- -------------------------------Конец Чертежи и схемы---------------------------------------------- -->
-        <!-- -----------------------------Покраска деревянных элементов------------------------------------- -->
         <a id="pokraska"></a>
         <div class="section">
             <p class="p-page-cap">Покраска деревянных элементов лестницы</p>
             <p class="p-med">Вы можете заказать у нас профессиональную покраску деревянных элементов лестницы.<br>
-                Стоимость покраски от 15 т.р.<br>
-                Ниже представлена палитра наиболее популярных расцветок. Выкрасы выполнены на сосне. <br>
+                Ниже представлена палитра наиболее популярных расцветок. Выкрасы выыполнены на сосне. <br>
                 На образцы нанесен 1 слой краски и 2 слоя воска.<br>
                 Обратите внимание! Оттенок на экране может отличаться от ожидаемого, мы настоятельно рекомендуем посетить наш шоу-рум для ознакомления с образцами выкрасов.<br> Всю доступную палитру на разных породах дерева можно посмотреть, перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
             <div class="clrbm us">
@@ -1506,9 +1405,281 @@
                 </div>
             </div>
         </div>
+        <div class="section">
+            <p class="p-page-cap">Покраска металлических элементов лестницы</p>
+            <p class="p-med">Покраска каркаса не влияет на стоимость.<br>
+                Вы можете выбрать любой цвет из палитры.<br>
+                Ниже представлены наиболее популярные расцветки каркаса.
+                <br>Ознакомиться с полной палитрой цветов металлокаркаса вы можете перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
+            <div class="clrbm">
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/9030A0136.jpg" class="a-zoom-img">
+                            <img src="img/colors/9030A0136.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">9030A0136 Алюм.металик хром (ЭП)</p>
+                </div>
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90306429.jpg" class="a-zoom-img">
+                            <img src="img/colors/90306429.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90306429 Алюм.металлик (ЭП), RAL 9006</p>
+                </div> -->
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A9006.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A9006.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A9006 Алюм.металлик (ПЭ), RAL 9006</p>
+                </div> -->
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5348A0737.jpg" class="a-zoom-img">
+                            <img src="img/colors/5348A0737.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5348A0737 Алюм.металлик матовый (ПЭ), RAL 9006</p>
+                </div> -->
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5268A9006.jpg" class="a-zoom-img">
+                            <img src="img/colors/5268A9006.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5268A9006 Алюм.металлик струтур. (ПЭ), RAL 9006</p>
+                </div> -->
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A9007.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A9007.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A9007 Алюм.металлик (ПЭ), RAL 9007</p>
+                </div> -->
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A9022.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A9022.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A9022 Алюм.металлик (ПЭ), RAL 9022</p>
+                </div> -->
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/93587983.jpg" class="a-zoom-img">
+                            <img src="img/colors/93587983.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">93587983 Алюм.металлик "матовый муар" (ЭП)</p>
+                </div>
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/6348A0100.jpg" class="a-zoom-img">
+                            <img src="img/colors/6348A0100.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">6348A0100 Алюм.металлик матовый (Э)</p>
+                </div> -->
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5030A0393.jpg" class="a-zoom-img">
+                            <img src="img/colors/5030A0393.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5030A0393 Лак с блёстками "бриллиант" (ПЭ)</p>
+                </div> -->
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5758A0646.jpg" class="a-zoom-img">
+                            <img src="img/colors/5758A0646.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5758A0646 Алюм.металлик "бриллиантовый муар" (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/1R489006.jpg" class="a-zoom-img">
+                            <img src="img/colors/1R489006.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">1R489006 Алюм.металлик "архитектурный муар" (ПЭ), RAL 9006</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90336285.jpg" class="a-zoom-img">
+                            <img src="img/colors/90336285.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90336285 Бежевый металлик (ЭП), RAL 1035</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8L421036.jpg" class="a-zoom-img">
+                            <img src="img/colors/8L421036.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">8L421036 Золотистый металлик бонд. (ПУ), RAL 1036</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90328405.jpg" class="a-zoom-img">
+                            <img src="img/colors/90328405.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90328405 Золотистый металлик (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90326428.jpg" class="a-zoom-img">
+                            <img src="img/colors/90326428.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90326428 Золотистый металлик (ЭП)</p>
+                </div>
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5033A1036.jpg" class="a-zoom-img">
+                            <img src="img/colors/5033A1036.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5033A1036 Золотистый перламутр (ЭП)</p>
+                </div> -->
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5033A0377.jpg" class="a-zoom-img">
+                            <img src="img/colors/5033A0377.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5033A0377 Бронзовый металлик (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A1220.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A1220.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A1220 Медный металлик (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5B238017.jpg" class="a-zoom-img">
+                            <img src="img/colors/5B238017.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5B238017 Коричневый структ. (ПЭ), RAL 8017</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5053A8017.jpg" class="a-zoom-img">
+                            <img src="img/colors/5053A8017.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5053A8017 Коричневый "муар" п-мат. (ПЭ), RAL 8017</p>
+                </div>
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5358A0557.jpg" class="a-zoom-img">
+                            <img src="img/colors/5358A0557.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5358A0557 Алюм.металлик "муар" с блёстками (ПЭ)</p>
+                </div> -->
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5359A0445.jpg" class="a-zoom-img">
+                            <img src="img/colors/5359A0445.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5359A0445 Серый "муар" с блёстками (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/93531330.jpg" class="a-zoom-img">
+                            <img src="img/colors/93531330.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">93531330 Медный металлик "муар" (ЭП)</p>
+                </div>
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5359A8645.jpg" class="a-zoom-img">
+                            <img src="img/colors/5359A8645.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5359A8645 Чёрный "муар" с блёстками (ПЭ)</p>
+                </div> -->
+                <!--                 <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90593451.jpg" class="a-zoom-img">
+                            <img src="img/colors/90593451.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90593451 Чёрный "муар" (ЭП)</p>
+                </div> -->
+            </div>
+        </div>
+        <!--      <a id="schems"></a> -->
+        <!--  <div class="my-hr"></div> -->
+        <div class="section">
+            <p class="p-page-cap">Чертежи и схемы</p>
+            <div class="schemes-slider">
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/scheme2.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme2.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке</p>
+                </div>
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/scheme3.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme3.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Длинное пояснение к картинке в две строки и еще немного текста</p>
+                </div>
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/scheme4.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme4.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке</p>
+                </div>
+                <div class="schemes-slider-item ">
+                    <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Базовый вид ограждений лестницы</p>
+                </div>
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/scheme.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/scheme.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Пояснение к картинке ghj,f</p>
+                </div>
+                <div class="schemes-slider-item">
+                    <a data-fancybox="gallery" href="img/levaya.jpg" rel="group" data-gallery="scheme-photo">
+                        <img src="img/levaya.jpg" alt="Картинка" class="img-fluid">
+                    </a>
+                    <p>Схема лестницы с поворотом налево</p>
+                </div>
+            </div>
+        </div>
+        <!-- Блок показывается только для заказных лестниц -->
         <div class="my-hr"></div>
-        <!-- ---------------------------Конец покраски деревянных элементов---------------------------- -->
-        <!-- -------------------------------Монтаж------------------------------------------------------------------------- -->
+        <div class="section">
+            <p class="p-page-cap">
+                Не подходят размеры?
+            </p>
+            <p>Возможно изготовление лестницы по индивидуальным размерам от 4 недель</p>
+            <div class="d-flex flex-column flex-md-row align-items-start">
+                <button class="btn btn-simple btn-zamer-order">Заказать расчет с моими размерами</button>
+                <div class="order-vars">
+                    <a href="" class="a-link mr-4">Или оставьте заявку и мы вышлем вам 5-7 вариантов подходящих лестниц</a>
+                </div>
+            </div>
+        </div>
+        <!-- Блок показывается только для заказных лестниц -->
         <a id="montage"></a>
         <div class="section">
             <div class="mntg">
@@ -1535,17 +1706,14 @@
                     <div class="col-md-6">
                         <p class="p-main-price pink mb-3">от 15 990<span class="price-rouble"></span></p>
                         <p class="">
-                            Указана цена исключительно на монтаж лестницы, любые дополнительные работы, связанные с несовершенством стен, углов, устранением дополнительных препятствий при установке лестницы - изменят стоимость работ.<br>
-                            Так же, на стоимость влияет удалённость объекта.
-                            Точную стоимость установки лестницы мы можем объявить только после осмотра помещения специалистом и совершения необходимых замеров.
+                            Указана стоимость исключительно на монтаж лестницы, любые дополнительные работы, связанные с несовершенством стен, углов, устранением дополнительных препятствий при установке лестницы - изменят стоимость работ.
+                            Точную стоимость на монтаж мы можем объявить только после осмотра помещения специалистом и совершения необходимых замеров.
                         </p>
                         <button class="btn mb-3 addzamer">Заказать замер</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="my-hr"></div>
-        <!-- -------------------------------Конец блока Монтаж--------------------------------------------------------------- -->
         <div class="my-hr"></div>
         <a id="video"></a>
         <div class="section">
@@ -1565,10 +1733,10 @@
                 </div>
             </div>
         </div>
-        <div class="my-hr"></div>
-        <a id="reviews"></a>
-        <div class="section">
-            <!-- Nav tabs -->
+        <!-- Были отзывы -->
+        <!--         <div class="my-hr"></div>
+        <a id="reviews"></a> -->
+        <!--         <div class="section">
             <ul class="nav nav-revs" id="myTab" role="tablist">
                 <li>
                     <a class="active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
@@ -1583,7 +1751,6 @@
             </ul>
         </div>
         <div class="section">
-            <!-- Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="rth">
@@ -1905,8 +2072,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- -------------Дополнительные товары----------------------- -->
+        </div> -->
+        <!-- Были отзывы -->
         <div class="section">
             <p class="p-page-cap">Дополнительные товары</p>
             <div class="similar-block">
@@ -2112,8 +2279,6 @@
                 </div>
             </div>
         </div>
-        <!-- ---------------Конец блока дополнительных товаров-------------- -->
-        <!-- ---------------------Похожие товары------------------------------- -->
         <div class="section">
             <p class="p-page-cap">Похожие</p>
             <div class="similar-block">
@@ -2403,7 +2568,6 @@
                 </div>
             </div>
         </div>
-        <!-- ----------------------Конец блока Похожие товары------------------- -->
         <div class="section">
             <div class="banner-horiz text-center">
                 <a href="#">
@@ -2413,94 +2577,6 @@
         </div>
     </div>
     <!-- Конец карточки каталога -->
-    <!-- Сео-блок -->
-    <div class="container-xl">
-        <div class="seo">
-            <div class="row no-gutters">
-                <div class="col">
-                    <ul class="seo-list">
-                        <li class="">
-                            <h4 class="">
-                                Помещение
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Лестницы для дома</a></li>
-                        <li class="list-group-item-action"><a class="" href="#">Лестницы для дачи</a></li>
-                        <li class="list-group-item-action"><a class="" href="#">Лестницы в коттедж</a></li>
-                        <li class="list-group-item-action"><a class="" href="#">Лестницы в таунхаус</a></li>
-                        <li class="list-group-item-action"><a class="" href="#">Лестницы для бани</a></li>
-                    </ul>
-                </div>
-                <div class="w-100 d-sm-none"></div>
-                <div class="col">
-                    <ul class="seo-list mb-3">
-                        <li class="">
-                            <h4 class="">
-                                Материал
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из сосны</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из берёзы</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из лиственницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из бука</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из ясеня</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы из дуба</a></li>
-                        <li class="list-group-item-action"><a href="#">Металлические</a></li>
-                        <li class="list-group-item-action"><a href="#">Комбинированные</a></li>
-                    </ul>
-                </div>
-                <div class="w-100 d-md-none"></div>
-                <div class="col">
-                    <ul class="seo-list mb-3">
-                        <li class="">
-                            <h4 class="">
-                                Форма
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Винтовые лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Маршевые лестницы (прямые)</a></li>
-                        <li class="list-group-item-action"><a href="#">Г-образные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">П-образные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Поворотные лестницы</a></li>
-                    </ul>
-                </div>
-                <div class="w-100 d-sm-none"></div>
-                <div class=" col">
-                    <ul class="seo-list mb-3">
-                        <li class="">
-                            <h4 class="">
-                                Конструкция
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Лестницы забежные</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на косоурах</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на тетивах</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на больцах</a></li>
-                        <li class="list-group-item-action"><a href="#">Модульные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Гусиный шаг</a></li>
-                        <li class="list-group-item-action"><a href="#">Консольные лестницы</a></li>
-                    </ul>
-                </div>
-                <div class="w-100 d-md-none"></div>
-                <div class=" col">
-                    <ul class="seo-list mb-3">
-                        <li class="">
-                            <h4 class="">
-                                Тип
-                            </h4>
-                        </li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на мансарду</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на второй этаж</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы в подвал</a></li>
-                        <li class="list-group-item-action"><a href="#">Уличные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Входные лестницы</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на крыльцо</a></li>
-                        <li class="list-group-item-action"><a href="#">Лестницы на крышу</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Кнопка наверх -->
     <div class="scrollup shadow-lg">
         <img src="img/up.svg" alt="">

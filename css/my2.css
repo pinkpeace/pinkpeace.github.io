@@ -5633,13 +5633,20 @@ ul.anchnav li:hover a {
 
 .col-pr {
     flex-grow: 2;
-    min-width: 380px;
 }
-
+@media (min-width: 400px){
+  .col-pr {
+    min-width: 380px;
+}  
+}
 @media (min-width: 835px) {
     .col-pic {
         max-width: 45%;
     }
+    .col-pr {
+   
+    min-width: 380px;
+
 }
 
 @media (min-width: 1200px) {

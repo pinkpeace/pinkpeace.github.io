@@ -787,7 +787,7 @@
             <!-- Конец блока с фотографиями -->
             <!-- Блок с расчетом цены и кнопкой "купить" -->
             <div class="col col-lft no-gutters">
-                <!-- -------------Выбор параметров отображается только у карточек с модификациями--------- -->
+                <!-- Выбор параметров отображается только у карточек с модификациями -->
                 <div class="d-none col col-pr">              
                     <div class="chc-bx">
                         <div class="form-group">
@@ -910,9 +910,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- --------------------Конец блока с выбором параметров--------------------------------- -->
+                <!-- Конец блока с выбором параметров-->
                 <!-- Блок с характеристиками показывается только для простого товара -->
-                <div class="col col-pr order-2 order-xl-1">
+                <div class="d-none d-xl-block col col-pr order-2 order-xl-1">
                     <div class="chrs-bx">
                         <div class="params short-params">
                             <p class="p-values">
@@ -976,7 +976,7 @@
                 </div>
                 <!-- Конец блока с характеристиками -->
                 <!-- Блок с кнопкой "купить" -->
-                <div class="col col-buy stck order-1 order-xl-2">
+                <div class="col col-buy  stck order-1 order-xl-2">
                     <div class="price-right">
                         <div class="main-price-box">
                             <p class="p-main-price">34 000<span class="price-rouble"></span>
@@ -1005,9 +1005,9 @@
         </div>
         <!-- --------------------------Основная информация о товаре-------------------------------------------- -->
         <div class="row align-items-start">
-            <div class="col-12 col-md-6 col-lg">
-                <!-- ---------------------------Характеристики здесь показываются только для головной карточки, у которой есть выбор параметров------- -->
-                <div class="trck d-none">
+            <div class="col-12 col-md col-pic">
+                <!--Характеристики -->
+                <div class="trck d-xl-none">
                     <p class="mb-2 p-cap">Характеристики:</p>
                     <div class="params short-params shrt">
                         <p class="p-values">
@@ -1173,7 +1173,7 @@
                     </div>
                     <button id="chrs" class="opn">Развернуть характеристики</button>
                 </div>
-                <!-- ---------------------Конец характеристик для головной карточки--------------------------------------------------------------- -->
+                <!--Конец характеристик для головной карточки-->
                 <div class="trck">
                     <p class="mb-2 p-cap">Описание:</p>
                     <p class="descr shrt">
@@ -1182,10 +1182,48 @@
                     </p>
                     <button id="descr" class="opn">Развернуть описание</button>
                 </div>
+                                <!-- Блок показывается только у простого товара или модификации -->
+                <div class="upak">
+                    <p class="mb-2 p-cap">Упаковка:</p>
+                    <div class="params short-params">
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Масса брутто, кг
+                                </b>
+                            </span>
+                            <span class="feature-val">93</span>
+                        </p>
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Количество упаковок
+                                </b>
+                            </span>
+                            <span class="feature-val">3</span>
+                        </p>
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Размеры наибольшей упаковки, мм
+                                </b>
+                            </span>
+                            <span class="feature-val">2500 × 350 × 180</span>
+                        </p>
+                        <p class="p-values">
+                            <span class="feature-name">
+                                <b>
+                                    Общий объём, м³
+                                </b>
+                            </span>
+                            <span class="feature-val">1.7</span>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg d-none">
+            <div class="col-12 col-md col-lft d-none">
                 <div class="">
-                    <p class="p-cap mb-2">Покраска/покрытие:</p>
+                    <p class="p-cap mb-2">Покраска:</p>
                     <p>Элементы лестницы и ограждение без покрытия, фурнитура чёрного цвета. Возможна предварительная профессиональная покраска в любой цвет в нашем цеху, цена от 12 т.р. <a class="opn" href="#pokraska">подробнее о покраске</a></p>
                 </div>
                 <div class="">
@@ -1193,8 +1231,6 @@
                     <p>Лестница поставляется в разобранном виде. Монтаж и сборка лестницы не входят в указанную стоимость.
                         Стоимость монтажа нашими специалистами от 16 т.р. <a class="opn" href="#montage">Подробнее о монтаже</a></p>
                 </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg d-none">
                 <div class="kpmpl">
                     <p class="p-cap mb-2">Комплектация:</p>
                     <p>Каркас лестницы и ступени из сосны с небольшими вкраплениями синевы, категория АВ, ступеней -12 шт., балясина прямая сосна - 10 шт., столб прямой сосна - 2 шт., поручень сосна - 40×40×2000 мм, опора сосна - 2 шт. 40×40×1850 мм, фурнитура (за исключением креплений к стене, инструкция по сборке, гарантийный талон</p>
@@ -1202,56 +1238,7 @@
             </div>
             <div class="my-hr"></div>
         </div>
-        <!-- -------------------------Конец блока с основной информацие о товаре---------------------------- -->
-        <!-- ------------------------------Только в карточке модификаций Габариты упаковки----------------------------------- -->
-        <div class="section ">
-            <a id="gabarity"></a>
-            <p class="p-page-cap">Упаковка:</p>
-            <div class="params">
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Вид упаковки
-                        </b>
-                    </span>
-                    <span class="feature-val">Термоусадочная плёнка</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Масса брутто, кг
-                        </b>
-                    </span>
-                    <span class="feature-val">1.02</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Количество упаковок
-                        </b>
-                    </span>
-                    <span class="feature-val">1</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Габариты упаковки, мм
-                        </b>
-                    </span>
-                    <span class="feature-val">800 × 400 × 26</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Общий объём, м³
-                        </b>
-                    </span>
-                    <span class="feature-val">0,2</span>
-                </p>
-            </div>
-            <div class="my-hr"></div>
-        </div>
-        <!-- -----------------------------------Конец блока Габариты упаковки----------------------------------------------- -->
+        <!-- Конец блока с основной информацие о товаре-->
         <!-- -------------Дополнительные товары----------------------- -->
         <div class="section">
             <p class="p-page-cap">Дополнительные товары</p>

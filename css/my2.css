@@ -3691,20 +3691,18 @@ p.clrnm {
 
 .btn-pdf {
     position: relative;
-    padding: 10px 15px 10px 70px;
-    height: 80px;
+    padding: 0px 0px 0px 70px;
+    height: 40px;
     width: 100%;
-    border: 1px solid #f2f5f6;
+    border: 1px solid #ffffff;
     background-image: url(../img/pdf.svg);
     background-repeat: no-repeat;
-    background-position: 15px center;
-    background-size: 40px auto;
+    background-position: 2em center;
+    background-size: 25px auto;
     display: block;
     text-align: left;
-    margin-bottom: 0.5em;
     background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
 }
 
 .btn-pdf:hover {
@@ -5726,10 +5724,9 @@ ul.anchnav li:hover a {
 
 .bn {
     display: flex;
-    align-items: center;
-    padding: 1em 0;
-    border: 2px solid #f2f5f6;
+    flex-direction: column;
+    padding: 2em;
     border-radius: 3px;
     margin-bottom: 1em;
-    width: 48%;
+    background-color: #f2f5f6;
 }

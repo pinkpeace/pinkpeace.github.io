@@ -842,7 +842,132 @@
             <!-- Конец блока с фотографиями -->
             <!-- Блок с расчетом цены и кнопкой "купить" -->
             <div class="col col-lft no-gutters">
-                <div class="col col-pr">
+                <!-- Блок с выбором параметров только для головной карточки (с модификациями) -->
+                <div class="d-none col col-pr">
+                    <div class="chc-bx">
+                        <div class="form-group">
+                            <p class="p-param-label">Высота лестницы, мм:</p>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="visota" id="h2540-2729" checked>
+                                <label class="  btn-radio  custom-control-label" for="h2540-2729">
+                                    2540 - 2729
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="visota" id="h2730-2925">
+                                <label class="  btn-radio  custom-control-label" for="h2730-2925">
+                                    2730 - 2925
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="visota" id="h2721-2900">
+                                <label class="  btn-radio  custom-control-label" for="h2721-2900">
+                                    2721 - 2900
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="visota" id="h2920-3100" disabled>
+                                <label class="  btn-radio  custom-control-label" for="h2920-3100">
+                                    2920 - 3100
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="p-param-label">Материал ступеней:</p>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="poroda" id="stup_bez" checked>
+                                <label class="btn-radio  custom-control-label" for="stup_bez">
+                                    Без ступеней
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="poroda" id="stup_sos_pod">
+                                <label class="btn-radio  custom-control-label" for="stup_sos_pod">
+                                    Сосна под покраску
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="poroda" id="stup_sos">
+                                <label class="btn-radio  custom-control-label" for="stup_sos">
+                                    Сосна
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="poroda" id="stup_listv">
+                                <label class="btn-radio  custom-control-label" for="stup_listv">
+                                    Лиственница
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="poroda" id="stup_buk">
+                                <label class="btn-radio  custom-control-label" for="stup_buk">
+                                    Бук
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="poroda" id="stup_yasen">
+                                <label class="btn-radio  custom-control-label" for="stup_yasen">
+                                    Ясень
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="poroda" id="stup_dub">
+                                <label class="btn-radio  custom-control-label" for="stup_dub">
+                                    Дуб
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="rdo-bx">
+                                <p class="p-param-label">Ограждение:</p>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="radio" name="ograjd" id="s_ograjd" checked>
+                                    <label class="btn-radio custom-control-label" for="s_ograjd">
+                                        С ограждением
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="radio" name="ograjd" id="bez_ogr">
+                                    <label class="btn-radio custom-control-label" for="bez_ogr">
+                                        Без ораждения
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="rdo-bx">
+                                <p class="p-param-label">Цвет каркаса:</p>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="radio" name="cvet" id="black_krks" checked>
+                                    <label class="btn-radio custom-control-label" for="black_krks">
+                                        Чёрный
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="radio" name="cvet" id="white_krks">
+                                    <label class="btn-radio custom-control-label" for='white_krks'>
+                                        Белый
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="radio" name="cvet" id="grey_krks">
+                                    <label class="btn-radio custom-control-label" for='grey_krks'>
+                                        Серебро
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="radio" name="cvet" id="gold_karkas">
+                                    <label class="btn-radio custom-control-label" for='gold_karkas'>
+                                        Золото
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Конец блока с выбором параметров -->
+                <!-- Блок с характеристиками только для простого товара------ -->
+                <div class="col col-pr order-2 order-xl-1">
                     <div class="chrs-bx">
                         <div class="params short-params">
                             <p class="p-values">
@@ -984,7 +1109,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-buy  stck">
+                <!-- КОнец блока с характеристиками -->
+                <div class="col col-buy  stck order-1 order-xl-2">
                     <div class="price-right">
                         <div class="main-price-box">
                             <p class="p-main-price">34 000<span class="price-rouble"></span>
@@ -1484,10 +1610,9 @@
                         <p>Вид сосны под покраску</p>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div class="my-hr"></div>
         </div>
-       
         <!-- -------------------------------Конец Чертежи и схемы---------------------------------------------- -->
         <!-- -----------------------------Покраска деревянных элементов------------------------------------- -->
         <a id="pokraska"></a>
@@ -1627,10 +1752,9 @@
                     </div>
                     <p class="clrnm">Любой цвет на ваш выбор</p>
                 </div>
-            </div> 
+            </div>
             <div class="my-hr"></div>
         </div>
-       
         <!-- ---------------------------Конец покраски деревянных элементов---------------------------- -->
         <!-- -------------------------------Монтаж------------------------------------------------------------------------- -->
         <a id="montage"></a>
@@ -1666,12 +1790,11 @@
                         <button class="btn mb-3 addzamer">Заказать замер</button>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div class="my-hr"></div>
         </div>
-       
         <!-- -------------------------------Конец блока Монтаж--------------------------------------------------------------- -->
-    <!-- ---------------------------------------Блок с видеоинструкцие по монтажу-------------------------------------------- -->
+        <!-- ---------------------------------------Блок с видеоинструкцие по монтажу-------------------------------------------- -->
         <a id="video"></a>
         <div class="section">
             <div class="video-block">
@@ -1688,10 +1811,10 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div class="my-hr"></div>
         </div>
-       <!-- --------------------------------------Конец блока с видео----------------------------------------------------------------- -->
+        <!-- --------------------------------------Конец блока с видео----------------------------------------------------------------- -->
         <a id="reviews"></a>
         <div class="section">
             <!-- Nav tabs -->

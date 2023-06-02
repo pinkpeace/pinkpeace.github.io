@@ -1522,9 +1522,10 @@ a:hover {
 .p-values {
     position: relative;
     width: 100%;
-    line-height: 0.9em;
+    line-height: 1.2em;
     margin-bottom: 0.9em;
     font-size: 14px;
+    max-width: 650px;
 }
 
 .p-values .feature-name {
@@ -1541,7 +1542,7 @@ a:hover {
 .p-values .feature-name b {
     font-weight: 400;
     background: #fff;
-    padding: 0 10px 0 0;
+    padding: 0 10px 2px 0;
     position: relative;
     z-index: 1;
     color: inherit;
@@ -2371,14 +2372,15 @@ select:focus {
 }
 
 .section {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    border-bottom: 1px solid #f2f5f6;
 }
 
 @media (min-width: 768px) {
     .section {
-        padding-top: 2em;
-        padding-bottom: 2em;
+        padding-top: 2.1em;
+        padding-bottom: 2.1em;
     }
 }
 
@@ -3662,8 +3664,8 @@ p.clrnm {
 
 .clrb {
     width: 45%;
-    margin-bottom: 1em;
-    margin-right: 1em;
+    margin-bottom: 0.6em;
+    margin-right: 0.6em;
 }
 
 @media(min-width:510px) {
@@ -5755,4 +5757,5 @@ ul.anchnav li:hover a {
 
 .upak {
     max-width: 600px;
+    margin-bottom: 1.5em;
 }

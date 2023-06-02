@@ -69,7 +69,7 @@ h5,
 }
 
 h1.page-name {
-    font-size: 21px;
+    font-size: 18px;
     margin-top: .3em;
     margin-bottom: .5em;
 }
@@ -2758,7 +2758,7 @@ div.scrollup:hover {
 }
 
 .main-slider div a div.sld-img-bx {
-    height: 30vh;
+    height: 40vh;
 }
 
 @media (min-width: 500px) {

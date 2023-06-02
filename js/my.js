@@ -247,7 +247,13 @@ $('.noTown').click(function() {
     $('#your_town').modal('hide');
      $('#city_modal').modal('show');
 });
-
+$(document).ready(function() {
+    var height = $(".descr").height();
+   
+    if (height>97) { 
+         $('.descr').parent().removeClass('active');
+         $('#descr').removeClass('d-none');;}
+});
 
 $('#descr').click(function() {
      var text = $('#descr').text();

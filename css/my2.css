@@ -1522,8 +1522,8 @@ a:hover {
 .p-values {
     position: relative;
     width: 100%;
-    line-height: 1em;
-    margin-bottom: 1em;
+    line-height: 0.9em;
+    margin-bottom: 0.9em;
     font-size: 14px;
 }
 
@@ -5673,7 +5673,7 @@ ul.anchnav li:hover a {
 .trck {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.3em;
+    margin-bottom: 1.5em;
     align-items: flex-start;
     position: relative;
 }
@@ -5691,10 +5691,11 @@ ul.anchnav li:hover a {
 }
 
 .shrt {
-    max-height: 140px;
+    max-height: 110px;
     overflow: hidden;
     width: 100%;
     transition: .5s;
+    margin-bottom: 0;
 }
 
 .active .shrt {
@@ -5729,4 +5730,16 @@ ul.anchnav li:hover a {
     border-radius: 3px;
     margin-bottom: 1em;
     background-color: #f2f5f6;
+}
+.kmpl-ul {
+    padding-left: 0px;
+}
+.kmpl-ul li {
+  padding: 0;
+  position: relative;
+  list-style: none; 
+}
+
+.upak {
+    max-width: 600px;
 }

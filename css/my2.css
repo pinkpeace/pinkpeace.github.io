@@ -5691,7 +5691,7 @@ ul.anchnav li:hover a {
 }
 
 .shrt {
-    max-height: 110px;
+    max-height: 100px;
     overflow: hidden;
     width: 100%;
     transition: .5s;
@@ -5730,6 +5730,19 @@ ul.anchnav li:hover a {
     border-radius: 3px;
     margin-bottom: 1em;
     background-color: #f2f5f6;
+    min-width: 225px;
+}
+@media (min-width: 512px){
+   .bn:first-child {
+    margin-right: 15px;
+} 
+}
+
+.bn img {
+    width: 40px;
+    margin-bottom: 1.2em;
+    margin-right: 1.2em;
+    opacity: 0.7;
 }
 .kmpl-ul {
     padding-left: 0px;

@@ -5693,7 +5693,7 @@ ul.anchnav li:hover a {
 }
 
 .shrt {
-    max-height: 100px;
+    max-height: 115px;
     overflow: hidden;
     width: 100%;
     transition: .5s;

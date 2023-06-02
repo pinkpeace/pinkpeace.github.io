@@ -250,7 +250,7 @@ $('.noTown').click(function() {
 $(document).ready(function() {
     var height = $(".descr").height();
    
-    if (height>97) { 
+    if (height>102) { 
          $('.descr').parent().removeClass('active');
          $('#descr').removeClass('d-none');;}
 });

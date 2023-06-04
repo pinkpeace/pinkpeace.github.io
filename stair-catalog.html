@@ -675,6 +675,9 @@
                             <div>
                                 <img class="img-fluid" alt="" src="img/k-001_6.jpg">
                             </div>
+                            <div>
+                                <img class="img-fluid" alt="" src="img/sineva.jpg">
+                            </div>
                         </div>
                         <div class="mrkrs-bx">
                             <div class="lp-mrkr">Собственное производство</div>
@@ -726,6 +729,13 @@
                                     <a data-fancybox="gallery" href="img/k-001_6.jpg" rel="group" data-gallery="prod-photo">
                                         <div class="sld-img-bx">
                                             <img src="img/k-001_6.jpg" alt="Картинка" class="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a data-fancybox="gallery" href="img/sineva.jpg" rel="group" data-gallery="prod-photo">
+                                        <div class="sld-img-bx">
+                                            <img src="img/sineva.jpg" alt="Картинка" class="">
                                         </div>
                                     </a>
                                 </div>
@@ -836,15 +846,30 @@
                         <div class="form-group">
                             <p class="p-param-label">Подступёнки:</p>
                             <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="radio" name="cvet" id="bez_podstup" checked>
+                                <input class="custom-control-input" type="radio" name="podstup" id="bez_podstup" checked>
                                 <label class="btn-radio custom-control-label" for="bez_podstup">
                                     Без подступёнок
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input" type="radio" name="cvet" id="s_podstup">
+                                <input class="custom-control-input" type="radio" name="podstup" id="s_podstup">
                                 <label class="btn-radio custom-control-label" for='s_podstup'>
                                     С подступёнкамми
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-none form-group">
+                            <p class="p-param-label">Покраска (ступеней):</p>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="pokras" id="bez_pokras" checked>
+                                <label class="btn-radio custom-control-label" for="bez_pokras">
+                                    Без покраски
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input class="custom-control-input" type="radio" name="pokras" id="s_pokras">
+                                <label class="btn-radio custom-control-label" for='s_pokras'>
+                                    С покраской
                                 </label>
                             </div>
                         </div>
@@ -1000,19 +1025,24 @@
                         <div class="main-price-box">
                             <p class="p-main-price">34 000<span class="price-rouble"></span>
                             </p>
-                            <p class="old-price">
+                            <p class="old-price mb-0">
                                 40 000<span class="price-rouble"></span>
                             </p>
+                            <div class="d-none">
+                                <a type="button" class="a-border-dotted text-grey text-xs btn-ch form_add" data-id="15" data-toggle="modal" data-target="#simple_form" data-form="Нашли дешевле">Нашли дешевле?</a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <p class="p-param-label">Поворот:</p>
-                            <div class="custom-control custom-checkbox">
+                        <p class="text-xs mb-0 pink"><i class="i_ok"></i>Цена без покраски</p>
+                        <p class="text-xs mb-0 pink"><i class="i_ok"></i>Цена без монтажа</p>
+                        <div class="form-group mt-4">
+                            <p class="p-param-label">Выберите поворот:</p>
+                            <div class="custom-control custom-checkbox mr-2">
                                 <input class="custom-control-input" type="radio" name="options" id="nalevo" checked>
                                 <label class="btn-radio custom-control-label" for="nalevo">
                                     Налево
                                 </label>
                             </div>
-                            <div class="custom-control custom-checkbox">
+                            <div class="custom-control custom-checkbox d-">
                                 <input class="custom-control-input" type="radio" name="options" id="napravo">
                                 <label class="btn-radio custom-control-label" for="napravo">
                                     Направо
@@ -1035,281 +1065,279 @@
                     </div>
                 </div>
             </div>
-           
         </div>
         <!-- --------------------------Основная информация о товаре-------------------------------------------- -->
         <div class="section">
-           <div class="row align-items-start">
-            <div class="col-12 col-lg col-pic">
-                <div class="trck">
-                    <p class="mb-2 p-cap">Характеристики:</p>
-                    <div class="params short-params shrt">
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Высота
-                                </b>
-                            </span>
-                            <span class="feature-val">2730 - 2925 мм</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Длина ступени
-                                </b>
-                            </span>
-                            <span class="feature-val">890 мм</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Толщина ступени
-                                </b>
-                            </span>
-                            <span class="feature-val">40 мм</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Высота шага
-                                </b>
-                            </span>
-                            <span class="feature-val">195 мм</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Угол наклона
-                                </b>
-                            </span>
-                            <span class="feature-val">42 °</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Ширина марша
-                                </b>
-                            </span>
-                            <span class="feature-val">900 мм</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Глубина ступени
-                                </b>
-                            </span>
-                            <span class="feature-val">400 мм</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Минимальный проём
-                                </b>
-                            </span>
-                            <span class="feature-val">920 × 2700 мм</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Наступная часть
-                                </b>
-                            </span>
-                            <span class="feature-val">220 мм</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Вид балясины
-                                </b>
-                            </span>
-                            <span class="feature-val">Прямая</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Вид столба
-                                </b>
-                            </span>
-                            <span class="feature-val">Прямой</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Угол наклона
-                                </b>
-                            </span>
-                            <span class="feature-val">42 °</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Материал каркаса
-                                </b>
-                            </span>
-                            <span class="feature-val">Сосна под покраску</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Материал ступеней
-                                </b>
-                            </span>
-                            <span class="feature-val">Сосна под покраску</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Категория
-                                </b>
-                            </span>
-                            <span class="feature-val">АВ</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Покрытие ступеней
-                                </b>
-                            </span>
-                            <span class="feature-val">Без покрытия</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Покрытие каркаса
-                                </b>
-                            </span>
-                            <span class="feature-val">Без покрытия</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Форма поставки
-                                </b>
-                            </span>
-                            <span class="feature-val">В разобранном виде</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Максимальная нагрузка
-                                </b>
-                            </span>
-                            <span class="feature-val">200 кг</span>
-                        </p>
+            <div class="row align-items-start">
+                <div class="col-12 col-lg col-pic">
+                    <div class="trck">
+                        <p class="mb-2 p-cap">Характеристики:</p>
+                        <div class="params short-params shrt">
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Высота
+                                    </b>
+                                </span>
+                                <span class="feature-val">2730 - 2925 мм</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Длина ступени
+                                    </b>
+                                </span>
+                                <span class="feature-val">890 мм</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Толщина ступени
+                                    </b>
+                                </span>
+                                <span class="feature-val">40 мм</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Высота шага
+                                    </b>
+                                </span>
+                                <span class="feature-val">195 мм</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Угол наклона
+                                    </b>
+                                </span>
+                                <span class="feature-val">42 °</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Ширина марша
+                                    </b>
+                                </span>
+                                <span class="feature-val">900 мм</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Глубина ступени
+                                    </b>
+                                </span>
+                                <span class="feature-val">400 мм</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Минимальный проём
+                                    </b>
+                                </span>
+                                <span class="feature-val">920 × 2700 мм</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Наступная часть
+                                    </b>
+                                </span>
+                                <span class="feature-val">220 мм</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Вид балясины
+                                    </b>
+                                </span>
+                                <span class="feature-val">Прямая</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Вид столба
+                                    </b>
+                                </span>
+                                <span class="feature-val">Прямой</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Угол наклона
+                                    </b>
+                                </span>
+                                <span class="feature-val">42 °</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Материал каркаса
+                                    </b>
+                                </span>
+                                <span class="feature-val">Сосна под покраску</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Материал ступеней
+                                    </b>
+                                </span>
+                                <span class="feature-val">Сосна под покраску</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Категория
+                                    </b>
+                                </span>
+                                <span class="feature-val">АВ</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Покрытие ступеней
+                                    </b>
+                                </span>
+                                <span class="feature-val">Без покрытия</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Покрытие каркаса
+                                    </b>
+                                </span>
+                                <span class="feature-val">Без покрытия</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Форма поставки
+                                    </b>
+                                </span>
+                                <span class="feature-val">В разобранном виде</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Максимальная нагрузка
+                                    </b>
+                                </span>
+                                <span class="feature-val">200 кг</span>
+                            </p>
+                        </div>
+                        <button id="chrs" class="opn">Развернуть характеристики</button>
                     </div>
-                    <button id="chrs" class="opn">Развернуть характеристики</button>
+                    <div class="trck active">
+                        <p class="mb-2 p-cap">Описание:</p>
+                        <p class="descr shrt">
+                            Для изготовления лестницы используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
+                            Высота подгоняется в заданных пределах при установке лестницы.
+                        </p>
+                        <button id="descr" class="opn d-none">Развернуть описание</button>
+                    </div>
+                    <div class="kpmpl">
+                        <p class="p-cap mb-2">Комплектация:</p>
+                        <ul class="kmpl-ul">
+                            <li>
+                                Элементы косоура - 3 шт.,
+                            </li>
+                            <li>cтупени прямые - 8 шт.,</li>
+                            <li>ступени поворотные -4 шт.,</li>
+                            <li>балясина прямая сосна - 12 шт.,</li>
+                            <li>столб прямой сосна - 2 шт., </li>
+                            <li>поручень сосна 40×40×1000 мм - 1 шт.,</li>
+                            <li>поручень сосна 40×40×1800 мм - 1 шт.,</li>
+                            <li>опора сосна 40×40×1850 мм - 2 шт.,</li>
+                            <li>фурнитура (за исключением креплений к стене),</li>
+                            <li>инструкция по сборке,</li>
+                            <li>гарантийный талон</li>
+                        </ul>
+                    </div>
+                    <!-- Информация меняется в зависимости от выбранной модификации -->
+                    <div class="upak">
+                        <p class="mb-2 p-cap">Упаковка:</p>
+                        <div class="params short-params">
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Масса брутто, кг
+                                    </b>
+                                </span>
+                                <span class="feature-val">93</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Количество упаковок
+                                    </b>
+                                </span>
+                                <span class="feature-val">3</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Размеры наибольшей упаковки, мм
+                                    </b>
+                                </span>
+                                <span class="feature-val">2500 × 350 × 180</span>
+                            </p>
+                            <p class="p-values">
+                                <span class="feature-name">
+                                    <b>
+                                        Общий объём, м³
+                                    </b>
+                                </span>
+                                <span class="feature-val">1.9</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="trck active">
-                    <p class="mb-2 p-cap">Описание:</p>
-                    <p class="descr shrt">
-                        Для изготовления лестницы под покраску используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
-                        Высота подгоняется в заданных пределах при установке лестницы.
-                    </p>
-                    <button id="descr" class="opn d-none">Развернуть описание</button>
-                </div>
-                <div class="kpmpl">
-                    <p class="p-cap mb-2">Комплектация:</p>
-                    <ul class="kmpl-ul">
-                        <li>
-                            Элементы косоура - 3 шт.,
-                        </li>
-                        <li>cтупени прямые - 8 шт.,</li>
-                        <li>ступени поворотные -4 шт.,</li>
-                        <li>балясина прямая сосна - 12 шт.,</li>
-                        <li>столб прямой сосна - 2 шт., </li>
-                        <li>поручень сосна 40×40×1000 мм - 1 шт.,</li>
-                        <li>поручень сосна 40×40×1800 мм - 1 шт.,</li>
-                        <li>опора сосна 40×40×1850 мм - 2 шт.,</li>
-                        <li>фурнитура (за исключением креплений к стене),</li>
-                        <li>инструкция по сборке,</li>
-                        <li>гарантийный талон</li>
-                    </ul>
-                </div>
-                <!-- Информация меняется в зависимости от выбранной модификации -->
-                <div class="upak">
-                    <p class="mb-2 p-cap">Упаковка:</p>
-                    <div class="params short-params">
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Масса брутто, кг
-                                </b>
-                            </span>
-                            <span class="feature-val">93</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Количество упаковок
-                                </b>
-                            </span>
-                            <span class="feature-val">3</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Размеры наибольшей упаковки, мм
-                                </b>
-                            </span>
-                            <span class="feature-val">2500 × 350 × 180</span>
-                        </p>
-                        <p class="p-values">
-                            <span class="feature-name">
-                                <b>
-                                    Общий объём, м³
-                                </b>
-                            </span>
-                            <span class="feature-val">1.9</span>
-                        </p>
+                <div class="col-12 col-lg col-lft">
+                    <div class="col col-xs-6 bn">
+                        <div class="d-flex">
+                            <div>
+                                <img src="img/pokraska2.png" alt="" class="">
+                            </div>
+                            <div>
+                                <p class="p-cap mb-0">Покраска</p>
+                                <p class="pink p-cap">от 12 000<span class="price-rouble"></span></p>
+                            </div>
+                        </div>
+                        <p class="mb-0">Любой цвет, подбор по образцу. Надёжные средства. Качественное нанесение</p>
+                        <a class="a-link" href="#pokraska">подробнее</a>
+                    </div>
+                    <div class="col col-xs-6 bn">
+                        <div class="d-flex">
+                            <div>
+                                <img src="img/driller.png" alt="" class="">
+                            </div>
+                            <div>
+                                <p class="p-cap mb-0">Монтаж:</p>
+                                <p class="pink p-cap">от 15 500<span class="price-rouble"></span></p>
+                            </div>
+                        </div>
+                        <p class="mb-0">Качественный монтаж опытными специалистами с учётом всех нюансов</p>
+                        <a class="a-link" href="#montage">Подробнее</a>
+                    </div>
+                    <div class="">
+                        <button class="btn-pdf">
+                            Инструкция по сборке лестницы К-001М
+                        </button>
+                        <button class="btn-pdf">
+                            Фирменный гарантийный талон ЛЕСТНИЦЫ-ПРОСТО
+                        </button>
+                        <button class="btn-pdf">
+                            Условия эксплуатации лестницы
+                        </button>
+                        <button class="btn-pdf">
+                            Еще один файл
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg col-lft">
-                <div class="col col-xs-6 bn">
-                    <div class="d-flex">
-                        <div>
-                            <img src="img/pokraska2.png" alt="" class="">
-                        </div>
-                        <div>
-                            <p class="p-cap mb-0">Покраска</p>
-                            <p class="pink p-cap">от 12 000<span class="price-rouble"></span></p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Любой цвет RAL. Надёжные средства. Качественное нанесение</p>
-                    <a class="a-link" href="#pokraska">подробнее</a>
-                </div>
-                <div class="col col-xs-6 bn">
-                    <div class="d-flex">
-                        <div>
-                            <img src="img/driller.png" alt="" class="">
-                        </div>
-                        <div>
-                            <p class="p-cap mb-0">Монтаж:</p>
-                            <p class="pink p-cap">от 15 500<span class="price-rouble"></span></p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Качественный монтаж опытными специалистами с учётом всех нюансов</p>
-                    <a class="a-link" href="#montage">Подробнее</a>
-                </div>
-                <div class="">
-                    <button class="btn-pdf">
-                        Инструкция по сборке лестницы К-001М
-                    </button>
-                    <button class="btn-pdf">
-                        Фирменный гарантийный талон ЛЕСТНИЦЫ-ПРОСТО
-                    </button>
-                    <button class="btn-pdf">
-                        Условия эксплуатации лестницы
-                    </button>
-                    <button class="btn-pdf">
-                        Еще один файл
-                    </button>
-                </div>
-            </div>
-        </div> 
         </div>
-        
-        <!-- -------------------------Конец блока с основной информацие о товаре---------------------------- -->
+        <!-- Конец блока с основной информацие о товаре -->
         <div class="section d-none">
             <!-- Характеристики -->
             <p class="p-page-cap">Характеристики:</p>
@@ -1488,7 +1516,7 @@
         <div class="d-none section">
             <p class="p-page-cap">Описание</p>
             <p class="">
-                Для изготовления лестницы под покраску используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
+                Для изготовления лестницы используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
             </p>
         </div>
         <!-- Блок ниже только в карточке -->
@@ -1573,32 +1601,15 @@
                         <p>Схема лестницы К-001М/8</p>
                     </div>
                 </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/ogr.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/ogr.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Вид балясины</p>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-3">
-                    <div class="sch-bx">
-                        <a data-fancybox="gallery" href="img/sineva.jpg" rel="group" data-gallery="scheme-photo">
-                            <img src="img/sineva.jpg" alt="Картинка" class="img-fluid">
-                        </a>
-                        <p>Вид сосны под покраску</p>
-                    </div>
-                </div>
-            </div> 
+            </div>
         </div>
         <!-- Конец Чертежи и схемы -->
         <!-- Покраска деревянных элементов -->
-       
         <a id="pokraska"></a>
         <div class="section">
             <p class="p-page-cap">Покраска деревянных элементов лестницы</p>
+            <p class="p-main-price pink">от 12 000<span class="price-rouble"></span></p>
             <p class="">Вы можете заказать у нас профессиональную покраску деревянных элементов лестницы.<br>
-                Стоимость покраски от 15 т.р.<br>
                 Ниже представлена палитра наиболее популярных расцветок. Выкрасы выполнены на сосне. <br>
                 На образцы нанесен 1 слой краски и 2 слоя воска.<br>
                 Обратите внимание! Оттенок на экране может отличаться от ожидаемого, мы настоятельно рекомендуем посетить наш шоу-рум для ознакомления с образцами выкрасов.<br> Всю доступную палитру на разных породах дерева можно посмотреть, перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>

@@ -292,12 +292,15 @@ a:hover {
 .i_paint_10:before {
     content: "\e019";
 }
+
 .i_ok:before {
     content: '\e01f';
 }
+
 .i_calendar:before {
     content: '\e01b';
 }
+
 @font-face {
     font-family: 'FontAwesome';
     src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -1825,10 +1828,10 @@ select:focus {
     border: 2px solid #ff3495;
 }
 
-.qd .btn-simple {
+/*.qd .btn-simple {
     margin-bottom: 5px;
 }
-
+*/
 .btn-simple.disabled {
     background-color: #a8acae;
     cursor: default;
@@ -2040,13 +2043,15 @@ select:focus {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .lp-mrkr {
         font-size: 1em;
-         height: 28px;
+        height: 28px;
 
     }
 }
+
 .hidden-descr {
     display: none;
 }
@@ -2265,9 +2270,11 @@ select:focus {
     margin-right: 1.8em;
     display: inline-flex;
 }
+
 .price-right .form-group {
     margin-bottom: 1.2em;
 }
+
 .price-right .form-group .custom-control {
     margin-bottom: 0;
     display: inline-block;
@@ -2533,9 +2540,15 @@ div.scrollup:hover {
 
 .top-panel a,
 .top-panel p {
-    margin-bottom: 4px;
+    line-height: 1em;
     display: inline-block;
 
+}
+.top-panel a {
+    margin-bottom: 0;
+}
+.top-panel p:not(:last-child) {
+    margin-right: 1.5em;
 }
 
 @media(min-width: 992px) {
@@ -2543,7 +2556,6 @@ div.scrollup:hover {
     .top-panel a,
     .top-panel p {
         font-size: 13px;
-        margin-bottom: 6px;
 
     }
 }
@@ -3152,9 +3164,11 @@ div.scrollup:hover {
 .slick-list {
     overflow: hidden;
 }
+
 .slick-slider {
     min-width: 280px;
 }
+
 .schemes-slider {
     position: relative;
     padding: 0px 30px;
@@ -3327,13 +3341,14 @@ div.scrollup:hover {
     background-color: #ff3495;
     padding: 5px 10px;
     color: #fff;
+    fill: #fff;
     margin-bottom: 5px;
-    flex-grow: 3;
+    flex-grow: 0;
 }
 
 .qd {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: no-wrap;
     align-items: stretch;
 }
@@ -5463,26 +5478,39 @@ a.zak-zam:hover {
     flex-grow: 0;
 }
 
-.similar-box .prev-photo {
-    height: 10vh;
+.dp .similar-box .prev-photo img {
+    height: 15vh;
 }
 
 @media (min-width: 400px) {
-    .similar-box .prev-photo {
+    .dp .similar-box .prev-photo img {
         height: 20vh;
     }
 }
 
 @media (min-width: 540px) {
-    .similar-box .prev-photo {
-        height: 30vh;
+    .dp .similar-box .prev-photo img {
+        height: 25vh;
     }
 }
-
+.dp .similar-box .prod-descr-box {
+    padding-top: 0.2em;
+    height: 140px;
+}
 .similar-box .prev-photo img {
     object-fit: contain;
 }
-
+.dp .slick-track .slick-slide>div {
+    position: relative;
+    height: 100%;
+}
+.dp .slick-slide {
+    margin-right: 10px;
+    border: 1px solid #e3f2f7;
+}
+.similar-item .qd {
+    justify-content: space-between;
+}
 ul.anchnav {
     color: #009de8;
     list-style: none;
@@ -5625,20 +5653,22 @@ ul.anchnav li:hover a {
 }
 
 .col-pr {
-    flex-grow: 2; 
+    flex-grow: 2;
 }
-@media (min-width: 370px){
-    .col-pr{
+
+@media (min-width: 370px) {
+    .col-pr {
         min-width: 340px;
     }
 }
-@media (min-width: 630px){
-/*    .col-pr {
+
+@media (min-width: 630px) {
+    /*    .col-pr {
      margin-left: 2em;
     }*/
 }
 
-@media (min-width: 900px) and (max-width: 1199px){
+@media (min-width: 900px) and (max-width: 1199px) {
     .col-pic {
         max-width: 55%;
     }
@@ -5649,6 +5679,7 @@ ul.anchnav li:hover a {
     .col-lft {
         width: 55%;
     }
+
     .col-pic {
         width: 45%;
     }
@@ -5737,10 +5768,11 @@ ul.anchnav li:hover a {
     background-color: #f2f5f6;
     min-width: 225px;
 }
-@media (min-width: 512px){
-   .bn:first-child {
-    margin-right: 15px;
-} 
+
+@media (min-width: 512px) {
+    .bn:first-child {
+        margin-right: 15px;
+    }
 }
 
 .bn img {
@@ -5749,13 +5781,15 @@ ul.anchnav li:hover a {
     margin-right: 1.2em;
     opacity: 0.7;
 }
+
 .kmpl-ul {
     padding-left: 0px;
 }
+
 .kmpl-ul li {
-  padding: 0;
-  position: relative;
-  list-style: none; 
+    padding: 0;
+    position: relative;
+    list-style: none;
 }
 
 .upak {

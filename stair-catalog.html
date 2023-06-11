@@ -443,6 +443,14 @@
                             Пункт выдачи
                         </a>
                     </div>
+                    <div class="bxx-clm d-none d-lg-flex">
+                        <a class="text-xs pb a-link" href="O_kompanii.html">
+                            О компании
+                        </a>
+                        <a class="text-xs pb a-link" href="kontakty.html">
+                            Контакты
+                        </a>
+                    </div>
                     <form class="bxx d-none d-sm-inline-flex search-form">
                         <input class="form-control" type="search" placeholder="Найти лестницу">
                         <button class="btn search-btn" type="submit"><img class="i-img i-srch" src="img/search.svg" alt=""></button>
@@ -625,8 +633,8 @@
             <button class="a-share">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10.1" height="11" viewBox="0 0 10.1 11">
                     <path d="M8.3,7.3c-0.5,0-1,0.2-1.3,0.6L3.6,6c0.1-0.1,0.1-0.3,0.1-0.5s0-0.4-0.1-0.5l3.3-1.9c0.4,0.4,0.8,0.6,1.4,0.6
-    c1,0,1.8-0.8,1.8-1.8S9.3,0,8.3,0S6.5,0.8,6.5,1.8c0,0.1,0,0.3,0.1,0.4L3.1,4.2C2.8,3.9,2.3,3.7,1.8,3.7C0.8,3.7,0,4.5,0,5.5
-    s0.8,1.8,1.8,1.8c0.5,0,1-0.2,1.2-0.5l3.4,1.9c0,0.1-0.1,0.3-0.1,0.4c0,1,0.8,1.8,1.8,1.8S10,10.2,10,9.2S9.2,7.3,8.3,7.3z" />
+            c1,0,1.8-0.8,1.8-1.8S9.3,0,8.3,0S6.5,0.8,6.5,1.8c0,0.1,0,0.3,0.1,0.4L3.1,4.2C2.8,3.9,2.3,3.7,1.8,3.7C0.8,3.7,0,4.5,0,5.5
+            s0.8,1.8,1.8,1.8c0.5,0,1-0.2,1.2-0.5l3.4,1.9c0,0.1-0.1,0.3-0.1,0.4c0,1,0.8,1.8,1.8,1.8S10,10.2,10,9.2S9.2,7.3,8.3,7.3z" />
                 </svg>
             </button>
         </div>
@@ -637,15 +645,31 @@
             Лестница К-001М
         </h1>
         <div class="top-panel">
-            <p class="p-quantity mr-4">Код товара: <span class="few">1526</span></p>
-            <p class="nowrp"> У лестницы&nbsp;</p><a href="#vars" class="a-border-dotted mr-4"> 7 вариантов размера</a>
-            <!--  <p class="mr-4">Купили более 10 раз</p> -->
-            <!--  <p class="p-quantity mr-4">В наличии: <span class="few">2 шт.</span></p> -->
-            <!--  <p class="mr-4"> <i class="i_box"></i>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p> -->
-            <!--  <p class="mr-4"><i class="i_point"></i>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p> -->
-            <p class="mr-4"><i class="i_clock"></i>Доставка в <a href="">Нижний Новгород:</a><span class="pink nowrp"> 5 - 7 дней</span></p>
-            <a class="a-zapros" data-toggle="modal" href="" data-target="#zapros">
-                <!-- <i class="i_ask"></i> --><i class="i_delivery"></i>Условия доставки</a>
+           <!-- Код товара выводится для всех товаров -->
+            <p class="p-quantity  ">Код товара: <span class="few">1526</span></p> 
+            
+            <!-- Количество покупок выводится для всех товаров, кроме головных карточек, у которых есть модификации -->
+            <!-- <p class=" ">Купили более 10 раз</p> -->
+
+            <!-- Варианты размера выводятся только для головной карточки, у которой есть группы модификаций - выводится количество групп модификаций -->
+            <p class="nowrp"> У лестницы&nbsp;<a href="#vars" class="a-border-dotted"> 7 вариантов размера</a></p>
+
+            <!-- Доступно к заказу - НЕ выводится для заказных лестниц и головных карточек, у которых есть модификации -->
+            <!-- <p class=" "> <i class="i_box"></i>Доступно к заказу:<span class="pink nowrp"> 34 шт.</span></p> -->
+
+            <!-- Наличие в городе НЕ выводится для заказных лестниц и головных карточек, у которых есть модификации, для всех городов, кроме Москвы "нет в наличии" -->
+            <p class=" "><i class="i_point"></i>В вашем городе:<span class="text-grey nowrp"> нет в наличии</span></p>
+
+            <!-- Срок доставки выводится для всех товаров -->
+            <p class=" "><i class="i_clock"></i>Доставка в <a href="">Нижний Новгород:</a><span class="pink nowrp"> 5 - 7 дней</span></p>
+
+            <!-- Условия доставки выводятся для всех товаров -->
+            <p>
+                <a href="/delivery.html" class=" "><i class="i_delivery"></i>Условия доставки</a>
+            </p>
+
+            <!-- Срок изготовления выводится только для заказных лестниц -->
+            <!-- <p class=""> <i class="i_calendar"></i>Срок изготовления:<span class="pink nowrp"> 35 дней</span></p>  -->
         </div>
         <!-- Конец -верхней панели -->
         <div class="row">
@@ -745,9 +769,9 @@
                 </div>
             </div>
             <!-- Конец блока с фотографиями -->
-            <!--------------------------- Выбор параметров или характеристики-------------------------------------- -->
+            <!--- Выбор параметров или характеристики -->
             <div class="col col-lft no-gutters">
-                <!-- -------------------Блок с выбором параметров только для головной карточи ------------------------->
+                <!-- Блок с выбором параметров выводится только для головной карточки лестницы с модификациями или вариантами --->
                 <div class="col col-pr">
                     <div class="chc-bx">
                         <div class="form-group">
@@ -875,151 +899,152 @@
                         </div>
                     </div>
                 </div>
-                <!-- ----------------------Конец блока с выбором параметров--------------------------------- ----------->
-                <!-- -----------------------Характеристики только для модификации или простого товара ------------------->
-                <div class="d-none col col-pr order-2 order-xl-1">
-                    <div class="chrs-bx">
-                        <div class="params short-params">
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота
-                                    </b>
-                                </span>
-                                <span class="feature-val">2730 - 2925 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Длина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">890 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">40 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Угол наклона
-                                    </b>
-                                </span>
-                                <span class="feature-val">42 °</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Глубина проступи
-                                    </b>
-                                </span>
-                                <span class="feature-val">350 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Глубина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">400 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Глубина проступи
-                                    </b>
-                                </span>
-                                <span class="feature-val">350 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Категория
-                                    </b>
-                                </span>
-                                <span class="feature-val">АВ</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Вид балясины
-                                    </b>
-                                </span>
-                                <span class="feature-val">Прямая</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Вид столба
-                                    </b>
-                                </span>
-                                <span class="feature-val">Прямой</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Угол наклона
-                                    </b>
-                                </span>
-                                <span class="feature-val">42 °</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота
-                                    </b>
-                                </span>
-                                <span class="feature-val">2750 - 3400 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Толщина ступени
-                                    </b>
-                                </span>
-                                <span class="feature-val">40 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Высота шага
-                                    </b>
-                                </span>
-                                <span class="feature-val">195 мм</span>
-                            </p>
-                            <p class="p-values">
-                                <span class="feature-name">
-                                    <b>
-                                        Максимальная нагрузка
-                                    </b>
-                                </span>
-                                <span class="feature-val">200 кг</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ---------------------------------Конец характеристик простого товара ----------------------------- -->
+                <!-- Конец блока с выбором параметров --->
+                <!-- Характеристики здесь выводятся только для карточки модификации или простого товара --->
+                <!--  <div class="col col-pr order-2 order-xl-1">
+                            <div class="chrs-bx">
+                                <div class="params short-params">
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Высота
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">2730 - 2925 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Длина ступени
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">890 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Толщина ступени
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">40 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Высота шага
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">195 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Угол наклона
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">42 °</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Глубина проступи
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">350 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Глубина ступени
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">400 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Высота шага
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">195 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Глубина проступи
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">350 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Категория
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">АВ</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Вид балясины
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">Прямая</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Вид столба
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">Прямой</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Угол наклона
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">42 °</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Высота
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">2750 - 3400 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Толщина ступени
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">40 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Высота шага
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">195 мм</span>
+                                    </p>
+                                    <p class="p-values">
+                                        <span class="feature-name">
+                                            <b>
+                                                Максимальная нагрузка
+                                            </b>
+                                        </span>
+                                        <span class="feature-val">200 кг</span>
+                                    </p>
+                                </div>
+                            </div>
+                </div> -->
+                <!-- Конец характеристик простого товара -->
+                <!-- Блок с ценой и кнопкой "купить" -->
                 <div class="col col-buy  order-1 order-xl-2 stck">
                     <div class="price-right">
                         <div class="main-price-box">
@@ -1028,12 +1053,11 @@
                             <p class="old-price mb-0">
                                 40 000<span class="price-rouble"></span>
                             </p>
-                            <div class="d-none">
-                                <a type="button" class="a-border-dotted text-grey text-xs btn-ch form_add" data-id="15" data-toggle="modal" data-target="#simple_form" data-form="Нашли дешевле">Нашли дешевле?</a>
-                            </div>
                         </div>
-                        <p class="text-xs mb-0 pink"><i class="i_ok"></i>Цена без покраски</p>
-                        <p class="text-xs mb-0 pink"><i class="i_ok"></i>Цена без монтажа</p>
+                        <!-- Сюда (ниже) вывести значения свойства "Примечание к цене" (нужно создать: множественное, строка) -->
+                        <p class="text-xs mb-0"><i class="i_ok"></i>Цена без покраски</p>
+                        <p class="text-xs mb-0"><i class="i_ok"></i>Цена без монтажа</p>
+                        <!-- Выбор поворота выводится только в карточках лестниц, с заполненным соответствующим свойством "поворот" (как сейчас на рабочем сайте)-->
                         <div class="form-group mt-4">
                             <p class="p-param-label">Выберите поворот:</p>
                             <div class="custom-control custom-checkbox mr-2">
@@ -1049,7 +1073,8 @@
                                 </label>
                             </div>
                         </div>
-                        <!-- //////////////// Кнопка с количеством//////////////////// -->
+                        <!-- Конец выбора поворота -->
+                        <!--  Кнопка с количеством -->
                         <div class="qd">
                             <div class="counter">
                                 <span class="counter-less" id="btnminus4">–</span>
@@ -1058,18 +1083,20 @@
                             </div>
                             <button type="button" class="btn btn-buy" data-toggle="modal" data-target="#added_to_cart">Купить</button>
                         </div>
-                        <!-- //////////////// Конец Кнопка с количеством//////////////////// -->
+                        <!-- Конец Кнопка с количеством -->
                         <button data-toggle="modal" data-target="#order_measure" class="btn addzamer mt-2 btn-block">
                             Заказать замер
                         </button>
                     </div>
                 </div>
+                <!-- Конец блока с ценой и кнопкой "купить" -->
             </div>
         </div>
-        <!-- --------------------------Основная информация о товаре-------------------------------------------- -->
+        <!-- Основная информация о товаре -->
         <div class="section">
             <div class="row align-items-start">
                 <div class="col-12 col-lg col-pic">
+                    <!-- Если мы в карточке модификации или простого товара, то блок "trck" с доп.классом -" d-xl-none"-->
                     <div class="trck">
                         <p class="mb-2 p-cap">Характеристики:</p>
                         <div class="params short-params shrt">
@@ -1236,6 +1263,7 @@
                         </p>
                         <button id="descr" class="opn d-none">Развернуть описание</button>
                     </div>
+                    <!-- Значения свойств выставляются соответствующие выбранной модификации -->
                     <div class="kpmpl">
                         <p class="p-cap mb-2">Комплектация:</p>
                         <ul class="kmpl-ul">
@@ -1301,6 +1329,7 @@
                             </div>
                             <div>
                                 <p class="p-cap mb-0">Покраска</p>
+                                <!-- Выводится цена из свойства "стоимость покраски деревянных элементов" -->
                                 <p class="pink p-cap">от 12 000<span class="price-rouble"></span></p>
                             </div>
                         </div>
@@ -1314,6 +1343,8 @@
                             </div>
                             <div>
                                 <p class="p-cap mb-0">Монтаж:</p>
+
+                                <!-- Выводится цена из свойства "Стоимость монтажа" -->
                                 <p class="pink p-cap">от 15 500<span class="price-rouble"></span></p>
                             </div>
                         </div>
@@ -1338,189 +1369,9 @@
             </div>
         </div>
         <!-- Конец блока с основной информацие о товаре -->
-        <div class="section d-none">
-            <!-- Характеристики -->
-            <p class="p-page-cap">Характеристики:</p>
-            <div class="params">
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Длина ступени
-                        </b>
-                    </span>
-                    <span class="feature-val">890 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Толщина ступени
-                        </b>
-                    </span>
-                    <span class="feature-val">40 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота шага
-                        </b>
-                    </span>
-                    <span class="feature-val">195 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Угол наклона
-                        </b>
-                    </span>
-                    <span class="feature-val">42 °</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Категория
-                        </b>
-                    </span>
-                    <span class="feature-val">АВ</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Глубина ступени
-                        </b>
-                    </span>
-                    <span class="feature-val">400 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота шага
-                        </b>
-                    </span>
-                    <span class="feature-val">195 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Глубина проступи
-                        </b>
-                    </span>
-                    <span class="feature-val">350 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Категория
-                        </b>
-                    </span>
-                    <span class="feature-val">АВ</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Вид балясины
-                        </b>
-                    </span>
-                    <span class="feature-val">Прямая</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Вид столба
-                        </b>
-                    </span>
-                    <span class="feature-val">Прямой</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Угол наклона
-                        </b>
-                    </span>
-                    <span class="feature-val">42 °</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота
-                        </b>
-                    </span>
-                    <span class="feature-val">2750 - 3400 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Толщина ступени
-                        </b>
-                    </span>
-                    <span class="feature-val">40 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Высота шага
-                        </b>
-                    </span>
-                    <span class="feature-val">195 мм</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Максимальная нагрузка
-                        </b>
-                    </span>
-                    <span class="feature-val">200 кг</span>
-                </p>
-                <a href="#" data-toggle="modal" data-target="#notmysize" class="a-link">
-                    Не подходят размеры?
-                </a>
-            </div>
-        </div>
-        <div class="section d-none">
-            <a id="gabarity"></a>
-            <p class="p-page-cap">Упаковка:</p>
-            <div class="params">
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Масса брутто, кг
-                        </b>
-                    </span>
-                    <span class="feature-val">93</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Количество упаковок
-                        </b>
-                    </span>
-                    <span class="feature-val">3</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Размеры наибольшей упаковки, мм
-                        </b>
-                    </span>
-                    <span class="feature-val">2500 × 350 × 180</span>
-                </p>
-                <p class="p-values">
-                    <span class="feature-name">
-                        <b>
-                            Общий объём, м³
-                        </b>
-                    </span>
-                    <span class="feature-val">2500 × 350 × 180</span>
-                </p>
-            </div>
-        </div>
-        <div class="d-none section">
-            <p class="p-page-cap">Описание</p>
-            <p class="">
-                Для изготовления лестницы используется сосна с небольшими изменениями цвета - синевой, такой допустимый порок древесины существенно не влияет на ее механические свойства и практически незаметен при покраске в тёмные цвета.
-            </p>
-        </div>
-        <!-- Блок ниже только в карточке -->
-        <!--         <div class="section">
+
+        <!-- Блок ниже только в карточке заказных без изменений-->
+        <!-- <div class="section">
             <p class="p-page-cap">
                 Не подходят размеры?
             </p>
@@ -1532,7 +1383,7 @@
                 </div>
             </div>
         </div> -->
-        <!-- Чертежи и схемы -->
+        <!-- Чертежи и схемы (блок не меняется, только расположение другое)-->
         <a id="schems"></a>
         <div class="section">
             <p class="p-page-cap">Чертежи и схемы</p>
@@ -1604,10 +1455,14 @@
             </div>
         </div>
         <!-- Конец Чертежи и схемы -->
+
         <!-- Покраска деревянных элементов -->
         <a id="pokraska"></a>
         <div class="section">
             <p class="p-page-cap">Покраска деревянных элементов лестницы</p>
+
+            <!-- Выводится цена из свойства "стоимость покраски деревянных элементов лестницы" -->
+            <!-- Во всех карточках, где заполонено свойство "стоимость покраски деревянных элементов лестницы" выводится этот блок, картинки везде одинаковые и текст -->
             <p class="p-main-price pink">от 12 000<span class="price-rouble"></span></p>
             <p class="">Вы можете заказать у нас профессиональную покраску деревянных элементов лестницы.<br>
                 Ниже представлена палитра наиболее популярных расцветок. Выкрасы выполнены на сосне. <br>
@@ -1745,7 +1600,135 @@
             </div>
         </div>
         <!-- Конец покраски деревянных элементов -->
-        <!-- Монтаж -->
+
+
+        <!-- Покраска металлических элементов -->
+        <!-- Блок выводится только для лестниц на заказ из раздела "на металлокаркасе", везде одинаковые цвета(картинки) и текст, как здесь -->
+        <!-- <div class="section">
+            <p class="p-page-cap">Покраска металлических элементов лестницы</p>
+            <p class="">Покраска каркаса не влияет на стоимость.<br>
+                Вы можете выбрать любой цвет из палитры.<br>
+                Ниже представлены наиболее популярные расцветки каркаса.
+                <br>Ознакомиться с полной палитрой цветов металлокаркаса вы можете перейдя по этой <a class="a-link" href="https://lestnicy-prosto.ru/uslugi/pokraska/">ссылке</a></p>
+            <div class="clrbm">
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/9030A0136.jpg" class="a-zoom-img">
+                            <img src="img/colors/9030A0136.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">9030A0136 Алюм.металик хром (ЭП)</p>
+                </div>
+                
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/93587983.jpg" class="a-zoom-img">
+                            <img src="img/colors/93587983.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">93587983 Алюм.металлик "матовый муар" (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5758A0646.jpg" class="a-zoom-img">
+                            <img src="img/colors/5758A0646.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5758A0646 Алюм.металлик "бриллиантовый муар" (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/1R489006.jpg" class="a-zoom-img">
+                            <img src="img/colors/1R489006.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">1R489006 Алюм.металлик "архитектурный муар" (ПЭ), RAL 9006</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90336285.jpg" class="a-zoom-img">
+                            <img src="img/colors/90336285.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90336285 Бежевый металлик (ЭП), RAL 1035</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/8L421036.jpg" class="a-zoom-img">
+                            <img src="img/colors/8L421036.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">8L421036 Золотистый металлик бонд. (ПУ), RAL 1036</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90328405.jpg" class="a-zoom-img">
+                            <img src="img/colors/90328405.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90328405 Золотистый металлик (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/90326428.jpg" class="a-zoom-img">
+                            <img src="img/colors/90326428.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">90326428 Золотистый металлик (ЭП)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5033A0377.jpg" class="a-zoom-img">
+                            <img src="img/colors/5033A0377.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5033A0377 Бронзовый металлик (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5038A1220.jpg" class="a-zoom-img">
+                            <img src="img/colors/5038A1220.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5038A1220 Медный металлик (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5B238017.jpg" class="a-zoom-img">
+                            <img src="img/colors/5B238017.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5B238017 Коричневый структ. (ПЭ), RAL 8017</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5053A8017.jpg" class="a-zoom-img">
+                            <img src="img/colors/5053A8017.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5053A8017 Коричневый "муар" п-мат. (ПЭ), RAL 8017</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/5359A0445.jpg" class="a-zoom-img">
+                            <img src="img/colors/5359A0445.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">5359A0445 Серый "муар" с блёстками (ПЭ)</p>
+                </div>
+                <div class="clrb">
+                    <div class="clrb-img">
+                        <a data-fancybox="colors" href="img/colors/93531330.jpg" class="a-zoom-img">
+                            <img src="img/colors/93531330.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="clrnm">93531330 Медный металлик "муар" (ЭП)</p>
+                </div>
+            </div>
+        </div> -->
+        <!-- Конец покраски металлических элементов -->
+
+        <!-- Монтаж-->
         <a id="montage"></a>
         <div class="section">
             <div class="mntg">
@@ -1770,6 +1753,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
+                        <!-- Выводится цена из свойства "стоимость монтажа" -->
                         <p class="p-main-price pink mb-3">от 15 990<span class="price-rouble"></span></p>
                         <p class="">
                             Указана цена исключительно на монтаж лестницы, любые дополнительные работы, связанные с несовершенством стен, углов, устранением дополнительных препятствий при установке лестницы - изменят стоимость работ.<br>
@@ -1782,6 +1766,8 @@
             </div>
         </div>
         <!-- Конец блока Монтаж -->
+
+        <!-- Блок с модификациями без изменений -->
         <div class="section">
             <div class="modif-block">
                 <div class="row">
@@ -3043,7 +3029,9 @@
                 </div>
             </div>
         </div>
-        <a id="video"></a>
+        <!-- Конец блока с модификациями -->
+
+        <!-- Блок с видео без изменений -->
         <div class="section">
             <div class="video-block">
                 <div class="row">
@@ -3061,6 +3049,9 @@
                 </div>
             </div>
         </div>
+        <!-- Конец блока с видео -->
+
+        <!-- Похожие без изменений -->
         <div class="section">
             <p class="p-page-cap">Похожие</p>
             <div class="similar-block">
@@ -3350,6 +3341,9 @@
                 </div>
             </div>
         </div>
+        <!-- Конец похожих -->
+
+
         <div class="section">
             <div class="banner-horiz text-center">
                 <a href="#">

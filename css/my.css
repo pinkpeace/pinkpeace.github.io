@@ -2544,9 +2544,11 @@ div.scrollup:hover {
     display: inline-block;
 
 }
+
 .top-panel a {
     margin-bottom: 0;
 }
+
 .top-panel p:not(:last-child) {
     margin-right: 1.5em;
 }
@@ -4760,6 +4762,10 @@ ul.portf_cat li:not(:last-child) {
     padding: 1em;
 }
 
+.shd {
+    box-shadow: 0px 2px 30px 6px #3a537459;
+}
+
 .paymnts {
     position: relative;
     overflow: hidden;
@@ -5493,24 +5499,30 @@ a.zak-zam:hover {
         height: 25vh;
     }
 }
+
 .dp .similar-box .prod-descr-box {
     padding-top: 0.2em;
     height: 140px;
 }
+
 .similar-box .prev-photo img {
     object-fit: contain;
 }
+
 .dp .slick-track .slick-slide>div {
     position: relative;
     height: 100%;
 }
+
 .dp .slick-slide {
     margin-right: 10px;
     border: 1px solid #e3f2f7;
 }
+
 .similar-item .qd {
     justify-content: space-between;
 }
+
 ul.anchnav {
     color: #009de8;
     list-style: none;
@@ -5795,4 +5807,40 @@ ul.anchnav li:hover a {
 .upak {
     max-width: 600px;
     margin-bottom: 1.5em;
+}
+
+.p-pbl {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.mb-sub15 {
+    margin-bottom: -180px;
+}
+.h-bao {
+    font-size: 39px;
+    line-height: 54px;
+    font-weight: 700;
+}
+.sot .zm_bx {
+    margin-left: -50px;
+    margin-right: 50px;
+    padding-right: 50px;
+}
+.p-p18 {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 27px;
+}
+
+ul.ul-artcl {
+    list-style: none;
+    padding: 30px;
+
+}
+
+ul.ul-artcl li {
+    list-style-type:"—  ";
+    margin-bottom: 1.5em;
+    font-size: 24px;
 }

@@ -129,6 +129,28 @@ $(document).ready(function() {
             },
         ]
     });
+    $('.prtf-sldr').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        slidesToScroll: 1,
+         arrows: false,
+         centerPadding: 'calc(50% - 700px)',
+        asNavFor: '.nmbr-sldr'
+
+    });
+    $('.nmbr-sldr').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        centerMode: true,
+        prevArrow: '<button class="pr-bt"></button>',
+        nextArrow: '<button class="nxt-bt"></button>',
+        asNavFor: '.prtf-sldr'
+    });
     $('[data-fancybox="gallery"]').fancybox({});
 
     // при нажатии на кнопку scrollup
@@ -245,25 +267,26 @@ $('.yesTown').click(function() {
 });
 $('.noTown').click(function() {
     $('#your_town').modal('hide');
-     $('#city_modal').modal('show');
+    $('#city_modal').modal('show');
 });
 $(document).ready(function() {
     var height = $(".descr").height();
-   
-    if (height>102) { 
-         $('.descr').parent().removeClass('active');
-         $('#descr').removeClass('d-none');;}
+
+    if (height > 102) {
+        $('.descr').parent().removeClass('active');
+        $('#descr').removeClass('d-none');;
+    }
 });
 
 $('#descr').click(function() {
-     var text = $('#descr').text();
+    var text = $('#descr').text();
     $('#descr').text(
-        text == "Развернуть описание" ? "Свернуть описание" : "Развернуть описание"); 
+        text == "Развернуть описание" ? "Свернуть описание" : "Развернуть описание");
     $(this).parent().toggleClass('active');
 });
 
-$('#chrs').click(function() {    
-     var text = $('#chrs').text();
+$('#chrs').click(function() {
+    var text = $('#chrs').text();
     $('#chrs').text(
         text == "Развернуть характеристики" ? "Свернуть характеристики" : "Развернуть характеристики");
     $(this).parent().toggleClass('active');
